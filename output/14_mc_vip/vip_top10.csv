@@ -1,0 +1,122 @@
+"ds_type","response_type","importance_type","Variable","Importance_avg","n","Importance_proportion"
+"Plant","Classification","Permutation","spectral_NDWI_endSnowfree",0.049763525317211,91,0.91
+"Plant","Classification","Permutation","spectral_EVI2b_lateSummer",0.0396114300291473,80,0.8
+"Plant","Classification","Permutation","spectral_NDWI_annualMean",0.035871294695876,67,0.67
+"Plant","Classification","Permutation","spectral_NDWI_lateSummer",0.0358530872368944,76,0.76
+"Plant","Classification","Permutation","spectral_NDWI_peakSummer",0.0339717726500502,79,0.79
+"Plant","Classification","Permutation","spectral_NDWI_annualMedian",0.0328176195211455,64,0.64
+"Plant","Classification","Permutation","spectral_EVI2b_peakSummer",0.0306922090587519,76,0.76
+"Plant","Classification","Permutation","spectral_NDWI_earlySummer",0.0297674477917676,69,0.69
+"Plant","Classification","Permutation","spectral_EVI2b_annualMedian",0.0289918827105062,66,0.66
+"Plant","Classification","Permutation","spectral_EVI2b_endSnowfree",0.0206141734635238,88,0.88
+"Plant","Classification","SHAP","trees_presence",0.000716462702158277,68,0.68
+"Plant","Classification","SHAP","bioclimate zone",0.000572475522493981,40,0.4
+"Plant","Classification","SHAP","topo_eastness",0.000135660354606581,32,0.32
+"Plant","Classification","SHAP","topo_northness",8.84760057432871e-05,11,0.11
+"Plant","Classification","SHAP","spectral_EVI2b_changeSSES",8.42602026884375e-05,45,0.45
+"Plant","Classification","SHAP","topo_slope",3.78045902639741e-05,45,0.45
+"Plant","Classification","SHAP","permafrost_index",3.57603930461073e-05,14,0.14
+"Plant","Classification","SHAP","topo_tpi",2.81133591211271e-05,22,0.22
+"Plant","Classification","SHAP","topo_cti",2.42701472123241e-05,9,0.09
+"Plant","Classification","SHAP","spectral_NIR_changeSSES",1.42662239498974e-05,12,0.12
+"Plant","Regression","Permutation","spectral_NDVI_earlySummer",372.673326493583,80,0.8
+"Plant","Regression","Permutation","spectral_NDVI_lateSummer",328.58736631935,72,0.72
+"Plant","Regression","Permutation","spectral_NDVI_peakSummer",316.974032879462,80,0.8
+"Plant","Regression","Permutation","spectral_NDVI_annualMedian",256.950466257017,56,0.56
+"Plant","Regression","Permutation","spectral_NDVI_endSnowfree",236.476055742056,65,0.65
+"Plant","Regression","Permutation","spectral_NDVI_annualMean",210.475064116839,45,0.45
+"Plant","Regression","Permutation","trees_presence",186.087388609641,86,0.86
+"Plant","Regression","Permutation","spectral_EVI2b_annualRange",172.784715353198,93,0.93
+"Plant","Regression","Permutation","bioclimate zone",172.373173460496,99,0.99
+"Plant","Regression","Permutation","spectral_NDVI_startSnowfree",152.466883320387,31,0.31
+"Plant","Regression","SHAP","bioclimate zone",38.0124785491013,99,0.99
+"Plant","Regression","SHAP","trees_presence",33.0319305520836,86,0.86
+"Plant","Regression","SHAP","ecosystem",12.9593797141075,96.68,0.9668
+"Plant","Regression","SHAP","permafrost_index",4.24940135800914,98,0.98
+"Plant","Regression","SHAP","topo_eastness",2.44999362818756,68,0.68
+"Plant","Regression","SHAP","topo_northness",1.85303932960005,38,0.38
+"Plant","Regression","SHAP","topo_cti",0.691730260577372,75,0.75
+"Plant","Regression","SHAP","topo_slope",0.557337152754515,54,0.54
+"Plant","Regression","SHAP","topo_tpi",0.490348787968637,49,0.49
+"Plant","Regression","SHAP","trees_cover",0.367853404795223,4,0.04
+"Woody Plant","Classification","Permutation","spectral_NDWI_earlySummer",0.0406754005247484,67,0.67
+"Woody Plant","Classification","Permutation","spectral_EVI2b_peakSummer",0.0343535469744089,70,0.7
+"Woody Plant","Classification","Permutation","spectral_NDWI_peakSummer",0.0341387399905973,74,0.74
+"Woody Plant","Classification","Permutation","spectral_EVI2b_annualMedian",0.0328822279106128,61,0.61
+"Woody Plant","Classification","Permutation","spectral_NDWI_lateSummer",0.0291388336650422,72,0.72
+"Woody Plant","Classification","Permutation","spectral_NDWI_annualMedian",0.0283036037514871,64,0.64
+"Woody Plant","Classification","Permutation","spectral_EVI2b_lateSummer",0.0264825128841766,63,0.63
+"Woody Plant","Classification","Permutation","spectral_EVI2b_earlySummer",0.025438563301683,65,0.65
+"Woody Plant","Classification","Permutation","spectral_NDWI_endSnowfree",0.0223776843646588,72,0.72
+"Woody Plant","Classification","Permutation","spectral_NDVI_earlySummer",0.0168507943454906,48,0.48
+"Woody Plant","Classification","SHAP","trees_presence",0.00142905563293774,74,0.74
+"Woody Plant","Classification","SHAP","bioclimate zone",0.000544398051103909,39,0.39
+"Woody Plant","Classification","SHAP","topo_eastness",0.000141030769054546,34,0.34
+"Woody Plant","Classification","SHAP","topo_northness",7.09728417386645e-05,17,0.17
+"Woody Plant","Classification","SHAP","spectral_NIR_changeLSES",1.51448663853727e-05,23,0.23
+"Woody Plant","Classification","SHAP","permafrost_index",1.16856540084388e-05,10,0.1
+"Woody Plant","Classification","SHAP","spectral_red_changeLSES",1.11959011452682e-05,22,0.22
+"Woody Plant","Classification","SHAP","spectral_NDWI_changeLSES",1.07753164556962e-05,14,0.14
+"Woody Plant","Classification","SHAP","topo_tpi",1.06840803729545e-05,13,0.13
+"Woody Plant","Classification","SHAP","spectral_green_changePSLS",1.0295358649789e-05,11,0.11
+"Woody Plant","Regression","Permutation","spectral_NDVI_earlySummer",382.78156765863,73,0.73
+"Woody Plant","Regression","Permutation","spectral_NDVI_peakSummer",315.564141290268,76,0.76
+"Woody Plant","Regression","Permutation","spectral_NDVI_lateSummer",264.738311163693,58,0.58
+"Woody Plant","Regression","Permutation","spectral_NDVI_startSnowfree",248.292242905515,43,0.43
+"Woody Plant","Regression","Permutation","spectral_NDVI_annualMean",231.06328620747,46,0.46
+"Woody Plant","Regression","Permutation","spectral_NDVI_annualMedian",223.46764848513,51,0.51
+"Woody Plant","Regression","Permutation","spectral_NDVI_endSnowfree",218.183245917033,55,0.55
+"Woody Plant","Regression","Permutation","trees_presence",194.66864180677,94,0.94
+"Woody Plant","Regression","Permutation","trees_cover",144.096703107686,6,0.06
+"Woody Plant","Regression","Permutation","spectral_red_peakSummer",140.960381795524,70,0.7
+"Woody Plant","Regression","SHAP","trees_presence",47.0218854791215,94,0.94
+"Woody Plant","Regression","SHAP","bioclimate zone",20.9305567078318,98,0.98
+"Woody Plant","Regression","SHAP","ecosystem",8.91963962354249,84.74,0.8474
+"Woody Plant","Regression","SHAP","permafrost_index",3.35636318096371,99,0.99
+"Woody Plant","Regression","SHAP","topo_northness",2.83938287075039,60,0.6
+"Woody Plant","Regression","SHAP","topo_eastness",2.33481961381149,77,0.77
+"Woody Plant","Regression","SHAP","trees_cover",1.40154964112046,6,0.06
+"Woody Plant","Regression","SHAP","topo_tpi",0.968463105393706,71,0.71
+"Woody Plant","Regression","SHAP","topo_cti",0.92532667954911,90,0.9
+"Woody Plant","Regression","SHAP","topo_slope",0.54623454091411,51,0.51
+"Plant","Classification","Proportion","spectral_EVI2b_startSnowfree",0.96,96,0.96
+"Plant","Classification","Proportion","spectral_NDWI_endSnowfree",0.91,91,0.91
+"Plant","Classification","Proportion","spectral_EVI2b_endSnowfree",0.88,88,0.88
+"Plant","Classification","Proportion","spectral_EVI2b_lateSummer",0.8,80,0.8
+"Plant","Classification","Proportion","spectral_NDWI_peakSummer",0.79,79,0.79
+"Plant","Classification","Proportion","spectral_EVI2b_peakSummer",0.76,76,0.76
+"Plant","Classification","Proportion","spectral_NDWI_lateSummer",0.76,76,0.76
+"Plant","Classification","Proportion","spectral_NDWI_startSnowfree",0.74,74,0.74
+"Plant","Classification","Proportion","spectral_NDWI_earlySummer",0.69,69,0.69
+"Plant","Classification","Proportion","spectral_EVI2b_annualRange",0.68,68,0.68
+"Plant","Classification","Proportion","trees_presence",0.68,68,0.68
+"Plant","Regression","Proportion","bioclimate zone",0.99,99,0.99
+"Plant","Regression","Proportion","permafrost_index",0.98,98,0.98
+"Plant","Regression","Proportion","ecosystem",0.9668,96.68,0.9668
+"Plant","Regression","Proportion","spectral_EVI2b_annualRange",0.93,93,0.93
+"Plant","Regression","Proportion","spectral_NDWI_annualRange",0.87,87,0.87
+"Plant","Regression","Proportion","trees_presence",0.86,86,0.86
+"Plant","Regression","Proportion","texture_NDVI_peakSummer",0.84,84,0.84
+"Plant","Regression","Proportion","spectral_SWIR2_annualRange",0.83,83,0.83
+"Plant","Regression","Proportion","spectral_EVI2b_changeSSES",0.82,82,0.82
+"Plant","Regression","Proportion","spectral_NDVI_annualRange",0.82,82,0.82
+"Woody Plant","Classification","Proportion","spectral_EVI2b_startSnowfree",0.95,95,0.95
+"Woody Plant","Classification","Proportion","spectral_EVI2b_endSnowfree",0.88,88,0.88
+"Woody Plant","Classification","Proportion","spectral_EVI2b_annualRange",0.75,75,0.75
+"Woody Plant","Classification","Proportion","spectral_NDWI_peakSummer",0.74,74,0.74
+"Woody Plant","Classification","Proportion","trees_presence",0.74,74,0.74
+"Woody Plant","Classification","Proportion","spectral_NDWI_endSnowfree",0.72,72,0.72
+"Woody Plant","Classification","Proportion","spectral_NDWI_lateSummer",0.72,72,0.72
+"Woody Plant","Classification","Proportion","spectral_EVI2b_peakSummer",0.7,70,0.7
+"Woody Plant","Classification","Proportion","spectral_NDWI_earlySummer",0.67,67,0.67
+"Woody Plant","Classification","Proportion","spectral_EVI2b_earlySummer",0.65,65,0.65
+"Woody Plant","Regression","Proportion","permafrost_index",0.99,99,0.99
+"Woody Plant","Regression","Proportion","bioclimate zone",0.98,98,0.98
+"Woody Plant","Regression","Proportion","spectral_EVI2b_annualRange",0.97,97,0.97
+"Woody Plant","Regression","Proportion","texture_NDVI_peakSummer",0.97,97,0.97
+"Woody Plant","Regression","Proportion","spectral_EVI2b_changeSSES",0.96,96,0.96
+"Woody Plant","Regression","Proportion","spectral_NDWI_annualRange",0.96,96,0.96
+"Woody Plant","Regression","Proportion","spectral_SWIR1_annualRange",0.94,94,0.94
+"Woody Plant","Regression","Proportion","trees_presence",0.94,94,0.94
+"Woody Plant","Regression","Proportion","spectral_NBR_annualRange",0.93,93,0.93
+"Woody Plant","Regression","Proportion","spectral_SWIR2_annualRange",0.93,93,0.93

@@ -1,0 +1,3096 @@
+1) root 0 0 0.41270  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.98880  
+    4) spectral_EVI2b_annualMedian < 1522.87902474512 0 0 0.00000 *
+    5) spectral_EVI2b_annualMedian > 1522.87902474512 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.02281  
+    6) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.09231 *
+    7) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.00000 *
+1) root 0 0 0.48070  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.02966  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.33330 *
+1) root 0 0 0.47390  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.04918  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.01794 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.38100 *
+1) root 0 0 0.476200  
+  2) spectral_NDWI_lateSummer < -4486.84465878628 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4486.84465878628 0 0 0.029410  
+    6) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.454500 *
+    7) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.008811 *
+1) root 0 0 0.467100  
+  2) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.040820  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009346 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.258100 *
+1) root 0 0 0.505700  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.995400  
+    4) spectral_EVI2b_earlySummer < 1351.61364908535 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1351.61364908535 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.035560  
+    6) spectral_NDWI_annualMean < -2978.81421386679 0 0 0.466700 *
+    7) spectral_NDWI_annualMean > -2978.81421386679 0 0 0.004762 *
+1) root 0 0 0.41270  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.98860  
+    4) spectral_EVI2b_peakSummer < 1804.12530110313 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 1804.12530110313 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.03383  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00813 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.35000 *
+1) root 0 0 0.46030  
+  2) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.01316  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.05660 *
+  3) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.93900  
+    6) spectral_NDWI_changeESPS < 17.6047038686869 0 0 0.98480 *
+    7) spectral_NDWI_changeESPS > 17.6047038686869 0 0 0.33330 *
+1) root 0 0 0.455800  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.069770  
+    6) spectral_EVI2b_annualMedian < 1135.39527909159 0 0 0.004587 *
+    7) spectral_EVI2b_annualMedian > 1135.39527909159 0 0 0.425000 *
+1) root 0 0 0.471700  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.060730  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004608 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.466700 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.994800  
+    6) spectral_EVI2b_startSnowfree < 91.7568444145132 0 0 0.000000 *
+    7) spectral_EVI2b_startSnowfree > 91.7568444145132 0 0 1.000000 *
+1) root 0 0 0.455800  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.994900  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.024490  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.004292 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.416700 *
+1) root 0 0 0.4558  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9306  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.2500 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.9850 *
+1) root 0 0 0.4626  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9668  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.0000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.9855 *
+1) root 0 0 0.460300  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.013270  
+    4) spectral_NDWI_lateSummer < -3380.02684237325 0 0 0.333300 *
+    5) spectral_NDWI_lateSummer > -3380.02684237325 0 0 0.004545 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.930200  
+    6) spectral_NDWI_earlySummer < -2042.33670139163 0 0 0.961500 *
+    7) spectral_NDWI_earlySummer > -2042.33670139163 0 0 0.000000 *
+1) root 0 0 0.46030  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.01653  
+    4) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.00000 *
+    5) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.18180 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 1.00000 *
+1) root 0 0 0.455800  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.994700  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.000000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.059060  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004505 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.437500 *
+1) root 0 0 0.43990  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.03543  
+    4) spectral_NDWI_lateSummer < -3085.04908588942 0 0 0.31580 *
+    5) spectral_NDWI_lateSummer > -3085.04908588942 0 0 0.01277 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.98930  
+    6) spectral_EVI2b_startSnowfree < 659.643816107385 0 0 0.00000 *
+    7) spectral_EVI2b_startSnowfree > 659.643816107385 0 0 1.00000 *
+1) root 0 0 0.485300  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.995200  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.000000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.030040  
+    6) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.004878 *
+    7) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.214300 *
+1) root 0 0 0.4762  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9459  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.9903 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.3333 *
+1) root 0 0 0.5034  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9367  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.9821 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.1538 *
+1) root 0 0 0.44670  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.02024  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.21740 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.98970  
+    6) spectral_NDWI_lateSummer < -4103.86351382253 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -4103.86351382253 0 0 0.00000 *
+1) root 0 0 0.453500  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.076630  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008929 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.486500 *
+1) root 0 0 0.462600  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.989800  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.040820  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004587 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.333300 *
+1) root 0 0 0.4671  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9671  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.4000 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.9951 *
+1) root 0 0 0.453500  
+  2) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004464  
+    4) spectral_EVI2b_changeSSES < 19.7351171622487 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 19.7351171622487 0 0 0.021740 *
+  3) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.917100  
+    6) spectral_NDWI_changeESPS < 6.89872273292765 0 0 0.994800 *
+    7) spectral_NDWI_changeESPS > 6.89872273292765 0 0 0.346200 *
+1) root 0 0 0.47850  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99500  
+    4) spectral_EVI2b_earlySummer < 1512.73531650449 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1512.73531650449 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.04184  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.01370 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.35000 *
+1) root 0 0 0.4762  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9333  
+    6) spectral_NDWI_lateSummer < -2504.67909798568 0 0 0.9856 *
+    7) spectral_NDWI_lateSummer > -2504.67909798568 0 0 0.2500 *
+1) root 0 0 0.4603  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.0000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.0480  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.5217 *
+1) root 0 0 0.43990  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.95450  
+    4) spectral_EVI2b_earlySummer < 1157.81201949029 0 0 0.33330 *
+    5) spectral_EVI2b_earlySummer > 1157.81201949029 0 0 0.99460 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.02058  
+    6) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.00000 *
+    7) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.10420 *
+1) root 0 0 0.45120  
+  2) spectral_EVI2b_annualMean < 1406.00128163611 0 0 0.03252  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.47060 *
+  3) spectral_EVI2b_annualMean > 1406.00128163611 0 0 0.97950  
+    6) spectral_NDWI_lateSummer < -3857.48439232094 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -3857.48439232094 0 0 0.55560 *
+1) root 0 0 0.487500  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.038300  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004762 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.320000 *
+1) root 0 0 0.449000  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.058140  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008621 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.500000 *
+1) root 0 0 0.48300  
+  2) spectral_NDWI_lateSummer < -3085.04908588942 0 0 0.94170  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.98590 *
+  3) spectral_NDWI_lateSummer > -3085.04908588942 0 0 0.01376  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.27270 *
+1) root 0 0 0.489800  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.972200  
+    4) spectral_NDWI_lateSummer < -2742.98979641654 0 0 0.990600 *
+    5) spectral_NDWI_lateSummer > -2742.98979641654 0 0 0.000000 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.026670  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.004762 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.333300 *
+1) root 0 0 0.473900  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.056910  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004566 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.481500 *
+1) root 0 0 0.5170  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9620  
+    6) spectral_EVI2b_changeSSES < -8.77231160475966 0 0 0.2222 *
+    7) spectral_EVI2b_changeSSES > -8.77231160475966 0 0 0.9912 *
+1) root 0 0 0.487500  
+  2) spectral_EVI2b_earlySummer < 1600.64444671414 0 0 0.042550  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004673 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.428600 *
+  3) spectral_EVI2b_earlySummer > 1600.64444671414 0 0 0.995100  
+    6) spectral_EVI2b_startSnowfree < 789.064410966045 0 0 0.000000 *
+    7) spectral_EVI2b_startSnowfree > 789.064410966045 0 0 1.000000 *
+1) root 0 0 0.421800  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.052040  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.008547 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.342900 *
+1) root 0 0 0.437600  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.984100  
+    4) spectral_EVI2b_earlySummer < 1512.73531650449 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1512.73531650449 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.027780  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004367 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.260900 *
+1) root 0 0 0.469400  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004425  
+    4) spectral_NDWI_lateSummer < -3906.96296934117 0 0 0.500000 *
+    5) spectral_NDWI_lateSummer > -3906.96296934117 0 0 0.000000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.958100  
+    6) spectral_NDWI_earlySummer < -2042.33670139163 0 0 0.985600 *
+    7) spectral_NDWI_earlySummer > -2042.33670139163 0 0 0.000000 *
+1) root 0 0 0.4671  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9364  
+    6) spectral_NDWI_lateSummer < -2531.06252356676 0 0 0.9762 *
+    7) spectral_NDWI_lateSummer > -2531.06252356676 0 0 0.1000 *
+1) root 0 0 0.44440  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.97860  
+    4) spectral_EVI2b_earlySummer < 1425.48672993507 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1425.48672993507 0 0 0.99460 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.05118  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01293 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.45450 *
+1) root 0 0 0.473900  
+  2) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.021550  
+    4) spectral_EVI2b_lateSummer < 1348.90516542547 0 0 0.008811 *
+    5) spectral_EVI2b_lateSummer > 1348.90516542547 0 0 0.600000 *
+  3) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.976100  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.990300 *
+1) root 0 0 0.449000  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.068970  
+    6) spectral_EVI2b_annualMedian < 1142.05163451695 0 0 0.008811 *
+    7) spectral_EVI2b_annualMedian > 1142.05163451695 0 0 0.470600 *
+1) root 0 0 0.46030  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.05556  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.41180 *
+1) root 0 0 0.4943  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9437  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.0000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.4583 *
+1) root 0 0 0.42860  
+  2) spectral_NDWI_annualMean < -2978.81421386679 0 0 0.98390  
+    4) spectral_EVI2b_startSnowfree < 969.921276039888 0 0 0.00000 *
+    5) spectral_EVI2b_startSnowfree > 969.921276039888 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -2978.81421386679 0 0 0.02353  
+    6) spectral_EVI2b_annualMean < 1106.26107158015 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1106.26107158015 0 0 0.33330 *
+1) root 0 0 0.476200  
+  2) spectral_EVI2b_peakSummer < 2208.5259814887 0 0 0.061220  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004651 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.466700 *
+  3) spectral_EVI2b_peakSummer > 2208.5259814887 0 0 0.994900  
+    6) spectral_EVI2b_earlySummer < 1353.619373273 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 1353.619373273 0 0 1.000000 *
+1) root 0 0 0.44440  
+  2) spectral_EVI2b_lateSummer < 1958.16959646997 0 0 0.02778  
+    4) spectral_NDWI_endSnowfree < -3422.94083306892 0 0 0.57140 *
+    5) spectral_NDWI_endSnowfree > -3422.94083306892 0 0 0.01224 *
+  3) spectral_EVI2b_lateSummer > 1958.16959646997 0 0 1.00000 *
+1) root 0 0 0.4512  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.0400  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.3846 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.9895  
+    6) spectral_NDWI_annualMean < -3236.0534855899 0 0 1.0000 *
+    7) spectral_NDWI_annualMean > -3236.0534855899 0 0 0.0000 *
+1) root 0 0 0.487500  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.066120  
+    6) spectral_NDWI_lateSummer < -3085.04908588942 0 0 0.483900 *
+    7) spectral_NDWI_lateSummer > -3085.04908588942 0 0 0.004739 *
+1) root 0 0 0.44670  
+  2) spectral_NDWI_earlySummer < -2821.73688571793 0 0 0.98450  
+    4) spectral_EVI2b_earlySummer < 1028.44079006978 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1028.44079006978 0 0 1.00000 *
+  3) spectral_NDWI_earlySummer > -2821.73688571793 0 0 0.02429  
+    6) spectral_EVI2b_annualMean < 1222.9085211556 0 0 0.01250 *
+    7) spectral_EVI2b_annualMean > 1222.9085211556 0 0 0.42860 *
+1) root 0 0 0.42630  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.99440  
+    4) spectral_NDWI_lateSummer < -3086.63799244668 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3086.63799244668 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.04545  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.01245 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.39130 *
+1) root 0 0 0.48750  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.04237  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.40000 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 1.00000 *
+1) root 0 0 0.485300  
+  2) spectral_NDWI_lateSummer < -4286.15244965821 0 0 0.990500  
+    4) spectral_EVI2b_annualMean < 1443.65002373721 0 0 0.000000 *
+    5) spectral_EVI2b_annualMean > 1443.65002373721 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4286.15244965821 0 0 0.025970  
+    6) spectral_NDWI_annualMean < -2846.29752625614 0 0 0.363600 *
+    7) spectral_NDWI_annualMean > -2846.29752625614 0 0 0.009091 *
+1) root 0 0 0.442200  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.061070  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004367 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.454500 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_lateSummer < -4298.44306489673 0 0 0.99440  
+    4) spectral_EVI2b_annualMedian < 1266.7678943969 0 0 0.00000 *
+    5) spectral_EVI2b_annualMedian > 1266.7678943969 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4298.44306489673 0 0 0.04580  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.02066 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.35000 *
+1) root 0 0 0.460300  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.059290  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.004545 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.424200 *
+1) root 0 0 0.442200  
+  2) spectral_NDWI_endSnowfree < -4114.66447998372 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4114.66447998372 0 0 0.035290  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008658 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.291700 *
+1) root 0 0 0.478500  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.009091  
+    4) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.039220 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.945700  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.500000 *
+1) root 0 0 0.47390  
+  2) spectral_NDWI_annualMean < -3263.44824308028 0 0 0.98490  
+    4) spectral_EVI2b_earlySummer < 1143.59007307129 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1143.59007307129 0 0 0.99490 *
+  3) spectral_NDWI_annualMean > -3263.44824308028 0 0 0.05372  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.48150 *
+1) root 0 0 0.467100  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.017240  
+    4) spectral_EVI2b_lateSummer < 1372.62602983787 0 0 0.004425 *
+    5) spectral_EVI2b_lateSummer > 1372.62602983787 0 0 0.500000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.966500  
+    6) spectral_EVI2b_earlySummer < 1571.47065547723 0 0 0.533300 *
+    7) spectral_EVI2b_earlySummer > 1571.47065547723 0 0 1.000000 *
+1) root 0 0 0.43760  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.98350  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.05405  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.46670 *
+1) root 0 0 0.4785  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9336  
+    6) spectral_NDWI_endSnowfree < -2139.72326244667 0 0 0.9679 *
+    7) spectral_NDWI_endSnowfree > -2139.72326244667 0 0 0.0000 *
+1) root 0 0 0.41040  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.04059  
+    6) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.37930 *
+1) root 0 0 0.480700  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.037820  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004651 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.347800 *
+1) root 0 0 0.428600  
+  2) spectral_NDWI_earlySummer < -3873.23297786835 0 0 0.994400  
+    4) spectral_NDWI_endSnowfree < -3265.78873774061 0 0 1.000000 *
+    5) spectral_NDWI_endSnowfree > -3265.78873774061 0 0 0.000000 *
+  3) spectral_NDWI_earlySummer > -3873.23297786835 0 0 0.045630  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004184 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.458300 *
+1) root 0 0 0.430800  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994400  
+    4) spectral_EVI2b_peakSummer < 1804.12530110313 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 1804.12530110313 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.045800  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004348 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.343800 *
+1) root 0 0 0.42630  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.99440  
+    4) spectral_EVI2b_earlySummer < 1285.28833721647 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1285.28833721647 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.04545  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01255 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.36000 *
+1) root 0 0 0.487500  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.000000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.066120  
+    6) spectral_EVI2b_annualMedian < 1135.39527909159 0 0 0.004902 *
+    7) spectral_EVI2b_annualMedian > 1135.39527909159 0 0 0.394700 *
+1) root 0 0 0.435400  
+  2) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.020330  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008403 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.375000 *
+  3) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.959000  
+    6) spectral_NDWI_lateSummer < -2546.67263963145 0 0 0.989400 *
+    7) spectral_NDWI_lateSummer > -2546.67263963145 0 0 0.000000 *
+1) root 0 0 0.503400  
+  2) spectral_EVI2b_annualMean < 1079.63967798093 0 0 0.004902  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.024390 *
+  3) spectral_EVI2b_annualMean > 1079.63967798093 0 0 0.932500  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.263200 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.990800 *
+1) root 0 0 0.44220  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01288  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.06667 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.00000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.92310  
+    6) spectral_EVI2b_earlySummer < 971.90649566407 0 0 0.15380 *
+    7) spectral_EVI2b_earlySummer > 971.90649566407 0 0 0.97440 *
+1) root 0 0 0.492100  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.995200  
+    4) spectral_EVI2b_endSnowfree < 605.08660329862 0 0 0.000000 *
+    5) spectral_EVI2b_endSnowfree > 605.08660329862 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.042920  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009479 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.363600 *
+1) root 0 0 0.43990  
+  2) spectral_NDWI_annualMean < -3103.49385705432 0 0 0.97410  
+    4) spectral_EVI2b_earlySummer < 1024.4180696868 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1024.4180696868 0 0 0.99470 *
+  3) spectral_NDWI_annualMean > -3103.49385705432 0 0 0.02419  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.37500 *
+1) root 0 0 0.460300  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.032520  
+    6) spectral_EVI2b_annualMedian < 1349.77765539647 0 0 0.004367 *
+    7) spectral_EVI2b_annualMedian > 1349.77765539647 0 0 0.411800 *
+1) root 0 0 0.5283  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9790  
+    6) spectral_NDWI_lateSummer < -2871.86828034974 0 0 1.0000 *
+    7) spectral_NDWI_lateSummer > -2871.86828034974 0 0 0.2857 *
+1) root 0 0 0.464900  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.013160  
+    4) spectral_EVI2b_lateSummer < 1372.62602983787 0 0 0.004444 *
+    5) spectral_EVI2b_lateSummer > 1372.62602983787 0 0 0.666700 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.948400  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.476200 *
+1) root 0 0 0.464900  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.994800  
+    4) spectral_EVI2b_lateSummer < 1484.49910437108 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1484.49910437108 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.048580  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004505 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.440000 *
+1) root 0 0 0.449000  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994700  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.047240  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004464 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.366700 *
+1) root 0 0 0.449000  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.024100  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004386 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.238100 *
+1) root 0 0 0.473900  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.049180  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004695 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.354800 *
+1) root 0 0 0.44220  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.99460  
+    4) spectral_EVI2b_annualMean < 1243.85553342909 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1243.85553342909 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.04669  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.40000 *
+1) root 0 0 0.45350  
+  2) spectral_NDWI_lateSummer < -3906.96296934117 0 0 0.97940  
+    4) spectral_EVI2b_earlySummer < 1024.4180696868 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1024.4180696868 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -3906.96296934117 0 0 0.04049  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.01282 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.53850 *
+1) root 0 0 0.458000  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.047810  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004717 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.282100 *
+1) root 0 0 0.48750  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00463  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.02326 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.00000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.95110  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.00000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.97720 *
+1) root 0 0 0.489800  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009259  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.036360 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.951100  
+    6) spectral_NDWI_lateSummer < -2504.67909798568 0 0 0.981700 *
+    7) spectral_NDWI_lateSummer > -2504.67909798568 0 0 0.000000 *
+1) root 0 0 0.505700  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.035400  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.009709 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.300000 *
+1) root 0 0 0.460300  
+  2) spectral_NDWI_lateSummer < -4298.44306489673 0 0 0.994700  
+    4) spectral_EVI2b_lateSummer < 1682.13523638253 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1682.13523638253 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4298.44306489673 0 0 0.059520  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004525 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.451600 *
+1) root 0 0 0.40360  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01569  
+    4) spectral_NDWI_lateSummer < -3380.02684237325 0 0 0.44440 *
+    5) spectral_NDWI_lateSummer > -3380.02684237325 0 0 0.00000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.93550  
+    6) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.52000 *
+1) root 0 0 0.433100  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.038610  
+    4) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.450000 *
+    5) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.004184 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.994500  
+    6) spectral_NDWI_lateSummer < -3310.46764247483 0 0 1.000000 *
+    7) spectral_NDWI_lateSummer > -3310.46764247483 0 0 0.000000 *
+1) root 0 0 0.503400  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.043670  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.004878 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.375000 *
+1) root 0 0 0.51250  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01905  
+    4) spectral_NDWI_endSnowfree < -2031.39882860329 0 0 0.11430 *
+    5) spectral_NDWI_endSnowfree > -2031.39882860329 0 0 0.00000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.96100  
+    6) spectral_NDWI_lateSummer < -2162.99170726167 0 0 0.98230 *
+    7) spectral_NDWI_lateSummer > -2162.99170726167 0 0 0.00000 *
+1) root 0 0 0.4399  
+  2) spectral_NDWI_annualMean < -4205.50564332416 0 0 1.0000 *
+  3) spectral_NDWI_annualMean > -4205.50564332416 0 0 0.0500  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.3824 *
+1) root 0 0 0.449000  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004292  
+    4) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.019610 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.947100  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.975200 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.000000 *
+1) root 0 0 0.44900  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.02101  
+    4) spectral_NDWI_earlySummer < -2998.66694137042 0 0 0.62500 *
+    5) spectral_NDWI_earlySummer > -2998.66694137042 0 0 0.00000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.95070  
+    6) spectral_EVI2b_changeSSES < -1.42696569750695 0 0 0.33330 *
+    7) spectral_EVI2b_changeSSES > -1.42696569750695 0 0 0.98950 *
+1) root 0 0 0.489800  
+  2) spectral_NDWI_annualMean < -2978.81421386679 0 0 0.981200  
+    4) spectral_EVI2b_annualMedian < 1135.39527909159 0 0 0.000000 *
+    5) spectral_EVI2b_annualMedian > 1135.39527909159 0 0 1.000000 *
+  3) spectral_NDWI_annualMean > -2978.81421386679 0 0 0.030700  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004739 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.352900 *
+1) root 0 0 0.412700  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.040740  
+    6) spectral_EVI2b_annualMedian < 1142.05163451695 0 0 0.008097 *
+    7) spectral_EVI2b_annualMedian > 1142.05163451695 0 0 0.391300 *
+1) root 0 0 0.4830  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9301  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.0000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.9595 *
+1) root 0 0 0.478500  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.009132  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.043480 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.941400  
+    6) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 0.995000 *
+    7) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.454500 *
+1) root 0 0 0.437600  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004255  
+    4) spectral_EVI2b_changeSSES < 19.6171999806985 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 19.6171999806985 0 0 0.022220 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.932000  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.250000 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.989500 *
+1) root 0 0 0.439900  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994600  
+    4) spectral_EVI2b_peakSummer < 1804.12530110313 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 1804.12530110313 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.039060  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004292 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.391300 *
+1) root 0 0 0.480700  
+  2) spectral_NDWI_annualMean < -2978.81421386679 0 0 0.971800  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.000000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.985700 *
+  3) spectral_NDWI_annualMean > -2978.81421386679 0 0 0.021930  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.004608 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.363600 *
+1) root 0 0 0.46710  
+  2) spectral_NDWI_annualMean < -4173.2577652035 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -4173.2577652035 0 0 0.08203  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.02252 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.47060 *
+1) root 0 0 0.4399  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.0000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.0500  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.4643 *
+1) root 0 0 0.4467  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9292  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.9946 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.4615 *
+1) root 0 0 0.485300  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.995200  
+    4) spectral_EVI2b_peakSummer < 1804.12530110313 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 1804.12530110313 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.034190  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004878 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.241400 *
+1) root 0 0 0.464900  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.056000  
+    6) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.004505 *
+    7) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.464300 *
+1) root 0 0 0.519300  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.005102  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.022730 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.930600  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.986600 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.333300 *
+1) root 0 0 0.44220  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00431  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.02273 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.00000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.92820  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.97920 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.35290 *
+1) root 0 0 0.43540  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.03861  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00823 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.50000 *
+1) root 0 0 0.43540  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.02734  
+    6) spectral_EVI2b_annualMean < 1109.42420552269 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1109.42420552269 0 0 0.36840 *
+1) root 0 0 0.46030  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.98980  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.03279  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.28570 *
+1) root 0 0 0.41720  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.04461  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.44440 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 1.00000 *
+1) root 0 0 0.462600  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.994900  
+    4) spectral_EVI2b_annualMedian < 1266.7678943969 0 0 0.000000 *
+    5) spectral_EVI2b_annualMedian > 1266.7678943969 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.032790  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009132 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.240000 *
+1) root 0 0 0.421800  
+  2) spectral_NDWI_lateSummer < -4286.15244965821 0 0 0.994200  
+    4) spectral_EVI2b_peakSummer < 1956.23169182319 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 1956.23169182319 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4286.15244965821 0 0 0.052240  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004237 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.406200 *
+1) root 0 0 0.478500  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009091  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.046510 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.945700  
+    6) spectral_NDWI_lateSummer < -2871.86828034974 0 0 0.995100 *
+    7) spectral_NDWI_lateSummer > -2871.86828034974 0 0 0.388900 *
+1) root 0 0 0.496600  
+  2) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.014150  
+    4) spectral_EVI2b_annualMedian < 1135.39527909159 0 0 0.004854 *
+    5) spectral_EVI2b_annualMedian > 1135.39527909159 0 0 0.333300 *
+  3) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.943200  
+    6) spectral_EVI2b_earlySummer < 1138.50303501714 0 0 0.315800 *
+    7) spectral_EVI2b_earlySummer > 1138.50303501714 0 0 1.000000 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_annualMean < -2978.81421386679 0 0 0.94330  
+    4) spectral_EVI2b_earlySummer < 1028.44079006978 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1028.44079006978 0 0 0.98390 *
+  3) spectral_NDWI_annualMean > -2978.81421386679 0 0 0.02834  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00431 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.40000 *
+1) root 0 0 0.46030  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.05179  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.44830 *
+1) root 0 0 0.48300  
+  2) spectral_NDWI_lateSummer < -4286.15244965821 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4286.15244965821 0 0 0.02564  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.46150 *
+1) root 0 0 0.48300  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99050  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.02165  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.00463 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.26670 *
+1) root 0 0 0.48300  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.02979  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.25930 *
+1) root 0 0 0.458000  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994900  
+    4) spectral_NDWI_lateSummer < -3086.63799244668 0 0 1.000000 *
+    5) spectral_NDWI_lateSummer > -3086.63799244668 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.020580  
+    6) spectral_EVI2b_annualMedian < 1126.67509986785 0 0 0.004425 *
+    7) spectral_EVI2b_annualMedian > 1126.67509986785 0 0 0.235300 *
+1) root 0 0 0.437600  
+  2) spectral_EVI2b_earlySummer < 1534.31913484526 0 0 0.035430  
+    4) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004255 *
+    5) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.421100 *
+  3) spectral_EVI2b_earlySummer > 1534.31913484526 0 0 0.984000  
+    6) spectral_NDWI_earlySummer < -3369.72806060318 0 0 1.000000 *
+    7) spectral_NDWI_earlySummer > -3369.72806060318 0 0 0.000000 *
+1) root 0 0 0.49430  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.04292  
+    6) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.29410 *
+1) root 0 0 0.4671  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9406  
+    6) spectral_NDWI_endSnowfree < -2139.72326244667 0 0 0.9717 *
+    7) spectral_NDWI_endSnowfree > -2139.72326244667 0 0 0.0000 *
+1) root 0 0 0.4399  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.9946  
+    4) spectral_EVI2b_lateSummer < 1484.49910437108 0 0 0.0000 *
+    5) spectral_EVI2b_lateSummer > 1484.49910437108 0 0 1.0000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.0428  
+    6) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.0000 *
+    7) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.3438 *
+1) root 0 0 0.4671  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9279  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.9758 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.2667 *
+1) root 0 0 0.4694  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9583  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.0000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.5263 *
+1) root 0 0 0.453500  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.032130  
+    6) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.008929 *
+    7) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.240000 *
+1) root 0 0 0.4649  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.0250  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.3333 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.9900  
+    6) spectral_EVI2b_annualMean < 1247.31603238068 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1247.31603238068 0 0 1.0000 *
+1) root 0 0 0.4739  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.9717  
+    4) spectral_EVI2b_annualMean < 1073.69896522781 0 0 0.0000 *
+    5) spectral_EVI2b_annualMean > 1073.69896522781 0 0 0.9952 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.0131  
+    6) spectral_EVI2b_annualMean < 1222.9085211556 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1222.9085211556 0 0 0.2727 *
+1) root 0 0 0.45800  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.05534  
+    4) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.01339 *
+    5) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.37930 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 1.00000 *
+1) root 0 0 0.48530  
+  2) spectral_EVI2b_annualMedian < 1500.98002248714 0 0 0.05128  
+    4) spectral_NDWI_lateSummer < -3085.04908588942 0 0 0.50000 *
+    5) spectral_NDWI_lateSummer > -3085.04908588942 0 0 0.01835 *
+  3) spectral_EVI2b_annualMedian > 1500.98002248714 0 0 0.97580  
+    6) spectral_NDWI_earlySummer < -2055.03589630115 0 0 0.98540 *
+    7) spectral_NDWI_earlySummer > -2055.03589630115 0 0 0.00000 *
+1) root 0 0 0.48070  
+  2) spectral_NDWI_annualMean < -3663.83549115282 0 0 0.98530  
+    4) spectral_EVI2b_earlySummer < 1143.59007307129 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1143.59007307129 0 0 0.99500 *
+  3) spectral_NDWI_annualMean > -3663.83549115282 0 0 0.04641  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.47830 *
+1) root 0 0 0.458000  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.008621  
+    4) spectral_NDWI_lateSummer < -3906.96296934117 0 0 0.250000 *
+    5) spectral_NDWI_lateSummer > -3906.96296934117 0 0 0.004386 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.956900  
+    6) spectral_EVI2b_earlySummer < 1138.50303501714 0 0 0.333300 *
+    7) spectral_EVI2b_earlySummer > 1138.50303501714 0 0 0.994900 *
+1) root 0 0 0.48980  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.99520  
+    4) spectral_NDWI_lateSummer < -3086.63799244668 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3086.63799244668 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.03863  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.33330 *
+1) root 0 0 0.483000  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.057850  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004762 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.406200 *
+1) root 0 0 0.519300  
+  2) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.009756  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.042550 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.961900  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.982700 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.000000 *
+1) root 0 0 0.47390  
+  2) spectral_EVI2b_peakSummer < 1959.28273786744 0 0 0.03766  
+    4) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.00905 *
+    5) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.38890 *
+  3) spectral_EVI2b_peakSummer > 1959.28273786744 0 0 0.99010  
+    6) spectral_NDWI_annualMean < -3117.86998028094 0 0 1.00000 *
+    7) spectral_NDWI_annualMean > -3117.86998028094 0 0 0.00000 *
+1) root 0 0 0.4694  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.9950  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.0000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.0000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.0251  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.3158 *
+1) root 0 0 0.48980  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00463  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.02222 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.00000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.95560  
+    6) spectral_NDWI_endSnowfree < -2139.72326244667 0 0 0.98170 *
+    7) spectral_NDWI_endSnowfree > -2139.72326244667 0 0 0.00000 *
+1) root 0 0 0.46940  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.99010  
+    4) spectral_EVI2b_earlySummer < 1143.59007307129 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1143.59007307129 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.02521  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00885 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.33330 *
+1) root 0 0 0.480700  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.053720  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009302 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.407400 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 1.000000 *
+1) root 0 0 0.496600  
+  2) spectral_NDWI_lateSummer < -3085.04908588942 0 0 0.956100  
+    4) spectral_EVI2b_earlySummer < 973.991112494012 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 973.991112494012 0 0 0.990900 *
+  3) spectral_NDWI_lateSummer > -3085.04908588942 0 0 0.004695  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.000000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.166700 *
+1) root 0 0 0.446700  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004274  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.023260 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.946900  
+    6) spectral_NDWI_endSnowfree < -2226.03701042746 0 0 0.980000 *
+    7) spectral_NDWI_endSnowfree > -2226.03701042746 0 0 0.000000 *
+1) root 0 0 0.453500  
+  2) spectral_EVI2b_peakSummer < 2208.5259814887 0 0 0.062500  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004484 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.454500 *
+  3) spectral_EVI2b_peakSummer > 2208.5259814887 0 0 0.994600  
+    6) spectral_NDWI_annualMean < -3236.0534855899 0 0 1.000000 *
+    7) spectral_NDWI_annualMean > -3236.0534855899 0 0 0.000000 *
+1) root 0 0 0.478500  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.989900  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.057850  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009479 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.387100 *
+1) root 0 0 0.44670  
+  2) spectral_EVI2b_annualMedian < 1500.98002248714 0 0 0.03586  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.34620 *
+  3) spectral_EVI2b_annualMedian > 1500.98002248714 0 0 0.98950  
+    6) spectral_EVI2b_earlySummer < 661.140029944803 0 0 0.00000 *
+    7) spectral_EVI2b_earlySummer > 661.140029944803 0 0 1.00000 *
+1) root 0 0 0.46030  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.04418  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.37930 *
+1) root 0 0 0.498900  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.995200  
+    4) spectral_EVI2b_earlySummer < 1285.28833721647 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1285.28833721647 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.055790  
+    6) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.009709 *
+    7) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.407400 *
+1) root 0 0 0.4512  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.0000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.0320  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.3077 *
+1) root 0 0 0.4444  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9245  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.0000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.4839 *
+1) root 0 0 0.44670  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.99460  
+    4) spectral_EVI2b_earlySummer < 1285.28833721647 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1285.28833721647 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.04706  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.46150 *
+1) root 0 0 0.43310  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99450  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.00000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.03861  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.38460 *
+1) root 0 0 0.4717  
+  2) spectral_NDWI_earlySummer < -2815.51487319973 0 0 0.9670  
+    4) spectral_EVI2b_changeSSES < -8.77231160475966 0 0 0.0000 *
+    5) spectral_EVI2b_changeSSES > -8.77231160475966 0 0 0.9856 *
+  3) spectral_NDWI_earlySummer > -2815.51487319973 0 0 0.0131  
+    6) spectral_EVI2b_annualMean < 1222.9085211556 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1222.9085211556 0 0 0.3333 *
+1) root 0 0 0.480700  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.995100  
+    4) spectral_EVI2b_annualMean < 1314.20275936868 0 0 0.000000 *
+    5) spectral_EVI2b_annualMean > 1314.20275936868 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.033900  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004695 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.304300 *
+1) root 0 0 0.498900  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.995300  
+    4) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.035090  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009662 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.285700 *
+1) root 0 0 0.498900  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.009346  
+    4) spectral_NDWI_earlySummer < -2998.66694137042 0 0 0.666700 *
+    5) spectral_NDWI_earlySummer > -2998.66694137042 0 0 0.000000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.960400  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.990900 *
+1) root 0 0 0.45350  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.98970  
+    4) spectral_NDWI_endSnowfree < -3265.78873774061 0 0 0.99480 *
+    5) spectral_NDWI_endSnowfree > -3265.78873774061 0 0 0.00000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.03239  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.44440 *
+1) root 0 0 0.4785  
+  2) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.9548  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.9860 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.0000 *
+1) root 0 0 0.4467  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9563  
+    6) spectral_EVI2b_earlySummer < 868.282387574529 0 0 0.0000 *
+    7) spectral_EVI2b_earlySummer > 868.282387574529 0 0 0.9801 *
+1) root 0 0 0.476200  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004566  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.025640 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.941400  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.388900 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.990200 *
+1) root 0 0 0.462600  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.048190  
+    6) spectral_EVI2b_annualMean < 1114.16753357132 0 0 0.009009 *
+    7) spectral_EVI2b_annualMean > 1114.16753357132 0 0 0.370400 *
+1) root 0 0 0.45800  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.98960  
+    4) spectral_EVI2b_earlySummer < 1351.61364908535 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1351.61364908535 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.04819  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00885 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.43480 *
+1) root 0 0 0.42860  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.99450  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.00000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.02713  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.30430 *
+1) root 0 0 0.469400  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004505  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.023260 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.940600  
+    6) spectral_EVI2b_earlySummer < 1090.25940781693 0 0 0.090910 *
+    7) spectral_EVI2b_earlySummer > 1090.25940781693 0 0 0.985600 *
+1) root 0 0 0.476200  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.061480  
+    4) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004717 *
+    5) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.437500 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.989800  
+    6) spectral_NDWI_earlySummer < -2254.22523068882 0 0 1.000000 *
+    7) spectral_NDWI_earlySummer > -2254.22523068882 0 0 0.000000 *
+1) root 0 0 0.442200  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.053850  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.008734 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.387100 *
+1) root 0 0 0.449000  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994700  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.043480  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004405 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.384600 *
+1) root 0 0 0.494300  
+  2) spectral_NDWI_endSnowfree < -3414.02544240642 0 0 0.995200  
+    4) spectral_NDWI_lateSummer < -2910.34938555284 0 0 1.000000 *
+    5) spectral_NDWI_lateSummer > -2910.34938555284 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3414.02544240642 0 0 0.038960  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.009259 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.466700 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.99470  
+    4) spectral_NDWI_lateSummer < -3137.88024388702 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3137.88024388702 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.01575  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.20000 *
+1) root 0 0 0.47620  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99010  
+    4) spectral_EVI2b_endSnowfree < 605.08660329862 0 0 0.00000 *
+    5) spectral_EVI2b_endSnowfree > 605.08660329862 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.03782  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.31030 *
+1) root 0 0 0.417200  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.055150  
+    6) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.004167 *
+    7) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.437500 *
+1) root 0 0 0.46940  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.04918  
+    4) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.01351 *
+    5) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.40910 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.98980  
+    6) spectral_NDWI_lateSummer < -3310.46764247483 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -3310.46764247483 0 0 0.00000 *
+1) root 0 0 0.471700  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.995000  
+    4) spectral_EVI2b_annualMean < 1314.20275936868 0 0 0.000000 *
+    5) spectral_EVI2b_annualMean > 1314.20275936868 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.041320  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004566 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.391300 *
+1) root 0 0 0.4762  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.9949  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.0000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.0000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.0535  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.4483 *
+1) root 0 0 0.41720  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.05166  
+    6) spectral_EVI2b_annualMedian < 1135.39527909159 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1135.39527909159 0 0 0.43750 *
+1) root 0 0 0.47620  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.04149  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00905 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.40000 *
+1) root 0 0 0.48070  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00905  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.05000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.95450  
+    6) spectral_NDWI_earlySummer < -2156.77334824213 0 0 0.97220 *
+    7) spectral_NDWI_earlySummer > -2156.77334824213 0 0 0.00000 *
+1) root 0 0 0.453500  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.994800  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.000000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.040000  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.008584 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.470600 *
+1) root 0 0 0.426300  
+  2) spectral_EVI2b_peakSummer < 2188.29211602229 0 0 0.059480  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004255 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.441200 *
+  3) spectral_EVI2b_peakSummer > 2188.29211602229 0 0 1.000000 *
+1) root 0 0 0.503400  
+  2) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.004717  
+    4) spectral_EVI2b_changeSSES < 19.2418049051237 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 19.2418049051237 0 0 0.030300 *
+  3) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.965100  
+    6) spectral_NDWI_earlySummer < -2042.33259000518 0 0 0.982200 *
+    7) spectral_NDWI_earlySummer > -2042.33259000518 0 0 0.000000 *
+1) root 0 0 0.415000  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.040890  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.004098 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.400000 *
+1) root 0 0 0.44220  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.98940  
+    4) spectral_EVI2b_lateSummer < 1515.58120047406 0 0 0.00000 *
+    5) spectral_EVI2b_lateSummer > 1515.58120047406 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.03175  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.44440 *
+1) root 0 0 0.523800  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009901  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.043480 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.958200  
+    6) spectral_NDWI_changeESPS < 17.6047038686869 0 0 0.995600 *
+    7) spectral_NDWI_changeESPS > 17.6047038686869 0 0 0.250000 *
+1) root 0 0 0.446700  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.039370  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004425 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.321400 *
+1) root 0 0 0.45800  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.05534  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.38890 *
+1) root 0 0 0.44220  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.04651  
+    4) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00000 *
+    5) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.34290 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 1.00000 *
+1) root 0 0 0.41040  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.05515  
+    4) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00823 *
+    5) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.44830 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.98220  
+    6) spectral_EVI2b_earlySummer < 1419.94468514188 0 0 0.00000 *
+    7) spectral_EVI2b_earlySummer > 1419.94468514188 0 0 1.00000 *
+1) root 0 0 0.458000  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.059060  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004444 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.482800 *
+1) root 0 0 0.446700  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008403  
+    4) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.037740 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.960600  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.979900 *
+1) root 0 0 0.4444  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9469  
+    6) spectral_EVI2b_changeSSES < -2.97908373705355 0 0 0.3750 *
+    7) spectral_EVI2b_changeSSES > -2.97908373705355 0 0 0.9948 *
+1) root 0 0 0.44440  
+  2) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 0.98940  
+    4) spectral_EVI2b_earlySummer < 1512.73531650449 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1512.73531650449 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.03953  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.38460 *
+1) root 0 0 0.4626  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.0520  
+    4) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.0000 *
+    5) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.4333 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 1.0000 *
+1) root 0 0 0.4921  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9476  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.9953 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.2143 *
+1) root 0 0 0.476200  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.995100  
+    4) spectral_EVI2b_lateSummer < 1489.7027230015 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1489.7027230015 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.029540  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004717 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.240000 *
+1) root 0 0 0.48300  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.93420  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.98150 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.08333 *
+1) root 0 0 0.444400  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994800  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.024000  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004237 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.357100 *
+1) root 0 0 0.4444  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9333  
+    6) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.0000 *
+    7) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.5484 *
+1) root 0 0 0.48750  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.03846  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.40910 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.99520  
+    6) spectral_NDWI_endSnowfree < -3815.06555436262 0 0 1.00000 *
+    7) spectral_NDWI_endSnowfree > -3815.06555436262 0 0 0.00000 *
+1) root 0 0 0.46490  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.99480  
+    4) spectral_EVI2b_peakSummer < 2188.29211602229 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 2188.29211602229 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.05622  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01376 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.35480 *
+1) root 0 0 0.439900  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.050000  
+    4) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.008696 *
+    5) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.366700 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 1.000000 *
+1) root 0 0 0.492100  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.009479  
+    4) spectral_EVI2b_changeSSES < 19.6171999806985 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 19.6171999806985 0 0 0.045450 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.934800  
+    6) spectral_NDWI_changeESPS < 18.0635232397211 0 0 0.981500 *
+    7) spectral_NDWI_changeESPS > 18.0635232397211 0 0 0.214300 *
+1) root 0 0 0.49430  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.99520  
+    4) spectral_NDWI_lateSummer < -3086.63799244668 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3086.63799244668 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.03896  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.33330 *
+1) root 0 0 0.444400  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004274  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.020000 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.942000  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.333300 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.989600 *
+1) root 0 0 0.4512  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.9948  
+    4) spectral_EVI2b_annualMean < 1281.50427553019 0 0 0.0000 *
+    5) spectral_EVI2b_annualMean > 1281.50427553019 0 0 1.0000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.0360  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.3750 *
+1) root 0 0 0.43990  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.98920  
+    4) spectral_NDWI_lateSummer < -3086.63799244668 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3086.63799244668 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.04297  
+    6) spectral_EVI2b_annualMedian < 1138.26667138231 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1138.26667138231 0 0 0.27500 *
+1) root 0 0 0.4694  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9452  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.3077 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.9854 *
+1) root 0 0 0.45120  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01667  
+    4) spectral_NDWI_lateSummer < -3906.96296934117 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3906.96296934117 0 0 0.01255 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.97010  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.00000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.98480 *
+1) root 0 0 0.46260  
+  2) spectral_EVI2b_earlySummer < 1571.47065547723 0 0 0.03279  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.36360 *
+  3) spectral_EVI2b_earlySummer > 1571.47065547723 0 0 0.99490  
+    6) spectral_EVI2b_peakSummer < 1871.11463201788 0 0 0.00000 *
+    7) spectral_EVI2b_peakSummer > 1871.11463201788 0 0 1.00000 *
+1) root 0 0 0.412700  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.047790  
+    6) spectral_EVI2b_annualMedian < 1380.41110456325 0 0 0.008197 *
+    7) spectral_EVI2b_annualMedian > 1380.41110456325 0 0 0.392900 *
+1) root 0 0 0.483000  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004695  
+    4) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.022220 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.929800  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.990300 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.333300 *
+1) root 0 0 0.478500  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.041670  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004739 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.310300 *
+1) root 0 0 0.45350  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.02823  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.29170 *
+1) root 0 0 0.46710  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.05622  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.40000 *
+1) root 0 0 0.43760  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.02745  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.28000 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.03089  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.38100 *
+1) root 0 0 0.46940  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99500  
+    4) spectral_EVI2b_peakSummer < 1804.12530110313 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 1804.12530110313 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.03719  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.36000 *
+1) root 0 0 0.462600  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.036890  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004464 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.400000 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.989800  
+    6) spectral_NDWI_lateSummer < -3310.46764247483 0 0 1.000000 *
+    7) spectral_NDWI_lateSummer > -3310.46764247483 0 0 0.000000 *
+1) root 0 0 0.48070  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.99510  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.00000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.04202  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01357 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.41180 *
+1) root 0 0 0.458000  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008772  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.057140 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.939000  
+    6) spectral_NDWI_endSnowfree < -2065.33892549278 0 0 0.975600 *
+    7) spectral_NDWI_endSnowfree > -2065.33892549278 0 0 0.000000 *
+1) root 0 0 0.439900  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.050000  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004348 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.400000 *
+1) root 0 0 0.44220  
+  2) spectral_NDWI_lateSummer < -4298.44306489673 0 0 0.98410  
+    4) spectral_EVI2b_annualMean < 1443.65002373721 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1443.65002373721 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4298.44306489673 0 0 0.03571  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.37500 *
+1) root 0 0 0.45580  
+  2) spectral_NDWI_earlySummer < -3848.84075879874 0 0 0.98980  
+    4) spectral_EVI2b_annualMean < 1406.00128163611 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1406.00128163611 0 0 1.00000 *
+  3) spectral_NDWI_earlySummer > -3848.84075879874 0 0 0.02857  
+    6) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.41180 *
+1) root 0 0 0.471700  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.056680  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004587 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.448300 *
+1) root 0 0 0.428600  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.989200  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.019610  
+    6) spectral_NDWI_annualMean < -2846.29752625614 0 0 0.250000 *
+    7) spectral_NDWI_annualMean > -2846.29752625614 0 0 0.004184 *
+1) root 0 0 0.453500  
+  2) spectral_NDWI_lateSummer < -3025.44687251541 0 0 0.965300  
+    4) spectral_EVI2b_annualMean < 1073.69896522781 0 0 0.000000 *
+    5) spectral_EVI2b_annualMean > 1073.69896522781 0 0 0.994900 *
+  3) spectral_NDWI_lateSummer > -3025.44687251541 0 0 0.020920  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.008734 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.300000 *
+1) root 0 0 0.4785  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9505  
+    6) spectral_EVI2b_changeSSES < -8.77231160475966 0 0 0.0000 *
+    7) spectral_EVI2b_changeSSES > -8.77231160475966 0 0 0.9906 *
+1) root 0 0 0.4830  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9552  
+    6) spectral_NDWI_earlySummer < -2156.77334824213 0 0 0.9771 *
+    7) spectral_NDWI_earlySummer > -2156.77334824213 0 0 0.0000 *
+1) root 0 0 0.485300  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.995200  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.034190  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004785 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.280000 *
+1) root 0 0 0.460300  
+  2) spectral_EVI2b_peakSummer < 2208.5259814887 0 0 0.040490  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004525 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.346200 *
+  3) spectral_EVI2b_peakSummer > 2208.5259814887 0 0 0.994800  
+    6) spectral_NDWI_annualMean < -3236.0534855899 0 0 1.000000 *
+    7) spectral_NDWI_annualMean > -3236.0534855899 0 0 0.000000 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.05639  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.41670 *
+1) root 0 0 0.439900  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.038910  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008734 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.285700 *
+1) root 0 0 0.467100  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.994900  
+    4) spectral_EVI2b_earlySummer < 1285.28833721647 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1285.28833721647 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.040980  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004464 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.450000 *
+1) root 0 0 0.4376  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9234  
+    6) spectral_EVI2b_changeSSES < -2.21225959250211 0 0 0.2632 *
+    7) spectral_EVI2b_changeSSES > -2.21225959250211 0 0 0.9895 *
+1) root 0 0 0.480700  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004566  
+    4) spectral_NDWI_endSnowfree < -2031.39882860329 0 0 0.020410 *
+    5) spectral_NDWI_endSnowfree > -2031.39882860329 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.950500  
+    6) spectral_NDWI_endSnowfree < -2139.72326244667 0 0 0.981400 *
+    7) spectral_NDWI_endSnowfree > -2139.72326244667 0 0 0.000000 *
+1) root 0 0 0.453500  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008929  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.043480 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.912400  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.333300 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.984500 *
+1) root 0 0 0.430800  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.988900  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.045980  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.008547 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.370400 *
+1) root 0 0 0.43310  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.02344  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.30000 *
+1) root 0 0 0.458000  
+  2) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.008511  
+    4) spectral_EVI2b_lateSummer < 1372.62602983787 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1372.62602983787 0 0 0.666700 *
+  3) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.970900  
+    6) spectral_EVI2b_earlySummer < 1138.50303501714 0 0 0.454500 *
+    7) spectral_EVI2b_earlySummer > 1138.50303501714 0 0 1.000000 *
+1) root 0 0 0.44900  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.03571  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.32140 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_endSnowfree < -3815.06555436262 0 0 0.98380  
+    4) spectral_EVI2b_peakSummer < 2208.5259814887 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 2208.5259814887 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3815.06555436262 0 0 0.03125  
+    6) spectral_EVI2b_annualMean < 1094.45453982015 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1094.45453982015 0 0 0.44440 *
+1) root 0 0 0.446700  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.989400  
+    4) spectral_EVI2b_earlySummer < 1351.61364908535 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1351.61364908535 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.043480  
+    6) spectral_EVI2b_annualMean < 1094.45453982015 0 0 0.004386 *
+    7) spectral_EVI2b_annualMean > 1094.45453982015 0 0 0.400000 *
+1) root 0 0 0.44900  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99480  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.02024  
+    6) spectral_EVI2b_annualMedian < 1430.15516580737 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1430.15516580737 0 0 0.29410 *
+1) root 0 0 0.467100  
+  2) spectral_EVI2b_annualMean < 1406.00128163611 0 0 0.029290  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004484 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.375000 *
+  3) spectral_EVI2b_annualMean > 1406.00128163611 0 0 0.985100  
+    6) spectral_EVI2b_peakSummer < 1646.55755482282 0 0 0.250000 *
+    7) spectral_EVI2b_peakSummer > 1646.55755482282 0 0 1.000000 *
+1) root 0 0 0.4512  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9431  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.0000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.5000 *
+1) root 0 0 0.48070  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.04184  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.45450 *
+1) root 0 0 0.451200  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.989400  
+    4) spectral_EVI2b_peakSummer < 1804.12530110313 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 1804.12530110313 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.047620  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.008929 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.357100 *
+1) root 0 0 0.444400  
+  2) spectral_NDWI_annualMean < -3263.44824308028 0 0 0.989400  
+    4) spectral_EVI2b_lateSummer < 1515.58120047406 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1515.58120047406 0 0 1.000000 *
+  3) spectral_NDWI_annualMean > -3263.44824308028 0 0 0.035710  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004329 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.381000 *
+1) root 0 0 0.464900  
+  2) spectral_NDWI_earlySummer < -2820.04402017696 0 0 0.970900  
+    4) spectral_NDWI_lateSummer < -3380.02684237325 0 0 0.990000 *
+    5) spectral_NDWI_lateSummer > -3380.02684237325 0 0 0.333300 *
+  3) spectral_NDWI_earlySummer > -2820.04402017696 0 0 0.021280  
+    6) spectral_EVI2b_annualMedian < 1325.49925698605 0 0 0.004425 *
+    7) spectral_EVI2b_annualMedian > 1325.49925698605 0 0 0.444400 *
+1) root 0 0 0.458000  
+  2) spectral_EVI2b_earlySummer < 1571.47065547723 0 0 0.051790  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004464 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.444400 *
+  3) spectral_EVI2b_earlySummer > 1571.47065547723 0 0 0.994700  
+    6) spectral_EVI2b_annualMean < 1315.70259899202 0 0 0.000000 *
+    7) spectral_EVI2b_annualMean > 1315.70259899202 0 0 1.000000 *
+1) root 0 0 0.48750  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.99500  
+    4) spectral_NDWI_annualMean < -3273.34409991542 0 0 1.00000 *
+    5) spectral_NDWI_annualMean > -3273.34409991542 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.06639  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.41030 *
+1) root 0 0 0.473900  
+  2) spectral_NDWI_endSnowfree < -4114.66447998372 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4114.66447998372 0 0 0.045270  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004566 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.416700 *
+1) root 0 0 0.4717  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9455  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 1.0000 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.3684 *
+1) root 0 0 0.45350  
+  2) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.06589  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00885 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.46880 *
+1) root 0 0 0.473900  
+  2) spectral_EVI2b_peakSummer < 2188.29211602229 0 0 0.060730  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004566 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.500000 *
+  3) spectral_EVI2b_peakSummer > 2188.29211602229 0 0 1.000000 *
+1) root 0 0 0.451200  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.047240  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.008621 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.454500 *
+1) root 0 0 0.446700  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.031750  
+    4) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.004367 *
+    5) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.304300 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 1.000000 *
+1) root 0 0 0.4580  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9395  
+    6) spectral_NDWI_lateSummer < -2871.86828034974 0 0 0.9849 *
+    7) spectral_NDWI_lateSummer > -2871.86828034974 0 0 0.3750 *
+1) root 0 0 0.48300  
+  2) spectral_EVI2b_annualMean < 1447.00840883169 0 0 0.03017  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.43750 *
+  3) spectral_EVI2b_annualMean > 1447.00840883169 0 0 0.98560  
+    6) spectral_NDWI_lateSummer < -2162.99170726167 0 0 0.99520 *
+    7) spectral_NDWI_lateSummer > -2162.99170726167 0 0 0.00000 *
+1) root 0 0 0.485300  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.038140  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004808 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.285700 *
+1) root 0 0 0.43760  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.98940  
+    4) spectral_EVI2b_earlySummer < 1512.73531650449 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1512.73531650449 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.02767  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.25930 *
+1) root 0 0 0.49430  
+  2) spectral_EVI2b_annualMean < 1447.00840883169 0 0 0.01818  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.30770 *
+  3) spectral_EVI2b_annualMean > 1447.00840883169 0 0 0.96830  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.00000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.36360 *
+1) root 0 0 0.47850  
+  2) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.06122  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01869 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.35480 *
+1) root 0 0 0.471700  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008929  
+    4) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.042550 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.949300  
+    6) spectral_NDWI_lateSummer < -2461.48356152023 0 0 0.980800 *
+    7) spectral_NDWI_lateSummer > -2461.48356152023 0 0 0.222200 *
+1) root 0 0 0.5238  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9665  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.9830 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.0000 *
+1) root 0 0 0.45350  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.06589  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.44740 *
+1) root 0 0 0.4286  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9310  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.9893 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.2500 *
+1) root 0 0 0.469400  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.071430  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004785 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.395300 *
+1) root 0 0 0.507900  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.048250  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.009709 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.409100 *
+1) root 0 0 0.4195  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.9941  
+    4) spectral_NDWI_lateSummer < -3137.88024388702 0 0 1.0000 *
+    5) spectral_NDWI_lateSummer > -3137.88024388702 0 0 0.0000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.0625  
+    6) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.0000 *
+    7) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.3778 *
+1) root 0 0 0.4921  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9274  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.0000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.4848 *
+1) root 0 0 0.496600  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.995300  
+    4) spectral_EVI2b_earlySummer < 1351.61364908535 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1351.61364908535 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.039130  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004762 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.400000 *
+1) root 0 0 0.4603  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.0000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.9398  
+    6) spectral_EVI2b_earlySummer < 1138.50303501714 0 0 0.2857 *
+    7) spectral_EVI2b_earlySummer > 1138.50303501714 0 0 0.9851 *
+1) root 0 0 0.494300  
+  2) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.004762  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.025640 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.939400  
+    6) spectral_NDWI_earlySummer < -2156.77334824213 0 0 0.973100 *
+    7) spectral_NDWI_earlySummer > -2156.77334824213 0 0 0.000000 *
+1) root 0 0 0.449000  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.994600  
+    4) spectral_EVI2b_lateSummer < 1484.49910437108 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1484.49910437108 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.054690  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004464 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.406200 *
+1) root 0 0 0.44670  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99480  
+    4) spectral_NDWI_lateSummer < -3150.17085912555 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3150.17085912555 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.02800  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00885 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.20830 *
+1) root 0 0 0.426300  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.066420  
+    6) spectral_NDWI_endSnowfree < -2558.7691515645 0 0 0.457100 *
+    7) spectral_NDWI_endSnowfree > -2558.7691515645 0 0 0.008475 *
+1) root 0 0 0.45350  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.98470  
+    4) spectral_EVI2b_earlySummer < 1512.73531650449 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1512.73531650449 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.02857  
+    6) spectral_EVI2b_annualMean < 1208.71643671044 0 0 0.00905 *
+    7) spectral_EVI2b_annualMean > 1208.71643671044 0 0 0.20830 *
+1) root 0 0 0.49210  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00463  
+    4) spectral_EVI2b_changeSSES < 19.7351171622487 0 0 0.00000 *
+    5) spectral_EVI2b_changeSSES > 19.7351171622487 0 0 0.02222 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.96000  
+    6) spectral_EVI2b_changeSSES < -2.21225959250211 0 0 0.46670 *
+    7) spectral_EVI2b_changeSSES > -2.21225959250211 0 0 0.99520 *
+1) root 0 0 0.4671  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9537  
+    6) spectral_NDWI_earlySummer < -2156.77334824213 0 0 0.9763 *
+    7) spectral_NDWI_earlySummer > -2156.77334824213 0 0 0.0000 *
+1) root 0 0 0.51020  
+  2) spectral_EVI2b_earlySummer < 1571.47065547723 0 0 0.04054  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.30000 *
+  3) spectral_EVI2b_earlySummer > 1571.47065547723 0 0 0.98630  
+    6) spectral_NDWI_lateSummer < -4040.33064714367 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -4040.33064714367 0 0 0.00000 *
+1) root 0 0 0.451200  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.984600  
+    4) spectral_EVI2b_annualMean < 1281.50427553019 0 0 0.000000 *
+    5) spectral_EVI2b_annualMean > 1281.50427553019 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.028460  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004505 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.250000 *
+1) root 0 0 0.458000  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004255  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.030300 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.975700  
+    6) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.545500 *
+1) root 0 0 0.473900  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.056910  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004545 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.500000 *
+1) root 0 0 0.480700  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.017940  
+    4) spectral_NDWI_lateSummer < -3906.96296934117 0 0 1.000000 *
+    5) spectral_NDWI_lateSummer > -3906.96296934117 0 0 0.004545 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.954100  
+    6) spectral_NDWI_earlySummer < -2042.33670139163 0 0 0.976500 *
+    7) spectral_NDWI_earlySummer > -2042.33670139163 0 0 0.000000 *
+1) root 0 0 0.442200  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004329  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.020000 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.923800  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.300000 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.989500 *
+1) root 0 0 0.43990  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00431  
+    4) spectral_EVI2b_changeSSES < 19.7351171622487 0 0 0.00000 *
+    5) spectral_EVI2b_changeSSES > 19.7351171622487 0 0 0.02041 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.92340  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.99470 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.31820 *
+1) root 0 0 0.469400  
+  2) spectral_NDWI_lateSummer < -4286.15244965821 0 0 0.974900  
+    4) spectral_NDWI_endSnowfree < -3588.20629973279 0 0 1.000000 *
+    5) spectral_NDWI_endSnowfree > -3588.20629973279 0 0 0.000000 *
+  3) spectral_NDWI_lateSummer > -4286.15244965821 0 0 0.053720  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004739 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.387100 *
+1) root 0 0 0.485300  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004651  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.022220 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.942500  
+    6) spectral_NDWI_changeESPS < 17.6047038686869 0 0 0.981600 *
+    7) spectral_NDWI_changeESPS > 17.6047038686869 0 0 0.000000 *
+1) root 0 0 0.426300  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.055970  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.008511 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.393900 *
+1) root 0 0 0.47620  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00463  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.02703 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.00000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.92890  
+    6) spectral_NDWI_changeESPS < 6.33176788353869 0 0 0.99490 *
+    7) spectral_NDWI_changeESPS > 6.33176788353869 0 0 0.46430 *
+1) root 0 0 0.47620  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99010  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.00000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.04184  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01408 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.26920 *
+1) root 0 0 0.464900  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.048390  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004505 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.423100 *
+1) root 0 0 0.467100  
+  2) spectral_EVI2b_earlySummer < 1534.31913484526 0 0 0.045080  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009434 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.281200 *
+  3) spectral_EVI2b_earlySummer > 1534.31913484526 0 0 0.989800  
+    6) spectral_NDWI_endSnowfree < -3692.79883253939 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3692.79883253939 0 0 0.000000 *
+1) root 0 0 0.444400  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.994700  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.000000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.035570  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004329 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.363600 *
+1) root 0 0 0.43310  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.99440  
+    4) spectral_NDWI_earlySummer < -3576.21254854352 0 0 1.00000 *
+    5) spectral_NDWI_earlySummer > -3576.21254854352 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.04962  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.41940 *
+1) root 0 0 0.46940  
+  2) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.01739  
+    4) spectral_EVI2b_lateSummer < 1372.62602983787 0 0 0.01316 *
+    5) spectral_EVI2b_lateSummer > 1372.62602983787 0 0 0.50000 *
+  3) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.96210  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.00000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.98070 *
+1) root 0 0 0.446700  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.054260  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004386 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.433300 *
+1) root 0 0 0.439900  
+  2) spectral_NDWI_earlySummer < -3848.84075879874 0 0 0.994500  
+    4) spectral_NDWI_endSnowfree < -3265.78873774061 0 0 1.000000 *
+    5) spectral_NDWI_endSnowfree > -3265.78873774061 0 0 0.000000 *
+  3) spectral_NDWI_earlySummer > -3848.84075879874 0 0 0.046510  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.008811 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.322600 *
+1) root 0 0 0.449000  
+  2) spectral_EVI2b_annualMedian < 1349.77765539647 0 0 0.008439  
+    4) spectral_EVI2b_peakSummer < 1538.06972234077 0 0 0.004274 *
+    5) spectral_EVI2b_peakSummer > 1538.06972234077 0 0 0.333300 *
+  3) spectral_EVI2b_annualMedian > 1349.77765539647 0 0 0.960800  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.984900 *
+1) root 0 0 0.45800  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.04435  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.01333 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.34780 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.98960  
+    6) spectral_NDWI_earlySummer < -2685.30037438471 0 0 1.00000 *
+    7) spectral_NDWI_earlySummer > -2685.30037438471 0 0 0.00000 *
+1) root 0 0 0.444400  
+  2) spectral_NDWI_lateSummer < -4677.6038780327 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4677.6038780327 0 0 0.046690  
+    6) spectral_EVI2b_annualMedian < 1138.26667138231 0 0 0.008889 *
+    7) spectral_EVI2b_annualMedian > 1138.26667138231 0 0 0.312500 *
+1) root 0 0 0.44900  
+  2) spectral_EVI2b_peakSummer < 1959.28273786744 0 0 0.03571  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00431 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.40000 *
+  3) spectral_EVI2b_peakSummer > 1959.28273786744 0 0 1.00000 *
+1) root 0 0 0.45580  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.98950  
+    4) spectral_EVI2b_lateSummer < 1515.58120047406 0 0 0.00000 *
+    5) spectral_EVI2b_lateSummer > 1515.58120047406 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.04800  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01327 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.37500 *
+1) root 0 0 0.48530  
+  2) spectral_EVI2b_earlySummer < 1637.7959673461 0 0 0.05439  
+    4) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00495 *
+    5) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.32430 *
+  3) spectral_EVI2b_earlySummer > 1637.7959673461 0 0 0.99500  
+    6) spectral_NDWI_lateSummer < -3420.51554644532 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -3420.51554644532 0 0 0.00000 *
+1) root 0 0 0.42630  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.04167  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01271 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.28570 *
+1) root 0 0 0.46940  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.98990  
+    4) spectral_EVI2b_peakSummer < 1804.12530110313 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 1804.12530110313 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.04132  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.33330 *
+1) root 0 0 0.439900  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.038910  
+    6) spectral_EVI2b_annualMean < 1153.5847504393 0 0 0.008696 *
+    7) spectral_EVI2b_annualMean > 1153.5847504393 0 0 0.296300 *
+1) root 0 0 0.428600  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.056180  
+    4) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.004237 *
+    5) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.451600 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 1.000000 *
+1) root 0 0 0.449000  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004348  
+    4) spectral_EVI2b_changeSSES < 19.7351171622487 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 19.7351171622487 0 0 0.019610 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.933600  
+    6) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.481500 *
+1) root 0 0 0.4807  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9339  
+    6) spectral_NDWI_earlySummer < -2042.33670139163 0 0 0.9636 *
+    7) spectral_NDWI_earlySummer > -2042.33670139163 0 0 0.0000 *
+1) root 0 0 0.446700  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.050580  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004367 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.428600 *
+1) root 0 0 0.4762  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9251  
+    6) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.4839 *
+    7) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.9949 *
+1) root 0 0 0.439900  
+  2) spectral_NDWI_lateSummer < -4397.79371948693 0 0 0.994500  
+    4) spectral_EVI2b_peakSummer < 2005.10020148214 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 2005.10020148214 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4397.79371948693 0 0 0.046510  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004255 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.478300 *
+1) root 0 0 0.4263  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9495  
+    6) spectral_NDWI_changeESPS < 25.3982091914431 0 0 0.9840 *
+    7) spectral_NDWI_changeESPS > 25.3982091914431 0 0 0.3000 *
+1) root 0 0 0.49210  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.03030  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00463 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.40000 *
+1) root 0 0 0.428600  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.059700  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004274 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.441200 *
+1) root 0 0 0.46940  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.99490  
+    4) spectral_EVI2b_endSnowfree < 605.08660329862 0 0 0.00000 *
+    5) spectral_EVI2b_endSnowfree > 605.08660329862 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.04115  
+    6) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.30300 *
+1) root 0 0 0.419500  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.011860  
+    4) spectral_NDWI_lateSummer < -3906.96296934117 0 0 1.000000 *
+    5) spectral_NDWI_lateSummer > -3906.96296934117 0 0 0.007937 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.968100  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.989100 *
+1) root 0 0 0.455800  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.032390  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.008811 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.300000 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.994800  
+    6) spectral_NDWI_earlySummer < -2254.22523068882 0 0 1.000000 *
+    7) spectral_NDWI_earlySummer > -2254.22523068882 0 0 0.000000 *
+1) root 0 0 0.48750  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.04641  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.01382 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.40000 *
+1) root 0 0 0.48070  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.04583  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.40740 *
+1) root 0 0 0.483000  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.995000  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.000000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.050210  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009346 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.400000 *
+1) root 0 0 0.469400  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.984700  
+    4) spectral_EVI2b_earlySummer < 1512.73531650449 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1512.73531650449 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.057140  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009346 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.387100 *
+1) root 0 0 0.42860  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.03077  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.27590 *
+1) root 0 0 0.4943  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.9604  
+    6) spectral_NDWI_changeESPS < 18.0635232397211 0 0 0.9908 *
+    7) spectral_NDWI_changeESPS > 18.0635232397211 0 0 0.3000 *
+1) root 0 0 0.45800  
+  2) spectral_NDWI_earlySummer < -3848.84075879874 0 0 0.98940  
+    4) spectral_NDWI_endSnowfree < -3265.78873774061 0 0 1.00000 *
+    5) spectral_NDWI_endSnowfree > -3265.78873774061 0 0 0.00000 *
+  3) spectral_NDWI_earlySummer > -3848.84075879874 0 0 0.05952  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01339 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.42860 *
+1) root 0 0 0.467100  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.071150  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004673 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.435900 *
+1) root 0 0 0.412700  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.037170  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.007968 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.444400 *
+1) root 0 0 0.42630  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99440  
+    4) spectral_NDWI_lateSummer < -3086.63799244668 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3086.63799244668 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.03448  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.39130 *
+1) root 0 0 0.48530  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01826  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.07843 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.94590  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.98560 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.30770 *
+1) root 0 0 0.469400  
+  2) spectral_EVI2b_annualMean < 1479.70689267017 0 0 0.037340  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004464 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.470600 *
+  3) spectral_EVI2b_annualMean > 1479.70689267017 0 0 0.990000  
+    6) spectral_NDWI_lateSummer < -4025.00561351657 0 0 1.000000 *
+    7) spectral_NDWI_lateSummer > -4025.00561351657 0 0 0.333300 *
+1) root 0 0 0.485300  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.990200  
+    4) spectral_EVI2b_endSnowfree < 1067.13500585327 0 0 0.000000 *
+    5) spectral_EVI2b_endSnowfree > 1067.13500585327 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.050630  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009524 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.370400 *
+1) root 0 0 0.455800  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.000000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.058820  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004425 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.482800 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.04563  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01255 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.37500 *
+1) root 0 0 0.48750  
+  2) spectral_EVI2b_annualMean < 1114.16753357132 0 0 0.00463  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.02439 *
+  3) spectral_EVI2b_annualMean > 1114.16753357132 0 0 0.95110  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.33330 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 0.99520 *
+1) root 0 0 0.460300  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004464  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.022730 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.930900  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.980100 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.312500 *
+1) root 0 0 0.451200  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.994700  
+    4) spectral_EVI2b_earlySummer < 1512.73531650449 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1512.73531650449 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.047430  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.008929 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.344800 *
+1) root 0 0 0.43540  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.05323  
+    6) spectral_EVI2b_annualMedian < 1166.76297562239 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1166.76297562239 0 0 0.41180 *
+1) root 0 0 0.47850  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.05350  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01351 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.47620 *
+1) root 0 0 0.4694  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9628  
+    6) spectral_EVI2b_changeSSES < -47.3568286351003 0 0 0.0000 *
+    7) spectral_EVI2b_changeSSES > -47.3568286351003 0 0 0.9857 *
+1) root 0 0 0.446700  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.039370  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004444 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.310300 *
+1) root 0 0 0.485300  
+  2) spectral_NDWI_earlySummer < -3873.23297786835 0 0 0.995000  
+    4) spectral_EVI2b_annualMean < 1406.00128163611 0 0 0.000000 *
+    5) spectral_EVI2b_annualMean > 1406.00128163611 0 0 1.000000 *
+  3) spectral_NDWI_earlySummer > -3873.23297786835 0 0 0.066120  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004785 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.454500 *
+1) root 0 0 0.4739  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9631  
+    6) spectral_NDWI_lateSummer < -2546.67263963145 0 0 0.9904 *
+    7) spectral_NDWI_lateSummer > -2546.67263963145 0 0 0.3333 *
+1) root 0 0 0.44900  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.03571  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.36000 *
+1) root 0 0 0.487500  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.054390  
+    6) spectral_EVI2b_annualMedian < 1326.73201607118 0 0 0.009259 *
+    7) spectral_EVI2b_annualMedian > 1326.73201607118 0 0 0.478300 *
+1) root 0 0 0.47390  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.99500  
+    4) spectral_EVI2b_lateSummer < 1489.7027230015 0 0 0.00000 *
+    5) spectral_EVI2b_lateSummer > 1489.7027230015 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.03347  
+    6) spectral_EVI2b_annualMean < 1109.42420552269 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1109.42420552269 0 0 0.29630 *
+1) root 0 0 0.469400  
+  2) spectral_NDWI_endSnowfree < -3422.94083306892 0 0 0.965500  
+    4) spectral_NDWI_lateSummer < -3156.78111494252 0 0 0.994900 *
+    5) spectral_NDWI_lateSummer > -3156.78111494252 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3422.94083306892 0 0 0.046220  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.009091 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.500000 *
+1) root 0 0 0.460300  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.012820  
+    4) spectral_NDWI_earlySummer < -2943.93786453177 0 0 0.333300 *
+    5) spectral_NDWI_earlySummer > -2943.93786453177 0 0 0.004386 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.966200  
+    6) spectral_NDWI_earlySummer < -2042.33259000518 0 0 0.980400 *
+    7) spectral_NDWI_earlySummer > -2042.33259000518 0 0 0.000000 *
+1) root 0 0 0.446700  
+  2) spectral_NDWI_lateSummer < -4286.15244965821 0 0 0.994700  
+    4) spectral_EVI2b_startSnowfree < 962.794624294865 0 0 0.000000 *
+    5) spectral_EVI2b_startSnowfree > 962.794624294865 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4286.15244965821 0 0 0.039530  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004348 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.391300 *
+1) root 0 0 0.460300  
+  2) spectral_NDWI_endSnowfree < -3422.94083306892 0 0 0.989500  
+    4) spectral_EVI2b_changeSSES < -8.77231160475966 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > -8.77231160475966 0 0 0.994700 *
+  3) spectral_NDWI_endSnowfree > -3422.94083306892 0 0 0.059760  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.004587 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.424200 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.04924  
+    6) spectral_EVI2b_annualMedian < 1131.61031595695 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1131.61031595695 0 0 0.43330 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.03462  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.34620 *
+1) root 0 0 0.480700  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.041840  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004762 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.310300 *
+1) root 0 0 0.45120  
+  2) spectral_NDWI_endSnowfree < -4114.66447998372 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4114.66447998372 0 0 0.03586  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00885 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.28000 *
+1) root 0 0 0.5079  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9451  
+    6) spectral_NDWI_lateSummer < -2871.86828034974 0 0 0.9821 *
+    7) spectral_NDWI_lateSummer > -2871.86828034974 0 0 0.3571 *
+1) root 0 0 0.45800  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.05159  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.39390 *
+1) root 0 0 0.46710  
+  2) spectral_EVI2b_peakSummer < 2135.98716293341 0 0 0.04098  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.37040 *
+  3) spectral_EVI2b_peakSummer > 2135.98716293341 0 0 0.99490  
+    6) spectral_EVI2b_earlySummer < 1353.619373273 0 0 0.00000 *
+    7) spectral_EVI2b_earlySummer > 1353.619373273 0 0 1.00000 *
+1) root 0 0 0.487500  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004695  
+    4) spectral_NDWI_lateSummer < -3906.96296934117 0 0 0.500000 *
+    5) spectral_NDWI_lateSummer > -3906.96296934117 0 0 0.000000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.938600  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.981400 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.230800 *
+1) root 0 0 0.47390  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.02929  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.36840 *
+1) root 0 0 0.458000  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004367  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.020000 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.948100  
+    6) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.994800 *
+    7) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.473700 *
+1) root 0 0 0.44440  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.02778  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.26920 *
+1) root 0 0 0.435400  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.045980  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004329 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.366700 *
+1) root 0 0 0.446700  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.031750  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004274 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.388900 *
+1) root 0 0 0.46710  
+  2) spectral_NDWI_annualMean < -2978.81421386679 0 0 0.97120  
+    4) spectral_NDWI_endSnowfree < -3265.78873774061 0 0 0.98540 *
+    5) spectral_NDWI_endSnowfree > -3265.78873774061 0 0 0.00000 *
+  3) spectral_NDWI_annualMean > -2978.81421386679 0 0 0.01717  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.36360 *
+1) root 0 0 0.449000  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994700  
+    4) spectral_EVI2b_lateSummer < 1484.49910437108 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1484.49910437108 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.039680  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004484 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.310300 *
+1) root 0 0 0.471700  
+  2) spectral_NDWI_endSnowfree < -4114.66447998372 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4114.66447998372 0 0 0.048980  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.004762 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.314300 *
+1) root 0 0 0.458000  
+  2) spectral_EVI2b_peakSummer < 2208.5259814887 0 0 0.040320  
+    4) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.004464 *
+    5) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.375000 *
+  3) spectral_EVI2b_peakSummer > 2208.5259814887 0 0 0.994800  
+    6) spectral_NDWI_endSnowfree < -3815.06555436262 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3815.06555436262 0 0 0.000000 *
+1) root 0 0 0.455800  
+  2) spectral_NDWI_endSnowfree < -3815.06555436262 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3815.06555436262 0 0 0.051380  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004484 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.400000 *
+1) root 0 0 0.45120  
+  2) spectral_EVI2b_annualMedian < 1430.15516580737 0 0 0.02479  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.01304 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.25000 *
+  3) spectral_EVI2b_annualMedian > 1430.15516580737 0 0 0.96980  
+    6) spectral_NDWI_lateSummer < -2801.79544894669 0 0 0.99480 *
+    7) spectral_NDWI_lateSummer > -2801.79544894669 0 0 0.37500 *
+1) root 0 0 0.43540  
+  2) spectral_NDWI_lateSummer < -4286.15244965821 0 0 0.99450  
+    4) spectral_EVI2b_earlySummer < 1297.16397150959 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1297.16397150959 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4286.15244965821 0 0 0.04615  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.48000 *
+1) root 0 0 0.469400  
+  2) spectral_NDWI_lateSummer < -3906.96296934117 0 0 0.989900  
+    4) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.000000 *
+    5) spectral_EVI2b_annualMean > 1102.36100181133 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -3906.96296934117 0 0 0.041320  
+    6) spectral_EVI2b_annualMedian < 1126.67509986785 0 0 0.009132 *
+    7) spectral_EVI2b_annualMedian > 1126.67509986785 0 0 0.347800 *
+1) root 0 0 0.4671  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.9950  
+    4) spectral_EVI2b_annualMean < 1406.00128163611 0 0 0.0000 *
+    5) spectral_EVI2b_annualMean > 1406.00128163611 0 0 1.0000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.0250  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.3000 *
+1) root 0 0 0.44900  
+  2) spectral_NDWI_earlySummer < -3911.90489231737 0 0 1.00000 *
+  3) spectral_NDWI_earlySummer > -3911.90489231737 0 0 0.03571  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00431 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.40000 *
+1) root 0 0 0.48070  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.99490  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.00000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.06173  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.40540 *
+1) root 0 0 0.45580  
+  2) spectral_EVI2b_earlySummer < 1571.47065547723 0 0 0.01646  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.17390 *
+  3) spectral_EVI2b_earlySummer > 1571.47065547723 0 0 0.99490  
+    6) spectral_EVI2b_annualMean < 1247.31603238068 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1247.31603238068 0 0 1.00000 *
+1) root 0 0 0.464900  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004425  
+    4) spectral_EVI2b_changeSSES < 19.7351171622487 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 19.7351171622487 0 0 0.017860 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.948800  
+    6) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.500000 *
+    7) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 1.000000 *
+1) root 0 0 0.426300  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994400  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.000000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.038170  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004219 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.360000 *
+1) root 0 0 0.48300  
+  2) spectral_NDWI_annualMean < -2978.81421386679 0 0 0.98590  
+    4) spectral_EVI2b_earlySummer < 1028.44079006978 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1028.44079006978 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -2978.81421386679 0 0 0.01316  
+    6) spectral_EVI2b_annualMedian < 1430.15516580737 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1430.15516580737 0 0 0.37500 *
+1) root 0 0 0.512500  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.048670  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009662 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.473700 *
+1) root 0 0 0.4717  
+  2) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.0000 *
+  3) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.9455  
+    6) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 1.0000 *
+    7) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.5000 *
+1) root 0 0 0.4943  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.9952  
+    4) spectral_EVI2b_changeSSES < -11.3999831066586 0 0 0.0000 *
+    5) spectral_EVI2b_changeSSES > -11.3999831066586 0 0 1.0000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.0431  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.3333 *
+1) root 0 0 0.48750  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.06996  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.01422 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.43750 *
+1) root 0 0 0.444400  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.000000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.061300  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004348 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.483900 *
+1) root 0 0 0.494300  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.022940  
+    4) spectral_EVI2b_peakSummer < 1538.06972234077 0 0 0.009434 *
+    5) spectral_EVI2b_peakSummer > 1538.06972234077 0 0 0.500000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.955200  
+    6) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.473700 *
+    7) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 1.000000 *
+1) root 0 0 0.428600  
+  2) spectral_NDWI_lateSummer < -4298.44306489673 0 0 0.994300  
+    4) spectral_EVI2b_peakSummer < 1956.23169182319 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 1956.23169182319 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4298.44306489673 0 0 0.056390  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004292 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.424200 *
+1) root 0 0 0.498900  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004808  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.022730 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.939900  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.461500 *
+1) root 0 0 0.496600  
+  2) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.009174  
+    4) spectral_EVI2b_lateSummer < 1372.62602983787 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1372.62602983787 0 0 0.333300 *
+  3) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.973100  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 1.000000 *
+1) root 0 0 0.44670  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00431  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.01852 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.93780  
+    6) spectral_EVI2b_changeSSES < -1.42696569750695 0 0 0.20000 *
+    7) spectral_EVI2b_changeSSES > -1.42696569750695 0 0 0.99480 *
+1) root 0 0 0.478500  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004525  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.020830 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.954500  
+    6) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.565200 *
+1) root 0 0 0.43990  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.99440  
+    4) spectral_NDWI_lateSummer < -3137.88024388702 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3137.88024388702 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.06464  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01299 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.43750 *
+1) root 0 0 0.48750  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99510  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.00000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.05063  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01415 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.36000 *
+1) root 0 0 0.48530  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.96350  
+    4) spectral_EVI2b_earlySummer < 1138.50303501714 0 0 0.16670 *
+    5) spectral_EVI2b_earlySummer > 1138.50303501714 0 0 0.98590 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.01351  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.30000 *
+1) root 0 0 0.48070  
+  2) spectral_NDWI_endSnowfree < -3815.06555436262 0 0 0.99510  
+    4) spectral_EVI2b_annualMedian < 1266.7678943969 0 0 0.00000 *
+    5) spectral_EVI2b_annualMedian > 1266.7678943969 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3815.06555436262 0 0 0.03797  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.30000 *
+1) root 0 0 0.512500  
+  2) spectral_NDWI_earlySummer < -3936.29711138697 0 0 0.986200  
+    4) spectral_EVI2b_earlySummer < 1230.83865964071 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1230.83865964071 0 0 1.000000 *
+  3) spectral_NDWI_earlySummer > -3936.29711138697 0 0 0.049330  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.005025 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.416700 *
+1) root 0 0 0.467100  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.994900  
+    4) spectral_EVI2b_annualMedian < 1320.09592627672 0 0 0.000000 *
+    5) spectral_EVI2b_annualMedian > 1320.09592627672 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.048780  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004545 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.423100 *
+1) root 0 0 0.4512  
+  2) spectral_EVI2b_annualMean < 1406.00128163611 0 0 0.0125  
+    4) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.0000 *
+    5) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.3333 *
+  3) spectral_EVI2b_annualMean > 1406.00128163611 0 0 0.9751  
+    6) spectral_NDWI_annualMean < -3117.86998028094 0 0 1.0000 *
+    7) spectral_NDWI_annualMean > -3117.86998028094 0 0 0.1667 *
+1) root 0 0 0.4331  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9317  
+    6) spectral_NDWI_lateSummer < -2871.86828034974 0 0 0.9946 *
+    7) spectral_NDWI_lateSummer > -2871.86828034974 0 0 0.3500 *
+1) root 0 0 0.45800  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01316  
+    4) spectral_NDWI_annualMean < -2926.94836037753 0 0 0.42860 *
+    5) spectral_NDWI_annualMean > -2926.94836037753 0 0 0.00000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.93430  
+    6) spectral_NDWI_changeESPS < 18.0635232397211 0 0 0.97040 *
+    7) spectral_NDWI_changeESPS > 18.0635232397211 0 0 0.20000 *
+1) root 0 0 0.41040  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01181  
+    4) spectral_NDWI_lateSummer < -3380.02684237325 0 0 0.50000 *
+    5) spectral_NDWI_lateSummer > -3380.02684237325 0 0 0.00000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.95190  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.00000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.52630 *
+1) root 0 0 0.478500  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.989900  
+    4) spectral_EVI2b_lateSummer < 1484.49910437108 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1484.49910437108 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.061730  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004717 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.451600 *
+1) root 0 0 0.489800  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.054620  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004854 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.375000 *
+1) root 0 0 0.42860  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.99450  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.00000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.03462  
+    6) spectral_EVI2b_annualMedian < 1131.61031595695 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1131.61031595695 0 0 0.26470 *
+1) root 0 0 0.498900  
+  2) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004808  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.023260 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.939900  
+    6) spectral_EVI2b_changeSSES < -8.77231160475966 0 0 0.111100 *
+    7) spectral_EVI2b_changeSSES > -8.77231160475966 0 0 0.973200 *
+1) root 0 0 0.462600  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.965900  
+    4) spectral_EVI2b_earlySummer < 973.991112494012 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 973.991112494012 0 0 0.990000 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.025420  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.004444 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.454500 *
+1) root 0 0 0.4943  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9356  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.9817 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.2143 *
+1) root 0 0 0.464900  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004444  
+    4) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.020410 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.944400  
+    6) spectral_NDWI_lateSummer < -2520.28921405037 0 0 0.980500 *
+    7) spectral_NDWI_lateSummer > -2520.28921405037 0 0 0.272700 *
+1) root 0 0 0.503400  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.964800  
+    4) spectral_EVI2b_earlySummer < 1138.50303501714 0 0 0.333300 *
+    5) spectral_EVI2b_earlySummer > 1138.50303501714 0 0 0.990800 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.014020  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004854 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.250000 *
+1) root 0 0 0.485300  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.995100  
+    4) spectral_NDWI_endSnowfree < -3617.75096010866 0 0 1.000000 *
+    5) spectral_NDWI_endSnowfree > -3617.75096010866 0 0 0.000000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.038300  
+    6) spectral_EVI2b_annualMedian < 1372.96536045763 0 0 0.009217 *
+    7) spectral_EVI2b_annualMedian > 1372.96536045763 0 0 0.388900 *
+1) root 0 0 0.4989  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9483  
+    6) spectral_NDWI_endSnowfree < -2139.72326244667 0 0 0.9778 *
+    7) spectral_NDWI_endSnowfree > -2139.72326244667 0 0 0.0000 *
+1) root 0 0 0.47850  
+  2) spectral_NDWI_lateSummer < -3252.40867502571 0 0 0.97580  
+    4) spectral_EVI2b_earlySummer < 973.991112494012 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 973.991112494012 0 0 0.99020 *
+  3) spectral_NDWI_lateSummer > -3252.40867502571 0 0 0.03846  
+    6) spectral_EVI2b_annualRange < 1660.75474929374 0 0 0.01778 *
+    7) spectral_EVI2b_annualRange > 1660.75474929374 0 0 0.55560 *
+1) root 0 0 0.453500  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.043650  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004405 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.400000 *
+1) root 0 0 0.469400  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004566  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.023260 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.927900  
+    6) spectral_EVI2b_earlySummer < 1724.22168051639 0 0 0.515200 *
+    7) spectral_EVI2b_earlySummer > 1724.22168051639 0 0 1.000000 *
+1) root 0 0 0.45350  
+  2) spectral_EVI2b_earlySummer < 1534.31913484526 0 0 0.03226  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.38100 *
+  3) spectral_EVI2b_earlySummer > 1534.31913484526 0 0 0.99480  
+    6) spectral_NDWI_lateSummer < -3369.27329500498 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -3369.27329500498 0 0 0.00000 *
+1) root 0 0 0.43760  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.03891  
+    4) spectral_EVI2b_annualMedian < 1120.01874444249 0 0 0.00000 *
+    5) spectral_EVI2b_annualMedian > 1120.01874444249 0 0 0.33330 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.99460  
+    6) spectral_NDWI_lateSummer < -3420.51554644532 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -3420.51554644532 0 0 0.00000 *
+1) root 0 0 0.46260  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.99490  
+    4) spectral_EVI2b_changeSSES < -11.7327057168035 0 0 0.00000 *
+    5) spectral_EVI2b_changeSSES > -11.7327057168035 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.02881  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.36840 *
+1) root 0 0 0.442200  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.000000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.064640  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008734 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.441200 *
+1) root 0 0 0.5011  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9404  
+    6) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.0000 *
+    7) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.5625 *
+1) root 0 0 0.44900  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.05447  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.37840 *
+1) root 0 0 0.460300  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.070310  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.009132 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.432400 *
+1) root 0 0 0.498900  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.043290  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004854 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.360000 *
+1) root 0 0 0.42180  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.03422  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.34620 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.99440  
+    6) spectral_NDWI_lateSummer < -3310.46764247483 0 0 1.00000 *
+    7) spectral_NDWI_lateSummer > -3310.46764247483 0 0 0.00000 *
+1) root 0 0 0.458000  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.051590  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004425 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.461500 *
+1) root 0 0 0.501100  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.063830  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004831 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.500000 *
+1) root 0 0 0.48980  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01402  
+    4) spectral_NDWI_lateSummer < -3380.02684237325 0 0 0.37500 *
+    5) spectral_NDWI_lateSummer > -3380.02684237325 0 0 0.00000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.93830  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.00000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.96820 *
+1) root 0 0 0.49430  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.05907  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.01435 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.39290 *
+1) root 0 0 0.464900  
+  2) spectral_NDWI_earlySummer < -3873.23297786835 0 0 0.989700  
+    4) spectral_EVI2b_lateSummer < 1515.58120047406 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1515.58120047406 0 0 1.000000 *
+  3) spectral_NDWI_earlySummer > -3873.23297786835 0 0 0.048780  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004525 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.440000 *
+1) root 0 0 0.462600  
+  2) spectral_NDWI_annualMean < -3663.83549115282 0 0 0.989700  
+    4) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 1.000000 *
+    5) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.333300 *
+  3) spectral_NDWI_annualMean > -3663.83549115282 0 0 0.044720  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004525 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.400000 *
+1) root 0 0 0.483000  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.050420  
+    4) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004762 *
+    5) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.392900 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.990100  
+    6) spectral_NDWI_lateSummer < -3472.85344318487 0 0 1.000000 *
+    7) spectral_NDWI_lateSummer > -3472.85344318487 0 0 0.000000 *
+1) root 0 0 0.435400  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.008475  
+    4) spectral_EVI2b_lateSummer < 1372.62602983787 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1372.62602983787 0 0 0.333300 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.926800  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.969400 *
+1) root 0 0 0.442200  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.008439  
+    4) spectral_EVI2b_lateSummer < 1372.62602983787 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1372.62602983787 0 0 0.400000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.946100  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.979700 *
+1) root 0 0 0.460300  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004505  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.023810 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.922400  
+    6) spectral_EVI2b_changeSSES < -8.77231160475966 0 0 0.166700 *
+    7) spectral_EVI2b_changeSSES > -8.77231160475966 0 0 0.990000 *
+1) root 0 0 0.46710  
+  2) spectral_NDWI_annualMean < -4132.8941704149 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -4132.8941704149 0 0 0.08203  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.01402 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.42860 *
+1) root 0 0 0.50340  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.04783  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.45830 *
+1) root 0 0 0.47850  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99510  
+    4) spectral_EVI2b_annualMedian < 1266.7678943969 0 0 0.00000 *
+    5) spectral_EVI2b_annualMedian > 1266.7678943969 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.03782  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.01376 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.30000 *
+1) root 0 0 0.45350  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.06589  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.45950 *
+1) root 0 0 0.48530  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.05021  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.40000 *
+1) root 0 0 0.444400  
+  2) spectral_EVI2b_annualMean < 1447.00840883169 0 0 0.032130  
+    4) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.004329 *
+    5) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.388900 *
+  3) spectral_EVI2b_annualMean > 1447.00840883169 0 0 0.979200  
+    6) spectral_NDWI_endSnowfree < -2235.11880064979 0 0 0.989500 *
+    7) spectral_NDWI_endSnowfree > -2235.11880064979 0 0 0.000000 *
+1) root 0 0 0.464900  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.989700  
+    4) spectral_EVI2b_earlySummer < 1512.73531650449 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1512.73531650449 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.052630  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004587 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.413800 *
+1) root 0 0 0.483000  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.069390  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009434 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.454500 *
+1) root 0 0 0.410400  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004065  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.022220 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.923100  
+    6) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.500000 *
+1) root 0 0 0.421800  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.048690  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008299 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.423100 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.994300  
+    6) spectral_EVI2b_earlySummer < 1419.94468514188 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 1419.94468514188 0 0 1.000000 *
+1) root 0 0 0.455800  
+  2) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004444  
+    4) spectral_EVI2b_changeSSES < 19.6171999806985 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 19.6171999806985 0 0 0.023260 *
+  3) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.925900  
+    6) spectral_NDWI_endSnowfree < -2065.33892549278 0 0 0.961500 *
+    7) spectral_NDWI_endSnowfree > -2065.33892549278 0 0 0.000000 *
+1) root 0 0 0.462600  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008734  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.038460 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.952800  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.980600 *
+1) root 0 0 0.43990  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.98380  
+    4) spectral_EVI2b_earlySummer < 1143.59007307129 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1143.59007307129 0 0 1.00000 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.04688  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01282 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.40910 *
+1) root 0 0 0.458000  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004444  
+    4) spectral_NDWI_endSnowfree < -2038.78546616735 0 0 0.022220 *
+    5) spectral_NDWI_endSnowfree > -2038.78546616735 0 0 0.000000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.930600  
+    6) spectral_EVI2b_changeSSES < -3.0409153138758 0 0 0.375000 *
+    7) spectral_EVI2b_changeSSES > -3.0409153138758 0 0 1.000000 *
+1) root 0 0 0.469400  
+  2) spectral_NDWI_endSnowfree < -3843.56289333873 0 0 0.990100  
+    4) spectral_EVI2b_peakSummer < 1852.99381076208 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 1852.99381076208 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3843.56289333873 0 0 0.029290  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004673 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.240000 *
+1) root 0 0 0.46030  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.04418  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00463 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.30300 *
+1) root 0 0 0.43990  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.04633  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.00000 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.44440 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 1.00000 *
+1) root 0 0 0.439900  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.994700  
+    4) spectral_EVI2b_earlySummer < 1285.28833721647 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1285.28833721647 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.027670  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004329 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.272700 *
+1) root 0 0 0.48070  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.99500  
+    4) spectral_NDWI_lateSummer < -3137.88024388702 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -3137.88024388702 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.05394  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.44830 *
+1) root 0 0 0.4830  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.9552  
+    6) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 1.0000 *
+    7) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.5455 *
+1) root 0 0 0.47390  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.99490  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.00000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.04938  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00463 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.40740 *
+1) root 0 0 0.435400  
+  2) spectral_EVI2b_peakSummer < 2135.98716293341 0 0 0.045980  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008299 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.500000 *
+  3) spectral_EVI2b_peakSummer > 2135.98716293341 0 0 1.000000 *
+1) root 0 0 0.458000  
+  2) spectral_NDWI_annualMean < -3103.49385705432 0 0 0.960800  
+    4) spectral_EVI2b_lateSummer < 1515.58120047406 0 0 0.125000 *
+    5) spectral_EVI2b_lateSummer > 1515.58120047406 0 0 0.994900 *
+  3) spectral_NDWI_annualMean > -3103.49385705432 0 0 0.025320  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004608 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.250000 *
+1) root 0 0 0.44220  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.02767  
+    6) spectral_NDWI_annualMean < -4173.2577652035 0 0 1.00000 *
+    7) spectral_NDWI_annualMean > -4173.2577652035 0 0 0.01992 *
+1) root 0 0 0.44440  
+  2) spectral_NDWI_lateSummer < -4286.15244965821 0 0 0.98930  
+    4) spectral_EVI2b_earlySummer < 1579.06062837337 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1579.06062837337 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4286.15244965821 0 0 0.04331  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.42310 *
+1) root 0 0 0.514700  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.073590  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.005025 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.500000 *
+1) root 0 0 0.45580  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.01695  
+    4) spectral_EVI2b_lateSummer < 1372.62602983787 0 0 0.00000 *
+    5) spectral_EVI2b_lateSummer > 1372.62602983787 0 0 0.66670 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.96100  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.00000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.98010 *
+1) root 0 0 0.43080  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.04924  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.39390 *
+1) root 0 0 0.462600  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.994800  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.000000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.044530  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.004545 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.370400 *
+1) root 0 0 0.460300  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.055560  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004464 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.464300 *
+1) root 0 0 0.514700  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.009901  
+    4) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.051280 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.941400  
+    6) spectral_NDWI_changeESPS < 16.7094189898097 0 0 0.982100 *
+    7) spectral_NDWI_changeESPS > 16.7094189898097 0 0 0.375000 *
+1) root 0 0 0.43310  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.99450  
+    4) spectral_EVI2b_startSnowfree < 949.864830904585 0 0 0.00000 *
+    5) spectral_EVI2b_startSnowfree > 949.864830904585 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.03861  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.32260 *
+1) root 0 0 0.50110  
+  2) spectral_EVI2b_annualMean < 1102.36100181133 0 0 0.01429  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.06522 *
+  3) spectral_EVI2b_annualMean > 1102.36100181133 0 0 0.94370  
+    6) spectral_EVI2b_earlySummer < 1138.50303501714 0 0 0.26670 *
+    7) spectral_EVI2b_earlySummer > 1138.50303501714 0 0 0.99070 *
+1) root 0 0 0.4603  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.0000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.0480  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.0000 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.3750 *
+1) root 0 0 0.462600  
+  2) spectral_NDWI_annualMean < -3413.55123018185 0 0 0.979700  
+    4) spectral_EVI2b_lateSummer < 1515.58120047406 0 0 0.000000 *
+    5) spectral_EVI2b_lateSummer > 1515.58120047406 0 0 0.994800 *
+  3) spectral_NDWI_annualMean > -3413.55123018185 0 0 0.045080  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004651 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.344800 *
+1) root 0 0 0.47390  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.06073  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.01402 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.36360 *
+1) root 0 0 0.469400  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.971300  
+    4) spectral_EVI2b_endSnowfree < 757.498814161894 0 0 0.000000 *
+    5) spectral_EVI2b_endSnowfree > 757.498814161894 0 0 0.985400 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.017240  
+    6) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.004444 *
+    7) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.428600 *
+1) root 0 0 0.460300  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.040320  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004608 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.290300 *
+1) root 0 0 0.41720  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.03745  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.35710 *
+1) root 0 0 0.462600  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994900  
+    4) spectral_NDWI_lateSummer < -3086.63799244668 0 0 1.000000 *
+    5) spectral_NDWI_lateSummer > -3086.63799244668 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.040650  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004484 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.391300 *
+1) root 0 0 0.462600  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004444  
+    4) spectral_EVI2b_peakSummer < 759.427277049581 0 0 0.000000 *
+    5) spectral_EVI2b_peakSummer > 759.427277049581 0 0 0.023260 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.939800  
+    6) spectral_NDWI_lateSummer < -2944.22132429287 0 0 0.994900 *
+    7) spectral_NDWI_lateSummer > -2944.22132429287 0 0 0.400000 *
+1) root 0 0 0.430800  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.023350  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004274 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.217400 *
+1) root 0 0 0.464900  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.056000  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004525 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.448300 *
+1) root 0 0 0.449000  
+  2) spectral_NDWI_endSnowfree < -3785.52089398674 0 0 0.994700  
+    4) spectral_EVI2b_earlySummer < 1285.28833721647 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1285.28833721647 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3785.52089398674 0 0 0.047240  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004386 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.423100 *
+1) root 0 0 0.4671  
+  2) spectral_NDWI_endSnowfree < -3815.06555436262 0 0 0.9900  
+    4) spectral_EVI2b_peakSummer < 2188.29211602229 0 0 0.0000 *
+    5) spectral_EVI2b_peakSummer > 2188.29211602229 0 0 1.0000 *
+  3) spectral_NDWI_endSnowfree > -3815.06555436262 0 0 0.0332  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.0000 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.3478 *
+1) root 0 0 0.48980  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.96330  
+    4) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.00000 *
+    5) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.98590 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.02691  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.00000 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.50000 *
+1) root 0 0 0.455800  
+  2) spectral_NDWI_lateSummer < -4557.41250954313 0 0 1.000000 *
+  3) spectral_NDWI_lateSummer > -4557.41250954313 0 0 0.043820  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.008734 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.409100 *
+1) root 0 0 0.45350  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.99490  
+    4) spectral_EVI2b_earlySummer < 1351.61364908535 0 0 0.00000 *
+    5) spectral_EVI2b_earlySummer > 1351.61364908535 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.02041  
+    6) spectral_EVI2b_annualMean < 1097.6176737627 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1097.6176737627 0 0 0.35710 *
+1) root 0 0 0.428600  
+  2) spectral_EVI2b_earlySummer < 1718.12049045408 0 0 0.056600  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004386 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.378400 *
+  3) spectral_EVI2b_earlySummer > 1718.12049045408 0 0 0.988600  
+    6) spectral_NDWI_endSnowfree < -3663.25417216351 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -3663.25417216351 0 0 0.000000 *
+1) root 0 0 0.48750  
+  2) spectral_NDWI_lateSummer < -4286.15244965821 0 0 0.99010  
+    4) spectral_EVI2b_peakSummer < 1956.23169182319 0 0 0.00000 *
+    5) spectral_EVI2b_peakSummer > 1956.23169182319 0 0 1.00000 *
+  3) spectral_NDWI_lateSummer > -4286.15244965821 0 0 0.06276  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.46880 *
+1) root 0 0 0.442200  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.035430  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.008475 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.388900 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.994700  
+    6) spectral_EVI2b_earlySummer < 1353.619373273 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 1353.619373273 0 0 1.000000 *
+1) root 0 0 0.469400  
+  2) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004405  
+    4) spectral_NDWI_endSnowfree < -3414.02544240642 0 0 0.200000 *
+    5) spectral_NDWI_endSnowfree > -3414.02544240642 0 0 0.000000 *
+  3) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.962600  
+    6) spectral_NDWI_earlySummer < -2042.33670139163 0 0 0.981000 *
+    7) spectral_NDWI_earlySummer > -2042.33670139163 0 0 0.000000 *
+1) root 0 0 0.487500  
+  2) spectral_EVI2b_annualMedian < 1357.22339950209 0 0 0.027650  
+    4) spectral_NDWI_annualMean < -2926.94836037753 0 0 0.500000 *
+    5) spectral_NDWI_annualMean > -2926.94836037753 0 0 0.009569 *
+  3) spectral_EVI2b_annualMedian > 1357.22339950209 0 0 0.933000  
+    6) spectral_NDWI_lateSummer < -2546.67263963145 0 0 0.976200 *
+    7) spectral_NDWI_lateSummer > -2546.67263963145 0 0 0.285700 *
+1) root 0 0 0.473900  
+  2) spectral_NDWI_endSnowfree < -3814.01823296285 0 0 0.995000  
+    4) spectral_NDWI_lateSummer < -3137.88024388702 0 0 1.000000 *
+    5) spectral_NDWI_lateSummer > -3137.88024388702 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3814.01823296285 0 0 0.041490  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.009259 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.320000 *
+1) root 0 0 0.476200  
+  2) spectral_NDWI_annualMean < -4173.2577652035 0 0 1.000000 *
+  3) spectral_NDWI_annualMean > -4173.2577652035 0 0 0.057140  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004673 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.419400 *
+1) root 0 0 0.473900  
+  2) spectral_EVI2b_annualMedian < 1326.73201607118 0 0 0.021930  
+    4) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004484 *
+    5) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.800000 *
+  3) spectral_EVI2b_annualMedian > 1326.73201607118 0 0 0.957700  
+    6) spectral_EVI2b_earlySummer < 864.317551170804 0 0 0.000000 *
+    7) spectral_EVI2b_earlySummer > 864.317551170804 0 0 0.976100 *
+1) root 0 0 0.458000  
+  2) spectral_NDWI_annualMean < -2872.78407729679 0 0 0.956300  
+    4) spectral_EVI2b_earlySummer < 1028.44079006978 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1028.44079006978 0 0 0.980100 *
+  3) spectral_NDWI_annualMean > -2872.78407729679 0 0 0.021280  
+    6) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.008734 *
+    7) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.500000 *
+1) root 0 0 0.41720  
+  2) spectral_NDWI_endSnowfree < -4114.66447998372 0 0 1.00000 *
+  3) spectral_NDWI_endSnowfree > -4114.66447998372 0 0 0.04815  
+    6) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.01277 *
+    7) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.28570 *
+1) root 0 0 0.494300  
+  2) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.066950  
+    6) spectral_EVI2b_annualMedian < 1160.10662019703 0 0 0.004902 *
+    7) spectral_EVI2b_annualMedian > 1160.10662019703 0 0 0.428600 *
+1) root 0 0 0.421800  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004132  
+    4) spectral_EVI2b_changeSSES < 19.7351171622487 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 19.7351171622487 0 0 0.018520 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.929600  
+    6) spectral_EVI2b_changeSSES < -2.97908373705355 0 0 0.250000 *
+    7) spectral_EVI2b_changeSSES > -2.97908373705355 0 0 0.989100 *
+1) root 0 0 0.46490  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.99490  
+    4) spectral_NDWI_lateSummer < -4397.79371948693 0 0 1.00000 *
+    5) spectral_NDWI_lateSummer > -4397.79371948693 0 0 0.00000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.04082  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.00000 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.34480 *
+1) root 0 0 0.469400  
+  2) spectral_EVI2b_annualMean < 1089.17436592874 0 0 0.004464  
+    4) spectral_EVI2b_changeSSES < 20.1377105117017 0 0 0.000000 *
+    5) spectral_EVI2b_changeSSES > 20.1377105117017 0 0 0.025640 *
+  3) spectral_EVI2b_annualMean > 1089.17436592874 0 0 0.949300  
+    6) spectral_NDWI_endSnowfree < -4171.40434541679 0 0 1.000000 *
+    7) spectral_NDWI_endSnowfree > -4171.40434541679 0 0 0.541700 *
+1) root 0 0 0.505700  
+  2) spectral_NDWI_endSnowfree < -3892.08085848988 0 0 0.995300  
+    4) spectral_EVI2b_earlySummer < 1285.28833721647 0 0 0.000000 *
+    5) spectral_EVI2b_earlySummer > 1285.28833721647 0 0 1.000000 *
+  3) spectral_NDWI_endSnowfree > -3892.08085848988 0 0 0.048250  
+    6) spectral_EVI2b_annualMean < 1084.43103788011 0 0 0.004831 *
+    7) spectral_EVI2b_annualMean > 1084.43103788011 0 0 0.476200 *
+1) root 0 0 0.442200  
+  2) spectral_NDWI_endSnowfree < -3862.536198114 0 0 0.994500  
+    4) spectral_NDWI_annualMean < -3155.16059460646 0 0 1.000000 *
+    5) spectral_NDWI_annualMean > -3155.16059460646 0 0 0.000000 *
+  3) spectral_NDWI_endSnowfree > -3862.536198114 0 0 0.050390  
+    6) spectral_EVI2b_annualMean < 1081.26790393756 0 0 0.004367 *
+    7) spectral_EVI2b_annualMean > 1081.26790393756 0 0 0.413800 *
+1) root 0 0 0.453500  
+  2) spectral_EVI2b_peakSummer < 2155.73322282072 0 0 0.044000  
+    4) spectral_EVI2b_annualMedian < 1332.94500109166 0 0 0.004464 *
+    5) spectral_EVI2b_annualMedian > 1332.94500109166 0 0 0.384600 *
+  3) spectral_EVI2b_peakSummer > 2155.73322282072 0 0 0.989500  
+    6) spectral_EVI2b_changeSSES < -8.77231160475966 0 0 0.000000 *
+    7) spectral_EVI2b_changeSSES > -8.77231160475966 0 0 1.000000 *

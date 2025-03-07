@@ -1,0 +1,80 @@
+/*
+
+NOTE: Appended zeros are necessary so scripts sort correctly
+
+000_ GUIDES AND TEMPLATES - GEE code editor
+	00_script_template
+	00_script_guide
+
+00_ FUNCTIONS  - GEE code editor
+  00_fun_field data
+  00_fun_misc
+  00_fun_palettes
+  00_fun_refl
+  00_fun_sentinel
+
+01_ PROCESS CAL/VAL DATA - GEE code editor
+  01_0_data_barren_random_pts
+  01_1_data_site_representativeness
+
+02_ PREPARE DATA FOR CCDC MODELING - GEE code editor
+  02_0_prep_finalize_arctic_roi
+  02_1_prep_create_water_ice_masks
+  02_2_prep_group_tiles
+
+03_ RUN CCDC - python
+  03_0_ccdc
+
+04_ PROCCESS SEASONAL REFLECTANCE DATA - GEE code editor
+  04_0_proc_seasonal_doy_tiles
+  04_1_proc_seasonal_doy_median
+  04_2_proc_seasonal_reflectance_tiles
+
+05_ TOPOGRAPHIC CORRECTION
+  05_0_topocorr_seasonal_doy_min_max
+  05_1_topocorr_copernicus_dem_slope_aspect
+  05_2_topocorr_calc_illumination_condition
+  05_3_topocorr_apply
+
+06_ PREDICTORS - GEE code editor
+  06_0_predictor_ecoregion
+  06_1_predictor_wte
+  06_2_predictor_texture_slope
+  06_3_predictor_permafrost
+  06_4_predictor_terraclimate
+  06_5_predictor_tree_cover
+  06_6_predictor_zone
+
+07_ PREDICTOR DATA EXTRACTION - GEE code editor
+  07_0_extract_calval
+
+08_ RUN MODELS - GEE code editor
+  08_0_run_model_compare_gee_r
+  08_1_run_model_binary_uncertainty
+  08_2_run_model_continuous_uncertainty
+
+09_ EXPORT DATA - GEE code editor
+  09_0_export_maps_to_asset
+  09_1_export_biomass_mask
+  09_2_export_mc_iterations_to_gcs
+  09_3_export_final_maps_to_drive
+  
+10_ ANALYSES - GEE code editor
+  10_0_analysis_summarize_biomass
+  10_1_analysis_climate_sum_area
+  10_2_analysis_climate_mean_biomass
+  10_3_analysis_climate_mean_cavm
+  10_4_analysis_compare_pixels
+  10_5_analysis_masked_area
+  10_6_analysis_zone_country_area
+  10_7_analysis_soil_carbon
+  10_8_analysis_topography_gradient
+  10_9_analysis_hillshade_data
+
+11_ VISUALIZATION APP - GEE code editor
+  11_0_visualization_app
+
+12_ DATA MANAGEMENT - GEE code editor
+  12_0_management_read_from_gcs
+
+*/

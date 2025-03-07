@@ -1,0 +1,13 @@
+filter_name,threshold_value
+ccdc_segment,
+water,0.01
+snow,0.01
+NBR,1
+NDMI,1
+NDVI,1
+ccdc_obs,30
+doy_lwr,doy_startSnowfree
+doy_upr,doy_endSnowfree
+tree_biomass,15000
+n_pixel,5
+n_plot,3

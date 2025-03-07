@@ -1,0 +1,110 @@
+/*
+
+DESCRIPTION: Create world terrestrial ecosystem predictor
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- READ IN DATA ----
+
+// Get World Terrestrial Ecosystems data
+// https://www.sciencebase.gov/catalog/item/6296791ed34ec53d276bb293
+// https://rmgsc.cr.usgs.gov/outgoing/ecosystems/Global/
+var wte = ee.Image('projects/arctic-biomass-mapping/assets/predictors/wte_2020').rename('world_terrestrial_ecosystems');
+Map.addLayer(wte, null, 'WTE');
+
+// Get Greenland data
+var greenland_water = ee.Image("OSU/GIMP/2000_ICE_OCEAN_MASK").select('ocean_mask');
+
+// 1.1 ----- PARAMETERS ----
+
+// Get projection information
+var proj = wte.projection();
+var crs = proj.crs();
+var scale = proj.nominalScale();
+var transform = proj.getInfo().transform;
+var transform_scale = transform[0];
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- FILL GAPS - FOCAL MODE ----
+
+// Fill some gaps to avoid NAs in cal/val data
+var wte_fill_gaps = wte.focalMode({radius: wte.projection().nominalScale().multiply(3).divide(2), kernelType: 'square', units: 'meters', iterations: 3}); // Fill some gaps to avoid NAs in cal/val data
+wte = wte_fill_gaps.blend(wte); 
+Map.addLayer(wte, null, 'World Terrestrial Ecosystems - Filled');
+print('World Terrestrial Ecosystems - Filled', wte);
+
+// 2.1 ----- FILL GREENLAND GAPS ----
+
+// Tidy greenland data
+var greenland_land = greenland_water.eq(0).selfMask();
+
+// Split Greenland
+// S will be assigned WTE class 2 = "Polar Moist Snow and Ice on Plains" to fill large ice gap
+// N will be assigned WTE class 1 = "Polar Moist Sparsely or Non-vegetated on Plains" to account for rocky coastlines
+var n_greenland_poly = ee.Geometry.Polygon([-89, 88, 0, 88, 7.6, 88, 7.6, 78.7, 0, 78.7, -89, 78.7], null, false);
+var s_greenland_poly = ee.Geometry.Polygon([-89, 78.7, 0, 78.7, 7.6, 78.7, 7.6, 58.8, 0, 58.8, -89, 58.8], null, false);
+var n_greenland = greenland_land.clip(n_greenland_poly);
+var s_greenland = greenland_land.clip(s_greenland_poly).multiply(2);
+greenland_land = n_greenland.blend(s_greenland);
+
+// Reproject greenland to match WTE
+greenland_land = greenland_land.reproject({crs: 'EPSG:4326', crsTransform: [transform_scale, 0, -180, 0, -transform_scale, 90]});
+
+// Fill Greenland gaps
+wte = greenland_land.blend(wte).rename('world_terrestrial_ecosystems'); 
+wte = wte.updateMask(wte.mask().gt(0)); // Remove mask percentage
+Map.addLayer(wte, null, 'World Terrestrial Ecosystems - Greenland Filled');
+print('World Terrestrial Ecosystems - Greenland Filled', wte);
+
+// 2.2 ----- ENCODE ----
+
+// Remove mask opacity
+wte = wte.updateMask(wte.mask().gt(0));
+Map.addLayer(wte, null, 'wte - mask opacity removed');
+
+// One-hot encode
+var hist = wte.reduceRegion({reducer: ee.Reducer.frequencyHistogram(), geometry: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), maxPixels: 1e13});
+var values = ee.List(ee.Dictionary(hist.get(wte.bandNames().get(0))).keys().map(ee.Number.parse)).getInfo(); // Remove all the unnecessary reducer output structure and make a list of values
+wte = ee.ImageCollection(values.map(function(value){return wte.eq(ee.Image.constant(value)).rename('world_terrestrial_ecosystems_X' + value)}))
+        .toBands()
+        .regexpRename('^[^_]*_', '') // Remove prefixes added by 'toBands()'
+        .uint8(); 
+Map.addLayer(wte, null, 'World Terrestrial Ecosystems - Encoded');
+print('World Terrestrial Ecosystems - Encoded', wte);
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+// Get dimension information
+var dimensions = wte.getInfo().bands[0].dimensions;
+var width = dimensions[0];
+var height = dimensions[1];
+
+// Export
+Export.image.toAsset({
+  image: wte,
+  description: 'wte_2020_filled_encoded',
+  assetId: 'projects/arctic-biomass-mapping/assets/predictors/wte_2020_filled_encoded',
+  pyramidingPolicy: 'mode',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), // Specify as rectangle to avoid gaps in output
+  crs: 'EPSG:4326',
+  crsTransform: [transform_scale, 0, -180, 0, -transform_scale, 90],
+  maxPixels: 1e12
+});
+
+

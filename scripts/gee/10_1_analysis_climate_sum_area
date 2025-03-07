@@ -1,0 +1,151 @@
+/*
+
+DESCRIPTION: Sum area across growing degree day bins
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS -----
+
+var gdd_base = 0;
+var gdd_bin_width = ee.Number(ee.Algorithms.If(ee.Number(gdd_base).eq(0), 10, 5));
+var canopy_height_threshold = 5; // Set to 200 for no mask, 5 is an appropriate mask
+var output_folder = 'area_sum_gdd' + gdd_base;
+
+// 1.1 ----- READ IN DATA -----
+
+// CHELSA growing degree days:
+//  - units: degrees celsius
+//  - description: heat sum of all days above the 0°C temperature accumulated over 1 year.
+//  - scale: 0.1
+var gdd = ee.Image("projects/arctic-biomass-mapping/assets/climate_analysis/CHELSA_gdd" + gdd_base + "_1981_2010_V_2_1").multiply(0.1).rename('gdd').round().unmask(0, false);
+
+var canopy_height = ee.ImageCollection("projects/meta-forest-monitoring-okw37/assets/CanopyHeight").mosaic();
+var total_biomass = ee.Image("projects/arctic-biomass-mapping/assets/modeled_final/total_biomass_2020_j_index_v20240514").select('total_biomass');
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- SET UP AREA DATA -----
+
+// Area will be calculated at whatever scale is specified for reduceRegion/export
+var area = ee.Image.pixelArea().rename('area_m2');
+
+// 2.1 ----- SET UP GDD DATA -----
+
+// Get max GDD -----
+
+var gdd_max = gdd.updateMask(total_biomass).reduceRegion({
+  reducer: ee.Reducer.max(),
+  geometry: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), 
+  scale: gdd.projection().nominalScale(), 
+  crs: gdd.projection().crs(), 
+  maxPixels: 1e13
+});
+
+gdd_max = ee.Number(ee.Dictionary(gdd_max).get('gdd'));
+gdd_max = gdd_max.divide(gdd_bin_width).round().multiply(gdd_bin_width).getInfo();
+
+// Bin GDD data -----
+
+var thresholds = ee.List.sequence(gdd_bin_width, gdd_max, gdd_bin_width).getInfo(); // Upper limit is maximum across Arctic domain
+var threshold_img = ee.Image(thresholds);
+var gdd_bins = gdd.gt(threshold_img).reduce('sum'); // Pixel values are bin numbers
+gdd_bins = gdd_bins.add(1).multiply(gdd_bin_width).rename('gdd_bin'); // Convert pixel values to bin end value
+print('Number of bins: ', ee.List(thresholds).length());
+
+// Mask GDD data -----
+
+// Mask to Arctic domain
+gdd_bins = gdd_bins.updateMask(total_biomass.mask());
+
+// Mask by canopy height
+canopy_height = canopy_height.unmask(0); // Fill currently masked areas with low value to ensure we include Greeland, barrier islands etc.
+var canopy_height_mask = canopy_height.lt(canopy_height_threshold).selfMask();
+gdd_bins = gdd_bins.updateMask(canopy_height_mask);
+
+// 2.2 ----- SUM AREA ACROSS BINS AND EXPORT -----
+
+var total_area_per_gdd_bin_loop = thresholds.map(function(bin){
+
+  // Restrict GDD bin image to current bin only
+  var gdd_bin = gdd_bins.eq(ee.Image.constant(bin)).selfMask();
+
+  // Mask area to current GDD bin only
+  var area_gdd_bin = area.updateMask(gdd_bin);
+
+  // Tidy mask
+  area_gdd_bin = area_gdd_bin.mask(area_gdd_bin.mask().gt(0));
+
+  // Total
+  var area_gdd_bin_reduced = area_gdd_bin.reduceRegion({
+    reducer: ee.Reducer.sum(),
+    geometry: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false),
+    crs: gdd.projection(),
+    tileScale: 1,
+    maxPixels: 1e13
+  });
+
+  var area_per_gdd_bin_fc = ee.FeatureCollection(ee.Feature(null, area_gdd_bin_reduced).set('gdd_bin', bin));
+
+  Export.table.toDrive({
+    collection: area_per_gdd_bin_fc, 
+    description: 'area_gdd' + gdd_base + '_bin' + bin + '_sum_1km', 
+    folder: output_folder
+  });
+  
+});
+
+throw('stop');
+
+// ============================
+// 3. BATCH RUN TASKS =========
+// ============================
+
+// Batch run tasks within the GEE code editor
+// Use the code here under 'Free version': https://github.com/gee-hydro/gee_monkey
+// 1) Run script to generate tasks, make sure the top of the task pane no longer says 'UPDATING...' - this indicates all tasks have generated
+// 2) Press F12 to bring up the javascript console
+// 3) Click the 'console' tab if it is not already open
+// 4) Scroll to the bottom where the blue '>' indicates you can enter code
+// 5) Paste the 'runTaskList' function and hit enter
+// 6) Paste 'runTaskList();' and hit enter
+// 7) Wait for the run dialog boxes to pop up (a dark black border indicates several overlapping dialog boxes which is what we want)
+// 8) Paste the 'confirmAll' function and hit enter
+// 9) Paste 'confirmAll();' and hit enter
+// 10) Be patient as the tasks are confirmed, do not close the browser window, eventually the running tasks will show up in the
+
+function runTaskList(){
+    // var tasklist = document.getElementsByClassName('task local type-EXPORT_IMAGE awaiting-user-config');
+    // for (var i = 0; i < tasklist.length; i++)
+    //         tasklist[i].getElementsByClassName('run-button')[0].click();
+    $$('.run-button' ,$$('ee-task-pane')[0].shadowRoot).forEach(function(e) {
+        e.click();
+    })
+}
+
+function confirmAll() {
+    // var ok = document.getElementsByClassName('goog-buttonset-default goog-buttonset-action');
+    // for (var i = 0; i < ok.length; i++)
+    //     ok[i].click();
+    $$('ee-table-config-dialog, ee-image-config-dialog').forEach(function(e) {
+        var eeDialog = $$('ee-dialog', e.shadowRoot)[0]
+        var paperDialog = $$('paper-dialog', eeDialog.shadowRoot)[0]
+        $$('.ok-button', paperDialog)[0].click()
+    })
+}
+
+runTaskList();
+confirmAll();
+

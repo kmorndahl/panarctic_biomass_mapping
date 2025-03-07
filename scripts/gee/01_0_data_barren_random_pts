@@ -1,0 +1,67 @@
+/*
+
+DESCRIPTION: Generate zero biomass observations for future modeling
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+- This script uses the original Arctic polygon without updated Greenland boundaries
+- This is so absences are more spread out, and not concetrated on the Greenland icesheet
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- READ IN DATA ----
+
+var wc = ee.ImageCollection('ESA/WorldCover/v200').first(); // WorldCover dataset
+var arctic_poly = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/arctic_oroarctic_polygon');
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- PREPARE LAND COVER IMAGE ----
+
+// Restrict to barren type land cover types only
+var built = wc.eq(50).selfMask();
+var barrens = wc.eq(60).selfMask();
+var snow_ice = wc.eq(70).selfMask();
+var water = wc.eq(80).selfMask();
+var lc = ee.Image(ee.ImageCollection([built, barrens, snow_ice, water]).mosaic().multiply(wc));
+
+// Clip to arctic polygon
+lc = lc.clip(arctic_poly);
+
+// Visualize
+Map.addLayer(lc, {bands: ['Map']}, 'barren types');
+
+// 2.1 ----- EXTRACT SAMPLES ----
+
+var random_pts = lc.stratifiedSample({numPoints: 500, seed: 1908, projection: 'EPSG:3571', scale: 30, region: ee.Geometry.BBox(-180, 45, 179.9999, 89.9999), geometries: true});
+Map.addLayer(random_pts, {color:'red'}, 'pts');
+
+throw('stop');
+
+// =====================
+// 3. EXPORT ===========
+// =====================
+
+Export.table.toDrive({
+  collection: random_pts, 
+  description: 'barren_built_snow_ice_water_random_pts_scale30m', 
+  folder: 'land_cover_random_pts',
+  fileFormat: 'SHP'
+  });
+
+Export.table.toAsset({
+  collection: random_pts, 
+  description: 'barren_built_snow_ice_water_random_pts_scale30m', 
+  assetId: 'projects/arctic-biomass-mapping/assets/field_data/barren_built_snow_ice_water_random_pts_scale30m'
+  });
+  
+  
+  

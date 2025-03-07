@@ -1,0 +1,71 @@
+/*
+
+DESCRIPTION: Export Monte Carlo iterations to Google Cloud Storage -- frees up space on GEE
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+IMPORTANT: 
+- For best results, GCS buckets should be in US-CENTRAL1 (GEE servers are in Iowa)
+- https://groups.google.com/g/google-earth-engine-developers/c/3MiE78ad8Aw/m/6F0Wi0XaAAAJ
+
+TO-DO:
+
+*/
+
+// ====================
+// 1. SET-UP  =========
+// ====================
+
+// 1.0 ----- PARAMETERS -----
+
+var response_type = 'continuous';
+var ds_type = 'woody';
+var year = 2020;
+var version = 'v20240514';
+var no_data_val = ee.Number(ee.Algorithms.If(ee.String(response_type).equals('binary'), -1, 65535)).getInfo(); // Choose -1 for binary, 65535 for continuous
+var fileDim = ee.Number(ee.Algorithms.If(ee.String(response_type).equals('binary'), 131072, 89600)).getInfo(); // Choose 131072 for binary, 65535 for continuous
+
+// 1.1 ----- READ IN DATA -----
+
+var ic = ee.ImageCollection('projects/arctic-biomass-mapping/assets/modeled_' + response_type + '/model_' + response_type + '_' + year + '_' + ds_type + '_' + version + '_mc');
+
+// ===================
+// 2. EXPORT =========
+// ===================
+
+// 2.0 ----- SET UP LIST OF MONTE CARLO ITERATIONS (AS STRINGS) -----
+
+var mc_iterations = ee.List.sequence(1, 100, 1).map(function(item){return ee.Number(item).format('%.0f')}).getInfo();
+
+// 2.1 ----- LOOP IMAGES IN IMAGE COLLECTION -----
+
+var export_gcs = mc_iterations.map(function(mc){
+
+  // Get image  
+  var img = ic.filter(ee.Filter.eq('system:index', mc)).first();
+  
+  // Set no data values
+  img = img.unmask(no_data_val); // Set masked areas so they aren't automatically set to 0
+  
+  // Export
+  Export.image.toCloudStorage({
+    image: img, 
+    description: mc, 
+    bucket: 'mc_iterations',
+    fileNamePrefix: year + '/' + response_type + '/' + ds_type + '/mc' + mc + '_',
+    region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), 
+    scale: 30, 
+    crs: 'EPSG:3571',
+    maxPixels: 1e13,
+    fileDimensions: fileDim, // https://gis.stackexchange.com/questions/359974/calculating-max-shardsize-and-filedimensions-to-avoid-tiling-large-raster-export/360062#360062
+    formatOptions: { // https://developers.google.com/earth-engine/guides/exporting_images
+      cloudOptimized: true,
+      noData: no_data_val
+    }
+  });
+  
+});
+

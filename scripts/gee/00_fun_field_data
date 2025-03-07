@@ -1,0 +1,276 @@
+/*
+
+DESCRIPTION: Functions to work with field biomass harvest data
+
+FUNCTION LIST:
+  buffer_func
+  coeff_var
+  water_mask
+  water_sum
+  water_filt
+  
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+// FUNCTION: buffer_func
+// USE: Create a square bounding region around a plot/site point location
+// PARAMETERS: 
+//  dataset_id = numerical dataset identifier
+//  feat_col = feature collection of plots/sites corresponding to dataset_id
+//  buffer_widths = dictionary of site specific buffer widths
+// NOTES: Parameters are populated automatically within 1_proc_site_representativeness script
+// AUTHOR: Melissa Rose, NAU
+// LAST UPDATE: 7-19-2022
+// TO-DO:
+
+exports.buffer_func = function(dataset_id, feat_col){
+  
+  // Plot-level
+  var subset1 = feat_col.filter(ee.Filter.equals('coord_type', 'plot')).map(function(feature) {
+    return feature.buffer(30).bounds(); // Return bounds of buffered feature
+  });
+  
+  // Site-level
+  var subset2 = feat_col.filter(ee.Filter.equals('coord_type', 'site')).map(function(feature) {
+    return feature.buffer(90).bounds(); // Return bounds of buffered feature
+  });
+  
+  var buffer_feat_col = subset1.merge(subset2); // Combine plot and site level buffered points
+
+  return buffer_feat_col;
+  
+};
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+// FUNCTION: mean_sd_cv
+// USE: Calculate the mean, standard deviation and coefficient of variation near plots/sites for selected bands
+// PARAMETERS: 
+//  dataset_id = numerical dataset identifier
+//  feat_col = feature collection of buffered plot/site points corresponding to dataset_id
+//  img = composite image, bands = list of bands over which to calculate CV
+// NOTES: Parameters are populated automatically within 1_proc_site_representativeness script
+// TO-DO: Enable band selection to change
+// AUTHOR: Melissa Rose, NAU
+// LAST UPDATE: 7-19-2022
+// TO-DO:
+
+exports.mean_sd_cv = function(dataset_id, feat_col, img, bands){
+  
+  // Specify and combine reducers
+  var reducers = ee.Reducer.mean().combine({
+    reducer2: ee.Reducer.stdDev(),
+    sharedInputs: true
+  });
+  
+  // Get mean and std over buffered plot/site points
+  var dataset_summary = img.select(bands).reduceRegions({
+    collection: feat_col,
+    reducer: reducers,
+    scale: 10,
+  });
+  
+  // Map over dataset summary to get coefficient of variation
+  var summary = dataset_summary.map(function(feature){
+    var NDVImean = ee.Number(feature.get('NDVI_mean')); 
+    var NDVIsd = ee.Number(feature.get('NDVI_stdDev'));
+    var NDVIcoeffVar = ee.Algorithms.If(ee.Algorithms.IsEqual(NDVImean, null), // Check if mean is null
+                                        null, // If null report null
+                                        ee.Number(NDVIsd.divide(NDVImean).multiply(100)).float()); // If not null, calculate CV
+    
+    var NDMImean = ee.Number(feature.get('NDMI_mean')); 
+    var NDMIsd = ee.Number(feature.get('NDMI_stdDev'));
+    var NDMIcoeffVar = ee.Algorithms.If(ee.Algorithms.IsEqual(NDMImean, null), // Check if mean is null
+                                        null, // If null report null
+                                        ee.Number(NDMIsd.divide(NDMImean).multiply(100)).float()); // If not null, calculate CV
+    
+    var NBRmean = ee.Number(feature.get('NBR_mean')); 
+    var NBRsd = ee.Number(feature.get('NBR_stdDev'));
+    var NBRcoeffVar = ee.Algorithms.If(ee.Algorithms.IsEqual(NBRmean, null), // Check if mean is null
+                                       null, // If null report null
+                                       ee.Number(NBRsd.divide(NBRmean).multiply(100)).float()); // If not null, calculate CV
+    
+    return feature.set('ndvi_cv', NDVIcoeffVar).set('ndmi_cv', NDMIcoeffVar).set('nbr_cv', NBRcoeffVar);
+  });
+  
+  return summary;
+  
+};
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+// FUNCTION: water_mask
+// USE: Create a binary layer classifying pixels with and without water, snow/ice and wetland
+// PARAMETERS: 
+//  dataset_id = numerical dataset identifier
+//  feat_col = feature collection of buffered plot/site points (with coefficient of variation data) corresponding to dataset_id
+//  img_ref = reference image collection to define projection for land cover data
+// NOTES: Parameters are populated automatically within 1_proc_site_representativeness script
+// AUTHOR: Melissa Rose, NAU
+// LAST UPDATE: 9-13-2022
+// TO-DO:
+
+exports.water_mask = function(dataset_id, feat_col, ic_ref){
+ 
+  // Create a bounding box for entire study region
+  var bbox = ee.Geometry(feat_col.geometry().bounds());
+ 
+  // Import Sentinel-derived landcover classification (10m-resolution)
+  var landcov = ee.ImageCollection("ESA/WorldCover/v100").first();
+  landcov = ee.Image(landcov).clip(bbox); 
+
+  // Add classified image for study region to map
+  var visualization = {bands: ['Map']};
+
+  // Create binary mask for 'Snow and ice' (70) class
+  var snow_ice = landcov.eq(70).rename('Snow and ice');
+
+  // Create binary mask for 'Open water' (80) class
+  var water = landcov.eq(80).rename('Open water');
+
+  // Create binary mask for 'Herbaceous wetland' (90) class
+  var wetland = landcov.eq(90).rename('Herbaceous wetland');
+
+  // Combine all three mask into 3-band mask image
+  var newBands = ee.Image([water, wetland]);
+  var water_mask = snow_ice.addBands(newBands);
+
+  return water_mask;
+
+};
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+// FUNCTION: water_summary
+// USE: Summarize the presence of water pixels within plot/site buffered areas - # of pixels and fraction of pixels
+// PARAMETERS: 
+//  dataset_id = numerical dataset identifier
+//  feat_col = feature collection of buffered plot/site points (with coefficient of variation data) corresponding to dataset_id
+//  img = multi-band binary water mask image
+// NOTES: Parameters are populated automatically within 1_proc_site_representativeness script
+// AUTHOR: Melissa Rose, NAU
+// LAST UPDATE: 9-13-2022
+// TO-DO:
+
+exports.water_summary = function(dataset_id, feat_col, img){
+
+  // Count total number of pixels in each plot/site
+  var pixel_count = img.select(0).reduceRegions({
+    reducer: ee.Reducer.count(), 
+    collection: feat_col, 
+    scale: 10,
+  }); 
+
+  // Create single mask for all bands
+  // Output is a multi-band image with masks for water, snow/ice and wetland
+  // Converts from binary 1/0 mask to 1s and NAs so that the count reducer will work
+  var multiBandMask = img.eq(1);
+
+  // Count number of pixels in each band for each plot/site
+  // i.e. for each plot/site count the number of water, snow/ice and wetland pixels
+  var water_count = img.mask(multiBandMask).reduceRegions({
+    reducer: ee.Reducer.count(), 
+    collection:  pixel_count, 
+    scale: 10,
+  }); 
+
+  // Calculate the fraction of pixels in each band for each site/ plot
+  var water_fraction = water_count.map(function(feature){
+    var snow_pixel = ee.Number(feature.get('Snow and ice')); 
+    var water_pixel = ee.Number(feature.get('Open water'));
+    var wetland_pixel = ee.Number(feature.get('Herbaceous wetland'));
+    var total_pixel = ee.Number(feature.get('count'));
+    
+    var snow_fraction = ee.Number(snow_pixel.divide(total_pixel).float());
+    var water_fraction = ee.Number(water_pixel.divide(total_pixel).float()); 
+    var wetland_fraction = ee.Number(wetland_pixel.divide(total_pixel).float());
+
+    var water_feat = feature.set('total_pixel_count', total_pixel,
+                                 'snow_pixel_count', feature.get('Snow and ice'),   // renaming each band's count output
+                                 'water_pixel_count', feature.get('Open water'),   
+                                 'wetland_pixel_count', feature.get('Herbaceous wetland'),   
+                                 'snow_fraction', snow_fraction,   // creating new property for each band's relative percentage
+                                 'water_fraction', water_fraction, 
+                                 'wetland_fraction', wetland_fraction);
+    var water_feat_properties = water_feat.propertyNames(); // Get property names
+    var keep_properties = water_feat_properties.filter(ee.Filter.inList('item', ['Snow and ice', 'Open water', 'Herbaceous wetland', 'count']).not()); // Get list of properties to keep
+
+    return water_feat.select(keep_properties); // Remove unwanted properties 
+    
+  });
+
+  return water_fraction;
+  
+};
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+// FUNCTION: water_filt
+// USE: Summarize the presence of water pixels within plot/site buffered areas - # of pixels and fraction of pixels
+// PARAMETERS: 
+//  dataset_id = numerical dataset identifier
+//  feat_col = feature collection of buffered plot/site points (with coefficient of variation data) corresponding to dataset_id
+//  value = threshold of water pixels to use for filtering representative vs. non-representative plots/sites (unit is # of pixels)
+//  folder = Google Drive folder to export to 
+// NOTES: Parameters are populated automatically within 1_proc_site_representativeness script
+// AUTHOR: Melissa Rose, NAU
+// LAST UPDATE: 9-13-2022
+// TO-DO:
+
+exports.water_filt = function(dataset_id, feat_col, value, folder){
+  
+  // Assign each plot/site as 'representative' or 'non-representative'
+  var site_rep = feat_col.map(function(feature){
+    var water_count = ee.Number(feature.get('snow_pixel_count')).add(ee.Number(feature.get('water_pixel_count'))); // Get total number of water and snow/ice pixels
+    var water_rep = ee.Algorithms.If(water_count.lte(ee.Number(value)), 'representative', 'non-representative'); // If total number of water and snow/ice pixels is less than user specified threshold assign 'representative' otherwise assign 'non-representative'
+    return feature.set('representativeness', water_rep); // Create and populate 'representativeness' property
+  });
+
+  // Visualize
+  var subset_rep = site_rep.filter(ee.Filter.equals('representativeness', 'representative'));
+  var subset_nonrep = site_rep.filter(ee.Filter.equals('representativeness', 'non-representative'));
+  var empty = ee.Image().byte();
+  var site_rep_outline = empty.paint({featureCollection: subset_rep, color: 1, width: 1});
+  var site_nonrep_outline = empty.paint({featureCollection: subset_nonrep, color: 1, width: 1});
+
+  return site_rep;
+  
+};
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+// FUNCTION: export_rep
+// USE: Export the representativeness results
+// PARAMETERS: 
+//  dataset_id = numerical dataset identifier
+//  feat_col = feature collection of buffered plot/site points (with coefficient of variation data) corresponding to dataset_id
+//  folder = Google Drive folder to export to 
+// NOTES: Parameters are populated automatically within 1_proc_site_representativeness script
+// AUTHOR: Katie Orndahl, NAU
+// LAST UPDATE: 3-29-2023
+// TO-DO:
+
+exports.export_rep = function(dataset_id, feat_col, folder){
+  
+  // Export as .csv
+  Export.table.toDrive({
+    collection: feat_col,
+    description: dataset_id+'_gee_representativeness',
+    folder: folder, 
+    fileFormat: 'CSV'
+  });
+
+  // Export as .shp
+  Export.table.toDrive({
+    collection: feat_col,
+    description:dataset_id+'_gee_representativeness',
+    folder: folder, 
+    fileFormat: 'SHP'
+  });
+  
+  return feat_col;
+  
+};
+

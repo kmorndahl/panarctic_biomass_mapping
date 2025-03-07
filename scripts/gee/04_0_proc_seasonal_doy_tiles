@@ -1,0 +1,346 @@
+/*
+
+DESCRIPTION: Apply CCDC models to produce seasonal composites
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+- Cannot import into Python because temporalSegmentation module written in JavaScript
+- Start and end of the snowfree season DOY composites tend to be blocky due to the DOY restrictions associated with the MGRS tiles
+  - However, these restrictions are necessary to get good CCDC fits
+  - It does not appear that this blocky-ness impacts the modeled reflectance
+  - More from Matt: "Remember that spring and fall dates are further clipped by the absolute DOY filter, which is applied based on latitude. 
+    It excluded dates when the peak sun elevation is less than 40 degrees in spring, and less than 25 degrees in fall. 
+    Mainly this is to exclude some weird garbage observations that would otherwise creep in, especially but not entirely on north-facing shadowy slopes. 
+    These garbage observations are mostly undetected snow and/or deep shadows and 
+    including them in the CCDC fits tends to yield some noisy results for the spring and fall windows especially. 
+    Using the peak sun angle is a way to come up with a general rule that varies with latitude. 
+    But, I have seen some evidence (fairly lush 'spring' composites) that these thresholds are not working in some southern coastal areas. 
+    It is also common that it has not snowed yet by the time the fall window closes. 
+    But at that point the sun angle is so low that the shadows are long and signal to noise ratio is low."
+- Peak summer and other phenology DOY resources for comparison:
+  - https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14638
+  - https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020JG006094
+  - https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2486.2007.01529.x
+  - https://tc.copernicus.org/articles/12/3373/2018/
+  - https://iopscience.iop.org/article/10.1088/1748-9326/6/3/035502/pdf
+  - https://www.sciencedirect.com/science/article/pii/S0924271618303010
+  - https://www.cambridge.org/core/journals/annals-of-glaciology/article/vegetation-phenology-in-greenland-and-links-to-cryospheric-change/E5E1F5CE72E7A228B7C35B37D7B140C3
+  - https://link.springer.com/article/10.1186/1472-6785-7-9#Sec13
+- Finding an appropriate number of years/days to iterate over required some trial and error
+  - Settled on 8 years, 77 days, 616 total model fits
+  - Out of memory issues crop up when using over 700 model fits
+- Choosing 'previous' as the segmentFindStrategy prevents peak summer identification from being affected by disturbance
+- Index to use for determining peak summer greenness
+  - In general, EVI is probably better suited for this
+  - However, EVI is very prone to topographic illumination artifacts
+  - Because we are applying the topographic correction post-hoc, we need to use NDVI here
+  - Normalized differenced indices do not need to be topographically corrected
+  - References:
+    - https://www.sciencedirect.com/science/article/pii/S016819231830087X?casa_token=3RWQXv_WbtIAAAAA:YiK-weXtaIbQ-IADIdm0kqgJiixJXlRClT9D8PIQISA2ihuub3p6vzRLQsEIR3qmAmvGZ_z0jf8
+    - https://www.mdpi.com/2673-7418/3/1/12
+    - https://daac.ornl.gov/ABOVE/guides/Annual_Seasonality_greenness.html
+    - https://www.sciencedirect.com/science/article/pii/S0303243419312164
+    - https://www.sciencedirect.com/science/article/pii/S0034425714001011
+    - https://www.mdpi.com/2072-4292/12/14/2290
+- CCDC model fit band explanations
+ * tStart: The start date of each model segment.
+ * tEnd: The end date of each model segment.
+ * tBreak: The model break date if a change is detected.
+ * numObs: The number of observations used in each model segment.
+ * changeProb: A numeric value representing the multi-band change probability. 
+ * _coefs: The regression coefficients for each of the bands in the image collection. 
+ * _rmse: The model root-mean-square error for each segment and input band.  
+ * _magnitude: For segments with changes detected, this represents the normalized residuals during the change period.
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS -----
+
+var segmentFindStrategy = 'previous'; // Strategy to use for selecting CCDC segment when there is no segment for the specified date
+var peak_summer_index = 'NDVI'; // Index to use for determining peak summer greenness
+var ccdc_start_year = 1984;
+var ccdc_end_year = 2023;
+var start_MD = '06-15';
+var end_MD = '08-31';
+var map_year_start = ee.Number(ccdc_start_year).divide(5).ceil().multiply(5);
+var map_year_end = ee.Number(ccdc_end_year).divide(5).floor().multiply(5);
+var map_years = ee.List.sequence(map_year_start, map_year_end, 5);
+var start_snowfree_name = 'doy_p003';
+var end_snowfree_name = 'doy_p097';
+var extrapolateMaxDays = 120; // Number of days to extrapolate beyond the start and end of a CCDC segment, helps fill in gaps before the first segment, after the last segment, and between segments
+var clipping_method = 'tiles'; // Choose 'tiles' or 'calval' 
+var in_version = 'v20240207'; // Input version identifier
+var out_version = 'v20240207'; // Output version identifier
+var scale = 30;
+var out_path = 'projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/';
+var in_path = 'projects/arctic-biomass-mapping/assets/CCDC_tiles/';
+var ccdc_path = in_path + 'CCDC_C2_SR_' + clipping_method + '_'+ ccdc_start_year + '_' + ccdc_end_year + '_' + in_version;
+var doy_path = in_path + 'CCDC_C2_SR_' + clipping_method + '_'+ ccdc_start_year + '_' + ccdc_end_year + '_' + in_version + '_DOYs';
+var existing_path = out_path + 'seasonal_doys_' + clipping_method + '_'+ ccdc_start_year + '_' + ccdc_end_year + '_' + out_version;
+var utm_zone = ee.List.sequence(1, 60); // UTM zone as a list of numbers (e.g. [6, 12, 55]) or ee.List.sequence(1, 60), optional, but can use to further subset exported tiles; ee.List.sequence(1, 60) = do not subset by UTM zone -- NEW VERSION BASED ON ZONE NUMBER
+
+// 1.1 ----- EXISTING MODULES -----
+
+var temporalSegmentation = require('users/wiell/temporalSegmentation:temporalSegmentation');
+var batch = require('users/fitoprincipe/geetools:batch');
+
+// 1.2 ----- LOAD DATA -----
+
+var tiles_mgrs_s2 = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/tiles_mgrs_s2');
+var ccdc_fits = ee.ImageCollection(ccdc_path);
+var doy_fits = ee.ImageCollection(doy_path);
+
+// ========================================
+// 2. CREATE LISTS FOR PROCESSING =========
+// ========================================
+
+// 2.0 ----- CREATE LIST OF TILES ACROSS WHICH TO MODEL REFLECTANCE -----
+
+// Load existing seasonal DOY image collection
+var existing = ee.ImageCollection(existing_path);
+var existing_tiles = existing.aggregate_array("system:index");
+
+// Filter MGRS tiles
+var tiles_mgrs_utm = tiles_mgrs_s2.filter(ee.Filter.inList('zone', utm_zone)); 
+var tile_list = tiles_mgrs_utm.toList(60000).map(function(f) {return ee.Feature(f).getString('name')});
+
+// Tidy tile list
+tile_list = tile_list.map(function(tile_name){return ee.String(tile_name).replace('^', 'CCDC_C2_' + ccdc_start_year + '_' + ccdc_end_year + '_').replace('$', '_' + in_version)});
+
+// Filter CCDC model images by UTM zone
+ccdc_fits = ccdc_fits.filter(ee.Filter.inList('system:index', tile_list));
+
+// Filter CCDC model images, removing if seasonal DOY image already exported
+ccdc_fits = ccdc_fits.filter(ee.Filter.inList('system:index', existing_tiles).not());
+print('Number of CCDC model fit tiles', ccdc_fits.size());
+print('CCDC model fit tile names', ccdc_fits.aggregate_array('system:index'));
+print('CCDC model fits', ccdc_fits);
+
+// 2.1 ----- CREATE LIST OF DATES ACROSS WHICH TO MODEL REFLECTANCE -----
+
+// Create function to use input start/end year and start/end month/day to produce a list of dates
+// Results is a list of lists:
+//  - outer list = years
+//  - innter lists = dates within years
+var create_datelist = function(year){
+  
+  var date_start = ee.Number(year).format('%.0f').cat('-').cat(start_MD);
+  var date_end = ee.Number(year).format('%.0f').cat('-').cat(end_MD);
+  var n_days = ee.Date(date_end).difference(ee.Date(date_start), 'day').round();
+  var days = ee.List.sequence(0, n_days, 1);
+  var calc_dates = function(n){
+    return ee.Date(date_start).advance(n, 'day');
+  };
+  
+  var dates = days.map(calc_dates);
+
+  return dates;
+  
+};
+
+var date_list = map_years.map(create_datelist);
+print('The list of years over which to model reflectance is:', map_years);
+print('The list of dates over which to model reflenctance is:', date_list);
+
+// ========================================
+// 3. CREATE PROCESSING FUNCTIONS =========
+// ========================================
+
+// 3.0 ----- PEAK SUMMER COMPOSITE FUNCTION -----
+// Create function to loop over years, and dates within years and model greenness (using spectral index) using CCDC coefficients
+
+var model_greenness = function(segments){
+  
+  // Wrap so we can explicitly specify segements created for the current MGRS tile
+  var wrap = function(list){
+  
+    // Map over list of dates for current year
+    var fits = ee.List(list).map(function(date){
+      
+      // Grab segment to use for peak summer calculation
+      var segment = segments.findByDate(ee.Date(date), segmentFindStrategy); // Expects ee.Date object
+      
+      // Produced modeled reflectance for current date
+      var fit = segment.slice({date: ee.Date(date), harmonics: 3, extrapolateMaxDays: extrapolateMaxDays}); // t: use fractional date, date: use ee.Date object
+      
+      // Convert date to day of year
+      var doy = ee.Date(date).getRelative('day', 'year').add(1);
+      
+      // Add day-of-year band
+      // fit = fit.addBands(ee.Image.constant(ee.Number(doy)).toUint16().rename('doy')); // fit is unbounded so 'doy' band added across entire globe, possible memory problem?
+      fit = fit.addBands(ee.Image.constant(ee.Number(doy)).updateMask(fit.select(0).mask()).toUint16().rename('doy'));  // Mask 'doy' band to match fit object -- not sure if this actually reduces memory use...?
+      
+      // Return modeled reflectance/indices for current DATE
+      return fit;
+        
+    });
+    
+    // Aggregate fits across dates into an image collection
+    fits = ee.ImageCollection(fits);
+    
+    // Get maximum index and associated DOY across all dates within the current year
+    var max_greenness = fits.map(function(img){return img.select([peak_summer_index, 'doy'])}).qualityMosaic(peak_summer_index);
+    
+    // Return maximum index and associated DOY across all dates within the current YEAR
+    return max_greenness;
+  
+  };
+  
+  return wrap;
+  
+};
+
+// 3.1 ----- SEASONAL DOY FUNCTION -----
+// Create function to loop CCDC fit images (each corresponds to a MGRS tile) and:
+// apply peak summer composite function to determine peak summer DOY for each year,
+// composite annual peak summer DOYs to get final peak summer DOY,
+// get start and end snow-free DOYs (calculated in using Python script 3_0_proc_ccdc),
+// and calculate early and late summer DOYs
+
+// MAP OVER CCDC FIT IMAGES (EACH CORRESPONDS TO A MGRS TILE)
+var season_doys_tiles = function(ccdc_img){
+
+  // Get current tile name
+  var tile_name = ee.String(ccdc_img.id());
+
+  // Get footprint from CCDC fit image
+  var footprint = ccdc_img.geometry();
+  
+  // Create CCDC segments for current CCDC fit image (corresponds to a MGRS tile)
+  // Arranges the data to make it easier to work with
+  // Attributes several functions to the resulting object
+  var ccdc_segments = temporalSegmentation.Segments(ccdc_img, 1);  // 1 = provide dates as fractional years
+
+  // Get maximum index and associated DOY across all years, one image per year
+  var peak_summer_ic = ee.ImageCollection(date_list.map(model_greenness(ccdc_segments)));
+  
+  // Calculate median of annual max index composites 
+  var peak_summer = peak_summer_ic.median().int16();
+
+  // Select DOY only, rename to indicate seasonal percentile
+  peak_summer = peak_summer.select('doy').rename('doy_peakSummer');
+  
+  // Get start and end of snowfree
+  var doy_img = doy_fits.filter(ee.Filter.eq('system:index', tile_name.replace('$', '_DOYs'))).first();
+  var start_snowfree = doy_img.select(start_snowfree_name).rename('doy_startSnowfree');
+  var end_snowfree = doy_img.select(end_snowfree_name).rename('doy_endSnowfree'); 
+
+  // Break into two periods: start of snowfree season to peak, peak to end of snowfree season
+  var start_end_periods = peak_summer.subtract(start_snowfree).rename('days_startToPeak')
+    .addBands(end_snowfree.subtract(peak_summer).rename('days_peakToEnd'));
+
+  // Calculate early summer (halfway between start of snowfree season and peak summer) and late summer (halfway between peak summer and end of snowfree season)
+  var doy_seasons = start_snowfree.add(start_end_periods.select('days_startToPeak').divide(2)).rename('earlySummer')
+    .addBands(peak_summer.add(start_end_periods.select('days_peakToEnd').divide(2)).rename('lateSummer'));
+  var early_summer = doy_seasons.select('earlySummer').rename('doy_earlySummer');
+  var late_summer = doy_seasons.select('lateSummer').rename('doy_lateSummer');
+
+  // Combine
+  var seasonal_doys = start_snowfree.addBands(early_summer)
+                                    .addBands(peak_summer)
+                                    .addBands(late_summer)
+                                    .addBands(end_snowfree);
+
+  return seasonal_doys.set('system:footprint', footprint)
+                      .set('id', tile_name.replace(in_version, out_version))
+                      .uint16();
+
+};
+
+// ===================================================
+// 4. PROCESS TO PRODUCE SEASONAL DOY IMAGES =========
+// ===================================================
+
+// Subset CCDC fit images to only index
+// Confirmed that modeled fits are identical to fits produced across full CCDC fit images
+ccdc_fits = ccdc_fits.map(function(img){
+  var img_metadata = img.select(['tStart', 'tEnd', 'tBreak', 'numObs', 'changeProb']);
+  var img_greenness = img.select('.*' + peak_summer_index + '.*');
+  return img_metadata.addBands(img_greenness);
+});
+
+// Map over CCDC fit images
+var seasonal_doys_final = ccdc_fits.map(season_doys_tiles);
+print('Final seasonal DOY composites, example MGRS tile output:', seasonal_doys_final.first());
+Map.addLayer(seasonal_doys_final.mosaic(), null, ' Seasonal DOYs');
+
+// ===================
+// 5. EXPORT =========
+// ===================
+// https://gis.stackexchange.com/questions/412094/computedobject-error-user-memory-limit-exceeded-when-exporting-small-extract
+
+// Get list of image IDs
+var export_ids = seasonal_doys_final
+  .aggregate_array('system:index')
+  .getInfo();
+  
+// Export each image to image collection in assets
+for (var j = 0; j < export_ids.length; j++) {
+  var id = export_ids[j];
+  var img = seasonal_doys_final.filter(ee.Filter.eq("system:index", id)).first();
+  var tile_name = ee.String(id).replace('CCDC_C2_' + ccdc_start_year + '_' + ccdc_end_year + '_', '').replace('_' + in_version, '');
+  var tile = tiles_mgrs_s2.filterMetadata('name','equals', tile_name).first();
+  var epsg = tile.getString('epsg').getInfo();
+
+  Export.image.toAsset({
+    image: img,
+    description: id,
+    assetId: out_path + 'seasonal_doys_' + clipping_method + '_'+ ccdc_start_year + '_' + ccdc_end_year + '_' + out_version + '/' + id,
+    region: img.geometry(),
+    crs: 'EPSG:' + epsg,
+    scale: scale,
+    maxPixels: 1e13  
+  });
+}
+
+throw('stop');
+
+// ===============================================
+// 6. BATCH RUN TASKS IN GEE CODE EDITOR =========
+// ===============================================
+
+// Batch run tasks within the GEE code editor
+// Use the code here under 'Free version': https://github.com/gee-hydro/gee_monkey
+// 1) Run script to generate tasks, make sure the top of the task pane no longer says 'UPDATING...' - this indicates all tasks have generated
+// 2) Press F12 to bring up the javascript console
+// 3) Click the 'console' tab if it is not already open
+// 4) Scroll to the bottom where the blue '>' indicates you can enter code
+// 5) Paste the 'runTaskList' function and hit enter
+// 6) Paste 'runTaskList();' and hit enter
+// 7) Wait for the run dialog boxes to pop up (a dark black border indicates several overlapping dialog boxes which is what we want)
+// 8) Paste the 'confirmAll' function and hit enter
+// 9) Paste 'confirmAll();' and hit enter
+// 10) Be patient as the tasks are confirmed, do not close the browser window, eventually the running tasks will show up in the
+
+// function runTaskList(){
+//     // var tasklist = document.getElementsByClassName('task local type-EXPORT_IMAGE awaiting-user-config');
+//     // for (var i = 0; i < tasklist.length; i++)
+//     //         tasklist[i].getElementsByClassName('run-button')[0].click();
+//     $$('.run-button' ,$$('ee-task-pane')[0].shadowRoot).forEach(function(e) {
+//         e.click();
+//     })
+// }
+
+// function confirmAll() {
+//     // var ok = document.getElementsByClassName('goog-buttonset-default goog-buttonset-action');
+//     // for (var i = 0; i < ok.length; i++)
+//     //     ok[i].click();
+//     $$('ee-table-config-dialog, ee-image-config-dialog').forEach(function(e) {
+//         var eeDialog = $$('ee-dialog', e.shadowRoot)[0]
+//         var paperDialog = $$('paper-dialog', eeDialog.shadowRoot)[0]
+//         $$('.ok-button', paperDialog)[0].click()
+//     })
+// }
+
+// runTaskList();
+// confirmAll();
+
+

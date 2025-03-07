@@ -1,0 +1,92 @@
+/*
+
+DESCRIPTION: Create ecoregion predictor
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS ----
+
+var crs = 'EPSG:3571'; // Universal CRS for reprojecting predictors
+var scale = 30; // Scale for reprojecting predictors
+
+// 1.1 ----- READ IN DATA ----
+
+var ecoregion = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/ecoregions_resolve_2017_45n');
+
+// 1.2 ----- TIDY DATA ----
+
+// Tidy ecoregion names
+ecoregion = ecoregion.map(function(feat){return feat.set({'ECO_NAME': ee.String(feat.get('ECO_NAME'))
+                                                                              .replace(' ', '', 'g')
+                                                                              .replace('[.]', '', 'g')
+                                                                              .replace('-', '', 'g')
+})});
+
+print('Ecoregion feature collection:', ecoregion);
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- CONVERT ECOREGION VECTOR FILE TO IMAGE ----
+
+var ecoregion_img = ecoregion.reduceToImage({
+  properties: ['ECO_ID'],
+  reducer: ee.Reducer.first()
+});
+
+ecoregion_img = ecoregion_img.unmask(ee.Number(num_ecoregion).add(1)); // All masked areas are converted to 52 to represent 'ecoregion_other'
+
+// 2.1 ----- GET ECOREGION NAMES AND IDs ----
+
+// Get ecoregion names and IDs from featureCollection
+var ecoregion_names = ecoregion.aggregate_array('ECO_NAME');
+var ecoregion_nums = ecoregion.aggregate_array('ECO_ID');
+var num_ecoregion = 846; // https://www.arcgis.com/home/item.html?id=37ea320eebb647c6838c23f72abae5ef
+
+// Add 'other' class
+ecoregion_nums = ecoregion_nums.cat([ee.Number(num_ecoregion).add(1)]); // Create list of ecoregion numbers, including unique number for 'ecoregion_other'
+ecoregion_names = ecoregion_names.cat(['other']).map(function(name){return ee.String('ecoregion_').cat(name)}); // Create list of ecoregion names, including unique name for 'ecoregion_other'
+print('Ecoregion names:', ecoregion_names);
+print('Ecoregion numbers:', ecoregion_nums);
+
+// 2.2 ----- CONVERT SINGLE BAND ECOREGION IMAGE INTO MULT-BAND BINARY IMAGE ----
+
+var ecoregion_final = ee.ImageCollection(ecoregion_nums.map(function(num){
+  return ecoregion_img.eq(ee.Image.constant(num)).unmask(0);
+}));
+
+ecoregion_final = ecoregion_final
+  .toBands()
+  .rename(ecoregion_names)
+  .setDefaultProjection({crs: predictors_crs, scale: predictors_scale})
+  .uint8();
+
+print(ecoregion_final);
+Map.addLayer(ecoregion_final, null, 'Ecoregions');
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.image.toAsset({
+  image: ecoregion_final, 
+  description: 'ecoregions_img',
+  assetId: 'projects/arctic-biomass-mapping/assets/predictors/ecoregions_img',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), // Specify as rectangle to avoid gaps in output 
+  scale: scale, 
+  crs: crs, 
+  maxPixels: 1e13
+});
+

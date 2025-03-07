@@ -1,0 +1,295 @@
+/*
+
+DESCRIPTION: Miscellaneous functions
+
+FUNCTION LIST:
+  ccdc_coefs_to_multiband_img
+  calcAnnualSpectral
+  calcChangeRate
+  taskErrors
+  createCoveringGrid
+  dateConversion
+  
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: ccdc_coefs_to_multiband_img
+// USE: Convert an image with image arrays for CCDC model coefficient to a single image where each band is an individual spectral bands's coefficient
+// AUTHOR: Katie Orndahl
+
+var ccdc_coefs_to_multiband_img = function(img){
+
+  var n = img.bandNames().length(); // Get number of bands in image
+  
+  // Loop over bands
+  var coef_ic = ee.List.sequence(0, n.subtract(1)).map(function(i){
+    
+    var band = img.select([i]).regexpRename('coefs', ''); // Get current band
+    var band_name = band.bandNames().get(0); // Get current band name
+    var coef_img = band.arrayFlatten([["int", "slp", "cos", "sin", "cos2", "sin2", "cos3", "sin3"]]) // Flatten array and rename appropriately
+                       .regexpRename('^', 'ccdc_')
+                       .regexpRename('^', band_name);
+    
+    return coef_img;
+  
+  });
+  
+  // Convert image collection to single image, rename and export
+  return ee.ImageCollection(coef_ic).toBands().regexpRename('^[^_]*_', '');
+  
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: calcAnnualSpectral
+// USE: Calculate annual summaries (mean, median, min, max, range) for modeled reflectance data
+// PARAMETERS: 
+//  spectral = modeled seasonal reflectance data
+//  doys = seasonal DOY data
+//  band = spectral band/index 
+// AUTHOR: Katie Orndahl
+
+var calcAnnualSpectral = function(spectral, doys, band) {
+  
+  var regex = '.*' + band + '.*';
+  var annual_spectral = spectral.select(regex);
+  
+  // Get annual summaries
+  var mean = annual_spectral.reduce(ee.Reducer.mean()).rename('spectral_' + band + '_annualMean');
+  var median = annual_spectral.reduce(ee.Reducer.median()).rename('spectral_' + band + '_annualMedian');
+  var minmax = annual_spectral.reduce(ee.Reducer.minMax()).rename('spectral_' + band + '_min', 'spectral_' + band + '_max');
+  var range = minmax.select('spectral_' + band + '_max').subtract(minmax.select('spectral_' + band + '_min')).rename('spectral_' + band + '_annualRange');
+  
+  // Get change rates
+  var change_rates = calcChangeRate(annual_spectral, band, doys, 'startSnowfree', 'earlySummer')
+    .addBands(calcChangeRate(annual_spectral, band, doys, 'earlySummer', 'peakSummer'))
+    .addBands(calcChangeRate(annual_spectral, band, doys, 'peakSummer', 'lateSummer'))
+    .addBands(calcChangeRate(annual_spectral, band, doys, 'lateSummer', 'endSnowfree'));
+    
+  return annual_spectral.addBands(mean)
+                        .addBands(median)
+                        .addBands(range)
+                        .addBands(change_rates);
+
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: calcChangeRate
+// USE: Calculate rate of modeled reflectance change between seasons
+// PARAMETERS: 
+//  annual_spectral = modeled seasonal reflectance data
+//  band = spectral band/index 
+//  doys = seasonal DOY data
+//  start = start season
+//  end = end season
+// NOTES: Called within calcAnnualSpectral, parameters populated there
+// AUTHOR: Katie Orndahl
+
+var calcChangeRate = function(annual_spectral, band, doys, start, end) {
+  
+  var doy_start = doys.select('doy_' + start);
+  var doy_end = doys.select('doy_' + end);
+  
+  var doy_diff = doy_end.subtract(doy_start);
+  
+  var spectral_start = annual_spectral.select('spectral_' + band + '_' + start);
+  var spectral_end = annual_spectral.select('spectral_' + band + '_' + end);
+
+  var spectral_diff = spectral_end.subtract(spectral_start);
+  
+  start = start[0].toUpperCase() + ee.String(start).replace('[a-z]', '', 'g').getInfo();
+  end = end[0].toUpperCase() + ee.String(end).replace('[a-z]', '', 'g').getInfo();
+
+  return spectral_diff.divide(doy_diff).rename('spectral_' + band + '_change' + start + end);
+  
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: taskErrors
+// USE: Find tasks that errored out
+// PARAMETERS: 
+//  cancelled = true/false - include tasks that were cancelled?
+//  overwrite = true/false - include tasks with overwrite errors (i.e. file already existed)?
+// AUTHOR: Katie Orndahl
+
+var taskErrors = function(cancelled, overwrite) {
+  
+  // Get list of tasks
+  var tasks = ee.List(ee.data.listOperations(5000));
+  
+  // Format and convert to feature collection
+  var tasks_fc = ee.FeatureCollection(tasks.map(function(item){
+    var feat = ee.Feature(null, ee.Feature(null, item).get('fa'));
+    return feat;
+  }));
+  
+  // Filter to get tasks that errored out
+  var tasks_err = tasks_fc.filter(ee.Filter.notNull(['error']));
+
+  // Extract metadata
+  var tasks_err_metadata = tasks_err.map(function(feat){
+    var error = ee.Dictionary(ee.Feature(null, feat.get('error')).get('fa'));
+    var metadata = ee.Dictionary(feat.get('metadata'));
+    return ee.Feature(null, error.combine(metadata));
+  });
+  
+  // Filter
+  var tasks_err_fc = ee.Algorithms.If(cancelled, 
+                                      tasks_err_metadata,
+                                      tasks_err_metadata.filter(ee.Filter.eq('state', 'FAILED')));
+  tasks_err_fc = ee.Algorithms.If(overwrite, 
+                                  tasks_err_fc,
+                                  tasks_err_fc.filter(ee.Filter.stringContains('message', 'Cannot overwrite asset').not()));
+                                  
+  return tasks_err_fc;
+  
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: createCoveringGrid
+// USE: Create covering grid over a list of MGRS tiles, used when tile will not compute without errors
+// PARAMETERS: 
+//  tile_list = list of names of tiles over which to create covering grid
+//  grid_dimension = dimensions for covering grid, in m - choose single number it will be used to create square grid
+//  crs = crs for output feature collection
+// AUTHOR: Katie Orndahl
+
+var createCoveringGrid = function(tile_list, grid_dimension, crs) {
+  
+  // Import MGRS tiles
+  var tiles = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/tiles_mgrs_s2_arctic_final');
+  
+  // Get tiles
+  var grid_tiles = tiles.filter(ee.Filter.inList('name', tile_list));
+  
+  // Create covering grid
+  var grid_fc = problem_tiles.map(function(feat){
+    var grid = feat.geometry().coveringGrid(crs, grid_dimension);
+    grid = grid.map(function(grid_feat){return grid_feat.set('name', feat.get('name'))}); // Retain tile name
+    return grid;
+  }).flatten(); // Flatten collection of collections
+  
+  // Create list of unique IDs
+  var id_lst = ee.List.sequence(1, grid_fc.size(), 1);
+  
+  // Apply unique IDs
+  grid_fc = ee.FeatureCollection(id_lst.map(function(id){
+    return ee.Feature(grid_fc.toList(5000).get(ee.Number(id).subtract(1))).set('ID', id);
+  }));
+  
+  return grid_fc;
+  
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: dateConversion
+// USE: utility functions to convert between date formats
+// AUTHOR: Daniel Wiell
+
+var J_DAYS = 0;
+var FRACTIONAL_YEARS = 1;
+var UNIX_TIME_MILLIS = 2;
+
+var dateConversion = {
+  
+  // Converts provided date to the date format specified when constructing the segments.
+  // Returns an ee.Number if date is an ee.Date, otherwise a JavaScript number.
+  toT: function (date, dateFormat) {
+    if (date instanceof ee.Date) {
+      date = ee.Date(date)
+      switch(dateFormat) {
+        case J_DAYS:
+          var epochDay = 719529
+          return date.millis().divide(1000).divide(3600).divide(24).add(epochDay)
+        case FRACTIONAL_YEARS:
+          return date.get('year').add(date.getFraction('year'))
+        case UNIX_TIME_MILLIS:
+          return date.millis()
+        default:
+          throw Error('Only dateFormat 0 (jdate), 1 (fractional years), and 2 (unix seconds) is supported')
+      }
+    } else {
+      date = new Date(date)
+      switch(dateFormat) {
+        case 0: // jdate
+          var epochDay = 719529
+          return date.getTime() / 1000 / 3600 / 24 + epochDay
+        case 1: // fractional years
+          var firstOfYear = new Date(Date.UTC(date.getFullYear(), 0, 1, 0, 0, 0))
+          var firstOfNextYear = new Date(Date.UTC(date.getFullYear() + 1, 0, 1, 0, 0, 0))
+          var fraction = (date - firstOfYear) / (firstOfNextYear - firstOfYear)
+          return date.getFullYear() + fraction
+        case 2: // unix seconds
+          return date.getTime()
+        default:
+          throw Error('Only dateFormat 0 (jdate), 1 (fractional years), and 2 (unix seconds) is supported')
+      }
+    }
+  },
+  
+  // Converts provided date in the date format specified when constructing the segments to a date.
+  // Returns an ee.Date.
+  fromT: function (t, dateFormat) {
+    t = ee.Number(t)
+    switch(dateFormat) {
+      case J_DAYS:
+        var epochDay = 719529
+        return ee.Date(ee.Number(t.subtract(epochDay).multiply(1000).multiply(3600).multiply(24)))
+        case FRACTIONAL_YEARS:
+          var firstOfYear = ee.Date.fromYMD(t.floor(), 1, 1)
+          var firstOfNextYear = firstOfYear.advance(1, 'year')
+          var daysInYear = firstOfNextYear.difference(firstOfYear, 'day')
+          var dayOfYear = daysInYear.multiply(t.mod(1)).floor()
+          return firstOfYear.advance(dayOfYear, 'day')
+        case UNIX_TIME_MILLIS:
+          return ee.Date(t)
+      default:
+        throw Error('Only dateFormat 0 (jdate), 1 (fractional years), and 2 (unix seconds) is supported')
+    }
+  },
+  
+  days: function (t1, t2, dateFormat) {
+    var diff = t2.subtract(t1)
+    switch(dateFormat) {
+      case J_DAYS:
+          return diff
+      case FRACTIONAL_YEARS:
+        return diff.multiply(365).round()
+      case UNIX_TIME_MILLIS:
+        return diff.divide(1000*3600*24).round()
+      default:
+        throw Error('Only dateFormat 0 (jdate), 1 (fractional years), and 2 (unix seconds) is supported')
+    }
+  }
+}
+
+exports = {
+  ccdc_coefs_to_multiband_img: ccdc_coefs_to_multiband_img,
+  calcAnnualSpectral: calcAnnualSpectral,
+  calcChangeRate: calcChangeRate,
+  taskErrors: taskErrors,
+  createCoveringGrid: createCoveringGrid,
+  dateConversion: dateConversion
+};

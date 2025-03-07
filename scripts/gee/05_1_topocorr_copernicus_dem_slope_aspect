@@ -1,0 +1,82 @@
+/*
+
+DESCRIPTION: Derive slope image from DEM -- saves compute in later scripts
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS -----
+
+var crs = 'EPSG:3857'; // CRS of Copernicus DEM
+var scale = 30;
+
+// 1.1 ----- READ IN DATA -----
+
+// Copernicus DEM, 30 m resolution
+// Need to reproject DEM to calculate slope:
+// https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30
+// https://groups.google.com/g/google-earth-engine-developers/c/KwKvcS_3QzI/m/pqLdorsqCQAJ
+var dem = ee.ImageCollection('COPERNICUS/DEM/GLO30')
+            .mosaic()
+            .setDefaultProjection(crs, null, scale)
+            .select('DEM')
+            .rename('elevation');
+
+// ROI    
+var arctic_poly = ee.FeatureCollection("projects/arctic-biomass-mapping/assets/ROIs/arctic_oroarctic_coast_buffer_laea_final");
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- SMOOTH DEM -----
+
+// Smooth the DEM using a low-pass kernel
+// reduceNeighborhood is more efficient, see here: https://groups.google.com/g/google-earth-engine-developers/c/sfvZlGQg5yw/m/lgvKV0b0BQAJ
+var boxcar = ee.Kernel.square({radius: 3, units: 'pixels', normalize: true});
+var dem_s = ee.Image(dem).reduceNeighborhood(ee.Reducer.mean(), boxcar); // Confirmed this produces identical results to .convolve()
+
+// 2.1 ----- CREATE TERRAIN LAYERS -----
+
+var slp = ee.Terrain.slope(dem_s)
+                    .rename('slope')
+                    .clip(ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 10, 45, -180, 45], null, false));
+
+var asp = ee.Terrain.aspect(dem_s)
+                    .rename('aspect')
+                    .clip(ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 10, 45, -180, 45], null, false));
+                    
+print('Slope', slp);
+print('Aspect', asp);
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.image.toAsset({
+  image: slp.clip(arctic_poly),
+  description: 'copernicus_dem_slope_clipped', 
+  assetId: 'projects/arctic-biomass-mapping/assets/predictors/copernicus_dem_slope_clipped', 
+  scale: scale, 
+  crs: crs,
+  maxPixels: 1e13
+});
+
+Export.image.toAsset({
+  image: asp.clip(arctic_poly),
+  description: 'copernicus_dem_aspect_clipped', 
+  assetId: 'projects/arctic-biomass-mapping/assets/predictors/copernicus_dem_aspect_clipped', 
+  scale: scale, 
+  crs: crs,
+  maxPixels: 1e13
+});

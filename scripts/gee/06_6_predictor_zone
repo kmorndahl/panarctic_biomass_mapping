@@ -1,0 +1,70 @@
+/*
+
+DESCRIPTION: Create zone predictor
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS -----
+
+var crs = 'EPSG:3571';
+var scale = 30;
+
+// 1.1 ----- READ IN DATA -----
+
+var zones = ee.FeatureCollection("projects/arctic-biomass-mapping/assets/ROIs/zones_with_subarctic");
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// Tidy zones
+zones = zones.map(function(feat){return feat.set({'FIRST_zone': ee.String(feat.get('FIRST_zone'))
+                                                                              .replace(' ', '', 'g')})});
+                                                                              
+// Convert zones to image
+var zones_img = zones.reduceToImage({
+  properties: ['dsl'],
+  reducer: ee.Reducer.first()
+});
+
+// Add 'other' category
+zones_img = zones_img.unmask(5); // All masked areas are converted to 5 to represent 'zone_3_other'
+
+// Convert single band zone image to multi-band binary zone image
+var zone_nums = ee.List.sequence(1,5,1);
+var zones_final = ee.ImageCollection(zone_nums.map(function(num){
+  return zones_img.eq(ee.Image.constant(num)).unmask(0);
+}));
+zones_final = zones_final.toBands()
+                         .rename(['zone_3_HighArctic', 'zone_3_LowArctic', 'zone_3_OroArctic', 'zone_3_SubArctic', 'zone_3_other']) // Remove prefixes added by 'toBands()'
+                         .setDefaultProjection({crs: crs, scale: scale});
+
+// Report
+print('Bioclimate Zones', zones_final);
+Map.addLayer(zones_final, null, 'Bioclimate Zones');
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.image.toAsset({
+  image: zones_final, 
+  description: 'zones_img',
+  assetId: 'projects/arctic-biomass-mapping/assets/predictors/zones_img',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), // Specify as rectangle to avoid gaps in output 
+  scale: scale, 
+  crs: crs, 
+  maxPixels: 1e13
+});
+

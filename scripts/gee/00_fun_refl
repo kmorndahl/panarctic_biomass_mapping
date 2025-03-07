@@ -1,0 +1,145 @@
+/*
+
+DESCRIPTION: Functions to work with CCDC model fits and modeled reflectance data
+
+FUNCTION LIST:
+  fitMapT
+  fitT
+  NDVIslope
+  calculateTexture
+  calculateTimeSinceBreak
+
+AUTHOR: Katie Orndahl, Matt Macander
+DATE:
+
+NOTES:
+
+TO-DO:
+
+*/
+
+var fun_misc = require('users/loganberner/nasa_arctic_biomass:0_fun_misc');
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: fitMapT
+// USE: Model reflectance over a DOY image, and map
+// PARAMETERS: 
+//  doyRaster = DOY image over which to produce modeled reflectance
+//  year = year for which to produce modeled reflectance
+//  segment = CCDC segment
+//  tag = Map suffix
+//  extrapolateMaxDays = Number of days to extrapolate beyond the start and end of a CCDC segment, helps fill in gaps before the first segment, after the last segment, and between segments
+//  shown = Show on map?
+// AUTHOR: Matt Macander
+// LAST UPDATE: 11-10-2024
+
+var fitMapT = function(doyRaster, year, segment, tag, extrapolateMaxDays, shown) {
+  var t = ee.Image(year).add(doyRaster.divide(365.25));  // Combine year and DOY to specify exact date (fractional year)
+  var fit = segment.slice({t: t, harmonics: 3, extrapolateMaxDays: extrapolateMaxDays});//, extrapolateMaxDays: 120});
+  Map.addLayer(fit, visParams, 'fit ' + tag, shown);
+  return(fit);
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: fitT
+// USE: Model reflectance over a DOY image
+// PARAMETERS: 
+//  doyRaster = DOY image over which to produce modeled reflectance
+//  year = year for which to produce modeled reflectance
+//  segment = CCDC segment
+//  extrapolateMaxDays = Number of days to extrapolate beyond the start and end of a CCDC segment, helps fill in gaps before the first segment, after the last segment, and between segments
+// AUTHOR: Matt Macander
+// LAST UPDATE: 11-10-2024
+
+var fitT = function(doyRaster, year, segment, extrapolateMaxDays) {
+  var t = ee.Image(year).add(doyRaster.divide(365.25)); // Combine year and DOY to specify exact date (fractional year)
+  var fit = segment.slice({t: t, harmonics: 3, extrapolateMaxDays: extrapolateMaxDays});//, extrapolateMaxDays: 120});
+  return(fit);
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: NDVIslope
+// USE: Calculate NDVI slope over the current CCDC segment
+// PARAMETERS: 
+//  segment = CCDC segment
+// AUTHOR: Kathleen Orndahl
+// LAST UPDATE: 11-10-2024
+
+var NDVIslope = function(segment, extrapolateMaxDays){
+  var segment_start = segment.toImage().select('tStart'); // Get segment start day
+  var segment_end = segment.toImage().select('tEnd'); // Get segment end day
+  var segment_length = segment_end.subtract(segment_start).multiply(365.25).rename('tLength_days'); // Calculate length of segment in days
+  var segment_start_fit = segment.slice({t: segment_start, harmonics: 3, extrapolateMaxDays: extrapolateMaxDays}); // Model reflectance for segment start day
+  var segment_end_fit = segment.slice({t: segment_end, harmonics: 3, extrapolateMaxDays: extrapolateMaxDays}); // Model reflectance for segment end day
+  var slope = segment_end_fit.select('NDVI').subtract(segment_start_fit.select('NDVI')) // Calculate change in NDVI
+                                          .divide(segment_length) // Divide by segment length (in days) to get change in NDVI per day
+                                          .multiply(10000) // Multiply by 10,000 for ease of number storage
+                                          .rename('ccdc_NDVIslope10000'); // Rename 
+  return(slope);
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: calculateTexture
+// USE: Calculate NDVI slope over the current CCDC segment
+// PARAMETERS: 
+//  img = modeled seasonal reflectance image
+//  texture_radius = radius (in m) to use for calculating texture
+//  texture_bands = spectral band/index to use for calculating texture
+//  texture_metrics = type of texture metric to calculate
+//  crs = output crs
+//  scale = output scale
+// AUTHOR: Kathleen Orndahl
+// LAST UPDATE: 11-10-2024
+
+var calculateTexture = function(img, texture_radius, texture_bands, texture_metrics, crs, scale){
+  var kernel = ee.Kernel.square({radius: texture_radius});
+  var txt = img.select(texture_bands) // Select bands to calculate texture on
+                               .setDefaultProjection({crs: crs, scale: scale}) // Set projection to ensure texture analysis is done at 30 m scale
+                               .unitScale(-10000, 10000).multiply(255).toByte() // Scale to 8 bit integer
+                               .glcmTexture({kernel: kernel, // Calculate texture
+                                             average: true})
+                               .select(texture_metrics)
+                               .regexpRename('spectral_', '')
+                               .regexpRename(ee.String(texture_metrics[0]).replace('[.][*]', ''), '')
+                               .regexpRename('^', 'texture_');
+  return(txt);
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+// FUNCTION: calculateTimeSinceBreak
+// USE: Calculate time since segment start
+// PARAMETERS: 
+//  segment = CCDC segment
+//  date = date (typically, date of field data collection)
+// AUTHOR: Kathleen Orndahl
+// LAST UPDATE: 11-10-2024
+
+var calculateTimeSinceBreak = function(segment, date){
+  var dateT = fun_misc.dateConversion.toT(date, 1); // Convert date to fractional year
+  var segment_start = segment.toImage().select('tStart'); // Get date of start of segment, as fractional year
+  var time_since_break = ee.Image.constant(dateT).subtract(segment_start); // Calculate time since beginning of segment (i.e. since last break/disturbance), in fractional years
+  return(time_since_break);
+};
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+exports = {
+  fitMapT: fitMapT,
+  fitT: fitT,
+  NDVIslope: NDVIslope,
+  calculateTexture: calculateTexture,
+  calculateTimeSinceBreak: calculateTimeSinceBreak
+};

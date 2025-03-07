@@ -1,0 +1,5 @@
+GDD0
+
+bin cutoff: 1810
+percent excluded: 0.8827781
+

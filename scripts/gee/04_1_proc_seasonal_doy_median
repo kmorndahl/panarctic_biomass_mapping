@@ -1,0 +1,46 @@
+/*
+
+DESCRIPTION: Calculate median DOY for each season across Pan Arctic - this provides, for each season, a reasonable date to use to extract a CCDC segment
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+- This script uses the original Arctic polygon without updated Greenland boundaries
+- This is so the entire Greenland icesheet is not used in determining median season DOYs
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS ----
+
+var ccdc_start_year = 1984;
+var ccdc_end_year = 2023;
+var version = 'v20240207'; // Version identifier
+
+// 1.1 ----- READ IN DATA ----
+
+var arctic = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/arctic_oroarctic_polygon'); 
+var seasonal_doys = ee.ImageCollection('projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/seasonal_doys_tiles_' + ccdc_start_year + '_' + ccdc_end_year + '_' + version);
+var seasonal_doy = seasonal_doys.mosaic();
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+var doy_median = seasonal_doy.reduceRegions({reducer: ee.Reducer.median(), scale: 30, crs: 'EPSG:3571', collection: arctic});
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.table.toAsset({
+  collection: doy_median, 
+  description: 'seasonal_doys_median', 
+  assetId: 'projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/seasonal_doys_median_' + ccdc_start_year + '_' + ccdc_end_year + '_' + version
+});

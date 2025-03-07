@@ -1,0 +1,134 @@
+/*
+
+DESCRIPTION: Create auxillary modeled seasonal reflectance predictors
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+- segmentFindStrategy
+  - For clipping_method = tiles
+    - Choose 'next' -- in the case where a disturbance occurs during the snow-free season 'next' allows the disturbance to be detected in the year it occurs
+  - For clipping_method = calval
+    - Choose 'closest'
+    - For field sites from the beginning or end of the time series e.g., 2022, there is no 'next' segment so this allows 'previous' to be selected
+    - In other instances, we will discard plots if they occur during a break between segments
+    - These are likely due to disturbance and might mess up model fits
+    - We will make exceptions for harvest dates just before the start or just after the end of the time series
+    - In these cases, the lack of segment might be more to due with data availability than disturbance
+    
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS ----
+
+var start_year = 1984;
+var end_year = 2023;
+var year = 2000; // Select year for predictions
+var date = ee.Date.fromYMD(year, 7, 31); // Create date for extracting segment, choose mid-summer-ish for month and day
+var extrapolateMaxDays = 120; // Number of days to extrapolate beyond the start and end of a CCDC segment, helps fill in gaps before the first segment, after the last segment, and between segments
+var ccdc_version = 'v20240207';
+var crs = 'EPSG:3571'; // Universal CRS for reprojecting predictors
+var scale = ee.Number(30); // Scale for reprojecting predictors
+var clipping_method = 'tiles'; // Choose 'tiles' or 'calval'
+var texture_bands = ['spectral_NDVI_peakSummer']; // Chosen from review of literature
+var texture_metrics = ['.*_var']; // Chosen from review of literature
+var texture_radius = 1; // Chosen from review of literature -- 3x3 window most common
+
+// Strategy to use for selecting CCDC segment when there is no segment for the specified date
+// Choose 'previous', 'next' or 'closest'
+var segmentFindStrategy = ee.Algorithms.If(ee.String(clipping_method).equals('calval'), 'closest', 'next').getInfo(); 
+
+// 1.1 ----- READ IN DATA ----
+
+var ccdc_fit = ee.ImageCollection('projects/arctic-biomass-mapping/assets/CCDC_tiles/CCDC_C2_SR_tiles_' + start_year + '_' + end_year + '_' + ccdc_version ).mosaic();
+var refl = ee.Image('projects/arctic-biomass-mapping/assets/seasonal_modeled_reflectance/seasonal_modeled_reflectance_' + start_year + '_' + end_year + '_' + ccdc_version + '_' + year);
+var refl_tc = ee.ImageCollection('projects/arctic-biomass-mapping/assets/seasonal_modeled_reflectance/seasonal_modeled_reflectance_' + start_year + '_' + end_year + '_' + ccdc_version + '_' + year + '_topographic_correction');
+
+// 1.2 ----- TIDY DATA ----
+
+refl_tc = refl_tc.mosaic(); // Mosaic topographically corrected collection
+refl = refl.select('.*_ND.*|.*NBR.*'); // Get normalized indices from original image
+var modeled_reflectance = refl_tc.addBands(refl); // Combine
+
+// 1.3 ----- MODULES/FUNCTIONS ----
+
+// Load existing module
+var temporalSegmentation = require('users/wiell/temporalSegmentation:temporalSegmentation'); 
+var fun_refl = require('users/loganberner/nasa_arctic_biomass:00_fun_refl');
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- SET UP SEGMENT ----
+
+// Get segments
+var segments = temporalSegmentation.Segments(ccdc_fit, 1);
+
+// Get segment that matches prediction date
+var segment = segments.findByDate(date, segmentFindStrategy);
+
+// 2.1 ----- TEXTURE ----
+
+// Calculate texture
+var texture = fun_refl.calculateTexture(modeled_reflectance, texture_radius, texture_bands, texture_metrics, crs, scale);
+
+// Fill gaps
+var texture_fill_gaps = texture.focalMean({radius: scale.multiply(3).divide(2), kernelType: 'square', units: 'meters', iterations: 1}); // Fill some gaps to avoid NAs in cal/val data
+texture = texture_fill_gaps.blend(texture) // Fill some gaps to avoid NAs in cal/val data
+                           .uint16(); // Set data type
+
+// Report
+print('NDVI texture', texture);
+Map.addLayer(texture, null, 'texture');
+
+// 2.2 ----- SLOPE ----
+
+// Calculate NDVI slope
+var slope = fun_refl.NDVIslope(segment);
+
+// Fill gaps
+var slope_fill_gaps = slope.focalMean({radius: scale.multiply(3).divide(2), kernelType: 'square', units: 'meters', iterations: 1}); // Fill some gaps to avoid NAs in cal/val data
+slope = slope_fill_gaps.blend(slope) // Fill some gaps to avoid NAs in cal/val data
+                       .int32() // Set data type
+                       .setDefaultProjection({crs: crs, scale: scale.getInfo()}); // Set default projection
+
+// Report
+print('NDVI slope', slope);
+Map.addLayer(slope, {min: -10000, max: 10000, palette: ['red', 'white', 'green']}, 'slope');
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+// Texture
+Export.image.toAsset({
+  image: texture,
+  description: 'seasonal_modeled_reflectance_NDVI_texture_' + year + '_' + ccdc_version,
+  assetId: 'projects/arctic-biomass-mapping/assets/predictors/seasonal_modeled_reflectance_NDVI_texture_' + year + '_' + ccdc_version,
+  pyramidingPolicy: 'mean',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), // Specify as rectangle to avoid gaps in output
+  crs: crs,
+  scale: scale.getInfo(),
+  maxPixels: 1e13
+});
+
+// Slope
+
+Export.image.toAsset({
+  image: slope,
+  description: 'seasonal_modeled_reflectance_NDVI_slope_' + year + '_' + ccdc_version,
+  assetId: 'projects/arctic-biomass-mapping/assets/predictors/seasonal_modeled_reflectance_NDVI_slope_' + year + '_' + ccdc_version,
+  pyramidingPolicy: 'mean', 
+  region: ee.Geometry.Polygon([-180, 83, 0, 83, 180, 83, 180, 45, 0, 45, -180, 45], null, false), // Specify as rectangle to avoid gaps in output
+  scale: scale.getInfo(), 
+  crs: crs, 
+  maxPixels: 1e13
+});
+

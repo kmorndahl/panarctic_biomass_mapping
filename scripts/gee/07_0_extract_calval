@@ -1,0 +1,771 @@
+/*
+
+DESCRIPTION: Extract predictor data at cal/val locations
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+- Reprojection of invidual thematic predictor sets NOT necessary
+- segmentFindStrategy
+  - For clipping_method = tiles
+    - Choose 'next' -- in the case where a disturbance occurs during the snow-free season 'next' allows the disturbance to be detected in the year it occurs
+  - For clipping_method = calval
+    - Choose 'closest'
+    - For field sites from the beginning or end of the time series e.g., 2022, there is no 'next' segment so this allows 'previous' to be selected
+    - In other instances, we will discard plots if they occur during a break between segments
+    - These are likely due to disturbance and might mess up model fits
+    - We will make exceptions for harvest dates just before the start or just after the end of the time series
+    - In these cases, the lack of segment might be more to due with data availability than disturbance
+- Predictors tried but removed from modeling:
+  - MODIS year since fire:
+    - The database only goes back to 2001... so for areas that haven't burned in this period, what fire year to assign? Could have burned in 2000 so fire year assignment might be misleading
+    - Some calval data has unknown harvest day so if there was a fire in the same year it would be hard to determine if it occurred before or after harvest
+      - This is probably the least concerning issue because presumably folks aren't sampling biomass in an area that burned earlier that same year (or if so it would be noted)
+    - Same issue for generating wall-to-wall predictors for 2000 and 2020, if a fire occured in 2000 or 2020 difficult to know what fire year to assign (0? or next most recent fire? depends on when in year fire occured)
+    - NOTE: new burned area product goes back to 1985 (but is missing some years...): https://gee-community-catalog.org/projects/gabam/#data-preprocessing
+  - ESA permafrost data
+    - Lots of sporadic data gaps
+    - Large data gap in NE Greenland
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS -----
+
+// Data input
+var ccdc_version = 'v20240207';
+var data_version = 'v20240215';
+
+// CCDC
+var ccdc_start_year = 1984;
+var ccdc_end_year = 2023;
+var start_snowfree_percentile = 'doy_p003'; // Select [earlier/less green] 'doy_p000', 'doy_p001', 'doy_p002', 'doy_p003', 'doy_p004', 'doy_p005' [later/more green]
+var end_snowfree_percentile = 'doy_p097'; // Select [earlier/more green] 'doy_p095', 'doy_p096', 'doy_p097', 'doy_p098', 'doy_p099', 'doy_p100' [later/less green]
+var extrapolateMaxDays = 120; // Original = 120, need to bump up to allow 1998 calval data to process; Number of days to extrapolate beyond the start and end of a CCDC segment, helps fill in gaps before the first segment, after the last segment, and between segments
+
+// Field data
+var calval_buffer = ee.Number(900).divide(2); // window for topographic correction, increase to get a more stable reflectance/illumination condition relationship
+var site_num_pts = 9; // Number of points/pixels to use for site-level predictor extraction i.e. 3x3 grid
+
+// Predictor processing
+var clipping_method = 'calval'; // Choose 'tiles' or 'calval'
+var texture_bands = ['spectral_NDVI_peakSummer']; // Chosen from review of literature
+var texture_metrics = ['.*_var']; // Chosen from review of literature
+var texture_radius = 1; // Chosen from review of literature -- 3x3 window most common
+
+// Topographic correction
+var seasons = ['startSnowfree', 'earlySummer', 'peakSummer', 'lateSummer', 'endSnowfree']; // Specify seasons to process
+var bands_topo_corr = ['spectral_blue_', 'spectral_green_', 'spectral_red_', 'spectral_NIR_', 'spectral_SWIR1_', 'spectral_SWIR2_', 'spectral_EVI2b_']; // Specify bands to process, no need to correct normalized spectral indices
+var bands_no_topo_corr = ['spectral_NBR_', 'spectral_NDMI_', 'spectral_NDVI_', 'spectral_NDWI_']; // Specify bands to process, no need to correct normalized spectral indices
+
+// Output
+var predictors_crs = 'EPSG:3571'; // Universal CRS for reprojecting predictors
+var predictors_scale = 30; // Scale for reprojecting predictors
+var export_folder = 'arctic_biomass_synthesis_predictors'; // Google Drive folder for exports
+var out_version = 'v20240207';
+
+// Strategy to use for selecting CCDC segment when there is no segment for the specified date
+// Choose 'previous', 'next' or 'closest'
+var segmentFindStrategy = ee.Algorithms.If(ee.String(clipping_method).equals('calval'), 'closest', 'next').getInfo();  
+
+// 1.1 ----- EXISTING MODULES/FUNCTIONS -----
+
+var palettes = require('users/gena/packages:palettes');
+var fun_misc = require('users/loganberner/nasa_arctic_biomass:00_fun_misc');
+var fun_refl = require('users/loganberner/nasa_arctic_biomass:00_fun_refl');
+var temporalSegmentation = require('users/wiell/temporalSegmentation:temporalSegmentation'); // Load module
+
+// ----- EXISTING DATA PATHS -----
+
+// DOY
+var phenology_tiles = ee.ImageCollection('projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/seasonal_doys_tiles_' + ccdc_start_year + '_' + ccdc_end_year + '_' + ccdc_version).mosaic();
+var phenology_calval = ee.ImageCollection('projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/seasonal_doys_calval_' + ccdc_start_year + '_' + ccdc_end_year + '_' + ccdc_version).mosaic();
+var phenology = ee.Image(ee.Algorithms.If(ee.String(clipping_method).equals('calval'), ee.ImageCollection([phenology_tiles, phenology_calval]).mosaic(), phenology_tiles));
+
+// CCDC fits
+var ccdc_tiles = ee.ImageCollection('projects/arctic-biomass-mapping/assets/CCDC_tiles/CCDC_C2_SR_tiles_' + ccdc_start_year + '_' + ccdc_end_year + '_' + ccdc_version).mosaic();
+var ccdc_calval = ee.ImageCollection('projects/arctic-biomass-mapping/assets/CCDC_tiles/CCDC_C2_SR_calval_' + ccdc_start_year + '_' + ccdc_end_year + '_' + ccdc_version).mosaic();
+var ccdc = ee.Image(ee.Algorithms.If(ee.String(clipping_method).equals('calval'), ee.ImageCollection([ccdc_tiles, ccdc_calval]).mosaic(), ccdc_tiles));
+
+// ROIs
+var tiles_mgrs_s2 = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/tiles_mgrs_s2'); // https://www.bluemarblegeo.com/knowledgebase/calculator-2020sp1/Military_Grid_Reference_System_(MGRS).htm
+
+// Field data
+var calval_plot_locations = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/field_data/arctic_tundra_biomass_synthesis_plots_' + data_version);
+var calval_plot_dates = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/field_data/arctic_tundra_biomass_synthesis_dataset_plot_dates_' + data_version);
+
+// Copernicus DEM, 30 m resolution
+var dem_tc = ee.ImageCollection("COPERNICUS/DEM/GLO30")
+            .mosaic()
+            .setDefaultProjection('EPSG:3857',null,30) // Explanation on setting default projection here https://twitter.com/jstnbraaten/status/1494038930643042309
+            .select('DEM')
+            .rename('elevation');
+
+// Illumination condition
+var ic = ee.ImageCollection('projects/arctic-biomass-mapping/assets/topographic_correction/illumination_condition_' + ccdc_version).mosaic();
+
+// ----- TIDY CAL/VAL DATA -----
+
+// Tidy calval date data
+calval_plot_dates = calval_plot_dates.distinct('plot_code'); // One feature per plot_code
+
+// If day is missing, set to the middle of the month
+var calval_day = calval_plot_dates.filter(ee.Filter.neq('day', 'NA'));
+var calval_no_day = calval_plot_dates.filter(ee.Filter.eq('day', 'NA'));
+calval_day = calval_day.map(function(feat){return feat.set('day_specified', 'yes')});
+calval_no_day = calval_no_day.map(function(feat){return feat.set('day_specified', 'no').set('day', '15')});
+calval_plot_dates = ee.FeatureCollection([calval_day, calval_no_day]).flatten();
+
+// Combine calval location data and date data
+var calvalFilter = ee.Filter.equals({ // Create filter
+  leftField: 'plot_code',
+  rightField: 'plot_code'
+});
+var join = ee.Join.inner(); // Create join
+var calval_joined = join.apply(calval_plot_locations, calval_plot_dates,  calvalFilter); // Perform join
+var calval = calval_joined.map(function(feat) {return ee.Feature(feat.get('primary')).set(ee.Feature(feat.get('secondary')).toDictionary())}); // Collapse features
+
+print('Cal/val data example:', calval.first());
+print('Cal/val data:', calval);
+
+Map.addLayer(tiles_mgrs_s2, null, 'MGRS tiles');
+Map.addLayer(calval_plot_locations, {color: 'red'}, 'Cal/val data');
+
+// ----- PROCESS DEM -----
+
+// Smooth the DEM using a low-pass kernel
+var boxcar = ee.Kernel.square({radius: 3,
+                               units: 'pixels', 
+                               normalize: true});
+var dem_s = ee.Image(dem_tc).convolve(boxcar);
+
+// Create terrain layers
+var slp = ee.Terrain.slope(dem_s);
+var slp_rad = ee.Terrain.slope(dem_s).multiply(3.14159265359).divide(180);
+var asp_rad = ee.Terrain.aspect(dem_s).multiply(3.14159265359).divide(180);
+
+// ----- PHENOLOGY PREDICTORS -----
+
+// Phenology references:
+// https://www.nature.com/articles/s41558-019-0688-1
+// https://onlinelibrary.wiley.com/doi/pdf/10.1111/gcb.12852
+// https://iopscience.iop.org/article/10.1088/1748-9326/aa6b0b/pdf
+// https://iopscience.iop.org/article/10.1088/1748-9326/6/4/045508/pdf
+
+print('Phenology predictors:', phenology);
+
+//  ----- TOPOGRAPHIC PREDICTORS -----
+
+// MERIT DEM based, 90m resolution -----
+// https://gee-community-catalog.org/projects/geomorpho90/
+
+// Import
+var dem = ee.Image("MERIT/DEM/v1_0_3").rename('topo_dem');
+var cti = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/cti").mosaic().rename('topo_cti');
+var slope = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/slope").mosaic().rename('topo_slope');
+var tpi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tpi").mosaic().rename('topo_tpi');
+var eastness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/eastness").mosaic().rename('topo_eastness');
+var northness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/northness").mosaic().rename('topo_northness');
+
+// Topographic predictors
+var topographic = dem.addBands(cti)
+                     .addBands(slope)
+                     .addBands(tpi)
+                     .addBands(eastness)
+                     .addBands(northness);
+                     
+var topographic_fill_gaps = topographic.focalMean({radius: dem.projection().nominalScale().multiply(3).divide(2), kernelType: 'square', units: 'meters', iterations: 1}); // Fill some gaps to avoid NAs in cal/val data
+topographic = topographic_fill_gaps.blend(topographic); // Fill some gaps to avoid NAs in cal/val data
+
+print('Topographic predictors:', topographic);
+
+//  ----- SOIL PREDICTORS -----
+
+// SoilGrids 250m resolution
+// https://gee-community-catalog.org/projects/isric/
+// These data have significant gaps so we are no longer using them
+// Confirmed gaps still present in data directly from provider: https://www.soilgrids.org/
+
+// SOIL-BIOCLIM 1km resolution
+// https://gee-community-catalog.org/projects/soil_bioclim/
+// These data have significant gaps so we are no longer using them
+// Confirmed gaps still present in data directly from provider: https://zenodo.org/records/4558732
+
+// OpenLandMap soil layers, 250m resolution
+// https://zenodo.org/records/2525664
+// https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_PH-H2O_USDA-4C1A2A_M_v02
+// There is less information about these data but they don't have gaps so we are using them
+// They appear to be somewhat based on the SoilGrids maps (?)
+
+var soil_carbon = ee.Image('OpenLandMap/SOL/SOL_ORGANIC-CARBON_USDA-6A1C_M/v02').regexpRename('b', 'soc_').regexpRename('$', 'cm');
+var soil_water = ee.Image('OpenLandMap/SOL/SOL_WATERCONTENT-33KPA_USDA-4B1C_M/v01').regexpRename('b', 'water_').regexpRename('$', 'cm');
+var soil_clay = ee.Image('OpenLandMap/SOL/SOL_CLAY-WFRACTION_USDA-3A1A1A_M/v02').regexpRename('b', 'clay_').regexpRename('$', 'cm');
+var soil_sand = ee.Image('OpenLandMap/SOL/SOL_SAND-WFRACTION_USDA-3A1A1A_M/v02').regexpRename('b', 'sand_').regexpRename('$', 'cm');
+var soil_bd = ee.Image('OpenLandMap/SOL/SOL_BULKDENS-FINEEARTH_USDA-4A1H_M/v02').regexpRename('b', 'bd_').regexpRename('$', 'cm');
+var soil_ph = ee.Image('OpenLandMap/SOL/SOL_PH-H2O_USDA-4C1A2A_M/v02').regexpRename('b', 'ph_').regexpRename('$', 'cm');
+
+var soil = soil_carbon.addBands(soil_water)
+                      .addBands(soil_clay)
+                      .addBands(soil_sand)
+                      .addBands(soil_bd)
+                      .addBands(soil_ph)
+                      .regexpRename('^', 'soil_');
+
+var soil_fill_gaps = soil.focalMean({radius: soil_carbon.projection().nominalScale().multiply(3).divide(2), kernelType: 'square', units: 'meters', iterations: 1}); // Fill some gaps to avoid NAs in cal/val data
+soil = soil_fill_gaps.blend(soil); // Fill some gaps to avoid NAs in cal/val data
+
+print('Soil predictors:', soil);
+
+//  ----- CLIMATE PREDICTORS -----
+
+// TERRACLIMATE
+// https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_TERRACLIMATE
+var terraclimate = ee.Image("projects/arctic-biomass-mapping/assets/predictors/terraclimate_filled");
+
+// WORLDCLIM
+// https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_BIO#description
+var worldclim = ee.Image('WORLDCLIM/V1/BIO').rename(['mat', 'mdr', 'iso', 'tseasonality', 'tmaxm', 'tminm', 'trange', 'tmeanwetq', 'tmeandryq', 'tmeanwarmq', 'tmeancoldq', 'tap', 'pmaxm', 'pminm', 'pseasonality', 'pmaxq', 'pminq', 'pwarmq', 'pcoldq']);
+
+// Fill to deal with NA
+var worldclim_fill_gaps = worldclim.focalMean({radius: worldclim.projection().nominalScale().multiply(3).divide(2), kernelType: 'square', units: 'meters', iterations: 1}); // Fill some gaps to avoid NAs in cal/val data
+worldclim = worldclim_fill_gaps.blend(worldclim);
+worldclim = worldclim.regexpRename('^', 'climate_1km_');
+
+// COMBINE
+var climate = worldclim.addBands(terraclimate);
+
+print('Climate predictors:', climate);
+
+//  ----- PERMAFROST PREDICTORS -----
+
+// Gruber permafrost data
+// https://tc.copernicus.org/articles/6/221/2012/tc-6-221-2012.pdf
+var permafrost = ee.Image('projects/arctic-biomass-mapping/assets/predictors/global_permafrost_zonation_index_gruber2012_filled_20km_v3').rename('permafrost_index');
+
+print('Permafrost:', permafrost);
+
+//  ----- LANDCOVER PREDICTORS -----
+
+// Get WorldCover v200 data
+var lc = ee.ImageCollection("ESA/WorldCover/v200").first().rename('land_cover');
+
+// Get World Terrestrial Ecosystems data
+// https://www.sciencebase.gov/catalog/item/6296791ed34ec53d276bb293
+// https://rmgsc.cr.usgs.gov/outgoing/ecosystems/Global/
+// NOTE: WTE data has some gaps/misalignment in northern Greenland, but these areas should 
+var wte = ee.Image('projects/arctic-biomass-mapping/assets/predictors/wte_2020_filled').rename('world_terrestrial_ecosystems');
+
+print('Land cover:', lc);
+print('World Terrestrial Ecosystems:', wte);
+
+//  ----- TREE COVER PREDICTORS -----
+
+// Get Hansen tree cover data
+// NOTE: areas outside of the Hansen mapped range are dealt with during cal/val data processing
+// So, no need to .unmask(0) to set high latitude/ocean areas to zero in this script
+var tree_cover = ee.Image("UMD/hansen/global_forest_change_2022_v1_10");
+tree_cover = tree_cover.select(['treecover2000', 'loss', 'gain', 'lossyear'], ['cover2000', 'loss', 'gain', 'lossyear']) // Select relevant bands
+                       .regexpRename('^', 'trees_'); // Add prefix
+
+print('Tree cover:', tree_cover);
+
+// ----- CCDC PREDICTORS -----
+
+var nSegments = ccdc.select('tBreak').arrayLength(0).rename('ccdc_nSegments');
+
+Map.addLayer(nSegments, {min:1, max:3}, 'nSegments');
+
+// ----- MODELED REFLECTANCE -----
+
+// Separate into plot and site coordinate types
+var calval_plots = calval.filter(ee.Filter.eq('coord_type', 'plot'));
+var calval_sites = calval.filter(ee.Filter.eq('coord_type', 'site'));
+calval_sites = calval_sites.distinct('site_code');
+print('Cal/val data with plot coordinate type:', calval_plots);
+print('Cal/val data with site coordinate type:', calval_sites);
+
+// Get segments
+var segments = temporalSegmentation.Segments(ccdc, 1);
+
+// Function to model seasonal reflectance, aggregate predictors and extract predictor information
+// Plot scale, only one pixel extracted per plot
+
+var modelReflectance_plot = function(feat){
+
+  // ----- APPLY CCDC MODELS -----
+  
+  // Get sample date information
+  var day = ee.Number.parse(feat.get('day'));
+  var month =  ee.Number.parse(feat.get('month')); 
+  var year =  ee.Number.parse(feat.get('year'));
+
+  // Parse to GEE date format
+  var date = ee.Date.fromYMD(year, month, day);
+  
+  // Get segment that matches harvest date
+  var segment = segments.findByDate(date, segmentFindStrategy);
+
+  // Model CCDC reflectance and rename bands with seasonal suffix
+  var start_snowfree_fit = fun_refl.fitT(phenology.select('doy_startSnowfree'), year, segment, extrapolateMaxDays).regexpRename('$', '_startSnowfree').regexpRename('^', 'spectral_');
+  var early_summer_fit = fun_refl.fitT(phenology.select('doy_earlySummer'), year, segment, extrapolateMaxDays).regexpRename('$', '_earlySummer').regexpRename('^', 'spectral_');
+  var peak_summer_fit = fun_refl.fitT(phenology.select('doy_peakSummer'), year, segment, extrapolateMaxDays).regexpRename('$', '_peakSummer').regexpRename('^', 'spectral_');
+  var late_summer_fit = fun_refl.fitT(phenology.select('doy_lateSummer'), year, segment, extrapolateMaxDays).regexpRename('$', '_lateSummer').regexpRename('^', 'spectral_');
+  var end_snowfree_fit = fun_refl.fitT(phenology.select('doy_endSnowfree'), year, segment, extrapolateMaxDays).regexpRename('$', '_endSnowfree').regexpRename('^', 'spectral_');
+  
+  // Combine modeled reflectance
+  var modeled_reflectance = start_snowfree_fit.addBands(early_summer_fit)
+                                              .addBands(peak_summer_fit)
+                                              .addBands(late_summer_fit)
+                                              .addBands(end_snowfree_fit);
+  
+  // ----- TOPOGRAPHIC CORRECTION -----
+  
+  // Function to loop seasons
+  var seasonal_topo_corr = function(season){
+    
+    // Get seasonal illumination condition and solar properties, and convert to original scale
+    var ic_season = ic.select('IC_' + season).divide(10000);
+    var cosZ_season = ic.select('cosZ_' + season).divide(10000);
+    var cosS_season = ic.select('cosS_' + season).divide(10000);
+    
+    // Add illumination condition and slope to reflectance, convert reflectance to original scale
+    var modeled_reflectance_ic = ee.Image(modeled_reflectance.divide(10000)
+                                                             .addBands(ic_season)
+                                                             .addBands(cosZ_season.rename('cosZ'))
+                                                             .addBands(cosS_season.rename('cosS'))
+                                                             .addBands(slp.rename('slope')));
+    
+    // Mask by slope
+    var slope_mask = modeled_reflectance_ic.select('slope').gte(5);
+    modeled_reflectance_ic = ee.Image(modeled_reflectance_ic.updateMask(slope_mask));
+    
+    // Mask by illumination condition
+    var ic_mask = modeled_reflectance_ic.select('IC_' + season).gt(0);
+    modeled_reflectance_ic = ee.Image(modeled_reflectance_ic.updateMask(ic_mask));
+
+    // Check if calval point is masked
+    var feat_check = modeled_reflectance_ic.select('spectral_blue_' + season).sampleRegions({
+      collection: ee.FeatureCollection([feat]), 
+      scale: 30,
+      geometries: false
+    }).size();
+
+    // Function to apply topographic correction to each band
+    function apply_SCSccorr(band){
+    
+      // LINEAR FIT OPTION #1: ALL IMAGE DATA
+      // Get current band + IC and perform linear fit
+      var out = modeled_reflectance_ic.select(ee.List(['IC_' + season, band])).reduceRegion({ 
+        reducer: ee.Reducer.linearFit(),
+        geometry: ee.Feature(feat).buffer(calval_buffer).geometry(),
+        scale: 30,
+        maxPixels: 1e13
+        }); 
+      
+      // Compute linear fit coefficients: a(slope), b(offset), c(b/a)
+      var out_a = ee.Number(out.get('scale'));
+      var out_b = ee.Number(out.get('offset'));
+      var out_c = ee.Number(out.get('offset')).divide(ee.Number(out.get('scale')));
+
+      // Apply the SCSc correction
+      var SCSc_output = modeled_reflectance_ic.expression("((image * (cosB * cosZ + cvalue)) / (ic + cvalue))", {
+        'image': modeled_reflectance_ic.select(ee.List([band])),
+        'ic': modeled_reflectance_ic.select('IC_' + season),
+        'cosB': modeled_reflectance_ic.select('cosS'),
+        'cosZ': modeled_reflectance_ic.select('cosZ'),
+        'cvalue': out_c
+        });
+        
+      // Fill masked areas with original reflectance values
+      SCSc_output = SCSc_output.multiply(10000) // Rescale
+                               .unmask(modeled_reflectance.select(band), false); // Must choose false otherwise output is empty
+      
+      return ee.Image(SCSc_output);
+      
+    }
+    
+    // Get bands for current season
+    var season_bands = bands_topo_corr.map(function(band){return band + season});
+    
+    // Apply topographic correction to each band
+    var modeled_reflectance_SCSccorr = ee.Algorithms.If(ee.Number(feat_check), // If no unmasked pixels, evaluates to FALSE, otherwise TRUE
+                                                        ee.ImageCollection(season_bands.map(apply_SCSccorr)) // If TRUE, perform topographic correction
+                                                                           .toBands() // Tidy
+                                                                           .regexpRename('^[0-9]_', '') // Tidy
+                                                                           .addBands({srcImg: modeled_reflectance, names: bands_no_topo_corr.map(function(band){return band + season}), overwrite: true}), // Add normalized bands (uncorrected)
+                                                        modeled_reflectance.select('.*' + season)); // If FALSE: no topographic correction
+    return ee.Image(modeled_reflectance_SCSccorr);
+    
+  };
+  
+  // Apply topographic correction to seasons
+  var modeled_reflectance_topo_corr = ee.ImageCollection(seasons.map(seasonal_topo_corr)).toBands().regexpRename('^[0-9]_', ''); // Convert to multiband image and remove leading numbers
+  
+  // ----- SUPPLEMENTARY REFLECTANCE DATA -----
+  
+  // Calculate texture
+  var texture = fun_refl.calculateTexture(modeled_reflectance_topo_corr, texture_radius, texture_bands, texture_metrics, predictors_crs, predictors_scale);
+
+  // Calculate NDVI slope
+  var segment_ndvi_slope = fun_refl.NDVIslope(segment, extrapolateMaxDays);
+  
+  // Get segment metadata
+  var segment_metadata = segment.toImage()
+                                .select('tStart', 'tEnd', 'tBreak', 'numObs', 'changeProb', '.*_rmse', '.*_magnitude')
+                                .regexpRename('^', 'ccdc_');
+  var segment_coefficients = segment.toImage()
+                                    .select('.*_coefs');
+  segment_coefficients = fun_misc.ccdc_coefs_to_multiband_img(segment_coefficients).regexpRename('^', 'coefs_'); // Format coefficients
+  segment_metadata = segment_metadata.addBands(segment_coefficients);
+  
+  // Calculate time since last disturbance, in fractional years
+  var time_since_dist = fun_refl.calculateTimeSinceBreak(segment, date).rename('ccdc_timeSinceDisturbance');
+
+  // Get previous and next segment dates
+  var previous_segment = segments.findByDate(date, 'previous');
+  var previous_segment_start = previous_segment.toImage().select('tStart').rename('ccdc_previousSegmentStart');
+  var previous_segment_end = previous_segment.toImage().select('tEnd').rename('ccdc_previousSegmentEnd');
+  var next_segment = segments.findByDate(date, 'next');
+  var next_segment_start = next_segment.toImage().select('tStart').rename('ccdc_nextSegmentStart');
+  var next_segment_end = next_segment.toImage().select('tEnd').rename('ccdc_nextSegmentEnd');
+
+  // ----- COMBINE SPECTRAL PREDICTORS -----
+
+  // Gather CCDC predictors
+  var ccdc_metadata = nSegments.addBands(segment_ndvi_slope).addBands(segment_metadata).addBands(time_since_dist).addBands(previous_segment_start).addBands(next_segment_start).addBands(previous_segment_end).addBands(next_segment_end);
+
+  // Combine predictors
+  var predictors = modeled_reflectance_topo_corr.addBands(phenology)
+                                                .addBands(topographic)
+                                                .addBands(soil)
+                                                .addBands(climate)                                      
+                                                .addBands(permafrost)
+                                                .addBands(texture)
+                                                .addBands(lc.reduceResolution({reducer: ee.Reducer.mode(), maxPixels: 1000}))
+                                                .addBands(wte.reduceResolution({reducer: ee.Reducer.mode(), maxPixels: 1000}))
+                                                .addBands(tree_cover)
+                                                .addBands(ccdc_metadata);
+
+  // Extract predictors
+  // Must use reduceRegions (or reduceRegion) because sample and sampleRegions drop properties when the value is masked
+  // Specify crs and scale otherwise data will be collected using GEE default of EPSG:4326, 1 degree scale
+  var feat_predictors = predictors.reduceRegions({
+    collection: ee.FeatureCollection([feat]), 
+    reducer: ee.Reducer.first(),
+    crs: predictors_crs, 
+    scale: predictors_scale
+  }).first()
+    .set('pixel_num', 1); // For plot level coordinates, we only grab one pixel
+  
+  // Explicitly cast to feature
+  feat_predictors = ee.Feature(feat_predictors);
+  
+  // Replace null with NA so properties are not removed -----
+  // https://gis.stackexchange.com/questions/300986/property-with-null-value-disappearing-from-feature-when-creating-feature-collect
+  
+  // Get property names
+  var prop_names = feat_predictors.propertyNames();
+  
+  // Loop through property names -- returns list of property values with null replaced with NA
+  var new_values = prop_names.map(function(name){
+    var replacement = ee.List([feat_predictors.get(name), 'NA']).reduce(ee.Reducer.firstNonNull()); // Replace nulls with NA, if not null original value is preserved
+    return replacement;
+  });
+  
+  // Combine property names and values
+  var replace_null_dict = ee.Dictionary.fromLists(prop_names, new_values);
+  
+  // Replace current feature properties using dictionary of updated property values
+  feat_predictors = feat_predictors.set(replace_null_dict);
+  
+  return(feat_predictors);
+  
+};
+
+// Function to model seasonal reflectance, aggregate predictors and extract predictor information
+// Site scale, 9 pixels extracted per plot
+var modelReflectance_site = function(feat){
+  
+  // ----- SET UP BUFFERED SITE -----
+  
+  feat = ee.Feature(feat);
+
+  // Get image pixel centroids
+  var centroid_img = tree_cover.select('trees_cover2000'); // Choose band that will never be masked, otherwise this will error out
+  var centroids = centroid_img.sample({
+    region: ee.Feature(feat).buffer(90).bounds().geometry(),
+    projection: predictors_crs,
+    scale: predictors_scale,
+    geometries: true  // Set to true to get points
+  });
+
+  // Create distance filter
+  var dist_filter = ee.Filter.withinDistance({
+    distance: 60,
+    leftField: '.geo',
+    rightField: '.geo'
+  });
+
+  // Create join
+  var dist_join = ee.Join.saveAll({
+    matchesKey: 'points',
+    measureKey: 'distance'
+  });
+
+  // Perform join
+  // Points within distance threshold are a property of the output feature
+  var feat_centroids = dist_join.apply(feat, centroids, dist_filter);
+  
+  // Get points within distance threshold as a feature collection
+  var pts = ee.FeatureCollection(ee.List(feat_centroids.first().get('points')));
+  
+  // Get 9 closest points
+  var selected_pts = pts.limit(site_num_pts, 'distance');
+  
+  // Add feature properties to selected points
+  var selected_pts_feat = selected_pts.map(function(f){return f.copyProperties(feat)});
+
+  // Remove join image property
+  var selected_pts_feat_props = selected_pts_feat.first().propertyNames();
+  var keep_props = selected_pts_feat_props.filter(ee.Filter.neq('item', texture_bands[0]));
+  selected_pts_feat = selected_pts_feat.map(function(f){return f.select(keep_props)});
+  
+  // ----- APPLY CCDC MODELS -----
+  
+  // Get sample date information
+  var day = ee.Number.parse(feat.get('day'));
+  var month =  ee.Number.parse(feat.get('month')); 
+  var year =  ee.Number.parse(feat.get('year'));
+
+  // Parse to GEE date format
+  var date = ee.Date.fromYMD(year, month, day);
+
+  // Get segment that matches harvest date
+  var segment = segments.findByDate(date, segmentFindStrategy);
+  
+  // Model CCDC reflectance and rename bands with seasonal suffix
+  var start_snowfree_fit = fun_refl.fitT(phenology.select('doy_startSnowfree'), year, segment, extrapolateMaxDays).regexpRename('$', '_startSnowfree').regexpRename('^', 'spectral_');
+  var early_summer_fit = fun_refl.fitT(phenology.select('doy_earlySummer'), year, segment, extrapolateMaxDays).regexpRename('$', '_earlySummer').regexpRename('^', 'spectral_');
+  var peak_summer_fit = fun_refl.fitT(phenology.select('doy_peakSummer'), year, segment, extrapolateMaxDays).regexpRename('$', '_peakSummer').regexpRename('^', 'spectral_');
+  var late_summer_fit = fun_refl.fitT(phenology.select('doy_lateSummer'), year, segment, extrapolateMaxDays).regexpRename('$', '_lateSummer').regexpRename('^', 'spectral_');
+  var end_snowfree_fit = fun_refl.fitT(phenology.select('doy_endSnowfree'), year, segment, extrapolateMaxDays).regexpRename('$', '_endSnowfree').regexpRename('^', 'spectral_');
+  
+  // Combine modeled reflectance
+  var modeled_reflectance = start_snowfree_fit.addBands(early_summer_fit)
+                                              .addBands(peak_summer_fit)
+                                              .addBands(late_summer_fit)
+                                              .addBands(end_snowfree_fit);
+
+  // ----- TOPOGRAPHIC CORRECTION -----
+  
+  // Mask by slope
+  modeled_reflectance = modeled_reflectance.addBands(slp.rename('slope'));
+  var slope_mask = modeled_reflectance.select('slope').gte(5);
+  var modeled_reflectance_m = ee.Image(modeled_reflectance.updateMask(slope_mask));
+  
+  // Function to loop seasons
+  var seasonal_topo_corr = function(season){
+    
+    // Get seasonal illumination condition and solar properties, and convert to original scale
+    var ic_season = ic.select('IC_' + season).divide(10000);
+    var cosZ_season = ic.select('cosZ_' + season).divide(10000);
+    var cosS_season = ic.select('cosS_' + season).divide(10000);
+    
+    // Add illumination condition and slope to reflectance, convert reflectance to original scale
+    var modeled_reflectance_ic = ee.Image(modeled_reflectance.divide(10000)
+                                                             .addBands(ic_season)
+                                                             .addBands(cosZ_season.rename('cosZ'))
+                                                             .addBands(cosS_season.rename('cosS'))
+                                                             .addBands(slp.rename('slope')));
+    
+    // Mask by illumination condition
+    var ic_mask = modeled_reflectance_ic.select('IC_' + season).gt(0);
+    modeled_reflectance_ic = ee.Image(modeled_reflectance_ic.updateMask(ic_mask));
+    
+    // Check if calval point is masked
+    var feat_check = modeled_reflectance_ic.select('spectral_blue_' + season).sampleRegions({
+      collection: selected_pts_feat, 
+      scale: 30,
+      geometries: false
+    }).size();
+    
+    // Function to apply topographic correction to each band
+    function apply_SCSccorr(band){
+    
+      // LINEAR FIT OPTION #1: ALL IMAGE DATA
+      // Get current band + IC and perform linear fit
+      var out = modeled_reflectance_ic.select(ee.List(['IC_' + season, band])).reduceRegion({ 
+        reducer: ee.Reducer.linearFit(),
+        geometry: ee.Feature(feat).buffer(calval_buffer).geometry(),
+        scale: 30,
+        maxPixels: 1e13
+        }); 
+      
+      // Compute linear fit coefficients: a(slope), b(offset), c(b/a)
+      var out_a = ee.Number(out.get('scale'));
+      var out_b = ee.Number(out.get('offset'));
+      var out_c = ee.Number(out.get('offset')).divide(ee.Number(out.get('scale')));
+        
+      // Apply the SCSc correction
+      var SCSc_output = modeled_reflectance_ic.expression("((image * (cosB * cosZ + cvalue)) / (ic + cvalue))", {
+        'image': modeled_reflectance_ic.select(ee.List([band])),
+        'ic': modeled_reflectance_ic.select('IC_' + season),
+        'cosB': modeled_reflectance_ic.select('cosS'),
+        'cosZ': modeled_reflectance_ic.select('cosZ'),
+        'cvalue': out_c
+        });
+        
+      // Fill masked areas with original reflectance values
+      SCSc_output = SCSc_output.multiply(10000) // Rescale
+                               .unmask(modeled_reflectance.select(band), false); // Must choose false otherwise output is empty
+      
+      return ee.Image(SCSc_output);
+      
+    }
+    
+    // Get bands for current season
+    var season_bands = bands_topo_corr.map(function(band){return band + season});
+    
+    // Apply topographic correction to each band
+    var modeled_reflectance_SCSccorr = ee.Algorithms.If(ee.Number(feat_check), // If no unmasked pixels, evaluates to FALSE, otherwise TRUE
+                                                        ee.ImageCollection(season_bands.map(apply_SCSccorr)) // If TRUE, perform topographic correction
+                                                                           .toBands() // Tidy
+                                                                           .regexpRename('^[0-9]_', '') // Tidy
+                                                                           .addBands({srcImg: modeled_reflectance, names: bands_no_topo_corr.map(function(band){return band + season}), overwrite: true}), // Add normalized bands (uncorrected)
+                                                        modeled_reflectance.select('.*' + season)); // If FALSE: no topographic correction
+
+    return ee.Image(modeled_reflectance_SCSccorr);
+    
+  };
+  
+  // Apply topographic correction to seasons
+  var modeled_reflectance_topo_corr = ee.ImageCollection(seasons.map(seasonal_topo_corr)).toBands().regexpRename('^[0-9]_', ''); // Convert to multiband image and remove leading numbers
+  
+  // ----- SUPPLEMENTARY REFLECTANCE DATA -----
+
+  // Calculate texture
+  var texture = fun_refl.calculateTexture(modeled_reflectance_topo_corr, texture_radius, texture_bands, texture_metrics, predictors_crs, predictors_scale);
+
+  // Calculate NDVI slope
+  var segment_ndvi_slope = fun_refl.NDVIslope(segment, extrapolateMaxDays);
+
+  // Get segment metadata
+  var segment_metadata = segment.toImage()
+                                .select('tStart', 'tEnd', 'tBreak', 'numObs', 'changeProb', '.*_rmse', '.*_magnitude')
+                                .regexpRename('^', 'ccdc_');
+  var segment_coefficients = segment.toImage()
+                                    .select('.*_coefs');
+  segment_coefficients = fun_misc.ccdc_coefs_to_multiband_img(segment_coefficients).regexpRename('^', 'coefs_'); // Format coefficients
+  segment_metadata = segment_metadata.addBands(segment_coefficients);
+  
+  // Calculate time since last disturbance, in fractional years
+  var time_since_dist = fun_refl.calculateTimeSinceBreak(segment, date).rename('ccdc_timeSinceDisturbance');
+
+  // Get previous and next segment dates
+  var previous_segment = segments.findByDate(date, 'previous');
+  var previous_segment_start = previous_segment.toImage().select('tStart').rename('ccdc_previousSegmentStart');
+  var previous_segment_end = previous_segment.toImage().select('tEnd').rename('ccdc_previousSegmentEnd');
+  var next_segment = segments.findByDate(date, 'next');
+  var next_segment_start = next_segment.toImage().select('tStart').rename('ccdc_nextSegmentStart');
+  var next_segment_end = next_segment.toImage().select('tEnd').rename('ccdc_nextSegmentEnd');
+
+  // ----- COMBINE SPECTRAL PREDICTORS -----
+
+  // Gather CCDC predictors
+  var ccdc_metadata = nSegments.addBands(segment_ndvi_slope).addBands(segment_metadata).addBands(time_since_dist).addBands(previous_segment_start).addBands(next_segment_start).addBands(previous_segment_end).addBands(next_segment_end);
+
+  // Combine predictors
+  var predictors = modeled_reflectance_topo_corr.addBands(phenology)
+                                                .addBands(topographic)
+                                                .addBands(soil)
+                                                .addBands(climate)                                      
+                                                .addBands(permafrost)
+                                                .addBands(texture)
+                                                .addBands(lc.reduceResolution({reducer: ee.Reducer.mode(), maxPixels: 1000}))
+                                                .addBands(wte.reduceResolution({reducer: ee.Reducer.mode(), maxPixels: 1000}))
+                                                .addBands(tree_cover)
+                                                .addBands(ccdc_metadata);
+
+  // Extract predictors
+  // Specify crs and scale otherwise data will be collected using GEE default of EPSG:4326, 1 degree scale
+  var selected_pts_predictors = predictors.reduceRegions({
+    collection: selected_pts_feat, 
+    reducer: ee.Reducer.first(), 
+    crs: predictors_crs, 
+    scale: predictors_scale
+  });
+
+  // Assign pixel ID numbers
+  var ids = ee.List.sequence(1, 9, 1);
+  selected_pts_predictors = ids.map(function(x){
+    var f = ee.Feature(selected_pts_predictors.toList(9).get(ee.Number(x).subtract(1)));
+    return ee.Feature(f.set('pixel_num', x));
+  });
+
+  // Replace null with NA so properties are not removed
+  // https://gis.stackexchange.com/questions/300986/property-with-null-value-disappearing-from-feature-when-creating-feature-collect
+  selected_pts_predictors = selected_pts_predictors.map(function(feat){
+    
+    // Explicitly cast to feature
+    feat = ee.Feature(feat); 
+    
+    // Get property names
+    var prop_names = feat.propertyNames();
+    
+    // Loop through property names -- returns list of property values with null replaced with NA
+    var new_values = prop_names.map(function(name){
+      var replacement = ee.List([feat.get(name), 'NA']).reduce(ee.Reducer.firstNonNull()); // Replace nulls with NA, if not null original value is preserved
+      return replacement;
+    });
+    
+    // Combine property names and values
+    var replace_null_dict = ee.Dictionary.fromLists(prop_names, new_values);
+    
+    // Replace current feature properties using dictionary of updated property values
+    return feat.set(replace_null_dict);
+    
+  });
+
+  return(selected_pts_predictors);
+  
+};
+
+// Test on subsets
+var feat_plot = calval_plots.filter(ee.Filter.eq('dataset_id', 'ds18'));
+var test_plot = feat_plot.map(modelReflectance_plot);
+print('Plot test dataset', feat_plot);
+print('Plot test dataset, predictors extracted', test_plot);
+
+var feat_site = calval_sites.filter(ee.Filter.eq('dataset_id', 'ds12'));
+var test_site = feat_site.toList(feat_site.size()).map(modelReflectance_site);
+print('Site test dataset', feat_site);
+print('Site test dataset, predictors extracted', ee.FeatureCollection(test_site.flatten()));
+
+// Run on full collections
+var predictors_plots = calval_plots.map(modelReflectance_plot);
+var predictors_sites = ee.FeatureCollection(calval_sites.toList(calval_sites.size())
+                                                        .map(modelReflectance_site)
+                                                        .flatten());
+print('Plot full dataset, predictors extracted', predictors_plots);
+print('Site full dataset, predictors extracted', predictors_sites);
+
+// Export
+Export.table.toDrive({
+  collection: predictors_plots,
+  description: 'arctic_tundra_biomass_synthesis_plots_predictors_' + ccdc_start_year + '_' + ccdc_end_year + '_' + segmentFindStrategy + '_topocorr_' + out_version,
+  folder: export_folder, 
+  fileFormat: 'CSV'
+});
+Export.table.toDrive({
+  collection: predictors_sites,
+  description: 'arctic_tundra_biomass_synthesis_sites_predictors_'  + ccdc_start_year + '_' + ccdc_end_year + '_' +  segmentFindStrategy + '_topocorr_' + out_version,
+  folder: export_folder, 
+  fileFormat: 'CSV'
+});
+
+throw('stop');
+

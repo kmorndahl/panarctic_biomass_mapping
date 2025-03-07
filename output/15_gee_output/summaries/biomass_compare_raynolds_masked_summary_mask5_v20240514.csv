@@ -1,0 +1,4 @@
+system:index,FIRST_zone,dsl,total_biomass_g_raynolds_extent_mean,total_biomass_g_raynolds_extent_sum,total_biomass_g_raynolds_mean,total_biomass_g_raynolds_sum,total_biomass_lwr_g_raynolds_extent_mean,total_biomass_lwr_g_raynolds_extent_sum,total_biomass_upr_g_raynolds_extent_mean,total_biomass_upr_g_raynolds_extent_sum,.geo
+0,High Arctic,1,103670.77720455422,1.679629488606E14,217155.0345521564,3.2164704999399875E14,54277.983632303614,8.79388621839E13,181825.67285989106,2.94586160301E14,"{""type"":""MultiPoint"",""coordinates"":[]}"
+1,Low Arctic,2,376608.5033165974,1.296281679462E15,454989.11243357405,1.4875784689683932E15,229385.05906795792,7.895404564515E14,604524.6307967185,2.0807660920671E15,"{""type"":""MultiPoint"",""coordinates"":[]}"
+2,Pan Arctic,4,289253.8237891923,1.4642446283226E15,380836.04885615106,1.8092255189623912E15,173341.42349013593,8.774793186354E14,469238.3421142161,2.3753522523681E15,"{""type"":""MultiPoint"",""coordinates"":[]}"

@@ -1,0 +1,9 @@
+"Variable","Importance"
+"spectral_NDWI_annualMean",0.14509480501139
+"spectral_NDVI_peakSummer",0.121776459539546
+"spectral_NDWI_lateSummer",0.112850378573456
+"spectral_EVI2b_annualMedian",0.0429545410702062
+"spectral_EVI2b_startSnowfree",0.034726017721274
+"spectral_EVI2b_endSnowfree",0.0193480668360171
+"topo_slope",0.0142823980251726
+"spectral_EVI2b_annualRange",0.0065155630538293

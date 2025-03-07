@@ -1,0 +1,16 @@
+"Variable","Importance"
+"spectral_NDVI_annualMedian",0.118359307808163
+"spectral_EVI2b_lateSummer",0.0911628344125794
+"spectral_NDWI_endSnowfree",0.0489134719364162
+"spectral_EVI2b_startSnowfree",0.0403500087722236
+"spectral_EVI2b_peakSummer",0.0375611582110844
+"spectral_NDWI_lateSummer",0.0164009258122649
+"spectral_EVI2b_endSnowfree",0.00606478152331273
+"spectral_NDWI_peakSummer",0.00587650909632493
+"spectral_NDWI_startSnowfree",0.0053074924731314
+"spectral_NDWI_earlySummer",0.00492113595856968
+"topo_slope",0.000898787698308522
+"texture_NDVI_peakSummer",0.000893503632629421
+"spectral_EVI2b_annualRange",0.00085010275333236
+"spectral_NBR_changeESPS",0.000320412631880528
+"trees_presence",0

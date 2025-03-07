@@ -1,0 +1,85 @@
+/*
+
+DESCRIPTION: Create tree cover predictors
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- READ IN DATA -----
+
+var tree_cover = ee.Image("UMD/hansen/global_forest_change_2022_v1_10");
+
+// 1.1 ----- PARAMETERS -----
+
+var year = 2020; // Select year for predictions
+
+// Get projection information
+var proj = tree_cover.projection();
+var crs = proj.crs();
+var transform = proj.getInfo().transform;
+
+// 1.2 ----- FUNCTIONS -----
+
+// FUNCTION: calculateTrees2020
+// USE: Calculate tree percent cover in the year 2020
+// AUTHOR: Kathleen Orndahl
+// LAST UPDATE: 11-10-2024
+function calculateTrees2020(img){
+  
+  var lost_before_2020 = img.select('trees_lossyear')
+  .unmask(100) // Areas where there was no tree loss are set to very high value so they aren't assigned a loss
+  .gte(20);
+  
+  var tree_cover_updated = img.select('trees_cover').multiply(lost_before_2020).unmask(0);
+
+  var tree_presence_updated = img.select('trees_presence').add(img.select('trees_gain')).gt(0);
+  
+  return tree_cover_updated.addBands(tree_presence_updated);
+  
+}
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// Tidy
+tree_cover = tree_cover.select(['treecover2000', 'loss', 'gain', 'lossyear'], ['cover', 'loss', 'gain', 'lossyear']) // Select relevant bands
+                       .regexpRename('^', 'trees_'); // Add prefix
+
+// Calculate tree presence/absence
+tree_cover = tree_cover.addBands(tree_cover.select('trees_cover').gt(0).rename('trees_presence')); // Calculate presence/absence
+
+// Calculate tree cover for specified year
+tree_cover = ee.Image(ee.Algorithms.If(ee.Number(year).eq(2020), calculateTrees2020(tree_cover), tree_cover.select(['trees_cover', 'trees_presence']))); // Get tree predictors based on year
+
+// Unmask so that high Arctic and ocean are filled with zeros
+tree_cover = tree_cover.unmask(0); 
+
+// Check
+print('Tree cover:', tree_cover);
+Map.addLayer(tree_cover, null, 'Tree cover/presence');
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.image.toAsset({
+  image: tree_cover,
+  description: 'tree_cover_' + year,
+  assetId: 'projects/arctic-biomass-mapping/assets/predictors/tree_cover_' + year,
+  pyramidingPolicy: 'mean',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), // Specify as rectangle to avoid gaps in output
+  crs: 'EPSG:4326',
+  crsTransform: transform,
+  maxPixels: 1e12
+});

@@ -1,0 +1,79 @@
+0. CREATE REGIONS OF INTEREST AND SUPPLEMENTARY BIOMASS SYNTESIS DATASETS - local
+	0.0_define_arctic_roi.R 
+	0.1_define_arctic_zones.R
+
+1. LANDSAT CROSS-SENSOR CALIBRATION - local
+	1.0_landsat_calibration_export_data.R
+	1.1_landsat_calibration_clean_data.R
+	1.2_landsat_calibration_fit_models.R
+
+2. CREATE DATASETS TO USE IN GEE TO EXTRACT PREDICTOR DATA - local
+	2.0_aggregate_final_plot_data_for_gee.R
+	2.1_create_plot_date_dataset_for_gee.R
+
+3. ADD REPRESENTATIVENESS DATA TO BIOMASS DATA - local
+	3.0_join_representativeness_zones.R
+
+4. ADD PREDICTOR DATA TO BIOMASS DATA - local
+	4.0_join_predictors.R
+
+5. FILTER DATA PLOT LEVEL DATA - local
+	5.0_filter_plot_level_data.R
+
+6. AGGREGATE DATA TO SITE LEVEL, FILTER AND SAVE MODEL READY DATASETS - local
+	6.0_aggregate_site_level.R
+	6.1_filter_site_level_data.R
+
+7. EXPLORATORY DATA ANALYSIS - local
+	7.0_response_variable_distribution.R
+	7.1_pairs_site_level.R
+	7.2_spatial_blocking_figure.R
+
+8. RUN MODELS - CROSS VALIDATION - monsoon
+	8.0_nested_spatial_cv_binary_loocv.R
+	8.1_nested_spatial_cv_continuous_loocv.R
+
+9. CROSS-VALIDATION FIGURES AND MODEL COMPARISON - local
+	9.0_cv_model_accuracy_binary.R
+	9.1_cv_model_accuracy_continuous.R
+	9.2_cv_tuning_evaluation_binary.R
+	9.3_cv_tuning_evaluation_continuous.R
+
+10. CROSS-VALIDATION FINAL MODEL METRICS AND FIGURES - local
+	10.0_cv_final_model_accuracy.R
+
+11. RUN MODELS - FINAL MONTE CARLO - monsoon
+	11.0_mc_final_models_binary.R
+	11.1_mc_final_models_continuous.R
+	11.2_mc_final_models_binary_thresholds.R
+
+12. FORMAT MODELS FOR GEE - local
+	12.0_format_model_for_gee_mc.R
+
+13. ENSURE R AND GEE PREDICTIONS MATCH - local
+	11.0_compare_r_gee_predictions.R
+
+14. VARIABLE IMPORTANCE
+	14.0_mc_vip.R
+	14.1_mc_pdp.R
+
+15. GEE OUTPUT - GEE
+	all code on GEE
+
+16. BIOMASS SUMMARIES - local
+	16.0_biomass_summaries
+
+17. FIGURES - local
+	17.0_figures_zone_map.R
+	17.1_figures_vip.R
+	17.2_figures_biomass_density_cavm.R
+	17.3_figures_hillshade_3d.R
+	17.4_figures_topography_transect.R
+	17.5_figures_climate_analysis.R
+	17.6_figures_compare_pixels.R
+
+18. FINAL MAPS - local
+	18.0_tile_index_map.R
+	18.1_compress_final_maps.R
+
+

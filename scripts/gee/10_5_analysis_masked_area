@@ -1,0 +1,215 @@
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- SET PARAMETERS -----
+
+var occurrence_percent = 90; // Percent threshold to use for JRC water mask
+var buffer_dist = 0; // Buffer distance for JRC water mask
+var crs = 'EPSG:3571';
+var scale = 30;
+
+// 1.1 ----- READ IN AND TIDY DATA -----
+
+var final_mask = ee.Image('projects/arctic-biomass-mapping/assets/modeled_final/total_biomass_2020_j_index_v20240514').select('total_biomass').mask();
+var arctic_buffer = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/arctic_oroarctic_coast_buffer_laea_final');
+
+// Create area image
+var area = ee.Image.pixelArea().rename('area');
+
+// Get the JRC occurrence layer
+// Water = integer value indicating occurrence %, non-water or unmapped = masked
+// Apply threshold percent
+// Self mask to force all valid water occurrence percents to '1'
+// Unmask so that masked areas become zeros
+// Note that masked areas include oceans, so these become zeros
+var occurrence = ee.Image("JRC/GSW1_4/GlobalSurfaceWater")
+                   .select('occurrence')
+                   .gte(occurrence_percent)
+                   .selfMask()
+                   .unmask(0);
+
+// Get Open Street Map Water Classification layer
+// https://gee-community-catalog.org/projects/osm_water/
+// Grab ocean only (1)
+// Mask so that ocean = 1, not ocean = 0
+// NOTE: JRC water metadata no longer works for identifying ocean 
+//  - JRC/GSW1_0/Metadata outdated and inaccurate for Greenland
+//  - JRC/GSW1_4/Metadata has observations even in the ocean
+var osm_water = ee.ImageCollection("projects/sat-io/open-datasets/OSM_waterLayer").mosaic();
+var osm_ocean = osm_water.eq(1).selfMask().unmask(0); // 1 = ocean, 0 = not ocean
+
+// JRC observation data
+// Must use earlier version for differentiating ocean/land
+//  - JRC/GSW1_0/Metadata outdated and inaccurate for Greenland - we will deliniate Greenland ourselves
+//  - JRC/GSW1_4/Metadata has observations even in the ocean
+var jrc_obs = ee.Image("JRC/GSW1_0/Metadata").select('total_obs'); 
+
+// WorldCover data
+var lc = ee.ImageCollection("ESA/WorldCover/v200").first();
+
+// Greenland ocean data
+var greenland_ocean = ee.Image("OSU/GIMP/2000_ICE_OCEAN_MASK")
+                        .select('ocean_mask')
+                        .rename('water_mask')
+                        .eq(0)
+                        .unmask({value: 0, sameFootprint: false});
+                        
+// Greenland ice data
+var greenland_ice = ee.Image("OSU/GIMP/2000_ICE_OCEAN_MASK")
+                      .select('ice_mask')
+                      .rename('water_mask')
+                      .eq(1)
+                      .unmask({value: 0, sameFootprint: false});
+
+// ============================================
+// 2. CREATE MASKS AND CALCUALTE AREA =========
+// ============================================
+
+// 2.0 ----- OCEAN MASK -----
+
+// Get JRC observation mask
+var jrc_mask = jrc_obs.mask().rename(['water_mask']);
+
+// WorldCover data
+var lc = ee.ImageCollection("ESA/WorldCover/v200").first();
+
+// Get WorldCover ocean mask
+var lc_mask = lc.mask() // WorldCover data includes some nearshore ocean labeled water, rest of ocean is masked
+                .eq(1)
+                .rename(['water_mask']); 
+
+// 2.1 ----- ICESHEET MASK -----
+
+// Greenland ice data
+var greenland_ice = ee.Image("OSU/GIMP/2000_ICE_OCEAN_MASK").select('ice_mask').rename('water_mask');
+
+// Tidy Greenland data
+greenland_ice = greenland_ice.eq(1).unmask({value: 0, sameFootprint: false}).selfMask().rename('mask');
+
+// Calculate area
+var greenland_ice_area = area.updateMask(greenland_ice.mask());
+var greenland_ice_area_summary = greenland_ice_area.reduceRegions({
+  reducer: ee.Reducer.sum(),
+  collection: ee.FeatureCollection([ee.Feature(ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), null)]),
+  scale: scale,
+  crs: crs
+});
+
+// Export
+Export.image.toAsset({
+  image: greenland_ice.byte(), 
+  description: 'greenland_ice_masked', 
+  assetId: 'projects/arctic-biomass-mapping/assets/modeled_final/greenland_ice_masked',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false),
+  crs: crs,
+  scale: scale,
+  maxPixels: 1e13
+});
+Export.table.toDrive({
+  collection: greenland_ice_area_summary, 
+  description: 'greenland_ice_area_TEMP', 
+  folder: 'areas'
+});
+
+print('Greenland ice area', greenland_ice_area_summary);
+
+// 2.2 ----- INLAND AND NEARSHORE WATER MASK -----
+// Use JRC occurrence data so water threshold can be user determined
+// Choose lenient water threshold to start, stricter masking can be applied later
+
+// Get the maximum value between the 'occurrence' and 'osm_ocean' layers
+// Land: occurrence = 0, osm_ocean = 0, stays 0
+// Rivers/lakes: occurrence = 1, osm_ocean = 0, stays 1
+// Ocean: occurrence = 0, osm_ocean = 1, becomes 1
+var water_mask = occurrence.max(osm_ocean);
+
+// Reverse mask to remove water
+water_mask = water_mask.eq(0);
+
+// Perform buffer, if specified
+var inland_water_mask = ee.Image(ee.Algorithms.If(ee.Number(buffer_dist).eq(0), water_mask, water_mask.focalMin({radius: buffer_dist, kernelType: 'square', units: 'meters'})));
+
+// Restrict to ROI
+inland_water_mask = inland_water_mask.add(osm_ocean).eq(0);
+inland_water_mask = inland_water_mask.clip(arctic_buffer).selfMask().rename('mask');
+
+// Calculate area
+var inland_water_area = area.updateMask(inland_water_mask.mask());
+var inland_water_area_summary = inland_water_area.reduceRegions({
+  reducer: ee.Reducer.sum(),
+  collection: ee.FeatureCollection([ee.Feature(ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), null)]),
+  scale: scale,
+  crs: crs
+});
+
+// Export
+Export.image.toAsset({
+  image: inland_water_mask.byte(), 
+  description: 'inland_water_masked', 
+  assetId: 'projects/arctic-biomass-mapping/assets/modeled_final/inland_water_masked',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false),
+  crs: crs,
+  scale: scale,
+  maxPixels: 1e13
+});
+Export.table.toDrive({
+  collection: inland_water_area_summary, 
+  description: 'inland_water_area_TEMP', 
+  folder: 'areas'
+});
+
+print('Inland water area', inland_water_area_summary);
+
+// 2.3 ----- LANDSAT 'OTHER' MASK -----
+
+var landsat_mask = final_mask.add(inland_water_mask.select('mask').unmask(0))
+                             .add(greenland_ice.select('mask').unmask(0))
+                             .add(osm_ocean)
+                             .add(lc_mask.eq(0))
+                             .eq(0)
+                             .selfMask()
+                             .clip(arctic_buffer)
+                             .rename('mask');
+
+// Calculate area
+var other_area = area.updateMask(landsat_mask.mask());
+var other_area_summary = other_area.reduceRegions({
+  reducer: ee.Reducer.sum(),
+  collection: ee.FeatureCollection([ee.Feature(ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), null)]),
+  scale: scale,
+  crs: crs
+});
+
+// Export
+Export.image.toAsset({
+  image: landsat_mask.byte(), 
+  description: 'other_masked', 
+  assetId: 'projects/arctic-biomass-mapping/assets/modeled_final/other_masked',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false),
+  crs: crs,
+  scale: scale,
+  maxPixels: 1e13
+});
+Export.table.toDrive({
+  collection: other_area_summary, 
+  description: 'other_area_TEMP', 
+  folder: 'areas'
+});
+
+print("'Other' area", other_area_summary);
+
+// 2.4 ----- ALL MASK -----
+
+var water_snow_ice = greenland_ice.unmask(0).add(inland_water_mask.unmask(0)).add(landsat_mask.unmask(0)).selfMask();
+
+// Export
+Export.image.toAsset({
+  image: water_snow_ice.byte(), 
+  description: 'water_snow_ice_masked', 
+  assetId: 'projects/arctic-biomass-mapping/assets/modeled_final/water_snow_ice',
+  region: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false),
+  crs: crs,
+  scale: scale,
+  maxPixels: 1e13
+});

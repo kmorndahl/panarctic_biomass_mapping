@@ -1,0 +1,469 @@
+/*
+
+DESCRIPTION: Palettes
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// =====================
+// 1. PALETTES =========
+// =====================
+
+// 1.1 EXISTING PALETTES ----
+
+var palettes = require('users/gena/packages:palettes');
+exports.presence_palette = palettes.crameri.buda[10].reverse(); // yellow-pink
+exports.biomass_palette = palettes.cmocean.Speed[7]; // yellow-green
+exports.woody_dominance_palette = palettes.matplotlib.viridis[7].reverse(); // yellow-blue
+exports.uncertainty_palette = palettes.matplotlib.magma[7].reverse(); // yellow-dark purple
+exports.change_bwb_palette = palettes.crameri.broc[10]; // blue-white-brown
+exports.change_bwg_palette = palettes.crameri.cork[10]; // blue-white-green
+exports.change_ryg_palette = palettes.colorbrewer.RdYlGn[7]; // red-yellow-green
+exports.change_pwg_palette = palettes.colorbrewer.PiYG[7]; // pink-white-green
+exports.change_bwt_palette = palettes.colorbrewer.BrBG[7]; // brown-white-teal
+exports.change_pwo_palette = palettes.colorbrewer.PuOr[7]; // purple-white-orange
+exports.change_rwb_palette = palettes.colorbrewer.RdBu[7]; // red-white-blue
+
+// 1.2 PALETTES WITH ZEROS AS GREY ----
+
+// https://www.rampgenerator.com/?unique_colors=11&steps=100&step_color%5B1%5D=%23757571&at_step%5B1%5D=1&step_color%5B2%5D=%23ffff66&at_step%5B2%5D=2&step_color%5B3%5D=%23e5df68&at_step%5B3%5D=11&step_color%5B4%5D=%23ddc36f&at_step%5B4%5D=22&step_color%5B5%5D=%23d7aa75&at_step%5B5%5D=33&step_color%5B6%5D=%23d1917b&at_step%5B6%5D=44&step_color%5B7%5D=%23ca7982&at_step%5B7%5D=55&step_color%5B8%5D=%23c2618a&at_step%5B8%5D=66&step_color%5B9%5D=%23b94892&at_step%5B9%5D=77&step_color%5B10%5D=%23b32b9e&at_step%5B10%5D=88&step_color%5B11%5D=%23b301b3&at_step%5B11%5D=100&min_value=0&max_value=1&decimals=2&opacity=1&col=COLUMN_NAME&null_color=%23EEEEEE&ccl=1&legend_labels=&legendContainer_css=width%3A+86px%3B%0D%0Abackground%3A+%23fff%3B%0D%0Aborder%3A+1px+solid+%23000%3B%0D%0Apadding%3A+10px+10px%3B%0D%0Aline-height%3A0%3B%0D%0Aborder-radius%3A10px%3B%0D%0Amargin-top%3A10px%3B&legendColor_css=display%3A+inline-block%3B%0D%0Awidth%3A20px%3B%0D%0Aheight%3A14px%3B&legendLabel_css=display%3A+inline-block%3B%0D%0Afont-size%3A9px%3B%0D%0Amargin-bottom%3A0%3B&units=%25&default_tab=EarthEngine&shape_type=Polygon&point_size=1&point_shape=circle&ssn=1&updated=1
+exports.presence_palette_grey = "757571,FFFF66,FCFB66,F9F766,F6F466,F3F066,F0ED67,EDE967,EAE667,E7E267,E5DF68,E4DC68,E3D969,E2D769,E2D46A,E1D26B,E0CF6B,DFCD6C,DFCA6D,DEC86D,DDC56E,DDC36F,DCC06F,DBBE70,DBBC70,DAB971,DAB771,D9B572,D9B372,D8B073,D8AE73,D7AC74,D7AA75,D6A775,D5A576,D5A376,D4A077,D49E77,D39C78,D39A78,D29779,D29579,D1937A,D1917B,D08E7B,CF8C7C,CF8A7C,CE887D,CD867E,CD837E,CC817F,CB7F80,CB7D80,CA7B81,CA7982,C97682,C87483,C77284,C77084,C66E85,C56B86,C46987,C46787,C36588,C26389,C2618A,C15E8A,C05C8B,BF5A8C,BE578C,BD558D,BD538E,BC518F,BB4E8F,BA4C90,B94A91,B94892,B84593,B74294,B74095,B63D96,B63A97,B53898,B53599,B4329A,B4309B,B32D9C,B32B9E,B3279F,B324A1,B320A3,B31DA5,B319A6,B316A8,B312AA,B30FAC,B30BAD,B308AF,B304B1,B301B3";
+exports.presence_viz_grey = {"min":0, "max":1, palette:"757571,FFFF66,FCFB66,F9F766,F6F466,F3F066,F0ED67,EDE967,EAE667,E7E267,E5DF68,E4DC68,E3D969,E2D769,E2D46A,E1D26B,E0CF6B,DFCD6C,DFCA6D,DEC86D,DDC56E,DDC36F,DCC06F,DBBE70,DBBC70,DAB971,DAB771,D9B572,D9B372,D8B073,D8AE73,D7AC74,D7AA75,D6A775,D5A576,D5A376,D4A077,D49E77,D39C78,D39A78,D29779,D29579,D1937A,D1917B,D08E7B,CF8C7C,CF8A7C,CE887D,CD867E,CD837E,CC817F,CB7F80,CB7D80,CA7B81,CA7982,C97682,C87483,C77284,C77084,C66E85,C56B86,C46987,C46787,C36588,C26389,C2618A,C15E8A,C05C8B,BF5A8C,BE578C,BD558D,BD538E,BC518F,BB4E8F,BA4C90,B94A91,B94892,B84593,B74294,B74095,B63D96,B63A97,B53898,B53599,B4329A,B4309B,B32D9C,B32B9E,B3279F,B324A1,B320A3,B31DA5,B319A6,B316A8,B312AA,B30FAC,B30BAD,B308AF,B304B1,B301B3"};
+exports.presence_sld_grey = '<RasterSymbolizer>' +
+            '<Opacity>1.0</Opacity>' +
+            '<ColorMap>' +
+              '<ColorMapEntry color="#757571" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FFFF66" quantity="0.01" label="0.01%"/>' +
+              '<ColorMapEntry color="#FCFB66" quantity="0.02" label="0.02%"/>' +
+              '<ColorMapEntry color="#F9F766" quantity="0.03" label="0.03%"/>' +
+              '<ColorMapEntry color="#F6F466" quantity="0.04" label="0.04%"/>' +
+              '<ColorMapEntry color="#F3F066" quantity="0.05" label="0.05%"/>' +
+              '<ColorMapEntry color="#F0ED67" quantity="0.06" label="0.06%"/>' +
+              '<ColorMapEntry color="#EDE967" quantity="0.07" label="0.07%"/>' +
+              '<ColorMapEntry color="#EAE667" quantity="0.08" label="0.08%"/>' +
+              '<ColorMapEntry color="#E7E267" quantity="0.09" label="0.09%"/>' +
+              '<ColorMapEntry color="#E5DF68" quantity="0.10" label="0.10%"/>' +
+              '<ColorMapEntry color="#E4DC68" quantity="0.11" label="0.11%"/>' +
+              '<ColorMapEntry color="#E3D969" quantity="0.12" label="0.12%"/>' +
+              '<ColorMapEntry color="#E2D769" quantity="0.13" label="0.13%"/>' +
+              '<ColorMapEntry color="#E2D46A" quantity="0.14" label="0.14%"/>' +
+              '<ColorMapEntry color="#E1D26B" quantity="0.15" label="0.15%"/>' +
+              '<ColorMapEntry color="#E0CF6B" quantity="0.16" label="0.16%"/>' +
+              '<ColorMapEntry color="#DFCD6C" quantity="0.17" label="0.17%"/>' +
+              '<ColorMapEntry color="#DFCA6D" quantity="0.18" label="0.18%"/>' +
+              '<ColorMapEntry color="#DEC86D" quantity="0.19" label="0.19%"/>' +
+              '<ColorMapEntry color="#DDC56E" quantity="0.20" label="0.20%"/>' +
+              '<ColorMapEntry color="#DDC36F" quantity="0.21" label="0.21%"/>' +
+              '<ColorMapEntry color="#DCC06F" quantity="0.22" label="0.22%"/>' +
+              '<ColorMapEntry color="#DBBE70" quantity="0.23" label="0.23%"/>' +
+              '<ColorMapEntry color="#DBBC70" quantity="0.24" label="0.24%"/>' +
+              '<ColorMapEntry color="#DAB971" quantity="0.25" label="0.25%"/>' +
+              '<ColorMapEntry color="#DAB771" quantity="0.26" label="0.26%"/>' +
+              '<ColorMapEntry color="#D9B572" quantity="0.27" label="0.27%"/>' +
+              '<ColorMapEntry color="#D9B372" quantity="0.28" label="0.28%"/>' +
+              '<ColorMapEntry color="#D8B073" quantity="0.29" label="0.29%"/>' +
+              '<ColorMapEntry color="#D8AE73" quantity="0.30" label="0.30%"/>' +
+              '<ColorMapEntry color="#D7AC74" quantity="0.31" label="0.31%"/>' +
+              '<ColorMapEntry color="#D7AA75" quantity="0.32" label="0.32%"/>' +
+              '<ColorMapEntry color="#D6A775" quantity="0.33" label="0.33%"/>' +
+              '<ColorMapEntry color="#D5A576" quantity="0.34" label="0.34%"/>' +
+              '<ColorMapEntry color="#D5A376" quantity="0.35" label="0.35%"/>' +
+              '<ColorMapEntry color="#D4A077" quantity="0.36" label="0.36%"/>' +
+              '<ColorMapEntry color="#D49E77" quantity="0.37" label="0.37%"/>' +
+              '<ColorMapEntry color="#D39C78" quantity="0.38" label="0.38%"/>' +
+              '<ColorMapEntry color="#D39A78" quantity="0.39" label="0.39%"/>' +
+              '<ColorMapEntry color="#D29779" quantity="0.40" label="0.40%"/>' +
+              '<ColorMapEntry color="#D29579" quantity="0.41" label="0.41%"/>' +
+              '<ColorMapEntry color="#D1937A" quantity="0.42" label="0.42%"/>' +
+              '<ColorMapEntry color="#D1917B" quantity="0.43" label="0.43%"/>' +
+              '<ColorMapEntry color="#D08E7B" quantity="0.44" label="0.44%"/>' +
+              '<ColorMapEntry color="#CF8C7C" quantity="0.45" label="0.45%"/>' +
+              '<ColorMapEntry color="#CF8A7C" quantity="0.46" label="0.46%"/>' +
+              '<ColorMapEntry color="#CE887D" quantity="0.47" label="0.47%"/>' +
+              '<ColorMapEntry color="#CD867E" quantity="0.48" label="0.48%"/>' +
+              '<ColorMapEntry color="#CD837E" quantity="0.49" label="0.49%"/>' +
+              '<ColorMapEntry color="#CC817F" quantity="0.50" label="0.50%"/>' +
+              '<ColorMapEntry color="#CB7F80" quantity="0.51" label="0.51%"/>' +
+              '<ColorMapEntry color="#CB7D80" quantity="0.52" label="0.52%"/>' +
+              '<ColorMapEntry color="#CA7B81" quantity="0.53" label="0.53%"/>' +
+              '<ColorMapEntry color="#CA7982" quantity="0.54" label="0.54%"/>' +
+              '<ColorMapEntry color="#C97682" quantity="0.55" label="0.55%"/>' +
+              '<ColorMapEntry color="#C87483" quantity="0.56" label="0.56%"/>' +
+              '<ColorMapEntry color="#C77284" quantity="0.57" label="0.57%"/>' +
+              '<ColorMapEntry color="#C77084" quantity="0.58" label="0.58%"/>' +
+              '<ColorMapEntry color="#C66E85" quantity="0.59" label="0.59%"/>' +
+              '<ColorMapEntry color="#C56B86" quantity="0.60" label="0.60%"/>' +
+              '<ColorMapEntry color="#C46987" quantity="0.61" label="0.61%"/>' +
+              '<ColorMapEntry color="#C46787" quantity="0.62" label="0.62%"/>' +
+              '<ColorMapEntry color="#C36588" quantity="0.63" label="0.63%"/>' +
+              '<ColorMapEntry color="#C26389" quantity="0.64" label="0.64%"/>' +
+              '<ColorMapEntry color="#C2618A" quantity="0.65" label="0.65%"/>' +
+              '<ColorMapEntry color="#C15E8A" quantity="0.66" label="0.66%"/>' +
+              '<ColorMapEntry color="#C05C8B" quantity="0.67" label="0.67%"/>' +
+              '<ColorMapEntry color="#BF5A8C" quantity="0.68" label="0.68%"/>' +
+              '<ColorMapEntry color="#BE578C" quantity="0.69" label="0.69%"/>' +
+              '<ColorMapEntry color="#BD558D" quantity="0.70" label="0.70%"/>' +
+              '<ColorMapEntry color="#BD538E" quantity="0.71" label="0.71%"/>' +
+              '<ColorMapEntry color="#BC518F" quantity="0.72" label="0.72%"/>' +
+              '<ColorMapEntry color="#BB4E8F" quantity="0.73" label="0.73%"/>' +
+              '<ColorMapEntry color="#BA4C90" quantity="0.74" label="0.74%"/>' +
+              '<ColorMapEntry color="#B94A91" quantity="0.75" label="0.75%"/>' +
+              '<ColorMapEntry color="#B94892" quantity="0.76" label="0.76%"/>' +
+              '<ColorMapEntry color="#B84593" quantity="0.77" label="0.77%"/>' +
+              '<ColorMapEntry color="#B74294" quantity="0.78" label="0.78%"/>' +
+              '<ColorMapEntry color="#B74095" quantity="0.79" label="0.79%"/>' +
+              '<ColorMapEntry color="#B63D96" quantity="0.80" label="0.80%"/>' +
+              '<ColorMapEntry color="#B63A97" quantity="0.81" label="0.81%"/>' +
+              '<ColorMapEntry color="#B53898" quantity="0.82" label="0.82%"/>' +
+              '<ColorMapEntry color="#B53599" quantity="0.83" label="0.83%"/>' +
+              '<ColorMapEntry color="#B4329A" quantity="0.84" label="0.84%"/>' +
+              '<ColorMapEntry color="#B4309B" quantity="0.85" label="0.85%"/>' +
+              '<ColorMapEntry color="#B32D9C" quantity="0.86" label="0.86%"/>' +
+              '<ColorMapEntry color="#B32B9E" quantity="0.87" label="0.87%"/>' +
+              '<ColorMapEntry color="#B3279F" quantity="0.88" label="0.88%"/>' +
+              '<ColorMapEntry color="#B324A1" quantity="0.89" label="0.89%"/>' +
+              '<ColorMapEntry color="#B320A3" quantity="0.90" label="0.90%"/>' +
+              '<ColorMapEntry color="#B31DA5" quantity="0.91" label="0.91%"/>' +
+              '<ColorMapEntry color="#B319A6" quantity="0.92" label="0.92%"/>' +
+              '<ColorMapEntry color="#B316A8" quantity="0.93" label="0.93%"/>' +
+              '<ColorMapEntry color="#B312AA" quantity="0.94" label="0.94%"/>' +
+              '<ColorMapEntry color="#B30FAC" quantity="0.95" label="0.95%"/>' +
+              '<ColorMapEntry color="#B30BAD" quantity="0.96" label="0.96%"/>' +
+              '<ColorMapEntry color="#B308AF" quantity="0.97" label="0.97%"/>' +
+              '<ColorMapEntry color="#B304B1" quantity="0.98" label="0.98%"/>' +
+              '<ColorMapEntry color="#B301B3" quantity="1" label="1%"/>' +
+            '</ColorMap>' +
+          '</RasterSymbolizer>';
+
+// https://www.rampgenerator.com/?unique_colors=8&steps=100&step_color%5B1%5D=%23757571&at_step%5B1%5D=1&step_color%5B2%5D=%23fffdcd&at_step%5B2%5D=2&step_color%5B3%5D=%23e1cd73&at_step%5B3%5D=16&step_color%5B4%5D=%23aaac20&at_step%5B4%5D=32&step_color%5B5%5D=%235f920c&at_step%5B5%5D=48&step_color%5B6%5D=%23187328&at_step%5B6%5D=64&step_color%5B7%5D=%23144b2a&at_step%5B7%5D=80&step_color%5B8%5D=%23172313&at_step%5B8%5D=100&min_value=0&max_value=2000&decimals=0&opacity=1&col=COLUMN_NAME&null_color=%23EEEEEE&ccl=1&legend_labels=&legendContainer_css=width%3A+86px%3B%0D%0Abackground%3A+%23fff%3B%0D%0Aborder%3A+1px+solid+%23000%3B%0D%0Apadding%3A+10px+10px%3B%0D%0Aline-height%3A0%3B%0D%0Aborder-radius%3A10px%3B%0D%0Amargin-top%3A10px%3B&legendColor_css=display%3A+inline-block%3B%0D%0Awidth%3A20px%3B%0D%0Aheight%3A14px%3B&legendLabel_css=display%3A+inline-block%3B%0D%0Afont-size%3A9px%3B%0D%0Amargin-bottom%3A0%3B&units=%25&default_tab=EarthEngine&shape_type=Polygon&point_size=1&point_shape=circle&ssn=1&updated=1
+exports.biomass_palette_black = "000000,FFFDCD,FCF9C6,FAF6C0,F8F2B9,F6EFB3,F4EBAC,F2E8A6,F0E5A0,EDE199,EBDE93,E9DA8C,E7D786,E5D37F,E3D079,E1CD73,DDCA6D,DAC868,D6C663,D3C45E,CFC259,CCC053,C8BE4E,C5BC49,C2BA44,BEB83F,BBB639,B7B434,B4B22F,B0B02A,ADAE25,AAAC20,A5AA1E,A0A81D,9BA71C,97A51B,92A319,8DA218,89A017,849F16,7F9D14,7B9B13,769A12,719811,6D960F,68950E,63930D,5F920C,5A900D,568E0F,518C11,4D8A13,488814,448616,3F8418,3B821A,37801B,327E1D,2E7C1F,297A21,257822,207624,1C7426,187328,177028,176E28,176B28,176928,166628,166428,166128,165F29,155C29,155A29,155729,155529,145229,145029,144D29,144B2A,144928,144727,144526,144325,144124,143F23,153D21,153B20,15391F,15371E,15351D,15331C,15311B,162F19,162D18,162B17,162916,162715,162514,172313";
+exports.biomass_palette_grey = "757571,FFFDCD,FCF9C6,FAF6C0,F8F2B9,F6EFB3,F4EBAC,F2E8A6,F0E5A0,EDE199,EBDE93,E9DA8C,E7D786,E5D37F,E3D079,E1CD73,DDCA6D,DAC868,D6C663,D3C45E,CFC259,CCC053,C8BE4E,C5BC49,C2BA44,BEB83F,BBB639,B7B434,B4B22F,B0B02A,ADAE25,AAAC20,A5AA1E,A0A81D,9BA71C,97A51B,92A319,8DA218,89A017,849F16,7F9D14,7B9B13,769A12,719811,6D960F,68950E,63930D,5F920C,5A900D,568E0F,518C11,4D8A13,488814,448616,3F8418,3B821A,37801B,327E1D,2E7C1F,297A21,257822,207624,1C7426,187328,177028,176E28,176B28,176928,166628,166428,166128,165F29,155C29,155A29,155729,155529,145229,145029,144D29,144B2A,144928,144727,144526,144325,144124,143F23,153D21,153B20,15391F,15371E,15351D,15331C,15311B,162F19,162D18,162B17,162916,162715,162514,172313";
+exports.biomass_viz_grey = {"min":0, "max":2000, palette:"757571,FFFDCD,FCF9C6,FAF6C0,F8F2B9,F6EFB3,F4EBAC,F2E8A6,F0E5A0,EDE199,EBDE93,E9DA8C,E7D786,E5D37F,E3D079,E1CD73,DDCA6D,DAC868,D6C663,D3C45E,CFC259,CCC053,C8BE4E,C5BC49,C2BA44,BEB83F,BBB639,B7B434,B4B22F,B0B02A,ADAE25,AAAC20,A5AA1E,A0A81D,9BA71C,97A51B,92A319,8DA218,89A017,849F16,7F9D14,7B9B13,769A12,719811,6D960F,68950E,63930D,5F920C,5A900D,568E0F,518C11,4D8A13,488814,448616,3F8418,3B821A,37801B,327E1D,2E7C1F,297A21,257822,207624,1C7426,187328,177028,176E28,176B28,176928,166628,166428,166128,165F29,155C29,155A29,155729,155529,145229,145029,144D29,144B2A,144928,144727,144526,144325,144124,143F23,153D21,153B20,15391F,15371E,15351D,15331C,15311B,162F19,162D18,162B17,162916,162715,162514,172313"};
+exports.biomass_sld_grey = '<RasterSymbolizer>' +
+            '<Opacity>1.0</Opacity>' +
+            '<ColorMap>' +
+              '<ColorMapEntry color="#757571" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FFFDCD" quantity="20" label="20%"/>' +
+              '<ColorMapEntry color="#FCF9C6" quantity="40" label="40%"/>' +
+              '<ColorMapEntry color="#FAF6C0" quantity="60" label="60%"/>' +
+              '<ColorMapEntry color="#F8F2B9" quantity="80" label="80%"/>' +
+              '<ColorMapEntry color="#F6EFB3" quantity="100" label="100%"/>' +
+              '<ColorMapEntry color="#F4EBAC" quantity="120" label="120%"/>' +
+              '<ColorMapEntry color="#F2E8A6" quantity="140" label="140%"/>' +
+              '<ColorMapEntry color="#F0E5A0" quantity="160" label="160%"/>' +
+              '<ColorMapEntry color="#EDE199" quantity="180" label="180%"/>' +
+              '<ColorMapEntry color="#EBDE93" quantity="200" label="200%"/>' +
+              '<ColorMapEntry color="#E9DA8C" quantity="220" label="220%"/>' +
+              '<ColorMapEntry color="#E7D786" quantity="240" label="240%"/>' +
+              '<ColorMapEntry color="#E5D37F" quantity="260" label="260%"/>' +
+              '<ColorMapEntry color="#E3D079" quantity="280" label="280%"/>' +
+              '<ColorMapEntry color="#E1CD73" quantity="300" label="300%"/>' +
+              '<ColorMapEntry color="#DDCA6D" quantity="320" label="320%"/>' +
+              '<ColorMapEntry color="#DAC868" quantity="340" label="340%"/>' +
+              '<ColorMapEntry color="#D6C663" quantity="360" label="360%"/>' +
+              '<ColorMapEntry color="#D3C45E" quantity="380" label="380%"/>' +
+              '<ColorMapEntry color="#CFC259" quantity="400" label="400%"/>' +
+              '<ColorMapEntry color="#CCC053" quantity="420" label="420%"/>' +
+              '<ColorMapEntry color="#C8BE4E" quantity="440" label="440%"/>' +
+              '<ColorMapEntry color="#C5BC49" quantity="460" label="460%"/>' +
+              '<ColorMapEntry color="#C2BA44" quantity="480" label="480%"/>' +
+              '<ColorMapEntry color="#BEB83F" quantity="500" label="500%"/>' +
+              '<ColorMapEntry color="#BBB639" quantity="520" label="520%"/>' +
+              '<ColorMapEntry color="#B7B434" quantity="540" label="540%"/>' +
+              '<ColorMapEntry color="#B4B22F" quantity="560" label="560%"/>' +
+              '<ColorMapEntry color="#B0B02A" quantity="580" label="580%"/>' +
+              '<ColorMapEntry color="#ADAE25" quantity="600" label="600%"/>' +
+              '<ColorMapEntry color="#AAAC20" quantity="620" label="620%"/>' +
+              '<ColorMapEntry color="#A5AA1E" quantity="640" label="640%"/>' +
+              '<ColorMapEntry color="#A0A81D" quantity="660" label="660%"/>' +
+              '<ColorMapEntry color="#9BA71C" quantity="680" label="680%"/>' +
+              '<ColorMapEntry color="#97A51B" quantity="700" label="700%"/>' +
+              '<ColorMapEntry color="#92A319" quantity="720" label="720%"/>' +
+              '<ColorMapEntry color="#8DA218" quantity="740" label="740%"/>' +
+              '<ColorMapEntry color="#89A017" quantity="760" label="760%"/>' +
+              '<ColorMapEntry color="#849F16" quantity="780" label="780%"/>' +
+              '<ColorMapEntry color="#7F9D14" quantity="800" label="800%"/>' +
+              '<ColorMapEntry color="#7B9B13" quantity="820" label="820%"/>' +
+              '<ColorMapEntry color="#769A12" quantity="840" label="840%"/>' +
+              '<ColorMapEntry color="#719811" quantity="860" label="860%"/>' +
+              '<ColorMapEntry color="#6D960F" quantity="880" label="880%"/>' +
+              '<ColorMapEntry color="#68950E" quantity="900" label="900%"/>' +
+              '<ColorMapEntry color="#63930D" quantity="920" label="920%"/>' +
+              '<ColorMapEntry color="#5F920C" quantity="940" label="940%"/>' +
+              '<ColorMapEntry color="#5A900D" quantity="960" label="960%"/>' +
+              '<ColorMapEntry color="#568E0F" quantity="980" label="980%"/>' +
+              '<ColorMapEntry color="#518C11" quantity="1000" label="1000%"/>' +
+              '<ColorMapEntry color="#4D8A13" quantity="1020" label="1020%"/>' +
+              '<ColorMapEntry color="#488814" quantity="1040" label="1040%"/>' +
+              '<ColorMapEntry color="#448616" quantity="1060" label="1060%"/>' +
+              '<ColorMapEntry color="#3F8418" quantity="1080" label="1080%"/>' +
+              '<ColorMapEntry color="#3B821A" quantity="1100" label="1100%"/>' +
+              '<ColorMapEntry color="#37801B" quantity="1120" label="1120%"/>' +
+              '<ColorMapEntry color="#327E1D" quantity="1140" label="1140%"/>' +
+              '<ColorMapEntry color="#2E7C1F" quantity="1160" label="1160%"/>' +
+              '<ColorMapEntry color="#297A21" quantity="1180" label="1180%"/>' +
+              '<ColorMapEntry color="#257822" quantity="1200" label="1200%"/>' +
+              '<ColorMapEntry color="#207624" quantity="1220" label="1220%"/>' +
+              '<ColorMapEntry color="#1C7426" quantity="1240" label="1240%"/>' +
+              '<ColorMapEntry color="#187328" quantity="1260" label="1260%"/>' +
+              '<ColorMapEntry color="#177028" quantity="1280" label="1280%"/>' +
+              '<ColorMapEntry color="#176E28" quantity="1300" label="1300%"/>' +
+              '<ColorMapEntry color="#176B28" quantity="1320" label="1320%"/>' +
+              '<ColorMapEntry color="#176928" quantity="1340" label="1340%"/>' +
+              '<ColorMapEntry color="#166628" quantity="1360" label="1360%"/>' +
+              '<ColorMapEntry color="#166428" quantity="1380" label="1380%"/>' +
+              '<ColorMapEntry color="#166128" quantity="1400" label="1400%"/>' +
+              '<ColorMapEntry color="#165F29" quantity="1420" label="1420%"/>' +
+              '<ColorMapEntry color="#155C29" quantity="1440" label="1440%"/>' +
+              '<ColorMapEntry color="#155A29" quantity="1460" label="1460%"/>' +
+              '<ColorMapEntry color="#155729" quantity="1480" label="1480%"/>' +
+              '<ColorMapEntry color="#155529" quantity="1500" label="1500%"/>' +
+              '<ColorMapEntry color="#145229" quantity="1520" label="1520%"/>' +
+              '<ColorMapEntry color="#145029" quantity="1540" label="1540%"/>' +
+              '<ColorMapEntry color="#144D29" quantity="1560" label="1560%"/>' +
+              '<ColorMapEntry color="#144B2A" quantity="1580" label="1580%"/>' +
+              '<ColorMapEntry color="#144928" quantity="1600" label="1600%"/>' +
+              '<ColorMapEntry color="#144727" quantity="1620" label="1620%"/>' +
+              '<ColorMapEntry color="#144526" quantity="1640" label="1640%"/>' +
+              '<ColorMapEntry color="#144325" quantity="1660" label="1660%"/>' +
+              '<ColorMapEntry color="#144124" quantity="1680" label="1680%"/>' +
+              '<ColorMapEntry color="#143F23" quantity="1700" label="1700%"/>' +
+              '<ColorMapEntry color="#153D21" quantity="1720" label="1720%"/>' +
+              '<ColorMapEntry color="#153B20" quantity="1740" label="1740%"/>' +
+              '<ColorMapEntry color="#15391F" quantity="1760" label="1760%"/>' +
+              '<ColorMapEntry color="#15371E" quantity="1780" label="1780%"/>' +
+              '<ColorMapEntry color="#15351D" quantity="1800" label="1800%"/>' +
+              '<ColorMapEntry color="#15331C" quantity="1820" label="1820%"/>' +
+              '<ColorMapEntry color="#15311B" quantity="1840" label="1840%"/>' +
+              '<ColorMapEntry color="#162F19" quantity="1860" label="1860%"/>' +
+              '<ColorMapEntry color="#162D18" quantity="1880" label="1880%"/>' +
+              '<ColorMapEntry color="#162B17" quantity="1900" label="1900%"/>' +
+              '<ColorMapEntry color="#162916" quantity="1920" label="1920%"/>' +
+              '<ColorMapEntry color="#162715" quantity="1940" label="1940%"/>' +
+              '<ColorMapEntry color="#162514" quantity="1960" label="1960%"/>' +
+              '<ColorMapEntry color="#172313" quantity="2000" label="2000%"/>' +
+            '</ColorMap>' +
+          '</RasterSymbolizer>';
+
+exports.woody_dominance_palette_grey = "757571,FDE725,F5E527,EDE429,E5E32B,DDE12D,D5E02F,CDDF31,C5DE33,BDDC35,B5DB37,ADDA39,A5D83B,9DD73D,95D63F,8ED542,88D345,83D148,7DCF4B,78CD4F,72CB52,6DC955,67C759,62C55C,5CC35F,57C163,51BF66,4CBD69,46BB6D,41B970,3BB773,36B677,34B378,33B179,32AE7A,30AC7C,2FA97D,2EA77E,2CA47F,2BA281,2AA082,289D83,279B84,269886,249687,239388,229189,218F8B,218C8B,228A8B,23878B,24858B,25828B,26808B,277D8B,287B8C,29788C,2A768C,2B738C,2C718C,2D6E8C,2E6C8C,2F698C,30678D,31648C,32618B,335E8A,345B8A,355889,375588,385288,395087,3A4D86,3B4A86,3D4785,3E4484,3F4184,403E83,413B82,433982,43367F,43337D,43307B,432D78,432B76,432874,432571,43226F,431F6D,431D6B,431A68,431766,431464,431161,430F5F,430C5D,43095A,430658,430356,440154";
+exports.woody_dominance_viz_grey = {"min":0, "max":100, palette:"757571,FDE725,F5E527,EDE429,E5E32B,DDE12D,D5E02F,CDDF31,C5DE33,BDDC35,B5DB37,ADDA39,A5D83B,9DD73D,95D63F,8ED542,88D345,83D148,7DCF4B,78CD4F,72CB52,6DC955,67C759,62C55C,5CC35F,57C163,51BF66,4CBD69,46BB6D,41B970,3BB773,36B677,34B378,33B179,32AE7A,30AC7C,2FA97D,2EA77E,2CA47F,2BA281,2AA082,289D83,279B84,269886,249687,239388,229189,218F8B,218C8B,228A8B,23878B,24858B,25828B,26808B,277D8B,287B8C,29788C,2A768C,2B738C,2C718C,2D6E8C,2E6C8C,2F698C,30678D,31648C,32618B,335E8A,345B8A,355889,375588,385288,395087,3A4D86,3B4A86,3D4785,3E4484,3F4184,403E83,413B82,433982,43367F,43337D,43307B,432D78,432B76,432874,432571,43226F,431F6D,431D6B,431A68,431766,431464,431161,430F5F,430C5D,43095A,430658,430356,440154"};
+exports.woody_dominance_sld_grey = '<RasterSymbolizer>' +
+            '<Opacity>1.0</Opacity>' +
+            '<ColorMap>' +
+              '<ColorMapEntry color="#757571" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FDE725" quantity="1" label="1%"/>' +
+              '<ColorMapEntry color="#F5E527" quantity="2" label="2%"/>' +
+              '<ColorMapEntry color="#EDE429" quantity="3" label="3%"/>' +
+              '<ColorMapEntry color="#E5E32B" quantity="4" label="4%"/>' +
+              '<ColorMapEntry color="#DDE12D" quantity="5" label="5%"/>' +
+              '<ColorMapEntry color="#D5E02F" quantity="6" label="6%"/>' +
+              '<ColorMapEntry color="#CDDF31" quantity="7" label="7%"/>' +
+              '<ColorMapEntry color="#C5DE33" quantity="8" label="8%"/>' +
+              '<ColorMapEntry color="#BDDC35" quantity="9" label="9%"/>' +
+              '<ColorMapEntry color="#B5DB37" quantity="10" label="10%"/>' +
+              '<ColorMapEntry color="#ADDA39" quantity="11" label="11%"/>' +
+              '<ColorMapEntry color="#A5D83B" quantity="12" label="12%"/>' +
+              '<ColorMapEntry color="#9DD73D" quantity="13" label="13%"/>' +
+              '<ColorMapEntry color="#95D63F" quantity="14" label="14%"/>' +
+              '<ColorMapEntry color="#8ED542" quantity="15" label="15%"/>' +
+              '<ColorMapEntry color="#88D345" quantity="16" label="16%"/>' +
+              '<ColorMapEntry color="#83D148" quantity="17" label="17%"/>' +
+              '<ColorMapEntry color="#7DCF4B" quantity="18" label="18%"/>' +
+              '<ColorMapEntry color="#78CD4F" quantity="19" label="19%"/>' +
+              '<ColorMapEntry color="#72CB52" quantity="20" label="20%"/>' +
+              '<ColorMapEntry color="#6DC955" quantity="21" label="21%"/>' +
+              '<ColorMapEntry color="#67C759" quantity="22" label="22%"/>' +
+              '<ColorMapEntry color="#62C55C" quantity="23" label="23%"/>' +
+              '<ColorMapEntry color="#5CC35F" quantity="24" label="24%"/>' +
+              '<ColorMapEntry color="#57C163" quantity="25" label="25%"/>' +
+              '<ColorMapEntry color="#51BF66" quantity="26" label="26%"/>' +
+              '<ColorMapEntry color="#4CBD69" quantity="27" label="27%"/>' +
+              '<ColorMapEntry color="#46BB6D" quantity="28" label="28%"/>' +
+              '<ColorMapEntry color="#41B970" quantity="29" label="29%"/>' +
+              '<ColorMapEntry color="#3BB773" quantity="30" label="30%"/>' +
+              '<ColorMapEntry color="#36B677" quantity="31" label="31%"/>' +
+              '<ColorMapEntry color="#34B378" quantity="32" label="32%"/>' +
+              '<ColorMapEntry color="#33B179" quantity="33" label="33%"/>' +
+              '<ColorMapEntry color="#32AE7A" quantity="34" label="34%"/>' +
+              '<ColorMapEntry color="#30AC7C" quantity="35" label="35%"/>' +
+              '<ColorMapEntry color="#2FA97D" quantity="36" label="36%"/>' +
+              '<ColorMapEntry color="#2EA77E" quantity="37" label="37%"/>' +
+              '<ColorMapEntry color="#2CA47F" quantity="38" label="38%"/>' +
+              '<ColorMapEntry color="#2BA281" quantity="39" label="39%"/>' +
+              '<ColorMapEntry color="#2AA082" quantity="40" label="40%"/>' +
+              '<ColorMapEntry color="#289D83" quantity="41" label="41%"/>' +
+              '<ColorMapEntry color="#279B84" quantity="42" label="42%"/>' +
+              '<ColorMapEntry color="#269886" quantity="43" label="43%"/>' +
+              '<ColorMapEntry color="#249687" quantity="44" label="44%"/>' +
+              '<ColorMapEntry color="#239388" quantity="45" label="45%"/>' +
+              '<ColorMapEntry color="#229189" quantity="46" label="46%"/>' +
+              '<ColorMapEntry color="#218F8B" quantity="47" label="47%"/>' +
+              '<ColorMapEntry color="#218C8B" quantity="48" label="48%"/>' +
+              '<ColorMapEntry color="#228A8B" quantity="49" label="49%"/>' +
+              '<ColorMapEntry color="#23878B" quantity="50" label="50%"/>' +
+              '<ColorMapEntry color="#24858B" quantity="51" label="51%"/>' +
+              '<ColorMapEntry color="#25828B" quantity="52" label="52%"/>' +
+              '<ColorMapEntry color="#26808B" quantity="53" label="53%"/>' +
+              '<ColorMapEntry color="#277D8B" quantity="54" label="54%"/>' +
+              '<ColorMapEntry color="#287B8C" quantity="55" label="55%"/>' +
+              '<ColorMapEntry color="#29788C" quantity="56" label="56%"/>' +
+              '<ColorMapEntry color="#2A768C" quantity="57" label="57%"/>' +
+              '<ColorMapEntry color="#2B738C" quantity="58" label="58%"/>' +
+              '<ColorMapEntry color="#2C718C" quantity="59" label="59%"/>' +
+              '<ColorMapEntry color="#2D6E8C" quantity="60" label="60%"/>' +
+              '<ColorMapEntry color="#2E6C8C" quantity="61" label="61%"/>' +
+              '<ColorMapEntry color="#2F698C" quantity="62" label="62%"/>' +
+              '<ColorMapEntry color="#30678D" quantity="63" label="63%"/>' +
+              '<ColorMapEntry color="#31648C" quantity="64" label="64%"/>' +
+              '<ColorMapEntry color="#32618B" quantity="65" label="65%"/>' +
+              '<ColorMapEntry color="#335E8A" quantity="66" label="66%"/>' +
+              '<ColorMapEntry color="#345B8A" quantity="67" label="67%"/>' +
+              '<ColorMapEntry color="#355889" quantity="68" label="68%"/>' +
+              '<ColorMapEntry color="#375588" quantity="69" label="69%"/>' +
+              '<ColorMapEntry color="#385288" quantity="70" label="70%"/>' +
+              '<ColorMapEntry color="#395087" quantity="71" label="71%"/>' +
+              '<ColorMapEntry color="#3A4D86" quantity="72" label="72%"/>' +
+              '<ColorMapEntry color="#3B4A86" quantity="73" label="73%"/>' +
+              '<ColorMapEntry color="#3D4785" quantity="74" label="74%"/>' +
+              '<ColorMapEntry color="#3E4484" quantity="75" label="75%"/>' +
+              '<ColorMapEntry color="#3F4184" quantity="76" label="76%"/>' +
+              '<ColorMapEntry color="#403E83" quantity="77" label="77%"/>' +
+              '<ColorMapEntry color="#413B82" quantity="78" label="78%"/>' +
+              '<ColorMapEntry color="#433982" quantity="79" label="79%"/>' +
+              '<ColorMapEntry color="#43367F" quantity="80" label="80%"/>' +
+              '<ColorMapEntry color="#43337D" quantity="81" label="81%"/>' +
+              '<ColorMapEntry color="#43307B" quantity="82" label="82%"/>' +
+              '<ColorMapEntry color="#432D78" quantity="83" label="83%"/>' +
+              '<ColorMapEntry color="#432B76" quantity="84" label="84%"/>' +
+              '<ColorMapEntry color="#432874" quantity="85" label="85%"/>' +
+              '<ColorMapEntry color="#432571" quantity="86" label="86%"/>' +
+              '<ColorMapEntry color="#43226F" quantity="87" label="87%"/>' +
+              '<ColorMapEntry color="#431F6D" quantity="88" label="88%"/>' +
+              '<ColorMapEntry color="#431D6B" quantity="89" label="89%"/>' +
+              '<ColorMapEntry color="#431A68" quantity="90" label="90%"/>' +
+              '<ColorMapEntry color="#431766" quantity="91" label="91%"/>' +
+              '<ColorMapEntry color="#431464" quantity="92" label="92%"/>' +
+              '<ColorMapEntry color="#431161" quantity="93" label="93%"/>' +
+              '<ColorMapEntry color="#430F5F" quantity="94" label="94%"/>' +
+              '<ColorMapEntry color="#430C5D" quantity="95" label="95%"/>' +
+              '<ColorMapEntry color="#43095A" quantity="96" label="96%"/>' +
+              '<ColorMapEntry color="#430658" quantity="97" label="97%"/>' +
+              '<ColorMapEntry color="#430356" quantity="98" label="98%"/>' +
+              '<ColorMapEntry color="#440154" quantity="100" label="100%"/>' +
+            '</ColorMap>' +
+          '</RasterSymbolizer>';
+
+// https://www.rampgenerator.com/?unique_colors=8&steps=100&step_color%5B1%5D=%23757571&at_step%5B1%5D=1&step_color%5B2%5D=%23fcfdbf&at_step%5B2%5D=2&step_color%5B3%5D=%23fdae78&at_step%5B3%5D=16&step_color%5B4%5D=%23ee605e&at_step%5B4%5D=32&step_color%5B5%5D=%23b63679&at_step%5B5%5D=48&step_color%5B6%5D=%23711f81&at_step%5B6%5D=64&step_color%5B7%5D=%232c105c&at_step%5B7%5D=80&step_color%5B8%5D=%23000004&at_step%5B8%5D=100&min_value=0&max_value=4&decimals=0&opacity=1&col=COLUMN_NAME&null_color=%23EEEEEE&ccl=1&legend_labels=&legendContainer_css=width%3A+86px%3B%0D%0Abackground%3A+%23fff%3B%0D%0Aborder%3A+1px+solid+%23000%3B%0D%0Apadding%3A+10px+10px%3B%0D%0Aline-height%3A0%3B%0D%0Aborder-radius%3A10px%3B%0D%0Amargin-top%3A10px%3B&legendColor_css=display%3A+inline-block%3B%0D%0Awidth%3A20px%3B%0D%0Aheight%3A14px%3B&legendLabel_css=display%3A+inline-block%3B%0D%0Afont-size%3A9px%3B%0D%0Amargin-bottom%3A0%3B&units=%25&default_tab=EarthEngine&shape_type=Polygon&point_size=1&point_shape=circle&ssn=1&updated=1
+exports.uncertainty_palette_grey = "757571,FCFDBF,FCF7B9,FCF1B4,FCECAF,FCE6AA,FCE0A5,FCDBA0,FCD59B,FCCF96,FCCA91,FCC48C,FCBE87,FCB982,FCB37D,FDAE78,FCA976,FBA474,FA9F73,F99A71,F8956F,F7906E,F68B6C,F5876B,F48269,F37D67,F27866,F17364,F06E62,EF6961,EE645F,EE605E,EA5D5F,E75A61,E35863,E05564,DC5266,D95068,D54D69,D24B6B,CE486D,CB456E,C74370,C44072,C03D73,BD3B75,B93877,B63679,B13479,AD337A,A9317A,A4307B,A02E7B,9C2D7C,972B7C,932A7D,8F297D,8A277E,86267E,82247F,7D237F,792180,752080,711F81,6C1E7E,681D7C,641C7A,5F1B77,5B1A75,571973,521870,4E176E,4A166C,451569,411467,3D1365,381262,341160,30105E,2C105C,290F57,270E53,250D4E,230C4A,210C46,1E0B41,1C0A3D,1A0938,180834,160830,13072B,110627,0F0522,0D041E,0B041A,080315,060211,04010C,020008,000004";
+exports.uncertainty_viz_grey = {"min":0, "max":4, palette:"757571,FCFDBF,FCF7B9,FCF1B4,FCECAF,FCE6AA,FCE0A5,FCDBA0,FCD59B,FCCF96,FCCA91,FCC48C,FCBE87,FCB982,FCB37D,FDAE78,FCA976,FBA474,FA9F73,F99A71,F8956F,F7906E,F68B6C,F5876B,F48269,F37D67,F27866,F17364,F06E62,EF6961,EE645F,EE605E,EA5D5F,E75A61,E35863,E05564,DC5266,D95068,D54D69,D24B6B,CE486D,CB456E,C74370,C44072,C03D73,BD3B75,B93877,B63679,B13479,AD337A,A9317A,A4307B,A02E7B,9C2D7C,972B7C,932A7D,8F297D,8A277E,86267E,82247F,7D237F,792180,752080,711F81,6C1E7E,681D7C,641C7A,5F1B77,5B1A75,571973,521870,4E176E,4A166C,451569,411467,3D1365,381262,341160,30105E,2C105C,290F57,270E53,250D4E,230C4A,210C46,1E0B41,1C0A3D,1A0938,180834,160830,13072B,110627,0F0522,0D041E,0B041A,080315,060211,04010C,020008,000004"};
+exports.uncertainty_sld_grey = '<RasterSymbolizer>' +
+            '<Opacity>1.0</Opacity>' +
+            '<ColorMap>' +
+              '<ColorMapEntry color="#757571" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCFDBF" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCF7B9" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCF1B4" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCECAF" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCE6AA" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCE0A5" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCDBA0" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCD59B" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCCF96" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCCA91" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCC48C" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCBE87" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCB982" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCB37D" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FDAE78" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FCA976" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FBA474" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#FA9F73" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F99A71" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F8956F" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F7906E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F68B6C" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F5876B" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F48269" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F37D67" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F27866" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F17364" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#F06E62" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#EF6961" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#EE645F" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#EE605E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#EA5D5F" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#E75A61" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#E35863" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#E05564" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#DC5266" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#D95068" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#D54D69" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#D24B6B" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#CE486D" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#CB456E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#C74370" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#C44072" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#C03D73" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#BD3B75" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#B93877" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#B63679" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#B13479" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#AD337A" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#A9317A" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#A4307B" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#A02E7B" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#9C2D7C" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#972B7C" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#932A7D" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#8F297D" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#8A277E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#86267E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#82247F" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#7D237F" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#792180" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#752080" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#711F81" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#6C1E7E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#681D7C" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#641C7A" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#5F1B77" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#5B1A75" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#571973" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#521870" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#4E176E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#4A166C" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#451569" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#411467" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#3D1365" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#381262" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#341160" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#30105E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#2C105C" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#290F57" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#270E53" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#250D4E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#230C4A" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#210C46" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#1E0B41" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#1C0A3D" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#1A0938" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#180834" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#160830" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#13072B" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#110627" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#0F0522" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#0D041E" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#0B041A" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#080315" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#060211" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#04010C" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#020008" quantity="0" label="0%"/>' +
+              '<ColorMapEntry color="#000004" quantity="4" label="4%"/>' +
+            '</ColorMap>' +
+          '</RasterSymbolizer>';

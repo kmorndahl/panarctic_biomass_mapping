@@ -1,0 +1,768 @@
+dataset_id,citation_short,site_code,bioclim_zone,mat_degC,gdd_degC,map_mm,latitude,longitude
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.15B1,Low Arctic,-1.04999999999995,1453.4,757.4,61.27049,-163.23611
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.15B2,Low Arctic,-1.04999999999995,1453,757.5,61.265281,-163.248769
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.15B3,Low Arctic,-1.04999999999995,1454.5,755.5,61.23125,-163.21033
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.15B4,Low Arctic,-1.04999999999995,1453.1,756.9,61.25932,-163.24341
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.15B5,Low Arctic,-1.04999999999995,1453.7,755.4,61.2361933333333,-163.222313333333
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.15B6,Low Arctic,-1.14999999999998,1442.1,754.7,61.29382,-163.33643
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.15B7,Low Arctic,-1.14999999999998,1461.6,758.5,61.3223433333333,-163.010393333333
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.72B1,Low Arctic,-1.04999999999995,1453.9,756,61.24067,-163.20741
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.72B2,Low Arctic,-1.04999999999995,1452.3,756.3,61.2403066666667,-163.222966666667
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.72B3,Low Arctic,-1.14999999999998,1441.6,751.9,61.28967,-163.34109
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.72B3,Low Arctic,-1.14999999999998,1442.1,754.7,61.2895,-163.34098
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.72B4,Low Arctic,-1.04999999999995,1466.3,756,61.3454433333334,-163.007906666667
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB1,Low Arctic,-1.04999999999995,1453.4,757.4,61.270533,-163.23857
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB2,Low Arctic,-1.04999999999995,1451.5,756.6,61.26289,-163.24985
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB3,Low Arctic,-1.04999999999995,1453.9,756,61.237811,-163.209211
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB4,Low Arctic,-1.04999999999995,1453.1,756.9,61.26097,-163.24286
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB5,Low Arctic,-1.04999999999995,1453.7,755.4,61.2366466666667,-163.22278
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB6,Low Arctic,-1.14999999999998,1441.6,751.9,61.29157,-163.34142
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB6,Low Arctic,-1.14999999999998,1439.5,750.8,61.28386,-163.34811
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB7,Low Arctic,-1.14999999999998,1461.6,756.8,61.332145,-163.016135
+ds01,Baillargeon et al. 2022,USA.YukonKuskokwimDelta.UB7,Low Arctic,-1.14999999999998,1464.8,756.6,61.33209,-163.00804
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.1,Low Arctic,-1.04999999999995,1453.4,757.5,61.2738973333333,-163.229959666667
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.2,Low Arctic,-1.04999999999995,1453,757.5,61.2704213333333,-163.241260333333
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.3,Low Arctic,-0.949999999999989,1482.2,759.6,61.186934,-162.791085
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.4,Low Arctic,-0.949999999999989,1481.9,763.4,61.200304,-162.789667
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.4,Low Arctic,-1.04999999999995,1473.5,767.5,61.200698,-162.78977
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.5,Low Arctic,-1.04999999999995,1485.2,772.2,61.2779593333333,-162.630776333333
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.6,Low Arctic,-0.949999999999989,1492.7,770.6,61.2589703333333,-162.629530666667
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.72B2,Low Arctic,-1.14999999999998,1464.2,755.9,61.35168,-163.02261
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.72B3,Low Arctic,-1.14999999999998,1443.1,747.7,61.29202,-163.36098
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.72B4,Low Arctic,-1.04999999999995,1453.4,756.5,61.24974,-163.20647
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.B,Low Arctic,-1.04999999999995,1453.1,756.9,61.25985,-163.24033
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.B,Low Arctic,-1.04999999999995,1456.3,749,61.3208,-163.24312
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.B,Low Arctic,-1.04999999999995,1453.4,757.5,61.27071,-163.23524
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.U,Low Arctic,-1.04999999999995,1451.5,756.6,61.25816,-163.24728
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.U,Low Arctic,-1.04999999999995,1456.3,749,61.32074,-163.2437
+ds02,Ludwig et al. 2018,USA.YukonKuskokwimDelta.U,Low Arctic,-1.04999999999995,1453.4,757.4,61.27041,-163.2373
+ds03,Salmon et al. 2019,USA.Kougaork.GraminoidShrub,Low Arctic,-5.14999999999998,1228.9,569.1,65.16138,-164.82263
+ds03,Salmon et al. 2019,USA.Kougaork.GraminoidShrub,Low Arctic,-5.24999999999994,1214.1,564.2,65.1635833333333,-164.812763333333
+ds03,Salmon et al. 2019,USA.Kougaork.LowShrub,Low Arctic,-5.24999999999994,1214.1,564.2,65.16483,-164.82516
+ds03,Salmon et al. 2019,USA.Kougaork.LowShrub,Low Arctic,-5.14999999999998,1242.4,576.1,65.16244,-164.83061
+ds03,Salmon et al. 2019,USA.Kougaork.LowShrub,Low Arctic,-5.14999999999998,1228.9,569.1,65.16119,-164.82651
+ds03,Salmon et al. 2019,USA.Kougaork.TallShrub,Low Arctic,-5.24999999999994,1214.1,564.2,65.16483,-164.82314
+ds03,Salmon et al. 2019,USA.Kougaork.TallShrub,Low Arctic,-5.14999999999998,1228.9,569.1,65.15861,-164.82213
+ds03,Salmon et al. 2019,USA.Kougaork.TallShrub,Low Arctic,-5.14999999999998,1242.3,569,65.16422,-164.8308
+ds03,Salmon et al. 2019,USA.Kougaork.TallShrub,Low Arctic,-5.14999999999998,1242.4,576.1,65.16101,-164.83
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.001,Oroarctic,-2.14999999999998,989.9,740.7,69.0569605,20.8113765
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.002,Oroarctic,-2.14999999999998,989.9,740.7,69.0569066666667,20.8116515
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.006,Oroarctic,-2.14999999999998,989.9,740.7,69.0567615,20.812805
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.007,Oroarctic,-2.14999999999998,989.9,740.7,69.056663,20.8111885
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.010,Oroarctic,-2.14999999999998,989.9,740.7,69.056726,20.813043
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.013,Oroarctic,-2.14999999999998,989.9,740.7,69.05646875,20.812071
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.019,Oroarctic,-2.14999999999998,989.9,740.7,69.0563765,20.812931
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.020,Oroarctic,-2.14999999999998,989.9,740.7,69.0564595,20.8136285
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.032,Oroarctic,-2.14999999999998,989.9,740.7,69.056293,20.8143995
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.038,Oroarctic,-2.14999999999998,989.9,740.7,69.0561435,20.81338
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.040,Oroarctic,-2.14999999999998,989.9,740.7,69.056155,20.8146235
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.043,Oroarctic,-2.14999999999998,989.9,740.7,69.055979,20.8120476
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.045,Oroarctic,-2.14999999999998,989.9,740.7,69.0560705,20.8131088333333
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.047,Oroarctic,-2.14999999999998,989.9,740.7,69.0561268,20.8142976
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.068,Oroarctic,-2.14999999999998,989.9,740.7,69.0557185,20.8123775
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.072,Oroarctic,-2.14999999999998,989.9,740.7,69.055765,20.81479
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.074,Oroarctic,-2.14999999999998,989.9,740.7,69.055491,20.81148
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.075,Oroarctic,-2.14999999999998,989.9,740.7,69.055554,20.8120235
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.076,Oroarctic,-2.14999999999998,989.9,740.7,69.0555745,20.8127585
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.077,Oroarctic,-2.14999999999998,989.9,740.7,69.0556116666667,20.8132275
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.084,Oroarctic,-2.14999999999998,989.9,740.7,69.0554668333333,20.8123451666667
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.086,Oroarctic,-2.14999999999998,989.9,740.7,69.0554911666667,20.8136886666667
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.091,Oroarctic,-2.14999999999998,989.9,740.7,69.0553065,20.8121225
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.092,Oroarctic,-2.14999999999998,989.9,740.7,69.055386,20.812792
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1003,Oroarctic,-2.84999999999997,858.2,796.7,69.054028,20.832624
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1009,Oroarctic,-2.14999999999998,989.9,740.7,69.056715,20.831841
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1015,Oroarctic,-2.24999999999994,967.2,788.5,69.059356,20.831064
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1021,Oroarctic,-2.24999999999994,967.2,788.5,69.062024,20.830322
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1027,Oroarctic,-2.24999999999994,967.2,788.5,69.064702,20.829493
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.103,Oroarctic,-1.24999999999994,1150.6,687.5,69.0619,20.8014695
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1033,Oroarctic,-2.24999999999994,967.2,788.5,69.067405,20.828974
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1039,Oroarctic,-2.64999999999998,894.9,837.6,69.070087,20.828002
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1043,Oroarctic,-2.84999999999997,858.2,796.7,69.054033,20.83388
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1045,Oroarctic,-2.84999999999997,858.2,796.7,69.054945,20.833509
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1057,Oroarctic,-2.24999999999994,967.2,788.5,69.060315,20.832195
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1063,Oroarctic,-2.24999999999994,967.2,788.5,69.062949,20.831267
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1069,Oroarctic,-2.24999999999994,967.2,788.5,69.0656175,20.8305775
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.107,Oroarctic,-2.14999999999998,989.9,740.7,69.0551255,20.81212875
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1075,Oroarctic,-2.24999999999994,967.2,788.5,69.0683145,20.829727
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1087,Oroarctic,-2.84999999999997,858.2,796.7,69.055916,20.834579
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.109,Oroarctic,-1.74999999999994,1045.8,726,69.064537,20.8007005
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1093,Oroarctic,-2.14999999999998,989.9,740.7,69.058523,20.833814
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1099,Oroarctic,-2.24999999999994,967.2,788.5,69.061229,20.832881
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1105,Oroarctic,-2.24999999999994,967.2,788.5,69.063938,20.83235
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.111,Oroarctic,-2.14999999999998,989.9,740.7,69.055192,20.814799
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1111,Oroarctic,-2.24999999999994,967.2,788.5,69.066609,20.831503
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1117,Oroarctic,-2.64999999999998,894.9,837.6,69.069241,20.830789
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11201,Oroarctic,-2.14999999999998,989.9,740.7,69.051819,20.8207835
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11202,Oroarctic,-1.34999999999997,1142.6,689.2,69.050485,20.8210985
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11203,Oroarctic,-1.34999999999997,1142.6,689.2,69.0496345,20.823873
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11204,Oroarctic,-1.34999999999997,1142.6,689.2,69.048536,20.8248875
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11205,Oroarctic,-2.24999999999994,966.2,737.2,69.048222,20.8272305
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11206,Oroarctic,-2.24999999999994,966.2,737.2,69.048097,20.833127
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11207,Oroarctic,-2.84999999999997,858.2,796.7,69.049682,20.8313065
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11208,Oroarctic,-2.84999999999997,858.2,796.7,69.0508285,20.8290805
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11209,Oroarctic,-2.54999999999995,906.4,773.2,69.071507,20.812814
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11209,Oroarctic,-1.74999999999994,1045.8,726,69.071466,20.812847
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11210,Oroarctic,-2.54999999999995,906.4,773.2,69.072355,20.813928
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11211,Oroarctic,-2.54999999999995,906.4,773.2,69.0740145,20.813867
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11212,Oroarctic,-2.54999999999995,906.4,773.2,69.075527,20.813935
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11213,Oroarctic,-2.54999999999995,906.4,773.2,69.076053,20.815979
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11214,Oroarctic,-2.54999999999995,906.4,773.2,69.075366,20.818221
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11215,Oroarctic,-2.54999999999995,906.4,773.2,69.074213,20.8181375
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11216,Oroarctic,-2.54999999999995,906.4,773.2,69.072925,20.8181115
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11217,Oroarctic,-2.14999999999998,989.9,740.7,69.059643,20.811271
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11218,Oroarctic,-2.14999999999998,989.9,740.7,69.0571585,20.8128375
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11219,Oroarctic,-2.14999999999998,989.9,740.7,69.0546935,20.817256
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11220,Oroarctic,-2.24999999999994,967.2,788.5,69.062747,20.826351
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11221,Oroarctic,-2.24999999999994,967.2,788.5,69.061602,20.8241275
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11222,Oroarctic,-2.14999999999998,989.9,740.7,69.0548395,20.824367
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11223,Oroarctic,-1.24999999999994,1150.6,687.5,69.061178,20.808957
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11224,Oroarctic,-1.74999999999994,1045.8,726,69.0674455,20.8141845
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.11225,Oroarctic,-2.24999999999994,967.2,788.5,69.0683385,20.820739
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1123,Oroarctic,-2.84999999999997,858.2,796.7,69.0541415,20.836392
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1129,Oroarctic,-2.84999999999997,858.2,796.7,69.056793,20.8355555
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1135,Oroarctic,-2.24999999999994,967.2,788.5,69.059471,20.834835
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1141,Oroarctic,-2.24999999999994,967.2,788.5,69.062164,20.834119
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1147,Oroarctic,-2.24999999999994,967.2,788.5,69.064834,20.833354
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.115,Oroarctic,-1.74999999999994,1045.8,726,69.0672395,20.7998605
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1159,Oroarctic,-2.64999999999998,894.9,837.6,69.070163,20.8317245
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.117,Oroarctic,-2.14999999999998,989.9,740.7,69.05503,20.813076
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1171,Oroarctic,-2.84999999999997,858.2,796.7,69.057756,20.83669
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1183,Oroarctic,-2.24999999999994,967.2,788.5,69.063131,20.835209
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1189,Oroarctic,-2.24999999999994,967.2,788.5,69.065788,20.834342
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.1195,Oroarctic,-2.24999999999994,967.2,788.5,69.068476,20.833681
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.124,Oroarctic,-2.14999999999998,989.9,740.7,69.0548925,20.81280625
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.13,Oroarctic,-1.24999999999994,1150.6,687.5,69.057349,20.800181
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.132,Oroarctic,-2.14999999999998,989.9,740.7,69.0547226666667,20.8126563333333
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.133,Oroarctic,-1.24999999999994,1150.6,687.5,69.057485,20.803975
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.133,Oroarctic,-2.14999999999998,989.9,740.7,69.054762,20.8132525
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.138,Oroarctic,-2.14999999999998,989.9,740.7,69.054572,20.81122825
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.139,Oroarctic,-1.24999999999994,1150.6,687.5,69.06016,20.803265
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.139,Oroarctic,-2.14999999999998,989.9,740.7,69.0545981666667,20.8115091666667
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.149,Oroarctic,-2.14999999999998,989.9,740.7,69.0544881666667,20.8118353333333
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.151,Oroarctic,-1.74999999999994,1045.8,726,69.06548,20.801626
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.159,Oroarctic,-2.14999999999998,989.9,740.7,69.05443675,20.81294675
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.168,Oroarctic,-2.14999999999998,989.9,740.7,69.054311,20.8127785
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.169,Oroarctic,-1.24999999999994,1150.6,687.5,69.055737,20.805749
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.171,Oroarctic,-2.14999999999998,989.9,740.7,69.054375,20.814492
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.177,Oroarctic,-2.14999999999998,989.9,740.7,69.0541675,20.813059
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.178,Oroarctic,-2.14999999999998,989.9,740.7,69.0542695,20.813671
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.180,Oroarctic,-2.14999999999998,989.9,740.7,69.05430725,20.81496
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.181,Oroarctic,-1.24999999999994,1150.6,687.5,69.061085,20.8041975
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.187,Oroarctic,-1.74999999999994,1045.8,726,69.063795,20.8033845
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.188,Oroarctic,-2.14999999999998,989.9,740.7,69.0541045,20.81405
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.189,Oroarctic,-2.14999999999998,989.9,740.7,69.054144,20.8145175
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.19,Oroarctic,-1.24999999999994,1150.6,687.5,69.060005,20.7993695
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.193,Oroarctic,-1.74999999999994,1045.8,726,69.066389,20.8026355
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.199,Oroarctic,-1.74999999999994,1045.8,726,69.0691445,20.801878
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.206,Oroarctic,-2.14999999999998,989.9,740.7,69.0540483333334,20.812234
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.211,Oroarctic,-1.24999999999994,1150.6,687.5,69.056658,20.806747
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.217,Oroarctic,-1.24999999999994,1150.6,687.5,69.059361,20.805931
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.217,Oroarctic,-2.14999999999998,989.9,740.7,69.0539165,20.8163405
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.229,Oroarctic,-1.74999999999994,1045.8,726,69.06476,20.804367
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.235,Oroarctic,-1.74999999999994,1045.8,726,69.067352,20.80365
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.241,Oroarctic,-1.34999999999997,1142.6,689.2,69.052294,20.809143
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.247,Oroarctic,-2.14999999999998,989.9,740.7,69.0549295,20.808527
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.25,Oroarctic,-1.24999999999994,1150.6,687.5,69.062705,20.798675
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.253,Oroarctic,-1.24999999999994,1150.6,687.5,69.0575835,20.807735
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.259,Oroarctic,-1.24999999999994,1150.6,687.5,69.0602805,20.806857
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.265,Oroarctic,-1.74999999999994,1045.8,726,69.06296,20.8062885
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.271,Oroarctic,-1.74999999999994,1045.8,726,69.065607,20.8054195
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.277,Oroarctic,-1.74999999999994,1045.8,726,69.0683135,20.804661
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.289,Oroarctic,-2.14999999999998,989.9,740.7,69.055829,20.809413
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.295,Oroarctic,-1.24999999999994,1150.6,687.5,69.058565,20.808719
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.301,Oroarctic,-1.24999999999994,1150.6,687.5,69.061199,20.80793
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.31,Oroarctic,-1.74999999999994,1045.8,726,69.065356,20.797901
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.313,Oroarctic,-1.74999999999994,1045.8,726,69.066568,20.806482
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.317,Oroarctic,-1.74999999999994,1045.8,726,69.068372,20.805864
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.319,Oroarctic,-1.74999999999994,1045.8,726,69.069176,20.80555
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.325,Oroarctic,-2.14999999999998,989.9,740.7,69.0541215,20.8109745
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.331,Oroarctic,-2.14999999999998,989.9,740.7,69.056826,20.8105105
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.343,Oroarctic,-1.24999999999994,1150.6,687.5,69.06215,20.808952
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.349,Oroarctic,-1.74999999999994,1045.8,726,69.0648375,20.8082285
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.355,Oroarctic,-1.74999999999994,1045.8,726,69.0674705,20.807449
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.361,Oroarctic,-2.14999999999998,989.9,740.7,69.052434,20.812911
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.367,Oroarctic,-2.14999999999998,989.9,740.7,69.055092,20.8121795
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.37,Oroarctic,-1.74999999999994,1045.8,726,69.06801,20.79727
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.373,Oroarctic,-2.14999999999998,989.9,740.7,69.057754,20.811311
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.385,Oroarctic,-1.74999999999994,1045.8,726,69.063106,20.809896
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.391,Oroarctic,-1.74999999999994,1045.8,726,69.065793,20.809182
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.403,Oroarctic,-2.14999999999998,989.9,740.7,69.05339,20.813885
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.409,Oroarctic,-2.14999999999998,989.9,740.7,69.0560225,20.813232
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.415,Oroarctic,-2.14999999999998,989.9,740.7,69.0587185,20.8123995
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.421,Oroarctic,-1.24999999999994,1150.6,687.5,69.0613815,20.8117035
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.427,Oroarctic,-1.74999999999994,1045.8,726,69.0640265,20.810926
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.433,Oroarctic,-1.74999999999994,1045.8,726,69.066753,20.810102
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.439,Oroarctic,-1.74999999999994,1045.8,726,69.069359,20.809406
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.445,Oroarctic,-2.14999999999998,989.9,740.7,69.0543115,20.814823
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.451,Oroarctic,-2.14999999999998,989.9,740.7,69.056935,20.814177
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.457,Oroarctic,-2.14999999999998,989.9,740.7,69.059622,20.813387
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.469,Oroarctic,-1.74999999999994,1045.8,726,69.064997,20.811939
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.475,Oroarctic,-1.74999999999994,1045.8,726,69.067631,20.811078
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.481,Oroarctic,-2.14999999999998,989.9,740.7,69.052566,20.8167215
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.487,Oroarctic,-2.14999999999998,989.9,740.7,69.0551635,20.8159245
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.493,Oroarctic,-2.14999999999998,989.9,740.7,69.0578575,20.81509
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.499,Oroarctic,-2.14999999999998,989.9,740.7,69.0605265,20.8143865
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.505,Oroarctic,-1.74999999999994,1045.8,726,69.063236,20.813714
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.511,Oroarctic,-1.74999999999994,1045.8,726,69.0658895,20.8129365
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.517,Oroarctic,-1.74999999999994,1045.8,726,69.068568,20.812085
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.523,Oroarctic,-2.14999999999998,989.9,740.7,69.053436,20.817607
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.532,Oroarctic,-2.14999999999998,989.9,740.7,69.057483,20.816541
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.535,Oroarctic,-2.14999999999998,989.9,740.7,69.058889,20.816128
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.541,Oroarctic,-2.24999999999994,967.2,788.5,69.061476,20.815432
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.547,Oroarctic,-1.74999999999994,1045.8,726,69.064187,20.814758
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.554,Oroarctic,-1.74999999999994,1045.8,726,69.067325,20.813718
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.559,Oroarctic,-1.74999999999994,1045.8,726,69.069533,20.81305
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.565,Oroarctic,-2.14999999999998,989.9,740.7,69.054392,20.8185595
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.571,Oroarctic,-2.14999999999998,989.9,740.7,69.0570565,20.8178525
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.577,Oroarctic,-2.14999999999998,989.9,740.7,69.0597795,20.817085
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.583,Oroarctic,-2.24999999999994,967.2,788.5,69.062385,20.8163935
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.589,Oroarctic,-1.74999999999994,1045.8,726,69.065063,20.8156565
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.595,Oroarctic,-1.74999999999994,1045.8,726,69.067758,20.814894
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.607,Oroarctic,-2.14999999999998,989.9,740.7,69.055396,20.819537
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.61,Oroarctic,-1.24999999999994,1150.6,687.5,69.060977,20.800472
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.619,Oroarctic,-2.14999999999998,989.9,740.7,69.060674,20.818041
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.625,Oroarctic,-2.24999999999994,967.2,788.5,69.063341,20.817383
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.631,Oroarctic,-1.74999999999994,1045.8,726,69.066029,20.816597
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.637,Oroarctic,-1.74999999999994,1045.8,726,69.06874,20.81583
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.643,Oroarctic,-2.14999999999998,989.9,740.7,69.0536205,20.82133
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.649,Oroarctic,-2.14999999999998,989.9,740.7,69.056301,20.8207565
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.655,Oroarctic,-2.14999999999998,989.9,740.7,69.058979,20.8199005
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.661,Oroarctic,-2.24999999999994,967.2,788.5,69.061618,20.8191765
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.667,Oroarctic,-2.24999999999994,967.2,788.5,69.064324,20.8184245
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.673,Oroarctic,-1.74999999999994,1045.8,726,69.067013,20.817645
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.679,Oroarctic,-1.74999999999994,1045.8,726,69.069643,20.8168855
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.685,Oroarctic,-2.14999999999998,989.9,740.7,69.054563,20.822264
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.697,Oroarctic,-2.14999999999998,989.9,740.7,69.059847,20.820745
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.703,Oroarctic,-2.24999999999994,967.2,788.5,69.062568,20.820239
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.709,Oroarctic,-2.24999999999994,967.2,788.5,69.065219,20.819306
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.715,Oroarctic,-1.74999999999994,1045.8,726,69.067936,20.818663
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.721,Oroarctic,-2.14999999999998,989.9,740.7,69.052835,20.824171
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.727,Oroarctic,-2.14999999999998,989.9,740.7,69.0554845,20.8233215
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.73,Oroarctic,-1.74999999999994,1045.8,726,69.066351,20.798903
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.733,Oroarctic,-2.14999999999998,989.9,740.7,69.058202,20.822585
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.739,Oroarctic,-2.24999999999994,967.2,788.5,69.0608425,20.821862
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.745,Oroarctic,-2.24999999999994,967.2,788.5,69.063591,20.8210305
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.747,Oroarctic,-2.24999999999994,967.2,788.5,69.064367,20.820813
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.751,Oroarctic,-2.24999999999994,967.2,788.5,69.066216,20.820373
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.757,Oroarctic,-1.74999999999994,1045.8,726,69.068922,20.8195645
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.763,Oroarctic,-2.14999999999998,989.9,740.7,69.053744,20.825024
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.769,Oroarctic,-2.14999999999998,989.9,740.7,69.056431,20.824339
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.781,Oroarctic,-2.24999999999994,967.2,788.5,69.061732,20.822885
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.787,Oroarctic,-2.24999999999994,967.2,788.5,69.064403,20.822063
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.793,Oroarctic,-2.24999999999994,967.2,788.5,69.067089,20.821247
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.799,Oroarctic,-1.74999999999994,1045.8,726,69.069775,20.820528
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.805,Oroarctic,-2.14999999999998,989.9,740.7,69.0546775,20.8261225
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.811,Oroarctic,-2.14999999999998,989.9,740.7,69.0573825,20.825326
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.817,Oroarctic,-2.14999999999998,989.9,740.7,69.0600295,20.824668
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.823,Oroarctic,-2.24999999999994,967.2,788.5,69.0627,20.823894
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.829,Oroarctic,-2.24999999999994,967.2,788.5,69.0654055,20.823131
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.835,Oroarctic,-2.24999999999994,967.2,788.5,69.068073,20.8223195
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.841,Oroarctic,-2.14999999999998,989.9,740.7,69.052932,20.827891
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.847,Oroarctic,-2.14999999999998,989.9,740.7,69.05563,20.827152
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.853,Oroarctic,-2.14999999999998,989.9,740.7,69.058325,20.826374
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.859,Oroarctic,-2.24999999999994,967.2,788.5,69.060947,20.825582
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.862,Oroarctic,-2.24999999999994,967.2,788.5,69.062316,20.825192
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.865,Oroarctic,-2.24999999999994,967.2,788.5,69.06363,20.824795
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.871,Oroarctic,-2.24999999999994,967.2,788.5,69.066344,20.824113
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.877,Oroarctic,-2.24999999999994,967.2,788.5,69.06903,20.823324
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.889,Oroarctic,-2.14999999999998,989.9,740.7,69.0565215,20.8281165
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.895,Oroarctic,-2.14999999999998,989.9,740.7,69.05927,20.827326
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.901,Oroarctic,-2.24999999999994,967.2,788.5,69.061853,20.826601
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.903,Oroarctic,-2.24999999999994,967.2,788.5,69.062758,20.826373
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.907,Oroarctic,-2.24999999999994,967.2,788.5,69.06459,20.8258085
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.91,Oroarctic,-1.24999999999994,1150.6,687.5,69.0565755,20.8029245
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.913,Oroarctic,-2.24999999999994,967.2,788.5,69.0672285,20.825117
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.919,Oroarctic,-2.64999999999998,894.9,837.6,69.069914,20.824414
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.925,Oroarctic,-2.14999999999998,989.9,740.7,69.054798,20.829812
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.931,Oroarctic,-2.14999999999998,989.9,740.7,69.057517,20.829062
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.937,Oroarctic,-2.24999999999994,967.2,788.5,69.060176,20.82833
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.949,Oroarctic,-2.24999999999994,967.2,788.5,69.065506,20.826963
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.955,Oroarctic,-2.24999999999994,967.2,788.5,69.068204,20.826149
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.961,Oroarctic,-2.84999999999997,858.2,796.7,69.0531195,20.831682
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.967,Oroarctic,-2.14999999999998,989.9,740.7,69.055749,20.830848
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.97,Oroarctic,-1.24999999999994,1150.6,687.5,69.059261,20.802086
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.973,Oroarctic,-2.14999999999998,989.9,740.7,69.0583945,20.8301515
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.979,Oroarctic,-2.24999999999994,967.2,788.5,69.061098,20.829354
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.985,Oroarctic,-2.24999999999994,967.2,788.5,69.063758,20.8286555
+ds04,Happonen et al. 2022,Finland.Kilpisjarvi.997,Oroarctic,-2.24999999999994,967.2,788.5,69.0691,20.827139
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-BirchShrub,Oroarctic,-0.549999999999955,1133.5,1449.7,68.4120036666667,18.1491
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-DryHeath,Oroarctic,-0.549999999999955,1133.5,1449.7,68.410918,18.149244
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-Fern,Oroarctic,-0.549999999999955,1133.5,1449.7,68.411868,18.146485
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-MesicHeath,Oroarctic,-0.549999999999955,1133.5,1449.7,68.4117101666667,18.148993
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-Rock,Oroarctic,-0.549999999999955,1133.5,1449.7,68.412427,18.149872
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-SalixShrub,Oroarctic,-0.549999999999955,1133.5,1449.7,68.4119121428572,18.1480844285714
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-SeasonallyFlooded,Oroarctic,-0.549999999999955,1133.5,1449.7,68.411142,18.14799
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-Snowbed,Oroarctic,-0.549999999999955,1133.5,1449.7,68.412663,18.1497075714286
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.KJ-Wetland,Oroarctic,-0.549999999999955,1133.5,1449.7,68.411135,18.150706
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-BirchForest,Oroarctic,-0.449999999999989,1193.3,786.5,68.3179392222223,18.8216946666667
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-BirchShrub,Oroarctic,-0.449999999999989,1193.3,786.5,68.3181328,18.8228856
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-DryHeath,Oroarctic,-0.449999999999989,1193.3,786.5,68.3179463333333,18.8207065
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-Juniper,Oroarctic,-0.449999999999989,1193.3,786.5,68.318567,18.821916
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-MesicHeath,Oroarctic,-0.449999999999989,1193.3,786.5,68.3183595,18.82184
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-SalixShrub,Oroarctic,-0.449999999999989,1193.3,786.5,68.3172365,18.8205625
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-SeasonallyFlooded,Oroarctic,-0.449999999999989,1193.3,786.5,68.31825675,18.8212645
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-SparseVeg,Oroarctic,-0.449999999999989,1193.3,786.5,68.319012,18.82191
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NF-Wetland,Oroarctic,-0.449999999999989,1193.3,786.5,68.3176223333333,18.8211613333333
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-BirchForest,Oroarctic,-1.04999999999995,1101.3,812,68.302082,18.847432
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-BirchShrub,Oroarctic,-1.04999999999995,1101.3,812,68.300806,18.84696
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-BirchShrub,Oroarctic,-1.34999999999997,1039.5,840.2,68.2998427500001,18.843514
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-DryHeath,Oroarctic,-1.34999999999997,1039.5,840.2,68.2994083333333,18.8404275
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-DryHeath,Oroarctic,-1.64999999999998,994,830.4,68.300694,18.851
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-Juniper,Oroarctic,-1.04999999999995,1101.3,812,68.301622,18.845266
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-MesicHeath,Oroarctic,-1.34999999999997,1039.5,840.2,68.2994025,18.84220725
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-MesicHeath,Oroarctic,-1.04999999999995,1101.3,812,68.3011415,18.846844
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-Rock,Oroarctic,-1.04999999999995,1101.3,812,68.301018,18.846205
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-SalixShrub,Oroarctic,-1.04999999999995,1101.3,812,68.302056,18.844598
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-SalixShrub,Oroarctic,-1.34999999999997,1039.5,840.2,68.2996945,18.843477
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-SeasonallyFlooded,Oroarctic,-1.34999999999997,1039.5,840.2,68.30077,18.841028
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-Snowbed,Oroarctic,-1.34999999999997,1039.5,840.2,68.300473,18.846935
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-SparseVeg,Oroarctic,-1.34999999999997,1039.5,840.2,68.29947725,18.84036225
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-SparseVeg,Oroarctic,-1.04999999999995,1101.3,812,68.301704,18.84761
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.NT-Wetland,Oroarctic,-1.04999999999995,1101.3,812,68.301552,18.8459555
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-BirchForest,Oroarctic,-0.149999999999977,1240.5,1282.1,68.4388365,18.2665255
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-BirchForest,Oroarctic,0.0500000000000114,1266.7,1284.6,68.438786,18.2592031666667
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-BirchShrub,Oroarctic,0.0500000000000114,1266.7,1284.6,68.4387244000001,18.2618378
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-DryHeath,Oroarctic,0.0500000000000114,1266.7,1284.6,68.4375423333334,18.260762
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-MesicHeath,Oroarctic,0.0500000000000114,1266.7,1284.6,68.4383926666667,18.2629835
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-MesicHeath,Oroarctic,-0.149999999999977,1240.5,1282.1,68.4380975,18.2678105
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-Rock,Oroarctic,0.0500000000000114,1266.7,1284.6,68.4387215,18.263116
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-SalixShrub,Oroarctic,0.0500000000000114,1266.7,1284.6,68.438719,18.26454
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-SalixShrub,Oroarctic,-0.149999999999977,1240.5,1282.1,68.4382306666667,18.266173
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-Wetland,Oroarctic,-0.149999999999977,1240.5,1282.1,68.4376145,18.2672095
+ds05,Siewert and Olofsson 2020,Sweden.Abisko.VJ-Wetland,Oroarctic,0.0500000000000114,1266.7,1284.6,68.439951,18.261089
+ds06,Siewert et al. 2015,Russia.Kytalyk.T1,Low Arctic,-13.45,744.6,301.1,70.833403,147.450678
+ds06,Siewert et al. 2015,Russia.Kytalyk.T1,Low Arctic,-13.45,739.1,301.8,70.8360816666666,147.45156
+ds06,Siewert et al. 2015,Russia.Kytalyk.T1,Low Arctic,-13.45,735.6,302.5,70.8425413333333,147.453688166667
+ds06,Siewert et al. 2015,Russia.Kytalyk.T1,Low Arctic,-13.45,734.5,302.9,70.8487895,147.4557345
+ds06,Siewert et al. 2015,Russia.Kytalyk.T2,Low Arctic,-13.45,739.7,301.2,70.8282422857143,147.479386428571
+ds06,Siewert et al. 2015,Russia.Kytalyk.T3,Low Arctic,-13.45,745.2,300.8,70.8228608,147.497467
+ds07,Natali et al. 2014,USA.BrooksRange.6,Oroarctic,-5.24999999999994,1458.3,598.2,66.45008,-150.618643333333
+ds07,Natali et al. 2014,USA.BrooksRange.7,Oroarctic,-6.94999999999999,1448.8,565.4,67.2373066666667,-150.161396666667
+ds07,Natali et al. 2014,USA.BrooksRange.8,Low Arctic,-8.54999999999996,826.5,505.4,68.0690366666667,-149.58041
+ds07,Natali et al. 2014,USA.InteriorAlaska.1,Subarctic,-1.54999999999995,2037.6,490.2,64.8693533333333,-147.86043
+ds07,Natali et al. 2014,USA.InteriorAlaska.17,Subarctic,-1.64999999999998,1943.7,570.1,64.9505566666667,-147.617786666667
+ds07,Natali et al. 2014,USA.InteriorAlaska.2,Subarctic,-1.54999999999995,2037.6,490.2,64.8668933333333,-147.857853333333
+ds07,Natali et al. 2014,USA.InteriorAlaska.20,Subarctic,-1.64999999999998,2043.7,517.3,64.71487,-148.288486666667
+ds07,Natali et al. 2014,USA.InteriorAlaska.21,Subarctic,-1.64999999999998,2032.9,515.3,64.70683,-148.291683333333
+ds07,Natali et al. 2014,USA.InteriorAlaska.22,Subarctic,-1.14999999999998,1966.4,503.8,64.3235066666667,-146.688096666667
+ds07,Natali et al. 2014,USA.InteriorAlaska.23,Subarctic,-1.04999999999995,1803.1,472.5,62.1667233333333,-145.470423333333
+ds07,Natali et al. 2014,USA.InteriorAlaska.24,Oroarctic,-3.54999999999995,1422,600.4,63.8781766666667,-149.253146666667
+ds07,Natali et al. 2014,USA.InteriorAlaska.3,Subarctic,-1.54999999999995,2037.6,490.2,64.8672933333333,-147.85878
+ds07,Natali et al. 2014,USA.InteriorAlaska.4,Subarctic,-1.54999999999995,2037.6,490.2,64.8661833333334,-147.857283333333
+ds07,Natali et al. 2014,USA.InteriorAlaska.5,Subarctic,-1.34999999999997,2073.9,510.3,64.8674933333333,-147.785416666667
+ds07,Natali et al. 2014,USA.NorthSlope.10,Low Arctic,-10.45,949.7,365.6,69.15647,-148.838046666667
+ds07,Natali et al. 2014,USA.NorthSlope.11,Low Arctic,-10.55,899.8,337.7,69.4330333333333,-148.673986666667
+ds07,Natali et al. 2014,USA.NorthSlope.12,Low Arctic,-10.55,892.3,340.1,69.42538,-148.69665
+ds07,Natali et al. 2014,USA.NorthSlope.12,Low Arctic,-10.55,899.8,337.7,69.43302,-148.67363
+ds07,Natali et al. 2014,USA.NorthSlope.13,High Arctic,-10.7499999999999,481.4,209.5,70.37411,-148.553233333333
+ds07,Natali et al. 2014,USA.NorthSlope.14,Low Arctic,-10.7499999999999,619.3,233.9,70.1621633333334,-148.465406666667
+ds07,Natali et al. 2014,USA.NorthSlope.15,Low Arctic,-10.7499999999999,865.7,276.9,69.67401,-148.721886666667
+ds07,Natali et al. 2014,USA.NorthSlope.16,Low Arctic,-10.7499999999999,865.7,276.9,69.67443,-148.718726666667
+ds07,Natali et al. 2014,USA.NorthSlope.9,Low Arctic,-9.14999999999998,826.1,464.2,68.4775533333333,-149.50269
+ds07,Natali et al. 2014,USA.SewardPeninsula.18,Low Arctic,-3.04999999999995,1146.4,749.4,64.50793,-165.296196666667
+ds07,Natali et al. 2014,USA.SewardPeninsula.19,Low Arctic,-5.04999999999996,1238.8,539.8,65.2293933333333,-164.827446666667
+ds08,Loranty and Natali Unpub.,Russia.Kolyma.OW1,Low Arctic,-11.55,804.8,285.7,69.347496,161.514128
+ds08,Loranty and Natali Unpub.,Russia.Kolyma.T1,Low Arctic,-11.35,949.7,282,69.26689,161.65974
+ds08,Loranty and Natali Unpub.,Russia.Kolyma.T2,Low Arctic,-11.35,949.7,282,69.26498,161.66273
+ds08,Loranty and Natali Unpub.,Russia.Kolyma.T3,Low Arctic,-11.45,821.2,286.5,69.34499,161.51045
+ds08,Loranty and Natali Unpub.,Russia.Kolyma.WT1,Low Arctic,-11.55,804.8,285.7,69.347613,161.514
+ds09,Heard et al. 2016,Russia.Kolyma.AKB,Low Arctic,-11.15,1114,315.4,68.811938,160.985297
+ds09,Heard et al. 2016,Russia.Kolyma.AMB,Subarctic,-10.65,1191.6,334.4,68.63849,161.389233
+ds09,Heard et al. 2016,Russia.Kolyma.DYB,Subarctic,-11.55,1055.9,306.5,68.633194,159.079018
+ds09,Heard et al. 2016,Russia.Kolyma.EXB,Subarctic,-10.7499999999999,1140.5,356.8,68.74333,161.40688
+ds09,Heard et al. 2016,Russia.Kolyma.HBR,Subarctic,-10.7499999999999,1124.6,352.9,68.75055,161.47281
+ds09,Heard et al. 2016,Russia.Kolyma.HDR,Subarctic,-10.7499999999999,1131.6,356.1,68.75606,161.44852
+ds09,Heard et al. 2016,Russia.Kolyma.LBR,Subarctic,-10.7499999999999,1104.3,361.2,68.7431,161.49712
+ds09,Heard et al. 2016,Russia.Kolyma.LDR,Subarctic,-10.7499999999999,1131.6,356.1,68.75591,161.44672
+ds09,Heard et al. 2016,Russia.Kolyma.OMB,Subarctic,-11.55,1041.1,296,68.72518,158.90396
+ds09,Heard et al. 2016,Russia.Kolyma.PFB,Subarctic,-10.65,1237.4,334.7,68.513357,161.49928
+ds09,Heard et al. 2016,Russia.Kolyma.PPB,Subarctic,-10.65,1229.5,344.8,68.50654,161.567297
+ds09,Heard et al. 2016,Russia.Kolyma.PPYB,Subarctic,-10.65,1235.6,334.3,68.511498,161.49373
+ds09,Heard et al. 2016,Russia.Kolyma.SYB,Subarctic,-10.7499999999999,1112.8,354.9,68.744788,161.3841
+ds09,Heard et al. 2016,Russia.Kolyma.T-10Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.75352,161.39455
+ds09,Heard et al. 2016,Russia.Kolyma.T-11Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.74869,161.40834
+ds09,Heard et al. 2016,Russia.Kolyma.T-12Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.74837,161.40237
+ds09,Heard et al. 2016,Russia.Kolyma.T-13Y4,Subarctic,-10.7499999999999,1140.5,356.8,68.7466,161.40433
+ds09,Heard et al. 2016,Russia.Kolyma.T-14Y4,Subarctic,-10.7499999999999,1140.5,356.8,68.74513,161.40063
+ds09,Heard et al. 2016,Russia.Kolyma.T-15Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.75188,161.39095
+ds09,Heard et al. 2016,Russia.Kolyma.T-16Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.75519,161.40013
+ds09,Heard et al. 2016,Russia.Kolyma.T-17Y4,Subarctic,-10.7499999999999,1140.5,356.8,68.74152,161.41411
+ds09,Heard et al. 2016,Russia.Kolyma.T-18Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.74632,161.38776
+ds09,Heard et al. 2016,Russia.Kolyma.T-1Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.74747,161.38988
+ds09,Heard et al. 2016,Russia.Kolyma.T-2Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.74529,161.38908
+ds09,Heard et al. 2016,Russia.Kolyma.T-3Y4,Subarctic,-10.65,1142.7,356.1,68.74472,161.41486
+ds09,Heard et al. 2016,Russia.Kolyma.T-4Y4,Subarctic,-10.7499999999999,1140.5,356.8,68.74164,161.41562
+ds09,Heard et al. 2016,Russia.Kolyma.T-5Y4,Subarctic,-10.7499999999999,1118.2,362.5,68.74834,161.4135
+ds09,Heard et al. 2016,Russia.Kolyma.T-6Y4,Subarctic,-10.7499999999999,1118.2,362.5,68.74939,161.41759
+ds09,Heard et al. 2016,Russia.Kolyma.T-7Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.74915,161.39
+ds09,Heard et al. 2016,Russia.Kolyma.T-8Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.74932,161.3882
+ds09,Heard et al. 2016,Russia.Kolyma.T-9Y4,Subarctic,-10.7499999999999,1117.7,361.5,68.75267,161.38544
+ds09,Heard et al. 2016,Russia.Kolyma.TB1,Low Arctic,-11.55,801.7,256.5,69.47578,162.148999
+ds09,Heard et al. 2016,Russia.Kolyma.TB2,Low Arctic,-11.55,796.3,261.1,69.469452,162.179456
+ds09,Heard et al. 2016,Russia.Kolyma.TB3,Low Arctic,-11.55,805.1,247.9,69.487158,162.13803
+ds09,Heard et al. 2016,Russia.Kolyma.TB4,Low Arctic,-11.55,795.5,259.3,69.474118,162.206796
+ds09,Heard et al. 2016,Russia.Kolyma.TBC,Low Arctic,-11.55,805.6,244,69.486887,162.156954
+ds09,Heard et al. 2016,Russia.Kolyma.TBC2,Low Arctic,-11.55,795.5,259.3,69.471407,162.214232
+ds09,Heard et al. 2016,Russia.Kolyma.TBC3,Low Arctic,-11.45,806.5,235,69.506304,162.125364
+ds09,Heard et al. 2016,Russia.Kolyma.TBC4,Low Arctic,-11.45,800.4,233,69.513645,162.108882
+ds10,Orndahl 2022,Canada.Yukon.PAGE,Low Arctic,-9.14999999999998,872.5,469.7,69.444201,-140.994442
+ds10,Orndahl 2022,Canada.Yukon.PEDRO,Subarctic,-2.94999999999999,1490.9,609.2,65.033633,-147.50591
+ds10,Orndahl 2022,Canada.Yukon.PINNELL,Oroarctic,-6.74999999999994,972.8,629.2,65.411801,-145.978035
+ds10,Orndahl 2022,Canada.Yukon.PORCUPINECREEK,Oroarctic,-5.94999999999999,1081.9,574.4,64.625243,-144.457526
+ds10,Orndahl 2022,Canada.Yukon.PRINDLE,Oroarctic,-6.34999999999997,983.8,691.3,65.360592,-146.525306
+ds10,Orndahl 2022,Canada.Yukon.QUARTZ02,Oroarctic,-5.84999999999997,1083.9,648.5,65.372846,-146.638447
+ds10,Orndahl 2022,Canada.Yukon.SCHAR,Oroarctic,-6.74999999999994,999.6,568.4,64.6084,-143.86342
+ds10,Orndahl 2022,Canada.Yukon.SEELA,Oroarctic,-5.54999999999996,996.6,658,64.710709,-138.880521
+ds10,Orndahl 2022,Canada.Yukon.SHEEPCREEK,Low Arctic,-9.64999999999998,973.9,446.8,69.1590450000001,-140.150177
+ds10,Orndahl 2022,Canada.Yukon.SIXTYMILE,Oroarctic,-6.04999999999996,1096.1,554.8,63.92754,-140.71201
+ds10,Orndahl 2022,Canada.Yukon.SOUTHSTONEBOY,Oroarctic,-7.34999999999997,850.9,703.3,64.674254,-144.274677
+ds10,Orndahl 2022,Canada.Yukon.SPRINGRIVER,Low Arctic,-10.65,726.3,522.1,69.034354,-139.645378
+ds10,Orndahl 2022,Canada.Yukon.STONE01,Oroarctic,-6.44999999999999,1022.3,588.5,64.692318,-144.201422
+ds10,Orndahl 2022,Canada.Yukon.STONE02,Oroarctic,-6.54999999999996,996.4,597.8,64.692378,-144.207113
+ds10,Orndahl 2022,Canada.Yukon.SWEDE,Oroarctic,-5.84999999999997,1140.7,664.8,64.195483,-140.354316
+ds10,Orndahl 2022,Canada.Yukon.THISTLE,Oroarctic,-5.74999999999994,1099.4,602.8,63.028578,-139.086731
+ds10,Orndahl 2022,Canada.Yukon.TOPOFTHEWORLD,Oroarctic,-5.74999999999994,1263.2,571.2,64.103667,-141.262385
+ds10,Orndahl 2022,Canada.Yukon.TOWYK,Oroarctic,-6.24999999999994,1080,648.1,64.06548,-140.953158
+ds10,Orndahl 2022,Canada.Yukon.TWELVEMILE,Oroarctic,-5.94999999999999,1179.3,559.7,65.382018,-145.989594
+ds10,Orndahl 2022,Canada.Yukon.UPPERPALDO,Oroarctic,-7.74999999999994,817.3,713.6,64.733846,-144.069387
+ds10,Orndahl 2022,Canada.Yukon.UPPERQUARRY,Oroarctic,-8.74999999999994,948.5,645.9,67.0109930000001,-136.209134
+ds10,Orndahl 2022,Canada.Yukon.WHEATEAR,Oroarctic,-7.14999999999998,797.1,716.8,65.560968,-147.194864
+ds10,Orndahl 2022,Canada.Yukon.WICKERSHAM,Subarctic,-3.94999999999999,1306,613.7,65.189643,-148.063821
+ds10,Orndahl 2022,USA.InteriorAlaska.AMSUMMIT,Oroarctic,-6.04999999999996,1151,547.3,64.598506,-141.248633
+ds10,Orndahl 2022,USA.InteriorAlaska.AUFEIS,Oroarctic,-10.05,1076.4,407.5,68.781209,-140.705077
+ds10,Orndahl 2022,USA.InteriorAlaska.BABBAGE,Low Arctic,-10.65,958.4,483.2,68.697025,-139.083258
+ds10,Orndahl 2022,USA.InteriorAlaska.BLOWRIVER,Low Arctic,-9.24999999999994,879.9,539,68.773497,-137.456703
+ds10,Orndahl 2022,USA.InteriorAlaska.BROWNSCREEK,Oroarctic,-5.84999999999997,1166.2,639.8,64.136275,-140.816252
+ds10,Orndahl 2022,USA.InteriorAlaska.BUTLER,Oroarctic,-6.74999999999994,960.6,612.9,63.921062,-140.649706
+ds10,Orndahl 2022,USA.InteriorAlaska.CALF,Low Arctic,-9.14999999999998,889.8,442.9,69.479689,-140.776314
+ds10,Orndahl 2022,USA.InteriorAlaska.COALCREEK,Oroarctic,-5.34999999999997,1162,606.9,64.560125,-139.906365
+ds10,Orndahl 2022,USA.InteriorAlaska.DEW,Low Arctic,-9.14999999999998,726.9,520.5,68.857112,-137.332129
+ds10,Orndahl 2022,USA.InteriorAlaska.EXCELSIOR,Oroarctic,-5.04999999999996,1209.1,647.4,62.765305,-138.978657
+ds10,Orndahl 2022,USA.InteriorAlaska.FIRTH,Low Arctic,-9.64999999999998,973.9,446.8,69.161421,-140.147256
+ds10,Orndahl 2022,USA.InteriorAlaska.FRYINGPAN,Oroarctic,-6.54999999999996,1091.9,525.9,65.383798,-145.461601
+ds10,Orndahl 2022,USA.InteriorAlaska.GRANITE,Oroarctic,-6.64999999999998,994.3,617.3,64.788337,-142.329137
+ds10,Orndahl 2022,USA.InteriorAlaska.GULCH,Oroarctic,-7.04999999999996,991.1,653,65.00369,-144.152549
+ds10,Orndahl 2022,USA.InteriorAlaska.KINGSOLOMON,Oroarctic,-5.24999999999994,1271.8,549.4,63.870336,-138.947671
+ds10,Orndahl 2022,USA.InteriorAlaska.LOWERQUARRY,Oroarctic,-8.64999999999998,991.1,612.9,67.001902,-136.219452
+ds10,Orndahl 2022,USA.InteriorAlaska.MATSONCREEK,Oroarctic,-6.94999999999999,941.3,619.8,63.77761,-140.7453
+ds10,Orndahl 2022,USA.InteriorAlaska.MOLLYCREEK,Oroarctic,-5.44999999999999,1103.6,600.1,64.2182150000001,-143.566971
+ds10,Orndahl 2022,USA.InteriorAlaska.MOSQUITOCREEK,Oroarctic,-5.74999999999994,1051.6,674.9,63.953856,-143.697851
+ds10,Orndahl 2022,USA.InteriorAlaska.OBRIAN,Oroarctic,-6.14999999999998,1065.8,670.2,65.5251,-147.204502
+ds10,Orndahl 2022,USA.InteriorAlaska.OGILVIE,Subarctic,-7.94999999999999,1159.2,544,65.7863440000001,-137.782985
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.A-Betula,Subarctic,-1.54999999999995,1169.7,673.4,68.8310796666667,23.844295
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.A-Betula,Subarctic,-1.54999999999995,1164.8,679.2,68.8316225,23.8457855
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.A-Hummock,Subarctic,-1.54999999999995,1169.7,673.4,68.83121975,23.844276
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.A-Salix,Subarctic,-1.54999999999995,1169.7,673.4,68.8311693333334,23.8445263333333
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.A-Salix,Subarctic,-1.54999999999995,1164.8,679.2,68.83155,23.845701
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.A-Sedge,Subarctic,-1.54999999999995,1169.7,673.4,68.831302,23.844813
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.A-Sphagnum,Subarctic,-1.54999999999995,1169.7,673.4,68.831212,23.84415425
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.EC-Betula,Subarctic,-1.44999999999999,1191.7,671,68.83250775,23.9122545
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.EC-Hummock,Subarctic,-1.44999999999999,1191.7,671,68.832319,23.9123975
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.EC-Salix,Subarctic,-1.44999999999999,1191.7,671,68.8325735,23.91253325
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.EC-Sedge,Subarctic,-1.44999999999999,1191.7,671,68.832148,23.9119985
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.EC-Sphagnum,Subarctic,-1.44999999999999,1191.7,671,68.8321844,23.9126598
+ds11,Villoslada et al. 2023,Finland.Javrresduottar.EC-Spring,Subarctic,-1.44999999999999,1191.7,671,68.8331612,23.911178
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.A-Betula,Subarctic,-1.54999999999995,1169.7,673.4,68.8331005,23.836898
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.A-Hummock,Subarctic,-1.54999999999995,1169.7,673.4,68.8334316,23.837973
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.A-Salix,Subarctic,-1.54999999999995,1169.7,673.4,68.83326,23.8383333333333
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.A-Sedge,Subarctic,-1.54999999999995,1169.7,673.4,68.833157,23.8369058
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.A-Sphagnum,Subarctic,-1.54999999999995,1169.7,673.4,68.83304825,23.83673825
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Betula,Subarctic,-1.44999999999999,1191.7,671,68.8335473333333,23.9121596666667
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Betula,Subarctic,-1.44999999999999,1191.7,666.7,68.8348715,23.9140925
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Hummock,Subarctic,-1.44999999999999,1191.7,671,68.8334553333333,23.9122366666667
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Hummock,Subarctic,-1.44999999999999,1191.7,666.7,68.834827,23.914026
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Salix,Subarctic,-1.44999999999999,1191.7,671,68.833432,23.9123703333333
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Salix,Subarctic,-1.44999999999999,1191.7,666.7,68.835002,23.9142895
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Sedge,Subarctic,-1.44999999999999,1191.7,671,68.83361,23.9115746666667
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Sedge,Subarctic,-1.44999999999999,1191.7,666.7,68.835142,23.91441
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Sphagnum,Subarctic,-1.44999999999999,1191.7,671,68.833738,23.911328
+ds11,Villoslada et al. 2023,Norway.Javrresduottar.EC-Sphagnum,Subarctic,-1.44999999999999,1191.7,666.7,68.83493425,23.91438675
+ds12,Raynolds 2018,USA.NorthSlope.Atqasuk,Low Arctic,-10.65,717.8,260.4,70.4645,-157.450722
+ds12,Raynolds 2018,USA.NorthSlope.Barrow,High Arctic,-10.65,292.3,243.2,71.3219330000001,-156.608417
+ds12,Raynolds 2018,USA.NorthSlope.Ivotuk1,Low Arctic,-10.35,826.1,495.8,68.4870170000001,-155.7436
+ds12,Raynolds 2018,USA.NorthSlope.Ivotuk3,Low Arctic,-10.35,827.5,500.8,68.47935,-155.738233
+ds12,Raynolds 2018,USA.NorthSlope.Oumalik1,Low Arctic,-10.55,887.2,311.1,69.735267,-155.869567
+ds12,Raynolds 2018,USA.NorthSlope.Oumalik2,Low Arctic,-10.55,887.2,311.1,69.7324829999999,-155.863767
+ds12,Raynolds 2018,USA.SewardPeninsula.QuartzCreek1,Low Arctic,-5.54999999999996,1138.6,518,65.449162,-164.629181
+ds12,Raynolds 2018,USA.SewardPeninsula.QuartzCreek2,Low Arctic,-5.54999999999996,1098.8,532.8,65.458561,-164.638968
+ds12,Raynolds 2018,USA.SewardPeninsula.QuartzCreek3,Low Arctic,-5.94999999999999,1033.3,599.9,65.5479,-163.4314
+ds13,Greaves et al. 2018,USA.Toolik.S1,Low Arctic,-9.84999999999997,840.6,456.6,68.6422595,-149.573170055556
+ds13,Greaves et al. 2018,USA.Toolik.S2,Low Arctic,-9.84999999999997,824.9,459.1,68.6310789500001,-149.57122695
+ds13,Greaves et al. 2018,USA.Toolik.S3,Low Arctic,-9.74999999999994,839.6,464.8,68.6253333333333,-149.585533833333
+ds13,Greaves et al. 2018,USA.Toolik.S3,Low Arctic,-9.84999999999997,824.9,459.1,68.625452125,-149.585194375
+ds14,Arndal et al. 2009,Greenland.Zackenberg.C1,High Arctic,-11.15,225.2,332.1,74.4783823333333,-20.5371957777778
+ds14,Arndal et al. 2009,Greenland.Zackenberg.C2,High Arctic,-11.05,233.8,324.7,74.4684525555556,-20.5437928888889
+ds14,Arndal et al. 2009,Greenland.Zackenberg.C5,High Arctic,-11.35,206.7,352.7,74.4916183333333,-20.4947186666667
+ds14,Arndal et al. 2009,Greenland.Zackenberg.D1,High Arctic,-11.2499999999999,210.4,339.1,74.4788074444444,-20.5546786666667
+ds14,Arndal et al. 2009,Greenland.Zackenberg.D4,High Arctic,-11.35,206.7,352.7,74.4927672222222,-20.498573
+ds14,Arndal et al. 2009,Greenland.Zackenberg.D5,High Arctic,-11.05,233.8,324.7,74.4687895555556,-20.5483003333333
+ds14,Arndal et al. 2009,Greenland.Zackenberg.G1,High Arctic,-11.15,225.2,332.1,74.4701569999999,-20.5407994444444
+ds14,Arndal et al. 2009,Greenland.Zackenberg.G3,High Arctic,-11.15,220.9,336.1,74.4789122222222,-20.5171368888889
+ds14,Arndal et al. 2009,Greenland.Zackenberg.G5,High Arctic,-11.35,206.7,352.7,74.4887303333333,-20.5023778888889
+ds14,Arndal et al. 2009,Greenland.Zackenberg.K2,High Arctic,-11.2499999999999,210.4,339.1,74.4801225555555,-20.5510293333333
+ds14,Arndal et al. 2009,Greenland.Zackenberg.K3,High Arctic,-11.15,220.9,336.1,74.4742105555556,-20.5190384444444
+ds14,Arndal et al. 2009,Greenland.Zackenberg.K4,High Arctic,-11.15,220.9,336.1,74.479215,-20.5249251111111
+ds14,Arndal et al. 2009,Greenland.Zackenberg.S1,High Arctic,-11.2499999999999,210.4,339.1,74.4798922222222,-20.5483982222222
+ds14,Arndal et al. 2009,Greenland.Zackenberg.S4,High Arctic,-11.35,206.7,352.7,74.4911183333334,-20.5044586666667
+ds14,Arndal et al. 2009,Greenland.Zackenberg.S5,High Arctic,-11.15,223,329.7,74.4712128888889,-20.5747201111111
+ds15,Berner et al. 2023,Finland.Kevo.1,Subarctic,-1.44999999999999,1192.7,665,69.418675,25.9818896
+ds15,Berner et al. 2023,Finland.Kevo.2,Subarctic,-1.44999999999999,1192.7,665,69.4148786,25.9864538
+ds15,Berner et al. 2023,Finland.Kevo.3,Oroarctic,-0.749999999999943,1248.7,657,69.7914875,27.107688
+ds15,Berner et al. 2023,Finland.Kevo.3,Oroarctic,-0.849999999999966,1238.9,673.1,69.791816,27.107935
+ds15,Berner et al. 2023,Finland.Kevo.4,Oroarctic,-0.549999999999955,1300.9,617.3,69.792284,27.0753448
+ds15,Berner et al. 2023,Finland.Kevo.5,Subarctic,-0.649999999999977,1297,575.9,69.6088432,27.2460674
+ds15,Berner et al. 2023,Finland.Kevo.6,Subarctic,-0.449999999999989,1347.8,552.6,69.6020376666667,27.2148163333333
+ds15,Berner et al. 2023,Finland.Kevo.6,Subarctic,-0.349999999999966,1375.6,545.5,69.6023125,27.2143875
+ds15,Berner et al. 2023,Finland.Kevo.7,Oroarctic,-0.449999999999989,1339,575.1,69.7328876,27.0438696
+ds15,Berner et al. 2023,Finland.Kevo.8,Oroarctic,-0.949999999999989,1186.7,656.6,69.89703,27.06568
+ds15,Berner et al. 2023,Finland.Kevo.8,Oroarctic,-0.449999999999989,1269.1,601.7,69.897195,27.064811
+ds15,Berner et al. 2023,Finland.Kevo.9,Oroarctic,0.0500000000000114,1381.6,604.3,69.909966,27.0827532
+ds15,Berner et al. 2023,Finland.Kevo.10,Oroarctic,-0.449999999999989,1273.4,680.6,70.0397252,27.8678338
+ds15,Berner et al. 2023,Finland.Kevo.11,Oroarctic,0.150000000000034,1395,594.7,70.0586484,27.5789162
+ds15,Berner et al. 2023,Finland.Kevo.12,Oroarctic,-1.64999999999998,1155,593.9,69.791104,26.278474
+ds15,Berner et al. 2023,Finland.Kevo.13,Subarctic,-0.149999999999977,1375,637.1,69.246798,27.2895424
+ds15,Berner et al. 2023,Finland.Kevo.14,Subarctic,-0.149999999999977,1368.3,639.6,69.2689634,27.2182002
+ds15,Berner et al. 2023,Finland.Kilpisjarvi.15,Subarctic,-0.449999999999989,1359.8,636.6,68.5207620000001,22.0341652
+ds15,Berner et al. 2023,Finland.Kilpisjarvi.16,Subarctic,-0.949999999999989,1269.7,625.7,68.811262,21.250396
+ds15,Berner et al. 2023,Finland.Kilpisjarvi.17,Subarctic,-0.949999999999989,1269.7,625.7,68.8116172,21.2420254
+ds15,Berner et al. 2023,Finland.Kilpisjarvi.18,Oroarctic,-2.84999999999997,858.2,796.7,69.0550346,20.8511652
+ds15,Berner et al. 2023,Finland.Kilpisjarvi.19,Oroarctic,-1.54999999999995,1117,720.7,69.0363466,20.844887
+ds15,Berner et al. 2023,Finland.Kilpisjarvi.20,Oroarctic,-1.24999999999994,1150.8,683.7,69.1043918,20.7593454
+ds16,Mikola et al. 2018,Russia.Tiksi.BareSoil,Low Arctic,-13.2499999999999,597.6,521.7,71.5947853333334,128.887276333333
+ds16,Mikola et al. 2018,Russia.Tiksi.Bog,Low Arctic,-13.2499999999999,597.6,521.7,71.5946666363636,128.890614181818
+ds16,Mikola et al. 2018,Russia.Tiksi.DryFen,Low Arctic,-13.2499999999999,597.6,521.7,71.59352315,128.88901095
+ds16,Mikola et al. 2018,Russia.Tiksi.DryFen,Low Arctic,-13.35,616.5,505.4,71.592177,128.885183
+ds16,Mikola et al. 2018,Russia.Tiksi.FloodMeadow,Low Arctic,-13.2499999999999,597.6,521.7,71.5935919,128.8869507
+ds16,Mikola et al. 2018,Russia.Tiksi.GraminoidTundra,Low Arctic,-13.2499999999999,597.6,521.7,71.5936582307692,128.885304615385
+ds16,Mikola et al. 2018,Russia.Tiksi.GraminoidTundra,Low Arctic,-13.35,616.5,505.4,71.5919973333334,128.885151333333
+ds16,Mikola et al. 2018,Russia.Tiksi.LichenTundra,Low Arctic,-13.2499999999999,597.6,521.7,71.5950113333333,128.886369833333
+ds16,Mikola et al. 2018,Russia.Tiksi.ShrubTundra,Low Arctic,-13.2499999999999,597.6,521.7,71.5946293684211,128.889303789474
+ds16,Mikola et al. 2018,Russia.Tiksi.WetFen,Low Arctic,-13.2499999999999,597.6,521.7,71.5940316666667,128.887558666667
+ds16,Mikola et al. 2018,Russia.Tiksi.WetFen,Low Arctic,-13.35,616.5,505.4,71.5910016666667,128.885202
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned12,Oroarctic,-7.64999999999998,1203.3,804.4,67.012777,79.1832075
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned12,Oroarctic,-7.64999999999998,1204.6,803.5,67.0155955,79.20720875
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned12,Oroarctic,-7.64999999999998,1208.6,803.7,67.0186225,79.2165805
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned12,Oroarctic,-7.64999999999998,1209.6,805.4,67.026347,79.213648
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned12,Oroarctic,-7.64999999999998,1198.9,805.3,67.027845,79.20658
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned44,Oroarctic,-7.64999999999998,1209.5,798.6,66.9930826666667,79.2600876666667
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned44,Oroarctic,-7.54999999999996,1217.3,793.8,66.987009,79.259916
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned44,Oroarctic,-7.64999999999998,1206,802.5,67.002871,79.183776
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned44,Oroarctic,-7.64999999999998,1210.8,798.2,67.00591,79.2797345
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned44,Oroarctic,-7.64999999999998,1202.4,802.5,67.007034,79.2297175
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned12,Oroarctic,-7.64999999999998,1203.3,804.4,67.010531,79.186897
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned12,Oroarctic,-7.64999999999998,1208.6,803.7,67.0172615,79.22021075
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned12,Oroarctic,-7.64999999999998,1206,802.5,67.0087515,79.186513
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned12,Oroarctic,-7.64999999999998,1209.6,805.4,67.0231675,79.213879
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned12,Oroarctic,-7.64999999999998,1198.9,805.3,67.026033,79.207456
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned44,Oroarctic,-7.64999999999998,1209.5,798.6,66.9931456666667,79.263054
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned44,Oroarctic,-7.54999999999996,1217.3,793.8,66.987098,79.265119
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned44,Oroarctic,-7.64999999999998,1205.3,800.2,67.000966,79.189004
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned44,Oroarctic,-7.64999999999998,1209.5,793.5,67.006097,79.290626
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned44,Oroarctic,-7.64999999999998,1210.8,798.2,67.003436,79.285385
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned44,Oroarctic,-7.64999999999998,1202.4,802.5,67.010248,79.229091
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned44,Oroarctic,-7.64999999999998,1206,802.5,67.005476,79.186386
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned28,Oroarctic,-7.64999999999998,1192.9,825,67.0158665,78.966742
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned28,Oroarctic,-7.64999999999998,1192.9,825,67.0173,78.9662195
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned28,Oroarctic,-7.64999999999998,1193.3,826.2,67.016848,78.957376
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned28,Oroarctic,-7.64999999999998,1193.3,826.2,67.016298,78.958319
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned28,Oroarctic,-7.64999999999998,1193.4,823.9,67.010206,78.982273
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned28,Oroarctic,-7.64999999999998,1195.2,821.9,67.014072,78.998625
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned28,Oroarctic,-7.64999999999998,1198.2,828.7,67.0399415,78.9466075
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned28,Oroarctic,-7.64999999999998,1193.8,820.6,67.043038,78.952722
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned28,Oroarctic,-7.64999999999998,1191,823.8,67.0347965,78.9573755
+ds17,Heim et al. 2022,Russia.Tazovsky.Unburned28,Oroarctic,-7.64999999999998,1188.9,825.4,67.026094,78.9660176666667
+ds17,Heim et al. 2022,Russia.Tazovsky.Burned28,Oroarctic,-7.64999999999998,1188.9,825.4,67.024842,78.96603
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C00,High Arctic,-15.15,482.5,233.7,73.22185185,-119.563796293333
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C07,High Arctic,-15.2499999999999,488,231.2,73.2188888866667,-119.55898148
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C07,High Arctic,-15.2499999999999,491.1,226.3,73.21888889,-119.55555556
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C08,High Arctic,-15.2499999999999,488,231.2,73.2188888866667,-119.55898148
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C08,High Arctic,-15.2499999999999,491.1,226.3,73.21888889,-119.55555556
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C08,High Arctic,-15.15,482.5,233.7,73.22083333,-119.56083333
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C09,High Arctic,-15.2499999999999,486.9,227.2,73.2243209888889,-119.556265433333
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C10,High Arctic,-15.2499999999999,486.9,227.2,73.224375,-119.5581944475
+ds18,Walker et al. 2011,Canada.BanksIsland.GreenCabin-C11,High Arctic,-15.2499999999999,486.9,227.2,73.2245370366667,-119.557592593333
+ds18,Walker et al. 2011,Canada.EllefRingnesIsland.Isachsen-C01,High Arctic,-15.65,119.1,279.2,78.7849221666667,-103.547013833333
+ds18,Walker et al. 2011,Canada.EllefRingnesIsland.Isachsen-C01,High Arctic,-15.65,117.3,280.6,78.784219,-103.555464428571
+ds18,Walker et al. 2011,Canada.EllefRingnesIsland.Isachsen-C01,High Arctic,-15.7499999999999,123.1,268.8,78.781083,-103.52505
+ds18,Walker et al. 2011,Canada.EllefRingnesIsland.Isachsen-C02,High Arctic,-15.7499999999999,123.1,268.8,78.781083,-103.52505
+ds18,Walker et al. 2011,Canada.EllefRingnesIsland.Isachsen-C02,High Arctic,-15.65,119.1,279.2,78.7847,-103.547411
+ds18,Walker et al. 2011,Canada.EllefRingnesIsland.Isachsen-C02,High Arctic,-15.65,117.3,280.6,78.784072,-103.555894666667
+ds18,Walker et al. 2011,Canada.PrincePatrickIsland.MouldBay-C00,High Arctic,-15.65,180.7,217.4,76.2256333319999,-119.2937
+ds18,Walker et al. 2011,Canada.PrincePatrickIsland.MouldBay-C03,High Arctic,-15.7499999999999,183.4,220.1,76.2284814833333,-119.299222223333
+ds18,Walker et al. 2011,Canada.PrincePatrickIsland.MouldBay-C03,High Arctic,-15.65,180.7,217.4,76.22813889,-119.297583335
+ds18,Walker et al. 2011,Canada.PrincePatrickIsland.MouldBay-C04,High Arctic,-15.7499999999999,183.4,220.1,76.2284814833333,-119.299222223333
+ds18,Walker et al. 2011,Canada.PrincePatrickIsland.MouldBay-C04,High Arctic,-15.65,180.7,217.4,76.22813889,-119.297583335
+ds18,Walker et al. 2011,Canada.PrincePatrickIsland.MouldBay-C05,High Arctic,-15.7499999999999,181.6,214.8,76.2279259266667,-119.333453706667
+ds18,Walker et al. 2011,Canada.PrincePatrickIsland.MouldBay-C06,High Arctic,-15.7499999999999,181.6,214.8,76.2286527775,-119.323798615
+ds18,Walker et al. 2011,USA.NorthSlope.Deadhorse-C15,Low Arctic,-10.7499999999999,619.3,233.9,70.1610555555556,-148.46806173
+ds18,Walker et al. 2011,USA.NorthSlope.Deadhorse-C16,Low Arctic,-10.7499999999999,619.3,233.9,70.161105554,-148.467652778
+ds18,Walker et al. 2011,USA.NorthSlope.FranklinBluffs-C15,Low Arctic,-10.7499999999999,865.7,276.9,69.6744663742106,-148.720269006316
+ds18,Walker et al. 2011,USA.NorthSlope.FranklinBluffs-C15,Low Arctic,-10.7499999999999,865.2,275,69.67392593,-148.72451852
+ds18,Walker et al. 2011,USA.NorthSlope.FranklinBluffs-C16,Low Arctic,-10.7499999999999,865.7,276.9,69.6743777780001,-148.72145
+ds18,Walker et al. 2011,USA.NorthSlope.FranklinBluffs-C17,Low Arctic,-10.7499999999999,865.7,276.9,69.674027775,-148.717368055
+ds18,Walker et al. 2011,USA.NorthSlope.FranklinBluffs-C17,Low Arctic,-10.7499999999999,865.2,275,69.67386111,-148.72466667
+ds18,Walker et al. 2011,USA.NorthSlope.HappyValley-C18,Low Arctic,-10.45,947.4,368.2,69.1468888879999,-148.850194444
+ds18,Walker et al. 2011,USA.NorthSlope.HappyValley-C19,Low Arctic,-10.45,947.4,368.2,69.146994444,-148.84792778
+ds18,Walker et al. 2011,USA.NorthSlope.HappyValley-C20,Low Arctic,-10.45,947.4,368.2,69.147027778,-148.846983334
+ds18,Walker et al. 2011,USA.NorthSlope.HoweIsland-C12,High Arctic,-10.55,379.5,185.6,70.3150583340001,-147.991983333
+ds18,Walker et al. 2011,USA.NorthSlope.HoweIsland-C13,High Arctic,-10.55,379.5,185.6,70.31517778,-147.99345
+ds18,Walker et al. 2011,USA.NorthSlope.Sagwon-C15,Low Arctic,-10.55,899.8,337.7,69.4329409722222,-148.673097222222
+ds18,Walker et al. 2011,USA.NorthSlope.Sagwon-C15,Low Arctic,-10.55,898.9,339.9,69.4323055555555,-148.672347222223
+ds18,Walker et al. 2011,USA.NorthSlope.Sagwon-C16,Low Arctic,-10.55,899.8,337.7,69.4332638888889,-148.672333333333
+ds18,Walker et al. 2011,USA.NorthSlope.Sagwon-C16,Low Arctic,-10.55,898.9,339.9,69.4316944444445,-148.672916666667
+ds18,Walker et al. 2011,USA.NorthSlope.Sagwon-C18,Low Arctic,-10.55,892.3,340.1,69.425722222,-148.695855554
+ds18,Walker et al. 2011,USA.NorthSlope.Sagwon-C19,Low Arctic,-10.55,892.3,340.1,69.425705556,-148.69602778
+ds18,Walker et al. 2011,USA.NorthSlope.WestDock-C14,High Arctic,-10.7499999999999,481.4,209.5,70.3747291675,-148.553006945
+ds18,Walker et al. 2011,USA.NorthSlope.WestDock-C14,High Arctic,-10.7499999999999,476.1,193.4,70.38141667,-148.56019444
+ds19,Walker et al. 2012,Russia.HeissIsland.Krenkel-1,High Arctic,-13.2499999999999,57.2,505.4,80.5929033333334,57.90223
+ds19,Walker et al. 2012,Russia.HeissIsland.Krenkel-2,High Arctic,-13.2499999999999,57.5,462.4,80.60706,57.9081966666667
+ds19,Walker et al. 2012,Russia.Yamal.Kharasavey-1,High Arctic,-8.14999999999998,477.5,419.2,71.1788,66.98002
+ds19,Walker et al. 2012,Russia.Yamal.Kharasavey-2a,High Arctic,-8.04999999999996,443.8,430.6,71.1944166666666,66.8889833333334
+ds19,Walker et al. 2012,Russia.Yamal.Kharasavey-2b,High Arctic,-8.04999999999996,457.6,453.7,71.194425,66.92875
+ds19,Walker et al. 2012,Russia.Yamal.Kharasavey-2b,High Arctic,-8.14999999999998,465.8,379,71.1938666666667,66.9345166666667
+ds19,Walker et al. 2012,Russia.Yamal.Laborovaya-1,Low Arctic,-6.84999999999997,1068.2,551.4,67.70661,67.9995033333333
+ds19,Walker et al. 2012,Russia.Yamal.Laborovaya-2,Low Arctic,-6.84999999999997,1070.4,529.2,67.6948933333333,68.0379166666667
+ds19,Walker et al. 2012,Russia.Yamal.Nadym-1,Subarctic,-5.34999999999997,1385.5,671.1,65.3135333333333,72.88784
+ds19,Walker et al. 2012,Russia.Yamal.Nadym-2-H,Subarctic,-5.34999999999997,1385.1,675.4,65.3146333333333,72.8621277777778
+ds19,Walker et al. 2012,Russia.Yamal.Nadym-2-IH,Subarctic,-5.34999999999997,1385.1,675.4,65.3146555555555,72.8621666666667
+ds19,Walker et al. 2012,Russia.Yamal.OstrovBelyy-1,High Arctic,-9.24999999999994,351.7,490.1,73.32855,70.078225
+ds19,Walker et al. 2012,Russia.Yamal.OstrovBelyy-1,High Arctic,-9.24999999999994,344.8,483.7,73.3287277777778,70.0781777777778
+ds19,Walker et al. 2012,Russia.Yamal.OstrovBelyy-2,High Arctic,-9.34999999999997,366.3,483.8,73.3093533333333,70.1290566666667
+ds19,Walker et al. 2012,Russia.Yamal.VaskinyDachi-1,Low Arctic,-8.84999999999997,754.1,453.5,70.27563,68.8911766666667
+ds19,Walker et al. 2012,Russia.Yamal.VaskinyDachi-2,Low Arctic,-8.94999999999999,750,455.8,70.29565,68.8841966666667
+ds19,Walker et al. 2012,Russia.Yamal.VaskinyDachi-3,Low Arctic,-8.94999999999999,746.2,452.5,70.3015416666667,68.842275
+ds19,Walker et al. 2012,Russia.Yamal.VaskinyDachi-3,Low Arctic,-8.94999999999999,752.7,453.1,70.3006777777778,68.8432888888889
+ds20,Gregory 2012,Canada.MelvilleIsland.Alpha,High Arctic,-15.2499999999999,257.2,208.2,74.9093209445318,-109.600733011111
+ds20,Gregory 2012,Canada.MelvilleIsland.Charlie,High Arctic,-15.15,248.7,212.5,74.9028655392755,-109.549090011111
+ds20,Gregory 2012,Canada.MelvilleIsland.Delta,High Arctic,-15.15,245.4,212.1,74.9055215173238,-109.521552211111
+ds20,Gregory 2012,Canada.MelvilleIsland.GOM,High Arctic,-15.2499999999999,257.2,208.2,74.9130245718101,-109.597987611111
+ds20,Gregory 2012,Canada.MelvilleIsland.GOP,High Arctic,-15.2499999999999,257.2,208.2,74.9150462803244,-109.587130111111
+ds20,Gregory 2012,Canada.MelvilleIsland.GOW,High Arctic,-15.2499999999999,257.2,208.2,74.9138716411876,-109.589992011111
+ds20,Gregory 2012,Canada.MelvilleIsland.Hotel,High Arctic,-15.2499999999999,244.7,222.7,74.9105314536423,-109.544962511111
+ds20,Gregory 2012,Canada.MelvilleIsland.India,High Arctic,-15.2499999999999,248,220.8,74.9151441802525,-109.555546511111
+ds20,Gregory 2012,Canada.MelvilleIsland.Juliet,High Arctic,-15.2499999999999,244.7,222.7,74.910737313491,-109.560433411111
+ds20,Gregory 2012,Canada.MelvilleIsland.PTM,High Arctic,-15.35,257,217.2,74.9185523477478,-109.600829111111
+ds20,Gregory 2012,Canada.MelvilleIsland.PTP,High Arctic,-15.35,257,217.2,74.9187166276271,-109.599396911111
+ds20,Gregory 2012,Canada.MelvilleIsland.PTW,High Arctic,-15.2499999999999,257.2,208.2,74.917395478598,-109.603719111111
+ds21,Gignac et al. 2022,Canada.BylotIsland.QarlikturvikValley,High Arctic,-13.15,419.1,406.5,73.1675972222222,-80.0290416666667
+ds21,Gignac et al. 2022,Canada.BylotIsland.QarlikturvikValley,High Arctic,-13.05,411.5,410,73.1712555555556,-80.0407222222222
+ds21,Gignac et al. 2022,Canada.BylotIsland.QarlikturvikValley,High Arctic,-13.2499999999999,417.1,415.8,73.1538555555556,-79.95765
+ds21,Gignac et al. 2022,Canada.BylotIsland.QarlikturvikValley,High Arctic,-12.95,396.7,422.8,73.1435083333334,-80.0641
+ds21,Gignac et al. 2022,Canada.BylotIsland.QarlikturvikValley,High Arctic,-13.15,399.6,425.1,73.1499722222222,-80.0104916666667
+ds21,Gignac et al. 2022,Canada.BylotIsland.QarlikturvikValley,High Arctic,-13.05,405.7,419.3,73.1508916666667,-80.0266694444444
+ds22,Deschamps et al. 2023,Canada.BylotIsland.MesicPlateau,High Arctic,-13.45,375.2,439.8,73.134633,-79.961057
+ds22,Deschamps et al. 2023,Canada.BylotIsland.MesicPlateau,High Arctic,-13.2499999999999,384.7,435.1,73.1388925,-80.004976
+ds22,Deschamps et al. 2023,Canada.BylotIsland.MesicPlateau,High Arctic,-13.2499999999999,400.6,427.9,73.147221,-79.970225
+ds22,Deschamps et al. 2023,Canada.BylotIsland.MesicPolygons,High Arctic,-13.35,446,397.3,73.16835025,-79.9050325
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Gladstone-MixedTundra,Oroarctic,-7.54999999999996,646.2,607.8,61.366030381819,-138.193119852228
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Gladstone-MixedTundra,Oroarctic,-7.04999999999996,702.7,592.4,61.3673434763776,-138.181041484805
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Gladstone-MixedTundra,Oroarctic,-8.64999999999998,535.1,593.1,61.3789968300578,-138.205943910934
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Gladstone-MixedTundra,Oroarctic,-7.94999999999999,604.5,581.5,61.3879182333268,-138.204248059663
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Gladstone-ShrubTundra,Oroarctic,-7.94999999999999,606.3,599.7,61.3734901910977,-138.186347654861
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Gladstone-ShrubTundra,Oroarctic,-7.04999999999996,702.7,592.4,61.3746392000708,-138.182836924658
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Outpost-MixedTundra,Oroarctic,-8.14999999999998,500.5,683.6,60.9675934671249,-138.442483439206
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Outpost-MixedTundra,Oroarctic,-7.84999999999997,533.8,635.1,60.9729451541127,-138.446637210419
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Outpost-MixedTundra,Oroarctic,-7.24999999999994,612.8,689,60.9670830854928,-138.42042268545
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Outpost-ShrubTundra,Oroarctic,-7.04999999999996,631.9,661,60.9759877063944,-138.423379259095
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Outpost-ShrubTundra,Oroarctic,-7.24999999999994,612.8,689,60.9732245741279,-138.41184746613
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Outpost-ShrubTundra,Oroarctic,-5.74999999999994,798.6,627.7,60.9851803401452,-138.409025643516
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Printers-MixedTundra,Oroarctic,-7.44999999999999,654.4,604.7,61.190440816001,-138.341241275643
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Printers-MixedTundra,Oroarctic,-6.74999999999994,744.4,575,61.1784538193681,-138.343330431676
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Printers-ShrubTundra,Oroarctic,-5.24999999999994,923.2,568.2,61.1909965075585,-138.355395075124
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Printers-ShrubTundra,Oroarctic,-4.54999999999996,1028.7,547.3,61.1845530060022,-138.357088957093
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Quill-MixedTundra,Oroarctic,-6.14999999999998,869.1,596.7,61.4150842122147,-139.484663368456
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Quill-MixedTundra,Oroarctic,-6.64999999999998,806.7,604.9,61.402484496259,-139.471628988873
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Quill-MixedTundra,Oroarctic,-5.74999999999994,966.4,705.1,61.4542857329791,-139.535488283379
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Quill-MixedTundra,Oroarctic,-6.54999999999996,847.5,712.4,61.4487619728151,-139.559325690556
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Quill-ShrubTundra,Oroarctic,-6.64999999999998,806.7,604.9,61.4062798705492,-139.466591794724
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Quill-ShrubTundra,Oroarctic,-3.94999999999999,1204,637.6,61.4355439646341,-139.526073556015
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Quill-ShrubTundra,Oroarctic,-6.54999999999996,858.3,621,61.4597889970806,-139.430561668096
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-7.34999999999997,675.3,639.8,61.2165051686723,-138.273567980308
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-8.74999999999994,522.7,636.3,61.220389890238,-138.26426463212
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-8.74999999999994,506.5,650.6,61.2003480396441,-138.299214810953
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-7.24999999999994,678.2,631.5,61.2012791781182,-138.288494839692
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-7.34999999999997,666.8,634.7,61.2026110714315,-138.281447725131
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-7.94999999999999,600.7,634.7,61.2090503574748,-138.264193781433
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-6.84999999999997,740.5,643.4,61.2219493584891,-138.295248195122
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-7.74999999999994,625,647.7,61.2144073210771,-138.291835261551
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-7.44999999999999,665.1,664,61.210895952721,-138.303590668057
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-6.24999999999994,805.4,669.1,61.2218450534871,-138.311670351766
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-8.54999999999996,538.2,554.7,61.2729176361012,-138.276792906235
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-MixedTundra,Oroarctic,-5.34999999999997,923.6,614.6,61.256078614876,-138.299904385848
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-ShrubTundra,Oroarctic,-6.24999999999994,805.4,669.1,61.2237451384673,-138.312812347479
+ds23,Danby et al. Unpub.,Canada.KluaneLake.Ruby-ShrubTundra,Oroarctic,-5.04999999999996,979.7,574.1,61.2636295686312,-138.302427301944
+ds24,Vankoughnett and Grogan 2016,Canada.DaringLake.LowBirch,Low Arctic,-9.64999999999998,1080,424.7,64.8698,-111.5681
+ds24,Vankoughnett and Grogan 2016,Canada.DaringLake.LowBirch,Low Arctic,-9.64999999999998,1078.8,429.1,64.8686,-111.56425
+ds24,Vankoughnett and Grogan 2016,Canada.DaringLake.MediumBirch,Low Arctic,-9.64999999999998,1078.8,429.1,64.871,-111.5512
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.AB1,Subarctic,-5.74999999999994,1101.1,606.1,57.75418867,-76.18273418
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.AB2,Subarctic,-5.84999999999997,1085.9,611.2,57.74979597,-76.20899796
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.AB8,Subarctic,-5.84999999999997,1085.9,611.2,57.75536864,-76.20155369
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.LSA2,Subarctic,-5.74999999999994,1101.1,606.1,57.7516063,-76.1743573
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.LSA4,Subarctic,-5.74999999999994,1101.1,606.1,57.7516063,-76.1743573
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.LSA6,Subarctic,-5.84999999999997,1085.9,611.2,57.757744,-76.21353
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.RcL5,Subarctic,-5.74999999999994,1099.8,603.8,57.73769098,-76.21918811
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.RcmL0,Subarctic,-5.74999999999994,1104,605.9,57.75863998,-76.16854196
+ds25,Gaspard and Boudreau 2023,Canada.BonifaceRiver.RcmL6,Subarctic,-5.84999999999997,1102.3,609.1,57.75411537,-76.16623256
+ds25,Gaspard and Boudreau 2023,Canada.ChukotkaRiver.TH1,Low Arctic,-9.54999999999995,728.8,718.8,61.3059041,-75.89254747
+ds25,Gaspard and Boudreau 2023,Canada.ChukotkaRiver.TH4,Low Arctic,-9.54999999999995,728.8,718.8,61.30349739,-75.88445817
+ds25,Gaspard and Boudreau 2023,Canada.ChukotkaRiver.TH5,Low Arctic,-9.54999999999995,721.2,734.2,61.30491444,-75.95403584
+ds25,Gaspard and Boudreau 2023,Canada.ChukotkaRiver.TPO2,Low Arctic,-9.64999999999998,716.5,738,61.30344338,-75.92177595
+ds25,Gaspard and Boudreau 2023,Canada.ChukotkaRiver.TPO3,Low Arctic,-9.54999999999995,728,730.1,61.29925382,-75.96573632
+ds25,Gaspard and Boudreau 2023,Canada.ChukotkaRiver.TPO5,Low Arctic,-9.54999999999995,728.9,729.3,61.28471992,-75.91786532
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.AB1,Subarctic,-5.04999999999996,1168.9,856.7,56.368033,-74.422635
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.AB2,Subarctic,-5.04999999999996,1169.4,851.5,56.351674,-74.376048
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.AB3,Subarctic,-4.94999999999999,1165.8,841.2,56.352833,-74.413837
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.LS0,Subarctic,-4.84999999999997,1200.8,816.4,56.352401,-74.448915
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.LS1,Subarctic,-4.94999999999999,1173.4,851,56.363113,-74.407903
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.LSA2,Subarctic,-5.04999999999996,1154.4,842,56.352136,-74.432114
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.RcL3,Subarctic,-4.94999999999999,1169.9,850.2,56.360575,-74.418452
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.RcmL0,Subarctic,-4.84999999999997,1191.5,811.8,56.334354,-74.404932
+ds25,Gaspard and Boudreau 2023,Canada.ClearwaterLake.RcmL2,Subarctic,-4.94999999999999,1184.9,836,56.361683,-74.448777
+ds25,Gaspard and Boudreau 2023,Canada.CoutureLake.TD7,Low Arctic,-8.04999999999996,933.5,690.1,60.062928,-75.601594
+ds25,Gaspard and Boudreau 2023,Canada.CoutureLake.TDA6,Low Arctic,-8.04999999999996,938.4,702.3,60.074122,-75.582815
+ds25,Gaspard and Boudreau 2023,Canada.CoutureLake.TDA7,Low Arctic,-8.04999999999996,941.2,695.3,60.061029,-75.572577
+ds25,Gaspard and Boudreau 2023,Canada.CoutureLake.TDO4,Low Arctic,-8.04999999999996,934.5,696.7,60.086673,-75.606327
+ds25,Gaspard and Boudreau 2023,Canada.DeceptionBay.BEGL1,Low Arctic,-9.34999999999997,745.5,589.8,62.086753,-74.286845
+ds25,Gaspard and Boudreau 2023,Canada.DeceptionBay.BEGL2,Low Arctic,-9.24999999999994,749.8,575.4,62.102468,-74.311823
+ds25,Gaspard and Boudreau 2023,Canada.DeceptionBay.BEGL3,Low Arctic,-9.34999999999997,676.8,631.5,62.090752,-74.443402
+ds25,Gaspard and Boudreau 2023,Canada.DeceptionBay.TH6,Low Arctic,-9.44999999999999,739.3,615.6,62.078122,-74.23213539
+ds25,Gaspard and Boudreau 2023,Canada.DeceptionBay.TH7,Low Arctic,-9.44999999999999,739.3,615.6,62.08251094,-74.23463399
+ds25,Gaspard and Boudreau 2023,Canada.DeceptionBay.TH8,Low Arctic,-9.34999999999997,735.8,591.1,62.09486542,-74.29443661
+ds25,Gaspard and Boudreau 2023,Canada.Ivujivik.RTP11,Low Arctic,-8.54999999999996,574.6,676.5,62.411691,-77.902819
+ds25,Gaspard and Boudreau 2023,Canada.Ivujivik.RTP12,Low Arctic,-8.64999999999998,552.1,714.6,62.403045,-77.891826
+ds25,Gaspard and Boudreau 2023,Canada.Ivujivik.RTP13,Low Arctic,-8.54999999999996,555,668,62.401698,-77.924048
+ds25,Gaspard and Boudreau 2023,Canada.Ivujivik.TP10,Low Arctic,-8.74999999999994,561.7,760.2,62.405248,-77.855772
+ds25,Gaspard and Boudreau 2023,Canada.Ivujivik.TP12,Low Arctic,-8.54999999999996,550.6,707.6,62.392452,-77.907827
+ds25,Gaspard and Boudreau 2023,Canada.Ivujivik.TP13,Low Arctic,-8.74999999999994,561,725.3,62.386805,-77.873969
+ds25,Gaspard and Boudreau 2023,Canada.LeRoyLake.TD1,Oroarctic,-6.74999999999994,1051.1,669.7,58.48650935,-75.46748038
+ds25,Gaspard and Boudreau 2023,Canada.LeRoyLake.TD4,Oroarctic,-6.74999999999994,1057.7,639.3,58.5378595,-75.47438848
+ds25,Gaspard and Boudreau 2023,Canada.LeRoyLake.TD7,Oroarctic,-6.74999999999994,1054.7,679.4,58.47018419,-75.45928362
+ds25,Gaspard and Boudreau 2023,Canada.LeRoyLake.TDA3,Oroarctic,-6.74999999999994,1062.8,633.2,58.51554722,-75.47942145
+ds25,Gaspard and Boudreau 2023,Canada.LeRoyLake.TDA4,Oroarctic,-6.74999999999994,1057.5,651,58.49628099,-75.51895562
+ds25,Gaspard and Boudreau 2023,Canada.LeRoyLake.TDA6,Oroarctic,-6.74999999999994,1057.3,687.1,58.47883333,-75.43265272
+ds25,Gaspard and Boudreau 2023,Canada.PayneLake.TD0,Low Arctic,-7.64999999999998,1002.9,678.9,59.55265501,-74.64641098
+ds25,Gaspard and Boudreau 2023,Canada.PayneLake.TD2,Low Arctic,-7.64999999999998,1002.9,678.9,59.55182201,-74.63464002
+ds25,Gaspard and Boudreau 2023,Canada.PayneLake.TD4,Low Arctic,-7.64999999999998,1008.6,679.6,59.54688901,-74.63111702
+ds25,Gaspard and Boudreau 2023,Canada.PayneLake.TDA0,Low Arctic,-7.64999999999998,1005.2,680.4,59.52783301,-74.59010404
+ds25,Gaspard and Boudreau 2023,Canada.PayneLake.TDA2,Low Arctic,-7.64999999999998,1006.3,680.8,59.54039304,-74.612129
+ds25,Gaspard and Boudreau 2023,Canada.PayneLake.TDA3,Low Arctic,-7.64999999999998,1007.5,680.3,59.52684897,-74.60225997
+ds26,Skaarup 2017,Canada.DaringLake.Tower1-DwarfShrub,Low Arctic,-9.54999999999995,1080.5,425.5,64.8691663333334,-111.576705666667
+ds26,Skaarup 2017,Canada.DaringLake.Tower3-DwarfShrub-2,Low Arctic,-9.64999999999998,1078.6,430.5,64.8721,-111.548217
+ds26,Skaarup 2017,Canada.DaringLake.Tower3-DwarfShrub-2,Low Arctic,-9.64999999999998,1080,424.7,64.872183,-111.54965
+ds26,Skaarup 2017,Canada.DaringLake.Tower3-DwarfShrub-2,Low Arctic,-9.64999999999998,1078.8,429.1,64.871633,-111.549883
+ds26,Skaarup 2017,Canada.DaringLake.Tower4-LowShrub-2,Low Arctic,-9.54999999999995,1076.5,449.2,64.862667,-111.652067
+ds26,Skaarup 2017,Canada.DaringLake.Tower4-LowShrub-2,Low Arctic,-9.54999999999995,1079.3,440.5,64.8630915,-111.651167
+ds27,Hayne 2010,Canada.DaringLake.Tower1-Heath,Low Arctic,-9.54999999999995,1080.5,425.5,64.86885,-111.57695
+ds27,Hayne 2010,Canada.DaringLake.Tower1-SedgeHollow,Low Arctic,-9.54999999999995,1080.5,425.5,64.87081,-111.581289
+ds27,Hayne 2010,Canada.DaringLake.Tower1-SedgeTussock,Low Arctic,-9.54999999999995,1086.5,427.3,64.86611,-111.57093
+ds27,Hayne 2010,Canada.DaringLake.Tower1-Shrub,Low Arctic,-9.54999999999995,1080.5,425.5,64.8685,-111.57003
+ds27,Hayne 2010,Canada.DaringLake.Tower2-SedgeFen,Low Arctic,-9.54999999999995,1086.5,427.3,64.864827,-111.567702
+ds28,Lafleur and Humphreys 2008,Canada.DaringLake.Tower1-MixedTundra,Low Arctic,-9.54999999999995,1080.5,425.5,64.8689,-111.57414
+ds29,Lafleur and Humphreys 2018,Canada.DaringLake.Tower3-DwarfShrub-1,Low Arctic,-9.64999999999998,1088.5,423.1,64.87223,-111.548588
+ds29,Lafleur and Humphreys 2018,Canada.DaringLake.Tower4-LowShrub-1,Low Arctic,-9.54999999999995,1079.3,440.5,64.863066,-111.65
+ds30,Bret-Harte et al. 2020a,USA.AnaktuvukRiver.108,Low Arctic,-9.84999999999997,937,401.2,68.95235,-150.2077
+ds30,Bret-Harte et al. 2020a,USA.AnaktuvukRiver.109,Low Arctic,-9.84999999999997,929.9,411.1,68.93334,-150.27289
+ds31,Bret-Harte et al. 2020b,USA.AnaktuvukRiver.103,Low Arctic,-9.84999999999997,940,398.6,68.95383,-150.20697
+ds31,Bret-Harte et al. 2020b,USA.AnaktuvukRiver.104,Low Arctic,-9.84999999999997,937,401.2,68.9511000000001,-150.20966
+ds32,Bret-Harte et al. 2020c,USA.AnaktuvukRiver.101,Low Arctic,-9.84999999999997,952.9,376.6,68.99539,-150.28278
+ds32,Bret-Harte et al. 2020c,USA.AnaktuvukRiver.114,Low Arctic,-9.84999999999997,966.2,371.4,68.997,-150.307

@@ -1,0 +1,82 @@
+/*
+
+DESCRIPTION: Create permafrost predictor
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+- Tips for exporting global asset:
+  - https://groups.google.com/g/google-earth-engine-developers/c/55btJBTGQoI/m/XUZWpLG1EAAJ
+  - https://groups.google.com/g/google-earth-engine-developers/c/SvCgqmXbMS0/m/KcoziJugCwAJ
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- READ IN DATA -----
+
+// Permafrost Zonation Index (Gruber 2012)
+var permafrostMetrics = ee.Image('projects/foreststructure/misc/global_permafrost_zonation_index_gruber2012');
+Map.addLayer(permafrostMetrics, null, 'permafrostMetrics');
+
+// 1.1 ----- PARAMETERS -----
+
+// Get projection information
+var proj = permafrostMetrics.projection().getInfo();
+var crs = proj.crs;
+var transform = proj.transform;
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// Original was 0.008333 degrees, caused rounding error after 43200 pixels)
+var permafrostMetrics_shifted = permafrostMetrics.changeProj(permafrostMetrics.projection(), ee.Projection('EPSG:4326',[0.0083333333333333,0,-180,0,-0.0083333333333333,89.994]));
+Map.addLayer(permafrostMetrics_shifted, {min:0, max:1}, 'permafrostMetrics_shifted', false);
+ 
+// Calculate 20 km focal mean, leaves sizeable gap
+var permafrostMetrics_shifted_fill = permafrostMetrics_shifted.focal_mean(20000, 'circle', 'meters');
+Map.addLayer(permafrostMetrics_shifted_fill, null, 'permafrostMetrics_shifted_fill');
+
+// Create geometry capturing gap
+var geom_gap = ee.FeatureCollection(ee.Geometry.BBox(-179, -89.99, -177, 89.99));
+Map.addLayer(geom_gap, null, 'geom_gap');
+
+// Clip original image to extent of gap
+var permafrostMetrics_shifted_gap = permafrostMetrics_shifted.clip(geom_gap);
+Map.addLayer(permafrostMetrics_shifted_gap, null, 'permafrostMetrics_shifted_gap');
+
+// Calculate 5 km focal mean on gap image
+var permafrostMetrics_shifted_gap_filled = permafrostMetrics_shifted_gap.focal_mean(5000, 'circle', 'meters');
+permafrostMetrics_shifted_gap_filled = permafrostMetrics_shifted_gap_filled.updateMask(permafrostMetrics_shifted_gap_filled.gt(0.5));
+Map.addLayer(permafrostMetrics_shifted_gap_filled, null, 'permafrostMetrics_shifted_gap_filled');
+
+// Combine focal mean images
+var permafrostMetrics_shifted_fill_all = ee.ImageCollection([permafrostMetrics_shifted_fill, permafrostMetrics_shifted_gap_filled]).mosaic();
+Map.addLayer(permafrostMetrics_shifted_fill_all, null, 'permafrostMetrics_shifted_fill_all');
+
+// Add back in actual data
+var permafrostMetrics_final = ee.ImageCollection([permafrostMetrics_shifted_fill_all, permafrostMetrics_shifted]).mosaic().unmask(0);
+Map.addLayer(permafrostMetrics_final, null, 'permafrostMetrics_final');
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.image.toAsset({
+    image: permafrostMetrics_final,
+    description: 'permafrostMetrics_final',
+    assetId: 'projects/arctic-biomass-mapping/assets/land_cover/global_permafrost_zonation_index_gruber2012_filled_20km_v3',
+    dimensions: '43200x18000',
+    crs: crs,
+    crsTransform: [0.0083333333333333,0,-180,0,-0.0083333333333333,89.994],
+    maxPixels: 1e12
+  });
+
+throw('stop')
+

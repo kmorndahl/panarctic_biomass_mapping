@@ -1,0 +1,73 @@
+/*
+
+DESCRIPTION: Calculate area across bioclimate zones
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+- Country FeatureCollections are too complex -- area must be calculated in R
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- READ IN AND TIDY DATA -----
+
+var total_biomass = ee.Image('projects/arctic-biomass-mapping/assets/modeled_final/total_biomass_2020_j_index_v20240514').select('total_biomass');
+var zones_fc = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/zones').select('FIRST_zone', 'dsl'); 
+
+// Convert zones to image and get metadata
+var zones_img = zones_fc.reduceToImage(['dsl'], ee.Reducer.min()).byte().updateMask(total_biomass.mask());
+var zone_codes = zones_fc.aggregate_array('dsl').add(4);
+var zone_dict = ee.Dictionary({1: 'High Arctic', 2: 'Low Arctic', 3: 'Oro Arctic', 4: 'Pan Arctic'});
+
+// Create area image 
+var area = ee.Image.pixelArea();
+
+// Combine zone and area images
+var zones_area = zones_img.addBands(area);
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- CALCULATE AREA ACROSS BIOCLIMATE ZONES -----
+
+var zones_area_totals = zone_codes.getInfo().map(function(zone_code){
+  
+  // Get zone name
+  var zone_name = zone_dict.get(ee.Number(zone_code).format('%.0f'));
+
+  // Mask biomass to current code only
+  var current_zone = zones_area.updateMask(zones_img.eq(ee.Image.constant(zone_code)).selfMask());
+  
+  // Tidy mask
+  current_zone = current_zone.mask(current_zone.mask().gt(0));
+  
+  // Reduce over masked biomass image
+  var current_zone_area = current_zone.reduceRegion({
+    reducer: ee.Reducer.sum(), 
+    geometry: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false),
+    scale: 1000, 
+    crs: 'EPSG:4326',
+    maxPixels: 1e13,
+    tileScale: 1}); // Default: 1
+
+  // Convert to feature
+  var feat = ee.Feature(null, current_zone_area).set('dsl', zone_code).set('FIRST_zone', zone_name);
+  
+  return feat;
+  
+});
+
+// Export
+Export.table.toDrive({
+  collection: ee.FeatureCollection(zones_area_totals).select(['.*'], null, false), 
+  description: 'zone_area',
+  folder: 'areas'
+});

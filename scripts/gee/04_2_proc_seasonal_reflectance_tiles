@@ -1,0 +1,122 @@
+/*
+
+DESCRIPTION: Produce seasonal composites from CCDC models based seasonal DOY images
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+- Reprojection of invidual thematic predictor sets NOT necessary
+- CCDC memory use discussion: https://groups.google.com/g/google-earth-engine-developers/c/shIVv-ZcIzU/m/oCMXaADLBQAJ
+- segmentFindStrategy
+  - For clipping_method = tiles
+    - Choose 'next' -- in the case where a disturbance occurs during the snow-free season 'next' allows the disturbance to be detected in the year it occurs
+  - For clipping_method = calval
+    - Choose 'closest'
+    - For field sites from the beginning or end of the time series e.g., 2022, there is no 'next' segment so this allows 'previous' to be selected
+    - In other instances, we will discard plots if they occur during a break between segments
+    - These are likely due to disturbance and might mess up model fits
+    - We will make exceptions for harvest dates just before the start or just after the end of the time series
+    - In these cases, the lack of segment might be more to due with data availability than disturbance
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS -----
+
+var year = 2020; // Select year for predictions
+var ccdc_start_year = 1984;
+var ccdc_end_year = 2023;
+var extrapolateMaxDays = 120; // Number of days to extrapolate beyond the start and end of a CCDC segment, helps fill in gaps before the first segment, after the last segment, and between segments
+var crs = 'EPSG:3571';
+var scale = 30;
+var version = 'v20240207'; // Input version identifier
+var clipping_method = 'tiles'; // Choose 'tiles' or 'calval'
+var out_path = 'projects/arctic-biomass-mapping/assets/seasonal_modeled_reflectance/';
+
+// Strategy to use for selecting CCDC segment when there is no segment for the specified date
+// Choose 'previous', 'next' or 'closest'
+var segmentFindStrategy = ee.Algorithms.If(ee.String(clipping_method).equals('calval'), 'closest', 'next').getInfo();  
+
+// 1.1 ----- EXISTING MODULES/FUNCTIONS -----
+
+var palettes = require('users/gena/packages:palettes');
+var fun_misc = require('users/loganberner/nasa_arctic_biomass:00_fun_misc');
+var fun_refl = require('users/loganberner/nasa_arctic_biomass:00_fun_refl');
+var temporalSegmentation = require('users/wiell/temporalSegmentation:temporalSegmentation'); // Load module
+var utils = require('users/parevalo_bu/gee-ccdc-tools:ccdcUtilities/api');
+
+// FUNCTION: convert_dates
+// USE: Convert from DOY to ee.Date
+// NOTES: Mapped over dictionary
+// AUTHOR: Katie Orndahl
+// LAST UPDATE: 11-10-2024
+
+var convert_dates = function(key, value){
+  var frac_date = ee.Number(year).add(ee.Number(value).divide(365.25)); // Convert from DOY to fractional year
+  return utils.Dates.convertDate({inputFormat: 1, inputDate: frac_date, outputFormat: 4}); // Convert from fractional date to ee.Date
+};
+
+// 1.2 ----- READ IN DATA -----
+
+var seasonal_doys = ee.ImageCollection('projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/seasonal_doys_tiles_' + ccdc_start_year + '_' + ccdc_end_year + '_' + version);
+var ccdc_fits = ee.ImageCollection('projects/arctic-biomass-mapping/assets/CCDC_tiles/CCDC_C2_SR_tiles_' + ccdc_start_year + '_' + ccdc_end_year + '_' + version);
+var doy_median = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/seasonal_doys_median_' + ccdc_start_year + '_' + ccdc_end_year + '_' + version);
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- MOSAIC DATA -----
+
+var ccdc_fit = ccdc_fits.mosaic();
+var seasonal_doy = seasonal_doys.mosaic();
+
+//  2.1 ----- MODEL REFLECTANCE -----
+
+// Get median seasonal DOYs
+// This provides, for each season, a reasonable date to use to extract a CCDC segment
+doy_median = doy_median.first().toDictionary(['doy_earlySummer', 'doy_endSnowfree', 'doy_lateSummer', 'doy_peakSummer', 'doy_startSnowfree']);
+
+// Convert DOYs to fractional dates
+var doy_median_frac = doy_median.map(convert_dates);
+
+// Get segments
+var segments = temporalSegmentation.Segments(ccdc_fit, 1);
+
+// Model CCDC reflectance and rename bands with seasonal suffix
+// Segments are selected based on average DOY for the given season
+var start_snowfree_fit = fun_refl.fitT(seasonal_doy.select('doy_startSnowfree'), year, segments.findByDate(ee.Date(doy_median_frac.get('doy_startSnowfree')), segmentFindStrategy), extrapolateMaxDays).regexpRename('$', '_startSnowfree').regexpRename('^', 'spectral_');
+var early_summer_fit = fun_refl.fitT(seasonal_doy.select('doy_earlySummer'), year, segments.findByDate(ee.Date(doy_median_frac.get('doy_earlySummer')), segmentFindStrategy), extrapolateMaxDays).regexpRename('$', '_earlySummer').regexpRename('^', 'spectral_');
+var peak_summer_fit = fun_refl.fitT(seasonal_doy.select('doy_peakSummer'), year, segments.findByDate(ee.Date(doy_median_frac.get('doy_peakSummer')), segmentFindStrategy), extrapolateMaxDays).regexpRename('$', '_peakSummer').regexpRename('^', 'spectral_');
+var late_summer_fit = fun_refl.fitT(seasonal_doy.select('doy_lateSummer'), year, segments.findByDate(ee.Date(doy_median_frac.get('doy_lateSummer')), segmentFindStrategy), extrapolateMaxDays).regexpRename('$', '_lateSummer').regexpRename('^', 'spectral_');
+var end_snowfree_fit = fun_refl.fitT(seasonal_doy.select('doy_endSnowfree'), year, segments.findByDate(ee.Date(doy_median_frac.get('doy_endSnowfree')), segmentFindStrategy), extrapolateMaxDays).regexpRename('$', '_endSnowfree').regexpRename('^', 'spectral_');
+
+// Combine modeled reflectance
+var modeled_reflectance = start_snowfree_fit.addBands(early_summer_fit)
+                                            .addBands(peak_summer_fit)
+                                            .addBands(late_summer_fit)
+                                            .addBands(end_snowfree_fit)
+                                            .int16();
+                                            
+print('Seasonal modeled reflectance', modeled_reflectance);
+Map.addLayer(modeled_reflectance, null, 'modeled_reflectance');
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.image.toAsset({
+  image: modeled_reflectance, 
+  description: 'seasonal_modeled_reflectance_' + ccdc_start_year + '_' + ccdc_end_year + '_' + version + '_' + year, 
+  assetId: out_path + 'seasonal_modeled_reflectance_' + ccdc_start_year + '_' + ccdc_end_year + '_' + version + '_' + year,
+  scale: scale, 
+  crs: crs, 
+  maxPixels: 1e13
+});
+
+  

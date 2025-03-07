@@ -1,0 +1,11 @@
+ds_type,mod,threshold,accuracy,j_index,f_meas,kappa
+total,lgbm,0.75,0.97,0.93,0.97,0.93
+total,rf,0.6,0.96,0.92,0.96,0.92
+total,svmLinear,0.65,0.96,0.91,0.96,0.91
+total,svmPoly,0.55,0.96,0.92,0.96,0.92
+total,xgb,0.8,0.96,0.92,0.96,0.92
+woody,lgbm,0.2,0.94,0.89,0.94,0.89
+woody,rf,0.45,0.95,0.89,0.95,0.89
+woody,svmLinear,0.4,0.94,0.88,0.94,0.88
+woody,svmPoly,0.35,0.94,0.88,0.94,0.88
+woody,xgb,0.45,0.94,0.89,0.94,0.89

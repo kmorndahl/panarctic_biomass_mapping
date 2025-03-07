@@ -1,0 +1,55 @@
+/*
+
+DESCRIPTION: Calculate minimum and maximum DOY for each season across each grouped MGRS tile
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS -----
+
+var version = 'v20240207';
+var crs = 'EPSG:3571';
+var scale = 30;
+
+// 1.1 ----- READ IN DATA -----
+
+var tiles = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/tiles_mgrs_s2_grouped_start_doy_45n_tidy');
+var doy_calval = ee.ImageCollection('projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/seasonal_doys_calval_1984_2023_' + version);
+var doy_tiles = ee.ImageCollection('projects/arctic-biomass-mapping/assets/seasonal_percentile_doys/seasonal_doys_tiles_1984_2023_' + version);
+
+// ====================
+// 2. ANALYZE =========
+// ====================
+
+// Combine DOY image collections
+var doy = doy_tiles.merge(doy_calval).mosaic();
+
+// Get minimum and maximum DOY for all seasons
+var min_max = doy.reduceRegions({
+  collection: tiles, 
+  reducer: ee.Reducer.minMax(), 
+  scale: scale, 
+  crs: crs
+});
+
+print('Tile DOY min/max', min_max);
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.table.toAsset({
+  collection: min_max, 
+  description: 'tiles_mgrs_s2_grouped_start_doy_45n_doy_min_max_' + version, 
+  assetId: 'projects/arctic-biomass-mapping/assets/ROIs/tiles_mgrs_s2_grouped_start_doy_45n_doy_min_max_' + version
+});

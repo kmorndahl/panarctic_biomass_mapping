@@ -1,0 +1,3490 @@
+1) root 0 0  278.9  
+  2) spectral_NDVI_earlySummer < 6757.6150467234 0 0  179.2  
+    4) spectral_NDVI_annualMean < 6268.13203394142 0 0  138.6 *
+    5) spectral_NDVI_annualMean > 6268.13203394142 0 0 1303.0 *
+  3) spectral_NDVI_earlySummer > 6757.6150467234 0 0 3132.0  
+    6) spectral_NDWI_changeLSES < -7.12806556194085 0 0 1567.0 *
+    7) spectral_NDWI_changeLSES > -7.12806556194085 0 0 3654.0 *
+1) root 0 0  298.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  171.50  
+    4) trees_cover < 1.28888888888889 0 0   90.92 *
+    5) trees_cover > 1.28888888888889 0 0  756.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2328.00  
+    6) spectral_NDVI_annualMean < 6658.23824906092 0 0 1725.00 *
+    7) spectral_NDVI_annualMean > 6658.23824906092 0 0 2931.00 *
+1) root 0 0  322.80  
+  2) spectral_NDVI_annualMean < 6268.55007914809 0 0  170.20  
+    4) trees_cover < 1.28888888888889 0 0   89.76 *
+    5) trees_cover > 1.28888888888889 0 0  642.90 *
+  3) spectral_NDVI_annualMean > 6268.55007914809 0 0 1933.00  
+    6) spectral_EVI2b_changeSSES < 43.5378187132585 0 0 1328.00 *
+    7) spectral_EVI2b_changeSSES > 43.5378187132585 0 0 2983.00 *
+1) root 0 0  266.6  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  183.1  
+    4) spectral_NDVI_annualMean < 6276.69913194884 0 0  131.8 *
+    5) spectral_NDVI_annualMean > 6276.69913194884 0 0 1527.0 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3482.0  
+    6) spectral_EVI2b_changeSSES < 22.7478501575206 0 0 5839.0 *
+    7) spectral_EVI2b_changeSSES > 22.7478501575206 0 0 2696.0 *
+1) root 0 0  257.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  152.10  
+    4) trees_cover < 0.333333333333333 0 0   91.41 *
+    5) trees_cover > 0.333333333333333 0 0  639.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2313.00  
+    6) spectral_SWIR1_endSnowfree < 746.947160296559 0 0 5839.00 *
+    7) spectral_SWIR1_endSnowfree > 746.947160296559 0 0 2153.00 *
+1) root 0 0  232.1  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  151.4  
+    4) trees_cover < 8.4 0 0  104.3 *
+    5) trees_cover > 8.4 0 0  827.6 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3094.0  
+    6) spectral_NDWI_changeLSES < -7.12806556194085 0 0 1768.0 *
+    7) spectral_NDWI_changeLSES > -7.12806556194085 0 0 3492.0 *
+1) root 0 0  230.40  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  157.50  
+    4) trees_cover < 0.5 0 0   82.93 *
+    5) trees_cover > 0.5 0 0  567.90 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3040.00  
+    6) spectral_NDWI_changePSLS < -22.0058269355502 0 0 1517.00 *
+    7) spectral_NDWI_changePSLS > -22.0058269355502 0 0 3345.00 *
+1) root 0 0  273.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  153.40  
+    4) trees_cover < 0.333333333333333 0 0   70.99 *
+    5) trees_cover > 0.333333333333333 0 0  604.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2861.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 2547.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  244.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  142.70  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   60.15 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  465.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2814.00  
+    6) spectral_NDVI_earlySummer < 6819.53772288958 0 0 1720.00 *
+    7) spectral_NDVI_earlySummer > 6819.53772288958 0 0 3690.00 *
+1) root 0 0  231.70  
+  2) spectral_NDVI_annualMean < 5915.64823565005 0 0  126.40  
+    4) spectral_NDVI_peakSummer < 6002.61891454842 0 0   43.02 *
+    5) spectral_NDVI_peakSummer > 6002.61891454842 0 0  417.30 *
+  3) spectral_NDVI_annualMean > 5915.64823565005 0 0 1595.00  
+    6) spectral_NDVI_earlySummer < 6836.73646690947 0 0 1040.00 *
+    7) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3396.00 *
+1) root 0 0  241.20  
+  2) spectral_NDVI_peakSummer < 7825.59136499018 0 0  168.40  
+    4) trees_cover < 0.333333333333333 0 0   85.11 *
+    5) trees_cover > 0.333333333333333 0 0  640.50 *
+  3) spectral_NDVI_peakSummer > 7825.59136499018 0 0 2634.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1801.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3258.00 *
+1) root 0 0  235.20  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  133.00  
+    4) trees_cover < 4.44444444444444 0 0   83.07 *
+    5) trees_cover > 4.44444444444444 0 0  686.30 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1927.00  
+    6) spectral_NDVI_annualMean < 6613.03536942294 0 0 1480.00 *
+    7) spectral_NDVI_annualMean > 6613.03536942294 0 0 2989.00 *
+1) root 0 0  227.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  130.00  
+    4) spectral_NDVI_earlySummer < 4510.85784694544 0 0   20.45 *
+    5) spectral_NDVI_earlySummer > 4510.85784694544 0 0  365.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2441.00  
+    6) texture_NDVI_peakSummer < 53.5033094161914 0 0 3326.00 *
+    7) texture_NDVI_peakSummer > 53.5033094161914 0 0 1851.00 *
+1) root 0 0  245.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  153.50  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   83.56 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  437.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2581.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1727.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3435.00 *
+1) root 0 0  302.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  170.90  
+    4) spectral_NDVI_peakSummer < 6542.83561120092 0 0   67.62 *
+    5) spectral_NDVI_peakSummer > 6542.83561120092 0 0  549.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2564.00  
+    6) spectral_red_lateSummer < 295.903633652872 0 0 3772.00 *
+    7) spectral_red_lateSummer > 295.903633652872 0 0 2026.00 *
+1) root 0 0  229.00  
+  2) spectral_NDVI_earlySummer < 6320.6107006503 0 0  147.80  
+    4) trees_cover < 0.333333333333333 0 0   75.11 *
+    5) trees_cover > 0.333333333333333 0 0  589.50 *
+  3) spectral_NDVI_earlySummer > 6320.6107006503 0 0 2896.00  
+    6) spectral_NDMI_annualMedian < 2235.10478923848 0 0 1715.00 *
+    7) spectral_NDMI_annualMedian > 2235.10478923848 0 0 3551.00 *
+1) root 0 0  294.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  164.20  
+    4) spectral_NDVI_earlySummer < 4588.03975373395 0 0   37.11 *
+    5) spectral_NDVI_earlySummer > 4588.03975373395 0 0  426.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2452.00  
+    6) spectral_NDMI_annualMedian < 2485.75199308135 0 0 2063.00 *
+    7) spectral_NDMI_annualMedian > 2485.75199308135 0 0 3562.00 *
+1) root 0 0  212.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  148.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   68.74 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  575.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2340.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1695.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3201.00 *
+1) root 0 0  319.60  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  197.10  
+    4) trees_cover < 1.28888888888889 0 0   88.43 *
+    5) trees_cover > 1.28888888888889 0 0  876.90 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3612.00  
+    6) spectral_EVI2b_annualRange < 1131.15420185021 0 0 5839.00 *
+    7) spectral_EVI2b_annualRange > 1131.15420185021 0 0 3134.00 *
+1) root 0 0  261.9  
+  2) trees_cover < 31.1428571428571 0 0  168.5  
+    4) spectral_NDVI_annualMean < 6273.35983219839 0 0  127.9 *
+    5) spectral_NDVI_annualMean > 6273.35983219839 0 0 1552.0 *
+  3) trees_cover > 31.1428571428571 0 0 2630.0  
+    6) spectral_NIR_annualRange < 533.474534210932 0 0 5839.0 *
+    7) spectral_NIR_annualRange > 533.474534210932 0 0 2229.0 *
+1) root 0 0  255.4  
+  2) trees_cover < 31.1428571428571 0 0  188.8  
+    4) spectral_NDVI_annualMean < 6273.35983219839 0 0  148.3 *
+    5) spectral_NDVI_annualMean > 6273.35983219839 0 0 1574.0 *
+  3) trees_cover > 31.1428571428571 0 0 2163.0  
+    6) spectral_NDMI_changeLSES < -1.40292116902591 0 0 1799.0 *
+    7) spectral_NDMI_changeLSES > -1.40292116902591 0 0 4710.0 *
+1) root 0 0  212.80  
+  2) spectral_NDVI_earlySummer < 6853.39495745563 0 0  148.50  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   56.71 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  554.10 *
+  3) spectral_NDVI_earlySummer > 6853.39495745563 0 0 3959.00  
+    6) spectral_EVI2b_changeSSES < 35.7495268542366 0 0 5839.00 *
+    7) spectral_EVI2b_changeSSES > 35.7495268542366 0 0 3332.00 *
+1) root 0 0  258.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  162.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   72.55 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  526.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2226.00  
+    6) topo_tpi < 0.115319580771029 0 0 1530.00 *
+    7) topo_tpi > 0.115319580771029 0 0 3443.00 *
+1) root 0 0  237.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  136.80  
+    4) spectral_NDVI_annualMean < 5342.29317928268 0 0   60.24 *
+    5) spectral_NDVI_annualMean > 5342.29317928268 0 0  495.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2035.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1623.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4200.00 *
+1) root 0 0  294.20  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  175.30  
+    4) trees_cover < 1.28888888888889 0 0   87.91 *
+    5) trees_cover > 1.28888888888889 0 0  746.30 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2737.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1865.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3995.00 *
+1) root 0 0  193.6  
+  2) spectral_NDVI_earlySummer < 6836.73646690947 0 0  139.2  
+    4) trees_cover < 13.4 0 0  105.3 *
+    5) trees_cover > 13.4 0 0 1158.0 *
+  3) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3366.0  
+    6) spectral_NDVI_annualMean < 6293.1575904581 0 0 5839.0 *
+    7) spectral_NDVI_annualMean > 6293.1575904581 0 0 3012.0 *
+1) root 0 0  227.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  142.60  
+    4) trees_cover < 0.333333333333333 0 0   72.39 *
+    5) trees_cover > 0.333333333333333 0 0  643.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2371.00  
+    6) topo_tpi < 1.00723962386449 0 0 1851.00 *
+    7) topo_tpi > 1.00723962386449 0 0 3189.00 *
+1) root 0 0  248.10  
+  2) spectral_NDVI_earlySummer < 6358.18427534612 0 0  142.50  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   59.59 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  632.00 *
+  3) spectral_NDVI_earlySummer > 6358.18427534612 0 0 2146.00  
+    6) spectral_red_peakSummer < 289.784224375827 0 0 4207.00 *
+    7) spectral_red_peakSummer > 289.784224375827 0 0 1865.00 *
+1) root 0 0  258.40  
+  2) spectral_NDVI_annualMean < 6279.88359027782 0 0  148.10  
+    4) spectral_NDVI_earlySummer < 4500.01266288143 0 0   30.84 *
+    5) spectral_NDVI_earlySummer > 4500.01266288143 0 0  343.10 *
+  3) spectral_NDVI_annualMean > 6279.88359027782 0 0 1782.00  
+    6) spectral_red_changeSSES < 1.70466632840189 0 0 1367.00 *
+    7) spectral_red_changeSSES > 1.70466632840189 0 0 3027.00 *
+1) root 0 0  268.8  
+  2) spectral_NDVI_earlySummer < 6463.65221460296 0 0  149.1  
+    4) trees_cover < 1.28888888888889 0 0   66.1 *
+    5) trees_cover > 1.28888888888889 0 0  691.5 *
+  3) spectral_NDVI_earlySummer > 6463.65221460296 0 0 2728.0  
+    6) spectral_NDMI_endSnowfree < 1611.56009720012 0 0 1868.0 *
+    7) spectral_NDMI_endSnowfree > 1611.56009720012 0 0 3589.0 *
+1) root 0 0  258.1  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  149.5  
+    4) trees_cover < 0.333333333333333 0 0   74.0 *
+    5) trees_cover > 0.333333333333333 0 0  560.1 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2388.0  
+    6) spectral_EVI2b_startSnowfree < 2182.46079984477 0 0 1735.0 *
+    7) spectral_EVI2b_startSnowfree > 2182.46079984477 0 0 3101.0 *
+1) root 0 0  306.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  170.10  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   80.85 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  607.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2664.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 2015.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4125.00 *
+1) root 0 0  233.50  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  152.00  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   31.78 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  391.60 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1909.00  
+    6) spectral_red_changeSSES < 4.16864742620993 0 0 1400.00 *
+    7) spectral_red_changeSSES > 4.16864742620993 0 0 3264.00 *
+1) root 0 0  281.3  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  183.4  
+    4) spectral_NDVI_peakSummer < 7026.95953549475 0 0  103.4 *
+    5) spectral_NDVI_peakSummer > 7026.95953549475 0 0  886.3 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3497.0  
+    6) trees_cover < 71.9 0 0 3107.0 *
+    7) trees_cover > 71.9 0 0 5839.0 *
+1) root 0 0  254.60  
+  2) spectral_NDVI_peakSummer < 7890.52717238376 0 0  159.60  
+    4) trees_cover < 1.28888888888889 0 0   75.41 *
+    5) trees_cover > 1.28888888888889 0 0  677.60 *
+  3) spectral_NDVI_peakSummer > 7890.52717238376 0 0 2974.00  
+    6) topo_tpi < 0.142285235060586 0 0 1956.00 *
+    7) topo_tpi > 0.142285235060586 0 0 3314.00 *
+1) root 0 0  228.70  
+  2) spectral_NDVI_annualMean < 6281.92693020582 0 0  153.50  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   35.95 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  391.10 *
+  3) spectral_NDVI_annualMean > 6281.92693020582 0 0 1850.00  
+    6) spectral_NDMI_annualMedian < 2235.10478923848 0 0 1352.00 *
+    7) spectral_NDMI_annualMedian > 2235.10478923848 0 0 3096.00 *
+1) root 0 0  234.70  
+  2) trees_cover < 28.6428571428571 0 0  142.50  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   60.32 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  488.10 *
+  3) trees_cover > 28.6428571428571 0 0 2223.00  
+    6) spectral_NDVI_earlySummer < 6836.19621343574 0 0 1553.00 *
+    7) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3899.00 *
+1) root 0 0  245.30  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  156.00  
+    4) trees_cover < 0.333333333333333 0 0   83.91 *
+    5) trees_cover > 0.333333333333333 0 0  624.80 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2803.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 2601.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  227.50  
+  2) spectral_NDVI_earlySummer < 6836.73646690947 0 0  163.50  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   52.48 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  517.70 *
+  3) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3533.00  
+    6) world_terrestrial_ecosystems_X53 < 0.5 0 0 3304.00 *
+    7) world_terrestrial_ecosystems_X53 > 0.5 0 0 3990.00 *
+1) root 0 0  246.2  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  145.2  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   59.2 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  465.2 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3138.0  
+    6) spectral_NDMI_endSnowfree < 1611.56009720012 0 0 1623.0 *
+    7) spectral_NDMI_endSnowfree > 1611.56009720012 0 0 3826.0 *
+1) root 0 0  280.6  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  182.8  
+    4) spectral_NDVI_earlySummer < 6320.6107006503 0 0  139.7 *
+    5) spectral_NDVI_earlySummer > 6320.6107006503 0 0 1670.0 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 4044.0  
+    6) spectral_NDVI_annualMean < 6195.56088835044 0 0 5839.0 *
+    7) spectral_NDVI_annualMean > 6195.56088835044 0 0 3146.0 *
+1) root 0 0  246.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  136.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   60.51 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  491.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2394.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1623.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3594.00 *
+1) root 0 0  219.2  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  129.6  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   42.5 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  346.1 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2151.0  
+    6) spectral_EVI2b_startSnowfree < 2182.46079984477 0 0 1688.0 *
+    7) spectral_EVI2b_startSnowfree > 2182.46079984477 0 0 3310.0 *
+1) root 0 0  254.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  161.50  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   47.98 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  454.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2488.00  
+    6) spectral_NDVI_annualMean < 6611.04022972924 0 0 1575.00 *
+    7) spectral_NDVI_annualMean > 6611.04022972924 0 0 3151.00 *
+1) root 0 0  281.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  138.50  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   41.28 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  354.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2481.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1787.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4023.00 *
+1) root 0 0  188.90  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  119.50  
+    4) spectral_NDVI_earlySummer < 4497.97789119431 0 0   27.26 *
+    5) spectral_NDVI_earlySummer > 4497.97789119431 0 0  296.40 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1614.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1333.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3391.00 *
+1) root 0 0  288.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  134.30  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   52.37 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  355.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2847.00  
+    6) spectral_SWIR1_endSnowfree < 1508.69774038284 0 0 3801.00 *
+    7) spectral_SWIR1_endSnowfree > 1508.69774038284 0 0 1820.00 *
+1) root 0 0  270.2  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  175.9  
+    4) spectral_NDVI_annualMean < 6276.69913194884 0 0  135.9 *
+    5) spectral_NDVI_annualMean > 6276.69913194884 0 0 1451.0 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3369.0  
+    6) trees_cover < 71.9 0 0 3179.0 *
+    7) trees_cover > 71.9 0 0 5839.0 *
+1) root 0 0  260.50  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  134.00  
+    4) trees_cover < 1.28888888888889 0 0   79.83 *
+    5) trees_cover > 1.28888888888889 0 0  543.50 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 2201.00  
+    6) spectral_NDVI_earlySummer < 6852.01000287502 0 0 1583.00 *
+    7) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3374.00 *
+1) root 0 0  282.30  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  172.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   75.95 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  537.00 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2093.00  
+    6) topo_tpi < 0.35475985109806 0 0 1644.00 *
+    7) topo_tpi > 0.35475985109806 0 0 3376.00 *
+1) root 0 0  250.6  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  142.8  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   27.0 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  392.3 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2365.0  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1726.0 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 3563.0 *
+1) root 0 0  250.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  153.20  
+    4) spectral_NDVI_earlySummer < 4576.15645154823 0 0   31.08 *
+    5) spectral_NDVI_earlySummer > 4576.15645154823 0 0  407.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2354.00  
+    6) spectral_SWIR1_endSnowfree < 886.592511371422 0 0 5839.00 *
+    7) spectral_SWIR1_endSnowfree > 886.592511371422 0 0 2180.00 *
+1) root 0 0  263.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  160.80  
+    4) trees_cover < 0.333333333333333 0 0   86.66 *
+    5) trees_cover > 0.333333333333333 0 0  573.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2476.00  
+    6) spectral_NDMI_annualMedian < 1659.15875984636 0 0 1606.00 *
+    7) spectral_NDMI_annualMedian > 1659.15875984636 0 0 3128.00 *
+1) root 0 0  231.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  131.00  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   36.33 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  343.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2521.00  
+    6) topo_tpi < 0.219577498733998 0 0 2077.00 *
+    7) topo_tpi > 0.219577498733998 0 0 3855.00 *
+1) root 0 0  287.30  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  150.20  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   50.35 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  541.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3104.00  
+    6) trees_cover < 76.5 0 0 2672.00 *
+    7) trees_cover > 76.5 0 0 5839.00 *
+1) root 0 0  207.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  119.80  
+    4) trees_cover < 0.944444444444444 0 0   70.98 *
+    5) trees_cover > 0.944444444444444 0 0  476.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2560.00  
+    6) spectral_SWIR1_annualRange < 625.32203534081 0 0 3360.00 *
+    7) spectral_SWIR1_annualRange > 625.32203534081 0 0 1849.00 *
+1) root 0 0  215.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  130.00  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   51.49 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  386.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2391.00  
+    6) trees_cover < 39 0 0 3066.00 *
+    7) trees_cover > 39 0 0 1715.00 *
+1) root 0 0  218.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  136.60  
+    4) spectral_NDVI_earlySummer < 4510.85784694544 0 0   32.36 *
+    5) spectral_NDVI_earlySummer > 4510.85784694544 0 0  322.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2430.00  
+    6) spectral_NDVI_annualMean < 6608.64532966151 0 0 1601.00 *
+    7) spectral_NDVI_annualMean > 6608.64532966151 0 0 3363.00 *
+1) root 0 0  251.80  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  177.30  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   62.23 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  600.20 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3390.00  
+    6) trees_cover < 76.5 0 0 2846.00 *
+    7) trees_cover > 76.5 0 0 5839.00 *
+1) root 0 0  208.30  
+  2) spectral_NDVI_annualMean < 6279.88359027782 0 0  129.80  
+    4) trees_cover < 0.944444444444444 0 0   76.43 *
+    5) trees_cover > 0.944444444444444 0 0  536.00 *
+  3) spectral_NDVI_annualMean > 6279.88359027782 0 0 2195.00  
+    6) spectral_NDVI_annualMean < 6610.64046935521 0 0 1589.00 *
+    7) spectral_NDVI_annualMean > 6610.64046935521 0 0 3147.00 *
+1) root 0 0  207.80  
+  2) spectral_NDVI_earlySummer < 6404.3445802976 0 0  135.10  
+    4) spectral_NDVI_earlySummer < 5147.53416581061 0 0   51.89 *
+    5) spectral_NDVI_earlySummer > 5147.53416581061 0 0  477.10 *
+  3) spectral_NDVI_earlySummer > 6404.3445802976 0 0 1950.00  
+    6) spectral_red_peakSummer < 289.784224375827 0 0 4207.00 *
+    7) spectral_red_peakSummer > 289.784224375827 0 0 1526.00 *
+1) root 0 0  247.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  148.00  
+    4) spectral_NDVI_peakSummer < 5783.77205622887 0 0   36.04 *
+    5) spectral_NDVI_peakSummer > 5783.77205622887 0 0  443.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2635.00  
+    6) spectral_red_lateSummer < 400.961775665488 0 0 3668.00 *
+    7) spectral_red_lateSummer > 400.961775665488 0 0 1487.00 *
+1) root 0 0  293.60  
+  2) spectral_NDVI_earlySummer < 6483.94399720847 0 0  148.30  
+    4) trees_cover < 1.28888888888889 0 0   81.13 *
+    5) trees_cover > 1.28888888888889 0 0  660.10 *
+  3) spectral_NDVI_earlySummer > 6483.94399720847 0 0 2797.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2400.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  241.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  133.00  
+    4) spectral_NDVI_peakSummer < 7131.51398759181 0 0   90.03 *
+    5) spectral_NDVI_peakSummer > 7131.51398759181 0 0  761.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2572.00  
+    6) trees_cover < 76.6111111111111 0 0 2228.00 *
+    7) trees_cover > 76.6111111111111 0 0 5839.00 *
+1) root 0 0  243.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  155.40  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   62.74 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  524.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2749.00  
+    6) spectral_NDMI_endSnowfree < 1611.56009720012 0 0 1751.00 *
+    7) spectral_NDMI_endSnowfree > 1611.56009720012 0 0 3347.00 *
+1) root 0 0  297.30  
+  2) spectral_NDVI_earlySummer < 6483.94399720847 0 0  135.00  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   58.72 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  517.20 *
+  3) spectral_NDVI_earlySummer > 6483.94399720847 0 0 2789.00  
+    6) spectral_NDMI_endSnowfree < 1782.23154743745 0 0 1798.00 *
+    7) spectral_NDMI_endSnowfree > 1782.23154743745 0 0 4008.00 *
+1) root 0 0  238.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  157.00  
+    4) trees_cover < 0.333333333333333 0 0   85.22 *
+    5) trees_cover > 0.333333333333333 0 0  627.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1995.00  
+    6) spectral_NDMI_annualMedian < 2159.84771472861 0 0 1495.00 *
+    7) spectral_NDMI_annualMedian > 2159.84771472861 0 0 3245.00 *
+1) root 0 0  284.1  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  167.0  
+    4) trees_cover < 1.28888888888889 0 0  100.6 *
+    5) trees_cover > 1.28888888888889 0 0  778.0 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3867.0  
+    6) spectral_EVI2b_startSnowfree < 1815.2926179817 0 0 5839.0 *
+    7) spectral_EVI2b_startSnowfree > 1815.2926179817 0 0 3150.0 *
+1) root 0 0  256.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  138.40  
+    4) trees_cover < 0.333333333333333 0 0   75.78 *
+    5) trees_cover > 0.333333333333333 0 0  653.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2688.00  
+    6) spectral_NDVI_peakSummer < 6921.18585031786 0 0 5839.00 *
+    7) spectral_NDVI_peakSummer > 6921.18585031786 0 0 2373.00 *
+1) root 0 0  273.2  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  186.3  
+    4) trees_cover < 4.44444444444444 0 0  106.7 *
+    5) trees_cover > 4.44444444444444 0 0  923.9 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3620.0  
+    6) spectral_NDMI_changeLSES < 15.0857682953833 0 0 2880.0 *
+    7) spectral_NDMI_changeLSES > 15.0857682953833 0 0 5839.0 *
+1) root 0 0  271.4  
+  2) trees_cover < 31.1428571428571 0 0  154.1  
+    4) spectral_NDVI_earlySummer < 6768.56470255491 0 0  135.9 *
+    5) spectral_NDVI_earlySummer > 6768.56470255491 0 0 2858.0 *
+  3) trees_cover > 31.1428571428571 0 0 2212.0  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1433.0 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 3772.0 *
+1) root 0 0  258.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  164.30  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   52.46 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  534.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2297.00  
+    6) spectral_NDVI_annualMean < 6608.64532966151 0 0 1561.00 *
+    7) spectral_NDVI_annualMean > 6608.64532966151 0 0 3492.00 *
+1) root 0 0  278.10  
+  2) spectral_NDVI_earlySummer < 6463.65221460296 0 0  134.50  
+    4) spectral_NDVI_earlySummer < 4880.5487793821 0 0   39.84 *
+    5) spectral_NDVI_earlySummer > 4880.5487793821 0 0  422.10 *
+  3) spectral_NDVI_earlySummer > 6463.65221460296 0 0 2752.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 2100.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3641.00 *
+1) root 0 0  299.50  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  175.20  
+    4) trees_cover < 0.333333333333333 0 0   74.97 *
+    5) trees_cover > 0.333333333333333 0 0  765.90 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3276.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1389.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3779.00 *
+1) root 0 0  258.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  140.90  
+    4) trees_cover < 0.333333333333333 0 0   75.15 *
+    5) trees_cover > 0.333333333333333 0 0  544.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2459.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2151.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  348.8  
+  2) spectral_NDVI_earlySummer < 6836.19621343574 0 0  213.7  
+    4) spectral_NDVI_annualMean < 6268.13203394142 0 0  158.9 *
+    5) spectral_NDVI_annualMean > 6268.13203394142 0 0 1405.0 *
+  3) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3584.0  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 3161.0 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.0 *
+1) root 0 0  242.60  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  169.50  
+    4) trees_cover < 0.333333333333333 0 0   92.99 *
+    5) trees_cover > 0.333333333333333 0 0  696.80 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2337.00  
+    6) spectral_NDMI_annualMedian < 1833.7556782129 0 0 1411.00 *
+    7) spectral_NDMI_annualMedian > 1833.7556782129 0 0 3527.00 *
+1) root 0 0  272.7  
+  2) trees_cover < 31.1428571428571 0 0  178.6  
+    4) spectral_NDVI_peakSummer < 7849.1231416638 0 0  143.5 *
+    5) spectral_NDVI_peakSummer > 7849.1231416638 0 0 2812.0 *
+  3) trees_cover > 31.1428571428571 0 0 2802.0  
+    6) trees_cover < 56.9 0 0 1998.0 *
+    7) trees_cover > 56.9 0 0 4730.0 *
+1) root 0 0  271.00  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  166.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   73.15 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  587.90 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3077.00  
+    6) spectral_NDMI_endSnowfree < 2203.78135997898 0 0 2168.00 *
+    7) spectral_NDMI_endSnowfree > 2203.78135997898 0 0 4374.00 *
+1) root 0 0  252.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  164.50  
+    4) trees_cover < 0.333333333333333 0 0   82.77 *
+    5) trees_cover > 0.333333333333333 0 0  675.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2606.00  
+    6) spectral_NDMI_annualMedian < 1840.50736982219 0 0 1661.00 *
+    7) spectral_NDMI_annualMedian > 1840.50736982219 0 0 4339.00 *
+1) root 0 0  228.90  
+  2) spectral_NDVI_peakSummer < 7849.60157253386 0 0  158.90  
+    4) trees_cover < 0.333333333333333 0 0   79.82 *
+    5) trees_cover > 0.333333333333333 0 0  616.80 *
+  3) spectral_NDVI_peakSummer > 7849.60157253386 0 0 2926.00  
+    6) spectral_NDMI_changeLSES < -58.5616705401505 0 0 1765.00 *
+    7) spectral_NDMI_changeLSES > -58.5616705401505 0 0 3158.00 *
+1) root 0 0  237.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  141.40  
+    4) spectral_NDVI_earlySummer < 4588.03975373395 0 0   35.26 *
+    5) spectral_NDVI_earlySummer > 4588.03975373395 0 0  381.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2670.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2274.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  364.40  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  207.90  
+    4) trees_cover < 1.28888888888889 0 0   93.02 *
+    5) trees_cover > 1.28888888888889 0 0  743.30 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3742.00  
+    6) spectral_red_peakSummer < 227.503002731476 0 0 5839.00 *
+    7) spectral_red_peakSummer > 227.503002731476 0 0 3249.00 *
+1) root 0 0  317.20  
+  2) spectral_NDVI_earlySummer < 6483.94399720847 0 0  171.50  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   76.11 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  578.00 *
+  3) spectral_NDVI_earlySummer > 6483.94399720847 0 0 2728.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2479.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  274.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  156.40  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   78.71 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  555.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2304.00  
+    6) spectral_NDMI_annualMedian < 2159.84771472861 0 0 1442.00 *
+    7) spectral_NDMI_annualMedian > 2159.84771472861 0 0 2936.00 *
+1) root 0 0  278.80  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  161.60  
+    4) trees_cover < 0.333333333333333 0 0   91.54 *
+    5) trees_cover > 0.333333333333333 0 0  577.50 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2578.00  
+    6) spectral_NDMI_annualMedian < 1833.7556782129 0 0 1446.00 *
+    7) spectral_NDMI_annualMedian > 1833.7556782129 0 0 3616.00 *
+1) root 0 0  249.00  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  155.60  
+    4) trees_cover < 1.28888888888889 0 0   82.86 *
+    5) trees_cover > 1.28888888888889 0 0  724.60 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 2001.00  
+    6) spectral_red_changeSSES < 1.70466632840189 0 0 1526.00 *
+    7) spectral_red_changeSSES > 1.70466632840189 0 0 3154.00 *
+1) root 0 0  259.80  
+  2) spectral_NDVI_earlySummer < 6836.19621343574 0 0  163.90  
+    4) trees_cover < 4.44444444444444 0 0   92.57 *
+    5) trees_cover > 4.44444444444444 0 0  711.70 *
+  3) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3411.00  
+    6) spectral_NIR_annualRange < 541.030087255761 0 0 5839.00 *
+    7) spectral_NIR_annualRange > 541.030087255761 0 0 3007.00 *
+1) root 0 0  207.40  
+  2) spectral_NDVI_annualMean < 6279.88359027782 0 0  150.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   60.75 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  561.50 *
+  3) spectral_NDVI_annualMean > 6279.88359027782 0 0 2210.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1478.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3382.00 *
+1) root 0 0  228.7  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  158.4  
+    4) spectral_NDVI_annualMean < 6265.36562081911 0 0  127.8 *
+    5) spectral_NDVI_annualMean > 6265.36562081911 0 0 1303.0 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2719.0  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1370.0 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3562.0 *
+1) root 0 0  256.60  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  137.60  
+    4) trees_cover < 0.333333333333333 0 0   72.31 *
+    5) trees_cover > 0.333333333333333 0 0  604.50 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2307.00  
+    6) trees_cover < 76.6111111111111 0 0 2012.00 *
+    7) trees_cover > 76.6111111111111 0 0 5839.00 *
+1) root 0 0  243.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  146.30  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   69.26 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  516.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2331.00  
+    6) spectral_NDMI_endSnowfree < 1579.86288701116 0 0 1492.00 *
+    7) spectral_NDMI_endSnowfree > 1579.86288701116 0 0 3254.00 *
+1) root 0 0  233.7  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  135.6  
+    4) spectral_NDVI_annualMean < 6270.59341907609 0 0  107.7 *
+    5) spectral_NDVI_annualMean > 6270.59341907609 0 0 1252.0 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2250.0  
+    6) spectral_red_lateSummer < 295.903633652872 0 0 3747.0 *
+    7) spectral_red_lateSummer > 295.903633652872 0 0 1809.0 *
+1) root 0 0  210.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  146.10  
+    4) spectral_NDVI_peakSummer < 6691.77721092824 0 0   73.02 *
+    5) spectral_NDVI_peakSummer > 6691.77721092824 0 0  509.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2310.00  
+    6) spectral_SWIR1_endSnowfree < 1508.69774038284 0 0 3151.00 *
+    7) spectral_SWIR1_endSnowfree > 1508.69774038284 0 0 1470.00 *
+1) root 0 0  252.8  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  147.1  
+    4) spectral_NDVI_peakSummer < 6691.77721092824 0 0   67.8 *
+    5) spectral_NDVI_peakSummer > 6691.77721092824 0 0  545.9 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2423.0  
+    6) spectral_NDMI_endSnowfree < 2025.69389525952 0 0 1633.0 *
+    7) spectral_NDMI_endSnowfree > 2025.69389525952 0 0 3564.0 *
+1) root 0 0  227.5  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  188.8  
+    4) trees_cover < 76.6111111111111 0 0  176.7 *
+    5) trees_cover > 76.6111111111111 0 0 5839.0 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3245.0  
+    6) spectral_NDWI_changeLSES < 58.4492322180797 0 0 3454.0 *
+    7) spectral_NDWI_changeLSES > 58.4492322180797 0 0 3037.0 *
+1) root 0 0  271.50  
+  2) spectral_NDVI_peakSummer < 7692.78329046798 0 0  161.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   68.37 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  506.10 *
+  3) spectral_NDVI_peakSummer > 7692.78329046798 0 0 2255.00  
+    6) spectral_NDVI_annualMean < 6610.64046935521 0 0 1482.00 *
+    7) spectral_NDVI_annualMean > 6610.64046935521 0 0 3093.00 *
+1) root 0 0  292.60  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  160.50  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   78.63 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  543.70 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 2180.00  
+    6) spectral_NDVI_peakSummer < 7825.59136499018 0 0 1182.00 *
+    7) spectral_NDVI_peakSummer > 7825.59136499018 0 0 2810.00 *
+1) root 0 0  210.10  
+  2) spectral_NDVI_annualMean < 6615.34245687959 0 0  143.40  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   37.48 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  363.10 *
+  3) spectral_NDVI_annualMean > 6615.34245687959 0 0 3301.00  
+    6) spectral_green_changeLSES < 4.12774252091278 0 0 3522.00 *
+    7) spectral_green_changeLSES > 4.12774252091278 0 0 2970.00 *
+1) root 0 0  240.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  136.50  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   64.01 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  433.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2115.00  
+    6) trees_cover < 41.8 0 0 3047.00 *
+    7) trees_cover > 41.8 0 0 1493.00 *
+1) root 0 0  264.0  
+  2) spectral_NDVI_earlySummer < 6757.6150467234 0 0  199.7  
+    4) spectral_NDVI_annualMean < 6268.13203394142 0 0  147.7 *
+    5) spectral_NDVI_annualMean > 6268.13203394142 0 0 1485.0 *
+  3) spectral_NDVI_earlySummer > 6757.6150467234 0 0 2973.0  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 2687.0 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.0 *
+1) root 0 0  290.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  143.80  
+    4) trees_cover < 1.28888888888889 0 0   90.61 *
+    5) trees_cover > 1.28888888888889 0 0  604.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2454.00  
+    6) spectral_EVI2b_startSnowfree < 1556.86363634229 0 0 5839.00 *
+    7) spectral_EVI2b_startSnowfree > 1556.86363634229 0 0 2212.00 *
+1) root 0 0  268.30  
+  2) spectral_NDVI_peakSummer < 7825.59136499018 0 0  173.70  
+    4) trees_cover < 1.28888888888889 0 0   99.13 *
+    5) trees_cover > 1.28888888888889 0 0  629.00 *
+  3) spectral_NDVI_peakSummer > 7825.59136499018 0 0 2535.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1742.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3249.00 *
+1) root 0 0  234.40  
+  2) spectral_NDVI_annualMean < 6617.33759657328 0 0  163.50  
+    4) trees_cover < 0.333333333333333 0 0   72.18 *
+    5) trees_cover > 0.333333333333333 0 0  673.40 *
+  3) spectral_NDVI_annualMean > 6617.33759657328 0 0 2749.00  
+    6) spectral_NDWI_changeLSES < 6.78445116022146 0 0 1526.00 *
+    7) spectral_NDWI_changeLSES > 6.78445116022146 0 0 3116.00 *
+1) root 0 0  174.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  124.80  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   34.26 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  375.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2463.00  
+    6) permafrost_index < 0.0812203781679273 0 0 3691.00 *
+    7) permafrost_index > 0.0812203781679273 0 0 1645.00 *
+1) root 0 0  271.20  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  145.30  
+    4) trees_cover < 1.28888888888889 0 0   78.67 *
+    5) trees_cover > 1.28888888888889 0 0  638.70 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3130.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1636.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3770.00 *
+1) root 0 0  226.40  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  142.10  
+    4) trees_cover < 0.944444444444444 0 0   85.86 *
+    5) trees_cover > 0.944444444444444 0 0  557.80 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 2044.00  
+    6) spectral_red_peakSummer < 437.377492450114 0 0 2906.00 *
+    7) spectral_red_peakSummer > 437.377492450114 0 0 1398.00 *
+1) root 0 0  282.70  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  188.80  
+    4) spectral_NDVI_peakSummer < 6503.26660513338 0 0   75.77 *
+    5) spectral_NDVI_peakSummer > 6503.26660513338 0 0  507.80 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2124.00  
+    6) spectral_NDMI_annualMedian < 2485.75199308135 0 0 1794.00 *
+    7) spectral_NDMI_annualMedian > 2485.75199308135 0 0 3691.00 *
+1) root 0 0  280.90  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  163.20  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   63.52 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  553.50 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3443.00  
+    6) trees_cover < 71.9 0 0 2929.00 *
+    7) trees_cover > 71.9 0 0 5839.00 *
+1) root 0 0  251.60  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  160.20  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   73.02 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  586.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3049.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1889.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3228.00 *
+1) root 0 0  277.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  169.70  
+    4) trees_cover < 0.944444444444444 0 0   91.08 *
+    5) trees_cover > 0.944444444444444 0 0  628.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2382.00  
+    6) trees_cover < 45.3 0 0 3149.00 *
+    7) trees_cover > 45.3 0 0 1386.00 *
+1) root 0 0  219.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  147.60  
+    4) trees_cover < 4.44444444444444 0 0   98.61 *
+    5) trees_cover > 4.44444444444444 0 0  761.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2597.00  
+    6) spectral_NDVI_annualMean < 6608.64532966151 0 0 1714.00 *
+    7) spectral_NDVI_annualMean > 6608.64532966151 0 0 3480.00 *
+1) root 0 0  220.40  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  149.20  
+    4) trees_cover < 1.28888888888889 0 0   94.12 *
+    5) trees_cover > 1.28888888888889 0 0  570.00 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2259.00  
+    6) trees_cover < 41.8 0 0 2999.00 *
+    7) trees_cover > 41.8 0 0 1683.00 *
+1) root 0 0  262.7  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  166.3  
+    4) spectral_NDVI_peakSummer < 6997.82179180051 0 0  108.5 *
+    5) spectral_NDVI_peakSummer > 6997.82179180051 0 0  885.4 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2854.0  
+    6) trees_cover < 76.6111111111111 0 0 2456.0 *
+    7) trees_cover > 76.6111111111111 0 0 5839.0 *
+1) root 0 0  247.10  
+  2) spectral_NDVI_earlySummer < 6320.6107006503 0 0  158.70  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   71.92 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  559.20 *
+  3) spectral_NDVI_earlySummer > 6320.6107006503 0 0 2366.00  
+    6) spectral_NDVI_earlySummer < 6852.01000287502 0 0 1724.00 *
+    7) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3078.00 *
+1) root 0 0  173.80  
+  2) spectral_NDVI_earlySummer < 6705.27923562497 0 0  137.20  
+    4) spectral_NDVI_earlySummer < 5144.79806025189 0 0   45.31 *
+    5) spectral_NDVI_earlySummer > 5144.79806025189 0 0  511.60 *
+  3) spectral_NDVI_earlySummer > 6705.27923562497 0 0 2614.00  
+    6) spectral_SWIR1_endSnowfree < 1439.76549260367 0 0 4915.00 *
+    7) spectral_SWIR1_endSnowfree > 1439.76549260367 0 0 1694.00 *
+1) root 0 0  259.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  155.80  
+    4) trees_cover < 1.11111111111111 0 0   81.61 *
+    5) trees_cover > 1.11111111111111 0 0  663.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2740.00  
+    6) spectral_SWIR2_changeESPS < -4.2114891714178 0 0 1881.00 *
+    7) spectral_SWIR2_changeESPS > -4.2114891714178 0 0 3922.00 *
+1) root 0 0  298.4  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  192.6  
+    4) trees_cover < 13.4 0 0  136.8 *
+    5) trees_cover > 13.4 0 0 1205.0 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3534.0  
+    6) spectral_NIR_annualRange < 541.030087255761 0 0 5839.0 *
+    7) spectral_NIR_annualRange > 541.030087255761 0 0 2958.0 *
+1) root 0 0  313.50  
+  2) spectral_NDVI_earlySummer < 6819.53772288958 0 0  213.60  
+    4) spectral_NDVI_earlySummer < 4576.15645154823 0 0   35.59 *
+    5) spectral_NDVI_earlySummer > 4576.15645154823 0 0  569.80 *
+  3) spectral_NDVI_earlySummer > 6819.53772288958 0 0 3368.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 3192.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  249.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  151.90  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   53.98 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  436.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2356.00  
+    6) spectral_red_peakSummer < 437.377492450114 0 0 3205.00 *
+    7) spectral_red_peakSummer > 437.377492450114 0 0 1423.00 *
+1) root 0 0  272.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  178.70  
+    4) spectral_NDVI_earlySummer < 4721.43343174709 0 0   51.32 *
+    5) spectral_NDVI_earlySummer > 4721.43343174709 0 0  448.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2189.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2015.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  216.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  122.40  
+    4) trees_cover < 0.944444444444444 0 0   67.73 *
+    5) trees_cover > 0.944444444444444 0 0  533.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2155.00  
+    6) spectral_NDVI_annualMean < 6611.04022972924 0 0 1456.00 *
+    7) spectral_NDVI_annualMean > 6611.04022972924 0 0 3165.00 *
+1) root 0 0  226.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  143.90  
+    4) spectral_NDVI_earlySummer < 4500.98125527456 0 0   31.64 *
+    5) spectral_NDVI_earlySummer > 4500.98125527456 0 0  342.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2450.00  
+    6) spectral_NDVI_earlySummer < 6786.88825064737 0 0 1724.00 *
+    7) spectral_NDVI_earlySummer > 6786.88825064737 0 0 3781.00 *
+1) root 0 0  303.00  
+  2) spectral_NDVI_earlySummer < 6320.6107006503 0 0  181.50  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   47.17 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  499.50 *
+  3) spectral_NDVI_earlySummer > 6320.6107006503 0 0 2397.00  
+    6) spectral_red_peakSummer < 289.784224375827 0 0 3799.00 *
+    7) spectral_red_peakSummer > 289.784224375827 0 0 1976.00 *
+1) root 0 0  179.4  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  135.7  
+    4) trees_cover < 1.28888888888889 0 0   82.5 *
+    5) trees_cover > 1.28888888888889 0 0  529.4 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1863.0  
+    6) spectral_red_changePSLS < -9.63933454807521 0 0 3391.0 *
+    7) spectral_red_changePSLS > -9.63933454807521 0 0 1724.0 *
+1) root 0 0  249.90  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  160.10  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   75.55 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  580.50 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3200.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 2760.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  272.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  170.30  
+    4) spectral_NDVI_peakSummer < 5878.90817305939 0 0   44.19 *
+    5) spectral_NDVI_peakSummer > 5878.90817305939 0 0  482.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2372.00  
+    6) spectral_NDMI_annualMedian < 1801.79322769935 0 0 1612.00 *
+    7) spectral_NDMI_annualMedian > 1801.79322769935 0 0 3283.00 *
+1) root 0 0  213.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  142.10  
+    4) trees_cover < 0.333333333333333 0 0   71.63 *
+    5) trees_cover > 0.333333333333333 0 0  559.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2140.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1572.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3504.00 *
+1) root 0 0  221.2  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  170.2  
+    4) trees_cover < 8.4 0 0  108.9 *
+    5) trees_cover > 8.4 0 0  952.3 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 4203.0  
+    6) permafrost_index < 0.21125178784132 0 0 3385.0 *
+    7) permafrost_index > 0.21125178784132 0 0 5839.0 *
+1) root 0 0  216.00  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  145.40  
+    4) spectral_NDVI_earlySummer < 4510.85784694544 0 0   31.73 *
+    5) spectral_NDVI_earlySummer > 4510.85784694544 0 0  382.70 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1818.00  
+    6) spectral_red_changeSSES < 4.97955751017538 0 0 1425.00 *
+    7) spectral_red_changeSSES > 4.97955751017538 0 0 3391.00 *
+1) root 0 0  273.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  154.20  
+    4) trees_cover < 1.28888888888889 0 0   91.11 *
+    5) trees_cover > 1.28888888888889 0 0  599.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2607.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1699.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3306.00 *
+1) root 0 0  242.10  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  153.10  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   64.92 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  545.80 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2789.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1777.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3576.00 *
+1) root 0 0  220.10  
+  2) spectral_NDVI_annualMean < 6279.88359027782 0 0  139.90  
+    4) trees_cover < 1.28888888888889 0 0   68.54 *
+    5) trees_cover > 1.28888888888889 0 0  694.30 *
+  3) spectral_NDVI_annualMean > 6279.88359027782 0 0 2251.00  
+    6) spectral_NDVI_earlySummer < 6819.53772288958 0 0 1564.00 *
+    7) spectral_NDVI_earlySummer > 6819.53772288958 0 0 3329.00 *
+1) root 0 0  277.70  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  180.60  
+    4) trees_cover < 0.333333333333333 0 0   78.45 *
+    5) trees_cover > 0.333333333333333 0 0  788.90 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3249.00  
+    6) spectral_NDWI_changeESPS < -27.3511371302579 0 0 2268.00 *
+    7) spectral_NDWI_changeESPS > -27.3511371302579 0 0 3902.00 *
+1) root 0 0  241.40  
+  2) spectral_NDVI_annualMean < 6281.92693020582 0 0  156.90  
+    4) trees_cover < 1.11111111111111 0 0   82.64 *
+    5) trees_cover > 1.11111111111111 0 0  647.60 *
+  3) spectral_NDVI_annualMean > 6281.92693020582 0 0 1759.00  
+    6) spectral_NDMI_endSnowfree < 1573.69231729894 0 0 1338.00 *
+    7) spectral_NDMI_endSnowfree > 1573.69231729894 0 0 3440.00 *
+1) root 0 0  258.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  145.20  
+    4) spectral_NDVI_peakSummer < 5783.77205622887 0 0   36.25 *
+    5) spectral_NDVI_peakSummer > 5783.77205622887 0 0  414.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 3487.00  
+    6) trees_cover < 76.5 0 0 2702.00 *
+    7) trees_cover > 76.5 0 0 5839.00 *
+1) root 0 0  205.10  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  144.50  
+    4) trees_cover < 0.944444444444444 0 0   78.78 *
+    5) trees_cover > 0.944444444444444 0 0  592.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2355.00  
+    6) trees_cover < 41.8 0 0 3304.00 *
+    7) trees_cover > 41.8 0 0 1541.00 *
+1) root 0 0  269.80  
+  2) trees_cover < 31.1428571428571 0 0  161.10  
+    4) spectral_NDVI_peakSummer < 6832.9644346349 0 0   82.19 *
+    5) spectral_NDVI_peakSummer > 6832.9644346349 0 0  744.10 *
+  3) trees_cover > 31.1428571428571 0 0 2615.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1410.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4222.00 *
+1) root 0 0  236.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  165.80  
+    4) spectral_NDVI_peakSummer < 6483.58700912545 0 0   69.43 *
+    5) spectral_NDVI_peakSummer > 6483.58700912545 0 0  495.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2566.00  
+    6) spectral_red_lateSummer < 400.961775665488 0 0 3628.00 *
+    7) spectral_red_lateSummer > 400.961775665488 0 0 1504.00 *
+1) root 0 0  307.9  
+  2) trees_cover < 76.6111111111111 0 0  248.9  
+    4) spectral_NDVI_earlySummer < 6339.37198095233 0 0  173.8 *
+    5) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2132.0 *
+  3) trees_cover > 76.6111111111111 0 0 5839.0 *
+1) root 0 0  285.6  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  170.1  
+    4) trees_cover < 1.28888888888889 0 0   90.5 *
+    5) trees_cover > 1.28888888888889 0 0  684.3 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3050.0  
+    6) spectral_NDWI_changeESPS < -26.5957004169302 0 0 1976.0 *
+    7) spectral_NDWI_changeESPS > -26.5957004169302 0 0 4017.0 *
+1) root 0 0  266.80  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  157.00  
+    4) trees_cover < 0.333333333333333 0 0   84.47 *
+    5) trees_cover > 0.333333333333333 0 0  638.20 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3409.00  
+    6) spectral_NIR_annualRange < 541.030087255761 0 0 5839.00 *
+    7) spectral_NIR_annualRange > 541.030087255761 0 0 2598.00 *
+1) root 0 0  227.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  125.20  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   61.89 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  444.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2423.00  
+    6) spectral_SWIR2_annualRange < 359.816216053382 0 0 1180.00 *
+    7) spectral_SWIR2_annualRange > 359.816216053382 0 0 3044.00 *
+1) root 0 0  210.80  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  156.40  
+    4) trees_cover < 0.944444444444444 0 0   87.65 *
+    5) trees_cover > 0.944444444444444 0 0  656.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2501.00  
+    6) spectral_red_peakSummer < 289.784224375827 0 0 4003.00 *
+    7) spectral_red_peakSummer > 289.784224375827 0 0 1642.00 *
+1) root 0 0  253.70  
+  2) spectral_NDVI_annualMean < 6281.92693020582 0 0  149.60  
+    4) spectral_NDVI_earlySummer < 5514.47405609555 0 0   72.51 *
+    5) spectral_NDVI_earlySummer > 5514.47405609555 0 0  563.20 *
+  3) spectral_NDVI_annualMean > 6281.92693020582 0 0 2393.00  
+    6) spectral_NDVI_annualMean < 6610.64046935521 0 0 1641.00 *
+    7) spectral_NDVI_annualMean > 6610.64046935521 0 0 3145.00 *
+1) root 0 0  260.6  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  181.5  
+    4) trees_cover < 7.7 0 0  110.1 *
+    5) trees_cover > 7.7 0 0  981.3 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3933.0  
+    6) spectral_NDMI_changeLSES < 15.0857682953833 0 0 3456.0 *
+    7) spectral_NDMI_changeLSES > 15.0857682953833 0 0 5839.0 *
+1) root 0 0  238.6  
+  2) trees_cover < 28.6428571428571 0 0  165.5  
+    4) spectral_EVI2b_changeSSES < 87.3929956757459 0 0  152.9 *
+    5) spectral_EVI2b_changeSSES > 87.3929956757459 0 0 3037.0 *
+  3) trees_cover > 28.6428571428571 0 0 2331.0  
+    6) spectral_red_lateSummer < 295.903633652872 0 0 4153.0 *
+    7) spectral_red_lateSummer > 295.903633652872 0 0 1724.0 *
+1) root 0 0  257.00  
+  2) spectral_NDVI_earlySummer < 6853.39495745563 0 0  166.00  
+    4) trees_cover < 0.944444444444444 0 0   77.63 *
+    5) trees_cover > 0.944444444444444 0 0  747.00 *
+  3) spectral_NDVI_earlySummer > 6853.39495745563 0 0 3759.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 3342.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  228.50  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  156.50  
+    4) spectral_NDVI_peakSummer < 6984.89291735096 0 0   86.96 *
+    5) spectral_NDVI_peakSummer > 6984.89291735096 0 0  694.40 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3261.00  
+    6) spectral_EVI2b_annualRange < 1698.05002395399 0 0 1526.00 *
+    7) spectral_EVI2b_annualRange > 1698.05002395399 0 0 3434.00 *
+1) root 0 0  236.4  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  174.6  
+    4) trees_cover < 0.944444444444444 0 0  104.9 *
+    5) trees_cover > 0.944444444444444 0 0  708.6 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2125.0  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1280.0 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3092.0 *
+1) root 0 0  242.10  
+  2) spectral_NDVI_earlySummer < 6836.19621343574 0 0  172.40  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   71.29 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  615.50 *
+  3) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3178.00  
+    6) trees_cover < 68 0 0 2912.00 *
+    7) trees_cover > 68 0 0 5839.00 *
+1) root 0 0  226.3  
+  2) spectral_NDVI_annualMean < 6279.88359027782 0 0  140.3  
+    4) trees_cover < 70.5 0 0  127.7 *
+    5) trees_cover > 70.5 0 0 5839.0 *
+  3) spectral_NDVI_annualMean > 6279.88359027782 0 0 1993.0  
+    6) spectral_NDVI_earlySummer < 6836.73646690947 0 0 1464.0 *
+    7) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3404.0 *
+1) root 0 0  185.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  140.10  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   41.73 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  402.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1937.00  
+    6) spectral_NDMI_endSnowfree < 1375.28954568336 0 0 1687.00 *
+    7) spectral_NDMI_endSnowfree > 1375.28954568336 0 0 2685.00 *
+1) root 0 0  238.7  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  145.6  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   33.7 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  376.4 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2246.0  
+    6) spectral_EVI2b_startSnowfree < 2172.84681621544 0 0 1571.0 *
+    7) spectral_EVI2b_startSnowfree > 2172.84681621544 0 0 3344.0 *
+1) root 0 0  268.80  
+  2) spectral_NDVI_annualMean < 6273.35983219839 0 0  140.10  
+    4) spectral_NDVI_earlySummer < 4709.65865894346 0 0   41.32 *
+    5) spectral_NDVI_earlySummer > 4709.65865894346 0 0  379.90 *
+  3) spectral_NDVI_annualMean > 6273.35983219839 0 0 2046.00  
+    6) spectral_red_changeSSES < 1.20322917217286 0 0 1603.00 *
+    7) spectral_red_changeSSES > 1.20322917217286 0 0 3373.00 *
+1) root 0 0  245.60  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  137.90  
+    4) trees_cover < 0.333333333333333 0 0   81.49 *
+    5) trees_cover > 0.333333333333333 0 0  521.40 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2459.00  
+    6) spectral_NDMI_endSnowfree < 1566.27630281681 0 0 1524.00 *
+    7) spectral_NDMI_endSnowfree > 1566.27630281681 0 0 3105.00 *
+1) root 0 0  270.70  
+  2) trees_cover < 23.3666666666667 0 0  154.80  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   42.72 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  554.90 *
+  3) trees_cover > 23.3666666666667 0 0 2269.00  
+    6) spectral_NDVI_earlySummer < 6852.01000287502 0 0 1486.00 *
+    7) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3746.00 *
+1) root 0 0  242.90  
+  2) spectral_NDVI_annualMean < 6511.04862755386 0 0  153.40  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   66.45 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  630.10 *
+  3) spectral_NDVI_annualMean > 6511.04862755386 0 0 3181.00  
+    6) world_terrestrial_ecosystems_X47 < 0.5 0 0 3547.00 *
+    7) world_terrestrial_ecosystems_X47 > 0.5 0 0 1839.00 *
+1) root 0 0  253.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  146.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   73.02 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  512.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2671.00  
+    6) spectral_NDMI_endSnowfree < 1566.27630281681 0 0 1472.00 *
+    7) spectral_NDMI_endSnowfree > 1566.27630281681 0 0 3651.00 *
+1) root 0 0  220.00  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  144.50  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   64.77 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  459.90 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2134.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1367.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3668.00 *
+1) root 0 0  264.7  
+  2) spectral_NDVI_earlySummer < 6358.18427534612 0 0  168.6  
+    4) trees_cover < 0.333333333333333 0 0  101.7 *
+    5) trees_cover > 0.333333333333333 0 0  644.3 *
+  3) spectral_NDVI_earlySummer > 6358.18427534612 0 0 2447.0  
+    6) topo_tpi < 0.219577498733998 0 0 1580.0 *
+    7) topo_tpi > 0.219577498733998 0 0 3506.0 *
+1) root 0 0  246.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  167.40  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   64.98 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  485.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2256.00  
+    6) spectral_NDMI_annualMedian < 1936.59733515266 0 0 1505.00 *
+    7) spectral_NDMI_annualMedian > 1936.59733515266 0 0 3006.00 *
+1) root 0 0  265.9  
+  2) trees_cover < 76.6111111111111 0 0  218.5  
+    4) spectral_NDVI_annualMean < 6279.88359027782 0 0  144.9 *
+    5) spectral_NDVI_annualMean > 6279.88359027782 0 0 1649.0 *
+  3) trees_cover > 76.6111111111111 0 0 5839.0 *
+1) root 0 0  227.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  127.50  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   57.91 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  473.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2498.00  
+    6) spectral_NDVI_earlySummer < 6836.73646690947 0 0 1600.00 *
+    7) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3395.00 *
+1) root 0 0  211.60  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  142.60  
+    4) spectral_NDVI_annualMean < 4531.57046531296 0 0   29.81 *
+    5) spectral_NDVI_annualMean > 4531.57046531296 0 0  301.10 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2066.00  
+    6) trees_cover < 43.3 0 0 3245.00 *
+    7) trees_cover > 43.3 0 0 1423.00 *
+1) root 0 0  236.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  154.30  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   64.69 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  595.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2304.00  
+    6) spectral_NDVI_annualMean < 6658.23824906092 0 0 1644.00 *
+    7) spectral_NDVI_annualMean > 6658.23824906092 0 0 3341.00 *
+1) root 0 0  246.00  
+  2) spectral_NDVI_earlySummer < 6853.39495745563 0 0  173.60  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   71.43 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  721.90 *
+  3) spectral_NDVI_earlySummer > 6853.39495745563 0 0 3990.00  
+    6) spectral_red_lateSummer < 228.196113526738 0 0 5839.00 *
+    7) spectral_red_lateSummer > 228.196113526738 0 0 3461.00 *
+1) root 0 0  227.60  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  127.40  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   60.73 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  525.30 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 2389.00  
+    6) spectral_NDMI_annualMedian < 2485.75199308135 0 0 1868.00 *
+    7) spectral_NDMI_annualMedian > 2485.75199308135 0 0 3691.00 *
+1) root 0 0  278.90  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  148.30  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   35.12 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  401.20 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 2145.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1393.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3187.00 *
+1) root 0 0  202.7  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  148.4  
+    4) spectral_NDVI_annualMean < 6281.92693020582 0 0  105.3 *
+    5) spectral_NDVI_annualMean > 6281.92693020582 0 0 1160.0 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3005.0  
+    6) spectral_red_peakSummer < 487.452819268192 0 0 3836.0 *
+    7) spectral_red_peakSummer > 487.452819268192 0 0 1343.0 *
+1) root 0 0  268.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  161.10  
+    4) trees_cover < 1.28888888888889 0 0   89.04 *
+    5) trees_cover > 1.28888888888889 0 0  692.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2472.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1544.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3400.00 *
+1) root 0 0  235.80  
+  2) trees_cover < 4.5 0 0  103.50  
+    4) spectral_NDVI_earlySummer < 4869.44327703983 0 0   41.54 *
+    5) spectral_NDVI_earlySummer > 4869.44327703983 0 0  315.50 *
+  3) trees_cover > 4.5 0 0 1040.00  
+    6) spectral_red_lateSummer < 312.894930579453 0 0 3402.00 *
+    7) spectral_red_lateSummer > 312.894930579453 0 0  889.60 *
+1) root 0 0  255.60  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  183.70  
+    4) trees_cover < 0.333333333333333 0 0   87.11 *
+    5) trees_cover > 0.333333333333333 0 0  659.20 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3026.00  
+    6) spectral_EVI2b_annualRange < 1495.97168648965 0 0 1526.00 *
+    7) spectral_EVI2b_annualRange > 1495.97168648965 0 0 3326.00 *
+1) root 0 0  250.2  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  144.1  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   59.4 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  543.9 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2431.0  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 1893.0 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.0 *
+1) root 0 0  234.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  137.60  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   33.03 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  366.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2694.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1617.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3380.00 *
+1) root 0 0  240.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  143.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   62.63 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  492.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2586.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2204.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  228.2  
+  2) spectral_NDVI_annualMean < 6281.92693020582 0 0  133.2  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   52.1 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  383.0 *
+  3) spectral_NDVI_annualMean > 6281.92693020582 0 0 1935.0  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1343.0 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 2690.0 *
+1) root 0 0  249.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  159.90  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   51.44 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  509.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2090.00  
+    6) spectral_NDMI_annualMedian < 1659.15875984636 0 0 1570.00 *
+    7) spectral_NDMI_annualMedian > 1659.15875984636 0 0 2999.00 *
+1) root 0 0  257.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  173.30  
+    4) trees_cover < 0.333333333333333 0 0   84.13 *
+    5) trees_cover > 0.333333333333333 0 0  606.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2527.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1950.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3914.00 *
+1) root 0 0  251.00  
+  2) spectral_NDVI_earlySummer < 6836.19621343574 0 0  169.20  
+    4) trees_cover < 1.28888888888889 0 0   91.57 *
+    5) trees_cover > 1.28888888888889 0 0  825.50 *
+  3) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3693.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 3217.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  218.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  147.40  
+    4) trees_cover < 0.333333333333333 0 0   78.03 *
+    5) trees_cover > 0.333333333333333 0 0  699.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2127.00  
+    6) spectral_NDMI_endSnowfree < 2285.95364433351 0 0 1639.00 *
+    7) spectral_NDMI_endSnowfree > 2285.95364433351 0 0 4407.00 *
+1) root 0 0  263.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  143.40  
+    4) spectral_NDVI_earlySummer < 4588.03975373395 0 0   44.29 *
+    5) spectral_NDVI_earlySummer > 4588.03975373395 0 0  372.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2508.00  
+    6) spectral_NDMI_endSnowfree < 2285.95364433351 0 0 1786.00 *
+    7) spectral_NDMI_endSnowfree > 2285.95364433351 0 0 4262.00 *
+1) root 0 0  281.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  161.00  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   76.51 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  545.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2443.00  
+    6) spectral_NDMI_annualMedian < 1801.79322769935 0 0 1630.00 *
+    7) spectral_NDMI_annualMedian > 1801.79322769935 0 0 3194.00 *
+1) root 0 0  287.5  
+  2) spectral_NDVI_earlySummer < 6836.19621343574 0 0  183.6  
+    4) trees_cover < 1.11111111111111 0 0   81.3 *
+    5) trees_cover > 1.11111111111111 0 0  793.0 *
+  3) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3467.0  
+    6) spectral_SWIR1_annualRange < 451.807115230476 0 0  975.8 *
+    7) spectral_SWIR1_annualRange > 451.807115230476 0 0 3850.0 *
+1) root 0 0  281.90  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  152.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   61.08 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  502.80 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2604.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1728.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3293.00 *
+1) root 0 0  254.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  170.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   66.91 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  632.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2495.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1712.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3190.00 *
+1) root 0 0  230.10  
+  2) spectral_NDVI_annualMean < 6268.55007914809 0 0  133.20  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   60.32 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  393.80 *
+  3) spectral_NDVI_annualMean > 6268.55007914809 0 0 1665.00  
+    6) spectral_red_changeSSES < 1.70466632840189 0 0 1295.00 *
+    7) spectral_red_changeSSES > 1.70466632840189 0 0 3146.00 *
+1) root 0 0  227.90  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  134.40  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   58.52 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  469.90 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 1982.00  
+    6) spectral_NDMI_annualMedian < 2162.92180540228 0 0 1402.00 *
+    7) spectral_NDMI_annualMedian > 2162.92180540228 0 0 3140.00 *
+1) root 0 0  229.80  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  146.50  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   68.26 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  473.50 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2342.00  
+    6) spectral_NDWI_changeLSES < 18.2394656312653 0 0 1746.00 *
+    7) spectral_NDWI_changeLSES > 18.2394656312653 0 0 3278.00 *
+1) root 0 0  241.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  156.50  
+    4) trees_cover < 1.28888888888889 0 0   86.04 *
+    5) trees_cover > 1.28888888888889 0 0  705.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2529.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1663.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3764.00 *
+1) root 0 0  266.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  153.70  
+    4) trees_cover < 0.333333333333333 0 0   73.56 *
+    5) trees_cover > 0.333333333333333 0 0  612.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2468.00  
+    6) spectral_NDVI_annualMean < 6608.64532966151 0 0 1746.00 *
+    7) spectral_NDVI_annualMean > 6608.64532966151 0 0 3130.00 *
+1) root 0 0  209.30  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  159.00  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   69.51 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  561.30 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3566.00  
+    6) spectral_SWIR2_changeESPS < -1.74423070706267 0 0 3396.00 *
+    7) spectral_SWIR2_changeESPS > -1.74423070706267 0 0 3990.00 *
+1) root 0 0  267.70  
+  2) spectral_NDVI_earlySummer < 6463.65221460296 0 0  143.90  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   60.79 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  538.10 *
+  3) spectral_NDVI_earlySummer > 6463.65221460296 0 0 2401.00  
+    6) spectral_NDMI_endSnowfree < 2199.701295442 0 0 1747.00 *
+    7) spectral_NDMI_endSnowfree > 2199.701295442 0 0 4176.00 *
+1) root 0 0  250.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  162.20  
+    4) spectral_NDVI_earlySummer < 4607.51600079101 0 0   29.56 *
+    5) spectral_NDVI_earlySummer > 4607.51600079101 0 0  418.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2055.00  
+    6) spectral_NDVI_annualMean < 6658.23824906092 0 0 1561.00 *
+    7) spectral_NDVI_annualMean > 6658.23824906092 0 0 3373.00 *
+1) root 0 0  219.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  150.80  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   49.71 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  470.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2189.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 1946.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  227.20  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  150.30  
+    4) spectral_NDVI_earlySummer < 4880.5487793821 0 0   47.84 *
+    5) spectral_NDVI_earlySummer > 4880.5487793821 0 0  421.70 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 1609.00  
+    6) spectral_EVI2b_changeSSES < 48.7809104799699 0 0 1286.00 *
+    7) spectral_EVI2b_changeSSES > 48.7809104799699 0 0 2634.00 *
+1) root 0 0  269.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  170.70  
+    4) trees_cover < 1.28888888888889 0 0   77.02 *
+    5) trees_cover > 1.28888888888889 0 0  666.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2392.00  
+    6) spectral_NDVI_annualMean < 6658.23824906092 0 0 1693.00 *
+    7) spectral_NDVI_annualMean > 6658.23824906092 0 0 3160.00 *
+1) root 0 0  234.10  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  171.30  
+    4) trees_cover < 0.333333333333333 0 0   80.66 *
+    5) trees_cover > 0.333333333333333 0 0  700.10 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3483.00  
+    6) spectral_NIR_annualRange < 593.772653766214 0 0 5839.00 *
+    7) spectral_NIR_annualRange > 593.772653766214 0 0 2810.00 *
+1) root 0 0  236.30  
+  2) trees_cover < 31.1428571428571 0 0  176.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   58.58 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  566.70 *
+  3) trees_cover > 31.1428571428571 0 0 2774.00  
+    6) spectral_red_peakSummer < 227.503002731476 0 0 5839.00 *
+    7) spectral_red_peakSummer > 227.503002731476 0 0 2092.00 *
+1) root 0 0  302.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  152.40  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   55.92 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  531.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2444.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1909.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 3751.00 *
+1) root 0 0  210.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  143.60  
+    4) trees_cover < 0.333333333333333 0 0   78.97 *
+    5) trees_cover > 0.333333333333333 0 0  534.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2119.00  
+    6) topo_tpi < 1.00723962386449 0 0 1725.00 *
+    7) topo_tpi > 1.00723962386449 0 0 3303.00 *
+1) root 0 0  223.30  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  158.60  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   46.57 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  421.90 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2203.00  
+    6) spectral_red_lateSummer < 365.088409074016 0 0 3810.00 *
+    7) spectral_red_lateSummer > 365.088409074016 0 0 1399.00 *
+1) root 0 0  225.4  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  160.3  
+    4) spectral_NDVI_annualMean < 6281.92693020582 0 0  123.6 *
+    5) spectral_NDVI_annualMean > 6281.92693020582 0 0 1342.0 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3246.0  
+    6) spectral_NDVI_earlySummer < 7076.49905511924 0 0 5839.0 *
+    7) spectral_NDVI_earlySummer > 7076.49905511924 0 0 2957.0 *
+1) root 0 0  217.30  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  123.30  
+    4) spectral_NDVI_peakSummer < 6695.30595131842 0 0   60.37 *
+    5) spectral_NDVI_peakSummer > 6695.30595131842 0 0  551.50 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1660.00  
+    6) spectral_NDVI_earlySummer < 7427.48093735288 0 0 1242.00 *
+    7) spectral_NDVI_earlySummer > 7427.48093735288 0 0 2973.00 *
+1) root 0 0  200.9  
+  2) spectral_NDVI_annualMean < 6615.34245687959 0 0  158.7  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   66.7 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  555.1 *
+  3) spectral_NDVI_annualMean > 6615.34245687959 0 0 3012.0  
+    6) spectral_NDVI_peakSummer < 8362.14674084424 0 0 3260.0 *
+    7) spectral_NDVI_peakSummer > 8362.14674084424 0 0 1526.0 *
+1) root 0 0  297.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  177.90  
+    4) spectral_NDVI_peakSummer < 6002.61891454842 0 0   45.77 *
+    5) spectral_NDVI_peakSummer > 6002.61891454842 0 0  513.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2531.00  
+    6) spectral_NDVI_annualMean < 6610.64046935521 0 0 1677.00 *
+    7) spectral_NDVI_annualMean > 6610.64046935521 0 0 3253.00 *
+1) root 0 0  283.20  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  183.20  
+    4) trees_cover < 0.333333333333333 0 0   82.42 *
+    5) trees_cover > 0.333333333333333 0 0  659.40 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3146.00  
+    6) spectral_EVI2b_changeSSES < 37.3792603709202 0 0 5100.00 *
+    7) spectral_EVI2b_changeSSES > 37.3792603709202 0 0 2258.00 *
+1) root 0 0  240.60  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  140.50  
+    4) spectral_NDVI_peakSummer < 6681.7067656531 0 0   60.36 *
+    5) spectral_NDVI_peakSummer > 6681.7067656531 0 0  556.50 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2298.00  
+    6) spectral_NDMI_annualMedian < 1659.15875984636 0 0 1482.00 *
+    7) spectral_NDMI_annualMedian > 1659.15875984636 0 0 3277.00 *
+1) root 0 0  253.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  152.50  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   65.37 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  484.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2332.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1603.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3207.00 *
+1) root 0 0  235.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  151.30  
+    4) spectral_NDVI_peakSummer < 6691.77721092824 0 0   72.02 *
+    5) spectral_NDVI_peakSummer > 6691.77721092824 0 0  593.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2157.00  
+    6) trees_cover < 41.8 0 0 3005.00 *
+    7) trees_cover > 41.8 0 0 1591.00 *
+1) root 0 0  260.40  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  158.60  
+    4) trees_cover < 0.333333333333333 0 0   72.58 *
+    5) trees_cover > 0.333333333333333 0 0  655.30 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2571.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2208.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  254.20  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  177.00  
+    4) spectral_NDVI_peakSummer < 6503.26660513338 0 0   69.99 *
+    5) spectral_NDVI_peakSummer > 6503.26660513338 0 0  607.60 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3223.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 2986.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  272.00  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  175.70  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   74.28 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  670.90 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3220.00  
+    6) spectral_EVI2b_annualRange < 1131.15420185021 0 0 5839.00 *
+    7) spectral_EVI2b_annualRange > 1131.15420185021 0 0 2817.00 *
+1) root 0 0  221.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  140.90  
+    4) spectral_NDVI_earlySummer < 4869.44327703983 0 0   41.45 *
+    5) spectral_NDVI_earlySummer > 4869.44327703983 0 0  406.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2140.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1766.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3541.00 *
+1) root 0 0  268.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  159.30  
+    4) trees_cover < 0.333333333333333 0 0   83.47 *
+    5) trees_cover > 0.333333333333333 0 0  650.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2233.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1750.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3477.00 *
+1) root 0 0  251.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  159.50  
+    4) trees_cover < 0.333333333333333 0 0   75.09 *
+    5) trees_cover > 0.333333333333333 0 0  597.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2131.00  
+    6) spectral_EVI2b_startSnowfree < 1556.86363634229 0 0 5839.00 *
+    7) spectral_EVI2b_startSnowfree > 1556.86363634229 0 0 1954.00 *
+1) root 0 0  211.70  
+  2) trees_cover < 5.94444444444444 0 0   95.76  
+    4) spectral_NDVI_annualMean < 4531.57046531296 0 0   23.26 *
+    5) spectral_NDVI_annualMean > 4531.57046531296 0 0  244.90 *
+  3) trees_cover > 5.94444444444444 0 0 1217.00  
+    6) spectral_EVI2b_startSnowfree < 2630.66403648309 0 0 1027.00 *
+    7) spectral_EVI2b_startSnowfree > 2630.66403648309 0 0 2894.00 *
+1) root 0 0  295.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  164.70  
+    4) spectral_NDVI_peakSummer < 6691.77721092824 0 0   81.68 *
+    5) spectral_NDVI_peakSummer > 6691.77721092824 0 0  537.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2300.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1516.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4044.00 *
+1) root 0 0  265.80  
+  2) spectral_NDVI_annualMean < 6615.34245687959 0 0  171.20  
+    4) spectral_NDVI_peakSummer < 6084.61373867525 0 0   47.38 *
+    5) spectral_NDVI_peakSummer > 6084.61373867525 0 0  481.30 *
+  3) spectral_NDVI_annualMean > 6615.34245687959 0 0 3158.00  
+    6) spectral_NDVI_earlySummer < 7958.68900361734 0 0 3275.00 *
+    7) spectral_NDVI_earlySummer > 7958.68900361734 0 0 1526.00 *
+1) root 0 0  214.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  144.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   52.72 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  539.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2703.00  
+    6) spectral_SWIR1_endSnowfree < 1508.69774038284 0 0 4470.00 *
+    7) spectral_SWIR1_endSnowfree > 1508.69774038284 0 0 2173.00 *
+1) root 0 0  262.80  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  180.50  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   67.04 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  594.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2969.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1770.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3868.00 *
+1) root 0 0  274.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  145.40  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   57.93 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  487.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2921.00  
+    6) spectral_red_lateSummer < 413.283897932983 0 0 3361.00 *
+    7) spectral_red_lateSummer > 413.283897932983 0 0 1749.00 *
+1) root 0 0  293.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  175.40  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   29.26 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  443.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2319.00  
+    6) topo_tpi < 0.35475985109806 0 0 1440.00 *
+    7) topo_tpi > 0.35475985109806 0 0 3198.00 *
+1) root 0 0  280.90  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  157.90  
+    4) spectral_NDVI_annualMean < 5219.56509814332 0 0   69.26 *
+    5) spectral_NDVI_annualMean > 5219.56509814332 0 0  505.70 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2933.00  
+    6) spectral_SWIR1_endSnowfree < 746.947160296559 0 0 5839.00 *
+    7) spectral_SWIR1_endSnowfree > 746.947160296559 0 0 2449.00 *
+1) root 0 0  214.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  140.90  
+    4) spectral_NDVI_annualMean < 4695.7907865118 0 0   34.71 *
+    5) spectral_NDVI_annualMean > 4695.7907865118 0 0  354.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1967.00  
+    6) spectral_NDVI_annualMean < 6613.03536942294 0 0 1528.00 *
+    7) spectral_NDVI_annualMean > 6613.03536942294 0 0 3196.00 *
+1) root 0 0  227.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  157.70  
+    4) spectral_NDVI_earlySummer < 4576.15645154823 0 0   37.29 *
+    5) spectral_NDVI_earlySummer > 4576.15645154823 0 0  384.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2228.00  
+    6) spectral_NDMI_endSnowfree < 1566.27630281681 0 0 1550.00 *
+    7) spectral_NDMI_endSnowfree > 1566.27630281681 0 0 3100.00 *
+1) root 0 0  269.40  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  172.60  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   65.05 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  517.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3042.00  
+    6) spectral_NDWI_changeESPS < -26.5957004169302 0 0 2133.00 *
+    7) spectral_NDWI_changeESPS > -26.5957004169302 0 0 3748.00 *
+1) root 0 0  248.7  
+  2) spectral_NDVI_earlySummer < 6463.65221460296 0 0  157.5  
+    4) trees_cover < 0.333333333333333 0 0   85.5 *
+    5) trees_cover > 0.333333333333333 0 0  630.3 *
+  3) spectral_NDVI_earlySummer > 6463.65221460296 0 0 2319.0  
+    6) trees_cover < 76.6111111111111 0 0 2133.0 *
+    7) trees_cover > 76.6111111111111 0 0 5839.0 *
+1) root 0 0  290.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  154.20  
+    4) trees_cover < 0.333333333333333 0 0   76.11 *
+    5) trees_cover > 0.333333333333333 0 0  684.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2306.00  
+    6) trees_cover < 41.8 0 0 2980.00 *
+    7) trees_cover > 41.8 0 0 1423.00 *
+1) root 0 0  243.1  
+  2) spectral_NDVI_earlySummer < 6853.39495745563 0 0  169.2  
+    4) trees_cover < 4.5 0 0   97.9 *
+    5) trees_cover > 4.5 0 0  883.8 *
+  3) spectral_NDVI_earlySummer > 6853.39495745563 0 0 3353.0  
+    6) spectral_EVI2b_changeSSES < 22.7478501575206 0 0 5839.0 *
+    7) spectral_EVI2b_changeSSES > 22.7478501575206 0 0 3105.0 *
+1) root 0 0  257.00  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  173.20  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   66.64 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  608.70 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3787.00  
+    6) spectral_EVI2b_annualRange < 1295.89362720861 0 0 5839.00 *
+    7) spectral_EVI2b_annualRange > 1295.89362720861 0 0 3331.00 *
+1) root 0 0  238.00  
+  2) trees_cover < 32 0 0  138.20  
+    4) spectral_NDVI_peakSummer < 6083.43581477539 0 0   40.75 *
+    5) spectral_NDVI_peakSummer > 6083.43581477539 0 0  444.80 *
+  3) trees_cover > 32 0 0 2766.00  
+    6) topo_tpi < 0.0344331786036495 0 0 1656.00 *
+    7) topo_tpi > 0.0344331786036495 0 0 4153.00 *
+1) root 0 0  226.80  
+  2) spectral_NDVI_earlySummer < 6463.65221460296 0 0  137.70  
+    4) trees_cover < 0.333333333333333 0 0   70.45 *
+    5) trees_cover > 0.333333333333333 0 0  583.00 *
+  3) spectral_NDVI_earlySummer > 6463.65221460296 0 0 2622.00  
+    6) spectral_NDWI_changeESPS < -27.3511371302579 0 0 1970.00 *
+    7) spectral_NDWI_changeESPS > -27.3511371302579 0 0 3554.00 *
+1) root 0 0  245.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  148.10  
+    4) spectral_NDVI_peakSummer < 6691.77721092824 0 0   73.37 *
+    5) spectral_NDVI_peakSummer > 6691.77721092824 0 0  527.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2718.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2535.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  261.10  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  163.70  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   61.11 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  581.90 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2262.00  
+    6) spectral_NDMI_endSnowfree < 1566.27630281681 0 0 1450.00 *
+    7) spectral_NDMI_endSnowfree > 1566.27630281681 0 0 3074.00 *
+1) root 0 0  219.70  
+  2) spectral_NDVI_annualMean < 6271.31649227039 0 0  133.70  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   55.85 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  427.70 *
+  3) spectral_NDVI_annualMean > 6271.31649227039 0 0 2172.00  
+    6) spectral_red_lateSummer < 428.538843731614 0 0 3028.00 *
+    7) spectral_red_lateSummer > 428.538843731614 0 0 1317.00 *
+1) root 0 0  229.20  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  141.10  
+    4) spectral_NDVI_earlySummer < 4588.03975373395 0 0   34.47 *
+    5) spectral_NDVI_earlySummer > 4588.03975373395 0 0  356.50 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2129.00  
+    6) topo_tpi < 0.219577498733998 0 0 1386.00 *
+    7) topo_tpi > 0.219577498733998 0 0 3337.00 *
+1) root 0 0  241.50  
+  2) trees_cover < 31.1428571428571 0 0  156.30  
+    4) trees_cover < 0.333333333333333 0 0   81.38 *
+    5) trees_cover > 0.333333333333333 0 0  576.40 *
+  3) trees_cover > 31.1428571428571 0 0 2401.00  
+    6) spectral_SWIR2_changeLSES < 7.43541686196338 0 0 1971.00 *
+    7) spectral_SWIR2_changeLSES > 7.43541686196338 0 0 5839.00 *
+1) root 0 0  237.2  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  152.2  
+    4) spectral_NDVI_annualMean < 6270.59341907609 0 0  119.4 *
+    5) spectral_NDVI_annualMean > 6270.59341907609 0 0 1360.0 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2273.0  
+    6) trees_cover < 76.6111111111111 0 0 1854.0 *
+    7) trees_cover > 76.6111111111111 0 0 5839.0 *
+1) root 0 0  237.70  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  156.70  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   66.14 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  554.30 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2554.00  
+    6) topo_tpi < 0.142285235060586 0 0 1915.00 *
+    7) topo_tpi > 0.142285235060586 0 0 3376.00 *
+1) root 0 0  210.60  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  152.80  
+    4) trees_cover < 0.944444444444444 0 0   82.24 *
+    5) trees_cover > 0.944444444444444 0 0  589.20 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2110.00  
+    6) trees_cover < 39 0 0 3054.00 *
+    7) trees_cover > 39 0 0 1586.00 *
+1) root 0 0  260.70  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  178.10  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   81.13 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  619.50 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3191.00  
+    6) spectral_NDVI_earlySummer < 7958.68900361734 0 0 3330.00 *
+    7) spectral_NDVI_earlySummer > 7958.68900361734 0 0 1526.00 *
+1) root 0 0  240.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  160.80  
+    4) trees_cover < 1.28888888888889 0 0   98.69 *
+    5) trees_cover > 1.28888888888889 0 0  561.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2150.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1546.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 2822.00 *
+1) root 0 0  326.80  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  188.80  
+    4) trees_cover < 0.944444444444444 0 0   84.18 *
+    5) trees_cover > 0.944444444444444 0 0  694.20 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2806.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1696.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3430.00 *
+1) root 0 0  249.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  158.90  
+    4) spectral_NDVI_peakSummer < 6691.77721092824 0 0   70.67 *
+    5) spectral_NDVI_peakSummer > 6691.77721092824 0 0  623.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2018.00  
+    6) spectral_red_peakSummer < 437.377492450114 0 0 2924.00 *
+    7) spectral_red_peakSummer > 437.377492450114 0 0 1188.00 *
+1) root 0 0  337.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  162.20  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   30.69 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  423.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2342.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1494.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3283.00 *
+1) root 0 0  257.90  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  143.90  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   35.85 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  343.40 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1945.00  
+    6) spectral_NDMI_annualMedian < 2162.92180540228 0 0 1236.00 *
+    7) spectral_NDMI_annualMedian > 2162.92180540228 0 0 3009.00 *
+1) root 0 0  284.20  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  162.20  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   33.95 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  411.20 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2571.00  
+    6) spectral_NDMI_endSnowfree < 1611.56009720012 0 0 1572.00 *
+    7) spectral_NDMI_endSnowfree > 1611.56009720012 0 0 3416.00 *
+1) root 0 0  266.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  167.50  
+    4) spectral_NDVI_peakSummer < 6503.26660513338 0 0   69.46 *
+    5) spectral_NDVI_peakSummer > 6503.26660513338 0 0  548.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2509.00  
+    6) spectral_NDMI_annualMedian < 1801.79322769935 0 0 1631.00 *
+    7) spectral_NDMI_annualMedian > 1801.79322769935 0 0 3227.00 *
+1) root 0 0  214.6  
+  2) trees_cover < 28.6428571428571 0 0  158.2  
+    4) spectral_NDVI_earlySummer < 6526.69932458927 0 0  142.3 *
+    5) spectral_NDVI_earlySummer > 6526.69932458927 0 0 2588.0 *
+  3) trees_cover > 28.6428571428571 0 0 2588.0  
+    6) spectral_NDVI_earlySummer < 6819.53772288958 0 0 1581.0 *
+    7) spectral_NDVI_earlySummer > 6819.53772288958 0 0 4350.0 *
+1) root 0 0  249.90  
+  2) spectral_NDVI_earlySummer < 6444.89093430094 0 0  151.80  
+    4) spectral_NDVI_earlySummer < 4576.15645154823 0 0   35.09 *
+    5) spectral_NDVI_earlySummer > 4576.15645154823 0 0  402.20 *
+  3) spectral_NDVI_earlySummer > 6444.89093430094 0 0 2733.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1896.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3152.00 *
+1) root 0 0  232.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  139.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   60.71 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  532.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2163.00  
+    6) spectral_NDVI_annualMean < 6611.04022972924 0 0 1619.00 *
+    7) spectral_NDVI_annualMean > 6611.04022972924 0 0 3329.00 *
+1) root 0 0  278.90  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  201.70  
+    4) spectral_NDVI_peakSummer < 6474.90414506022 0 0   58.29 *
+    5) spectral_NDVI_peakSummer > 6474.90414506022 0 0  655.30 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3249.00  
+    6) trees_cover < 68 0 0 3014.00 *
+    7) trees_cover > 68 0 0 5839.00 *
+1) root 0 0  235.60  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  162.30  
+    4) spectral_NDVI_peakSummer < 6691.77721092824 0 0   60.96 *
+    5) spectral_NDVI_peakSummer > 6691.77721092824 0 0  590.80 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2644.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1550.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3252.00 *
+1) root 0 0  272.20  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  167.90  
+    4) spectral_NDVI_earlySummer < 4889.30069249549 0 0   44.35 *
+    5) spectral_NDVI_earlySummer > 4889.30069249549 0 0  474.50 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2145.00  
+    6) spectral_NDVI_annualMean < 6611.04022972924 0 0 1458.00 *
+    7) spectral_NDVI_annualMean > 6611.04022972924 0 0 3175.00 *
+1) root 0 0  251.3  
+  2) trees_cover < 31.1428571428571 0 0  176.8  
+    4) spectral_NDVI_earlySummer < 6895.04848706844 0 0  157.9 *
+    5) spectral_NDVI_earlySummer > 6895.04848706844 0 0 3037.0 *
+  3) trees_cover > 31.1428571428571 0 0 2256.0  
+    6) spectral_NDMI_changeLSES < -1.40292116902591 0 0 1650.0 *
+    7) spectral_NDMI_changeLSES > -1.40292116902591 0 0 5086.0 *
+1) root 0 0  251.3  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  140.4  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   76.3 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  565.4 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2329.0  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1557.0 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4203.0 *
+1) root 0 0  190.9  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  144.8  
+    4) spectral_NDVI_peakSummer < 6503.26660513338 0 0   55.8 *
+    5) spectral_NDVI_peakSummer > 6503.26660513338 0 0  514.5 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2330.0  
+    6) spectral_NIR_annualRange < 533.474534210932 0 0 5839.0 *
+    7) spectral_NIR_annualRange > 533.474534210932 0 0 1940.0 *
+1) root 0 0  234.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  151.90  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   33.71 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  429.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2337.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1406.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3799.00 *
+1) root 0 0  231.80  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  165.50  
+    4) spectral_NDVI_earlySummer < 4721.43343174709 0 0   39.34 *
+    5) spectral_NDVI_earlySummer > 4721.43343174709 0 0  449.40 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 1818.00  
+    6) topo_tpi < 1.00723962386449 0 0 1423.00 *
+    7) topo_tpi > 1.00723962386449 0 0 3303.00 *
+1) root 0 0  255.60  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  155.80  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   68.29 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  506.00 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2645.00  
+    6) spectral_SWIR1_endSnowfree < 817.21257247106 0 0 5839.00 *
+    7) spectral_SWIR1_endSnowfree > 817.21257247106 0 0 2270.00 *
+1) root 0 0  212.40  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  130.70  
+    4) spectral_NDVI_peakSummer < 5850.68199290891 0 0   37.35 *
+    5) spectral_NDVI_peakSummer > 5850.68199290891 0 0  378.30 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1975.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1503.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3156.00 *
+1) root 0 0  179.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  111.10  
+    4) spectral_NDVI_annualMean < 4695.7907865118 0 0   20.77 *
+    5) spectral_NDVI_annualMean > 4695.7907865118 0 0  313.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1738.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1521.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3691.00 *
+1) root 0 0  258.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  132.60  
+    4) spectral_NDVI_peakSummer < 6503.26660513338 0 0   45.81 *
+    5) spectral_NDVI_peakSummer > 6503.26660513338 0 0  456.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2613.00  
+    6) spectral_NDVI_earlySummer < 6868.66849342118 0 0 1753.00 *
+    7) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3473.00 *
+1) root 0 0  240.30  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  177.10  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   73.85 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  525.60 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3177.00  
+    6) spectral_NDMI_changeLSES < 2.83634306470809 0 0 3588.00 *
+    7) spectral_NDMI_changeLSES > 2.83634306470809 0 0 2903.00 *
+1) root 0 0  214.60  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  150.10  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   41.78 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  425.30 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 1951.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1600.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3591.00 *
+1) root 0 0  236.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  139.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   59.49 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  500.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2546.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1565.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3430.00 *
+1) root 0 0  221.90  
+  2) spectral_NDVI_peakSummer < 7890.52717238376 0 0  170.10  
+    4) trees_cover < 0.333333333333333 0 0   85.44 *
+    5) trees_cover > 0.333333333333333 0 0  664.50 *
+  3) spectral_NDVI_peakSummer > 7890.52717238376 0 0 2896.00  
+    6) spectral_NDMI_annualMedian < 1653.76292388484 0 0 1839.00 *
+    7) spectral_NDMI_annualMedian > 1653.76292388484 0 0 3198.00 *
+1) root 0 0  220.80  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  129.90  
+    4) spectral_NDVI_earlySummer < 4510.85784694544 0 0   22.49 *
+    5) spectral_NDVI_earlySummer > 4510.85784694544 0 0  341.80 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2398.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1894.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3491.00 *
+1) root 0 0  291.6  
+  2) trees_cover < 31.1428571428571 0 0  182.9  
+    4) spectral_NDVI_annualMean < 6273.35983219839 0 0  138.8 *
+    5) spectral_NDVI_annualMean > 6273.35983219839 0 0 1555.0 *
+  3) trees_cover > 31.1428571428571 0 0 2244.0  
+    6) spectral_red_peakSummer < 295.464005858443 0 0 4091.0 *
+    7) spectral_red_peakSummer > 295.464005858443 0 0 1525.0 *
+1) root 0 0  272.9  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  161.1  
+    4) trees_cover < 0.333333333333333 0 0   83.7 *
+    5) trees_cover > 0.333333333333333 0 0  629.4 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2465.0  
+    6) spectral_NDVI_annualMean < 6608.64532966151 0 0 1601.0 *
+    7) spectral_NDVI_annualMean > 6608.64532966151 0 0 3257.0 *
+1) root 0 0  198.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  134.50  
+    4) trees_cover < 1.28888888888889 0 0   70.97 *
+    5) trees_cover > 1.28888888888889 0 0  655.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2313.00  
+    6) spectral_NDVI_earlySummer < 7139.67520888599 0 0 1620.00 *
+    7) spectral_NDVI_earlySummer > 7139.67520888599 0 0 3560.00 *
+1) root 0 0  274.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  148.70  
+    4) spectral_NDVI_earlySummer < 5147.53416581061 0 0   52.79 *
+    5) spectral_NDVI_earlySummer > 5147.53416581061 0 0  539.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2742.00  
+    6) spectral_NDVI_earlySummer < 6836.73646690947 0 0 1862.00 *
+    7) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3550.00 *
+1) root 0 0  222.90  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  143.40  
+    4) trees_cover < 1.28888888888889 0 0   81.12 *
+    5) trees_cover > 1.28888888888889 0 0  607.00 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2238.00  
+    6) topo_tpi < 0.219577498733998 0 0 1717.00 *
+    7) topo_tpi > 0.219577498733998 0 0 4064.00 *
+1) root 0 0  258.50  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  173.80  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   60.39 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  642.60 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3518.00  
+    6) spectral_EVI2b_startSnowfree < 1815.2926179817 0 0 5839.00 *
+    7) spectral_EVI2b_startSnowfree > 1815.2926179817 0 0 3054.00 *
+1) root 0 0  231.90  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  146.10  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   66.25 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  521.40 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2406.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1798.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3622.00 *
+1) root 0 0  254.20  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  168.70  
+    4) trees_cover < 1.28888888888889 0 0   87.88 *
+    5) trees_cover > 1.28888888888889 0 0  719.40 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3287.00  
+    6) spectral_EVI2b_changeSSES < 22.7478501575206 0 0 5839.00 *
+    7) spectral_EVI2b_changeSSES > 22.7478501575206 0 0 2823.00 *
+1) root 0 0  280.9  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  175.7  
+    4) spectral_NDVI_earlySummer < 6339.37198095233 0 0  145.2 *
+    5) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1707.0 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 4014.0  
+    6) permafrost_index < 0.21125178784132 0 0 3202.0 *
+    7) permafrost_index > 0.21125178784132 0 0 5839.0 *
+1) root 0 0  227.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  136.50  
+    4) trees_cover < 0.333333333333333 0 0   73.56 *
+    5) trees_cover > 0.333333333333333 0 0  566.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2299.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1762.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 3551.00 *
+1) root 0 0  251.40  
+  2) spectral_NDVI_earlySummer < 6444.89093430094 0 0  163.80  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   30.66 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  424.80 *
+  3) spectral_NDVI_earlySummer > 6444.89093430094 0 0 2471.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1545.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3629.00 *
+1) root 0 0  209.30  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  141.40  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   34.43 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  373.80 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2440.00  
+    6) topo_tpi < 0.115319580771029 0 0 1903.00 *
+    7) topo_tpi > 0.115319580771029 0 0 4407.00 *
+1) root 0 0  224.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  159.10  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   64.62 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  603.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2723.00  
+    6) spectral_SWIR1_endSnowfree < 1508.69774038284 0 0 3554.00 *
+    7) spectral_SWIR1_endSnowfree > 1508.69774038284 0 0 1892.00 *
+1) root 0 0  334.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  181.00  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   45.04 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  497.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2522.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1406.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3328.00 *
+1) root 0 0  207.20  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  145.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   67.85 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  480.60 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2222.00  
+    6) spectral_NDVI_peakSummer < 7267.26181207638 0 0 5839.00 *
+    7) spectral_NDVI_peakSummer > 7267.26181207638 0 0 1944.00 *
+1) root 0 0  229.10  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  137.20  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   59.78 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  557.80 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2700.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1516.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3530.00 *
+1) root 0 0  223.60  
+  2) trees_cover < 29.5 0 0  135.40  
+    4) trees_cover < 0.333333333333333 0 0   71.66 *
+    5) trees_cover > 0.333333333333333 0 0  499.30 *
+  3) trees_cover > 29.5 0 0 2458.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1651.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3466.00 *
+1) root 0 0  186.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  144.60  
+    4) trees_cover < 1.28888888888889 0 0   80.25 *
+    5) trees_cover > 1.28888888888889 0 0  613.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2104.00  
+    6) spectral_NBR_changeESPS < 56.6088469694545 0 0 1467.00 *
+    7) spectral_NBR_changeESPS > 56.6088469694545 0 0 3591.00 *
+1) root 0 0  268.3  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  190.1  
+    4) spectral_NDVI_earlySummer < 6339.37198095233 0 0  140.6 *
+    5) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1775.0 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3280.0  
+    6) spectral_green_changeLSES < 4.12774252091278 0 0 3531.0 *
+    7) spectral_green_changeLSES > 4.12774252091278 0 0 2929.0 *
+1) root 0 0  263.50  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  177.60  
+    4) spectral_NDVI_peakSummer < 6695.30595131842 0 0   76.45 *
+    5) spectral_NDVI_peakSummer > 6695.30595131842 0 0  671.70 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2891.00  
+    6) spectral_EVI2b_annualRange < 1131.15420185021 0 0 5839.00 *
+    7) spectral_EVI2b_annualRange > 1131.15420185021 0 0 2680.00 *
+1) root 0 0  236.80  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  171.80  
+    4) trees_cover < 0.333333333333333 0 0   62.86 *
+    5) trees_cover > 0.333333333333333 0 0  676.60 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2738.00  
+    6) spectral_NDMI_endSnowfree < 1782.23154743745 0 0 1802.00 *
+    7) spectral_NDMI_endSnowfree > 1782.23154743745 0 0 4050.00 *
+1) root 0 0  235.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  155.10  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   59.53 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  460.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2404.00  
+    6) spectral_NIR_annualRange < 533.474534210932 0 0 5839.00 *
+    7) spectral_NIR_annualRange > 533.474534210932 0 0 1946.00 *
+1) root 0 0  252.6  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  154.4  
+    4) trees_cover < 1.28888888888889 0 0   95.9 *
+    5) trees_cover > 1.28888888888889 0 0  660.8 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2482.0  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2109.0 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.0 *
+1) root 0 0  200.70  
+  2) spectral_NDVI_peakSummer < 7849.60157253386 0 0  143.70  
+    4) trees_cover < 1.28888888888889 0 0   80.02 *
+    5) trees_cover > 1.28888888888889 0 0  625.90 *
+  3) spectral_NDVI_peakSummer > 7849.60157253386 0 0 2600.00  
+    6) spectral_SWIR2_annualRange < 505.191461053886 0 0 3387.00 *
+    7) spectral_SWIR2_annualRange > 505.191461053886 0 0 1655.00 *
+1) root 0 0  257.50  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  185.10  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   58.04 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  629.40 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3305.00  
+    6) spectral_NIR_annualRange < 541.030087255761 0 0 5839.00 *
+    7) spectral_NIR_annualRange > 541.030087255761 0 0 3052.00 *
+1) root 0 0  286.40  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  188.50  
+    4) trees_cover < 0.333333333333333 0 0   82.13 *
+    5) trees_cover > 0.333333333333333 0 0  752.40 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3503.00  
+    6) spectral_red_peakSummer < 227.503002731476 0 0 5839.00 *
+    7) spectral_red_peakSummer > 227.503002731476 0 0 3113.00 *
+1) root 0 0  241.50  
+  2) spectral_NDVI_peakSummer < 7894.06411143246 0 0  168.10  
+    4) spectral_NDVI_peakSummer < 6695.30595131842 0 0   70.91 *
+    5) spectral_NDVI_peakSummer > 6695.30595131842 0 0  585.90 *
+  3) spectral_NDVI_peakSummer > 7894.06411143246 0 0 2843.00  
+    6) topo_tpi < 0.142285235060586 0 0 1677.00 *
+    7) topo_tpi > 0.142285235060586 0 0 3572.00 *
+1) root 0 0  249.10  
+  2) trees_cover < 31.1428571428571 0 0  156.60  
+    4) spectral_NDVI_earlySummer < 5147.53416581061 0 0   66.08 *
+    5) spectral_NDVI_earlySummer > 5147.53416581061 0 0  509.70 *
+  3) trees_cover > 31.1428571428571 0 0 2592.00  
+    6) spectral_NDMI_endSnowfree < 2025.69389525952 0 0 1534.00 *
+    7) spectral_NDMI_endSnowfree > 2025.69389525952 0 0 3916.00 *
+1) root 0 0  238.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  150.80  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   45.22 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  400.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2326.00  
+    6) spectral_red_peakSummer < 289.784224375827 0 0 4370.00 *
+    7) spectral_red_peakSummer > 289.784224375827 0 0 1596.00 *
+1) root 0 0  236.7  
+  2) spectral_NDVI_earlySummer < 6463.65221460296 0 0  142.7  
+    4) trees_cover < 0.333333333333333 0 0   71.2 *
+    5) trees_cover > 0.333333333333333 0 0  587.3 *
+  3) spectral_NDVI_earlySummer > 6463.65221460296 0 0 2489.0  
+    6) spectral_NIR_annualRange < 541.030087255761 0 0 5839.0 *
+    7) spectral_NIR_annualRange > 541.030087255761 0 0 2095.0 *
+1) root 0 0  303.10  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  188.70  
+    4) trees_cover < 4.44444444444444 0 0   99.28 *
+    5) trees_cover > 4.44444444444444 0 0  888.70 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3803.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 3294.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  253.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  159.80  
+    4) trees_cover < 0.333333333333333 0 0   91.41 *
+    5) trees_cover > 0.333333333333333 0 0  698.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2273.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1940.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3691.00 *
+1) root 0 0  231.30  
+  2) spectral_NDVI_annualMean < 6281.92693020582 0 0  140.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   65.26 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  466.60 *
+  3) spectral_NDVI_annualMean > 6281.92693020582 0 0 1686.00  
+    6) spectral_NDMI_annualMedian < 2159.84771472861 0 0 1263.00 *
+    7) spectral_NDMI_annualMedian > 2159.84771472861 0 0 2746.00 *
+1) root 0 0  234.00  
+  2) spectral_NDVI_annualMean < 6615.34245687959 0 0  174.00  
+    4) trees_cover < 0.944444444444444 0 0   76.74 *
+    5) trees_cover > 0.944444444444444 0 0  696.50 *
+  3) spectral_NDVI_annualMean > 6615.34245687959 0 0 3331.00  
+    6) spectral_NDMI_endSnowfree < 2203.78135997898 0 0 2947.00 *
+    7) spectral_NDMI_endSnowfree > 2203.78135997898 0 0 3522.00 *
+1) root 0 0  242.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  168.60  
+    4) trees_cover < 0.333333333333333 0 0   85.95 *
+    5) trees_cover > 0.333333333333333 0 0  587.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1999.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1388.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3324.00 *
+1) root 0 0  250.70  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  170.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   65.28 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  598.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2693.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1577.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3437.00 *
+1) root 0 0  267.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  158.20  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   62.76 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  566.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2228.00  
+    6) spectral_NDMI_endSnowfree < 2285.95364433351 0 0 1462.00 *
+    7) spectral_NDMI_endSnowfree > 2285.95364433351 0 0 3589.00 *
+1) root 0 0  239.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  148.30  
+    4) spectral_NDVI_peakSummer < 5866.95202205679 0 0   31.26 *
+    5) spectral_NDVI_peakSummer > 5866.95202205679 0 0  437.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2410.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1482.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3441.00 *
+1) root 0 0  297.10  
+  2) spectral_NDVI_earlySummer < 6836.19621343574 0 0  201.50  
+    4) trees_cover < 1.28888888888889 0 0   96.55 *
+    5) trees_cover > 1.28888888888889 0 0  808.30 *
+  3) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3685.00  
+    6) trees_cover < 71.9 0 0 3039.00 *
+    7) trees_cover > 71.9 0 0 5839.00 *
+1) root 0 0  210.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  135.80  
+    4) spectral_NDVI_peakSummer < 6691.77721092824 0 0   57.04 *
+    5) spectral_NDVI_peakSummer > 6691.77721092824 0 0  492.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2494.00  
+    6) spectral_green_changeLSES < 6.00549811921873 0 0 1979.00 *
+    7) spectral_green_changeLSES > 6.00549811921873 0 0 5839.00 *
+1) root 0 0  227.10  
+  2) spectral_NDVI_earlySummer < 6483.94399720847 0 0  141.30  
+    4) trees_cover < 0.333333333333333 0 0   75.93 *
+    5) trees_cover > 0.333333333333333 0 0  676.30 *
+  3) spectral_NDVI_earlySummer > 6483.94399720847 0 0 2851.00  
+    6) spectral_NDMI_annualMedian < 1659.15875984636 0 0 1542.00 *
+    7) spectral_NDMI_annualMedian > 1659.15875984636 0 0 3505.00 *
+1) root 0 0  246.20  
+  2) spectral_NDVI_earlySummer < 6463.65221460296 0 0  143.40  
+    4) spectral_NDVI_earlySummer < 5242.19536276204 0 0   58.91 *
+    5) spectral_NDVI_earlySummer > 5242.19536276204 0 0  434.20 *
+  3) spectral_NDVI_earlySummer > 6463.65221460296 0 0 2464.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1643.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3081.00 *
+1) root 0 0  296.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  172.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   63.95 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  593.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2842.00  
+    6) trees_cover < 54.9 0 0 2296.00 *
+    7) trees_cover > 54.9 0 0 4298.00 *
+1) root 0 0  257.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  159.10  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   62.85 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  481.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2286.00  
+    6) spectral_NDMI_changeLSES < 15.0857682953833 0 0 1930.00 *
+    7) spectral_NDMI_changeLSES > 15.0857682953833 0 0 5839.00 *
+1) root 0 0  247.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  146.80  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   54.47 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  527.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2231.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1782.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 2928.00 *
+1) root 0 0  262.80  
+  2) spectral_NDVI_earlySummer < 6478.95389808303 0 0  177.00  
+    4) trees_cover < 0.333333333333333 0 0   95.79 *
+    5) trees_cover > 0.333333333333333 0 0  698.30 *
+  3) spectral_NDVI_earlySummer > 6478.95389808303 0 0 3083.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2870.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  261.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  158.90  
+    4) trees_cover < 1.78888888888889 0 0   98.71 *
+    5) trees_cover > 1.78888888888889 0 0  606.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2707.00  
+    6) topo_tpi < 0.219577498733998 0 0 1702.00 *
+    7) topo_tpi > 0.219577498733998 0 0 3612.00 *
+1) root 0 0  247.40  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  164.00  
+    4) trees_cover < 0.333333333333333 0 0   80.45 *
+    5) trees_cover > 0.333333333333333 0 0  608.00 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3206.00  
+    6) spectral_NDVI_earlySummer < 7958.68900361734 0 0 3346.00 *
+    7) spectral_NDVI_earlySummer > 7958.68900361734 0 0 1526.00 *
+1) root 0 0  304.30  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  180.80  
+    4) trees_cover < 1.28888888888889 0 0   93.54 *
+    5) trees_cover > 1.28888888888889 0 0  714.10 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2432.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1524.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3340.00 *
+1) root 0 0  234.20  
+  2) spectral_NDVI_earlySummer < 6836.19621343574 0 0  158.20  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   69.45 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  540.70 *
+  3) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3161.00  
+    6) spectral_NDMI_annualMedian < 1659.15875984636 0 0  975.80 *
+    7) spectral_NDMI_annualMedian > 1659.15875984636 0 0 3598.00 *
+1) root 0 0  252.80  
+  2) spectral_NDVI_earlySummer < 6483.94399720847 0 0  156.10  
+    4) trees_cover < 0.333333333333333 0 0   77.66 *
+    5) trees_cover > 0.333333333333333 0 0  684.90 *
+  3) spectral_NDVI_earlySummer > 6483.94399720847 0 0 2853.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1686.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3491.00 *
+1) root 0 0  250.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  134.80  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   59.66 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  509.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2324.00  
+    6) spectral_red_lateSummer < 295.903633652872 0 0 3899.00 *
+    7) spectral_red_lateSummer > 295.903633652872 0 0 1826.00 *
+1) root 0 0  284.70  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  159.30  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   40.85 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  507.60 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2989.00  
+    6) spectral_NDVI_peakSummer < 7331.53229633138 0 0 5839.00 *
+    7) spectral_NDVI_peakSummer > 7331.53229633138 0 0 2689.00 *
+1) root 0 0  226.3  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  162.9  
+    4) trees_cover < 1.28888888888889 0 0   75.0 *
+    5) trees_cover > 1.28888888888889 0 0  746.2 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3922.0  
+    6) spectral_NBR_changeESPS < 33.7796936147903 0 0 5839.0 *
+    7) spectral_NBR_changeESPS > 33.7796936147903 0 0 3648.0 *
+1) root 0 0  231.70  
+  2) spectral_NDVI_earlySummer < 6320.6107006503 0 0  146.40  
+    4) trees_cover < 1.28888888888889 0 0   92.21 *
+    5) trees_cover > 1.28888888888889 0 0  709.10 *
+  3) spectral_NDVI_earlySummer > 6320.6107006503 0 0 2274.00  
+    6) spectral_red_peakSummer < 438.24573046322 0 0 3161.00 *
+    7) spectral_red_peakSummer > 438.24573046322 0 0 1476.00 *
+1) root 0 0  224.70  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  164.70  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   68.17 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  513.00 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2354.00  
+    6) trees_cover < 45.3 0 0 3396.00 *
+    7) trees_cover > 45.3 0 0 1704.00 *
+1) root 0 0  254.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  124.20  
+    4) spectral_NDVI_peakSummer < 6832.9644346349 0 0   65.88 *
+    5) spectral_NDVI_peakSummer > 6832.9644346349 0 0  587.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2409.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1782.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4198.00 *
+1) root 0 0  266.9  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  148.6  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   64.0 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  506.6 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3098.0  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1792.0 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3446.0 *
+1) root 0 0  274.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  181.30  
+    4) trees_cover < 0.333333333333333 0 0   95.33 *
+    5) trees_cover > 0.333333333333333 0 0  611.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2635.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1819.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3656.00 *
+1) root 0 0  297.30  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  177.70  
+    4) trees_cover < 0.333333333333333 0 0   86.13 *
+    5) trees_cover > 0.333333333333333 0 0  721.70 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3721.00  
+    6) spectral_NDVI_peakSummer < 7220.39462679571 0 0 5839.00 *
+    7) spectral_NDVI_peakSummer > 7220.39462679571 0 0 3232.00 *
+1) root 0 0  279.6  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  166.9  
+    4) trees_cover < 1.11111111111111 0 0   84.0 *
+    5) trees_cover > 1.11111111111111 0 0  683.1 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2221.0  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1453.0 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3268.0 *
+1) root 0 0  225.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  136.60  
+    4) spectral_NDVI_earlySummer < 4576.15645154823 0 0   34.72 *
+    5) spectral_NDVI_earlySummer > 4576.15645154823 0 0  373.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2342.00  
+    6) trees_cover < 40.5 0 0 2930.00 *
+    7) trees_cover > 40.5 0 0 1688.00 *
+1) root 0 0  229.0  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  156.1  
+    4) spectral_NDVI_earlySummer < 4576.15645154823 0 0   23.2 *
+    5) spectral_NDVI_earlySummer > 4576.15645154823 0 0  421.1 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2314.0  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1837.0 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3110.0 *
+1) root 0 0  274.4  
+  2) spectral_NDVI_annualMean < 6279.88359027782 0 0  160.4  
+    4) world_terrestrial_ecosystems_X72 < 0.5 0 0  147.6 *
+    5) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.0 *
+  3) spectral_NDVI_annualMean > 6279.88359027782 0 0 2091.0  
+    6) spectral_red_lateSummer < 400.961775665488 0 0 2712.0 *
+    7) spectral_red_lateSummer > 400.961775665488 0 0 1470.0 *
+1) root 0 0  226.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  162.00  
+    4) trees_cover < 1.28888888888889 0 0   85.23 *
+    5) trees_cover > 1.28888888888889 0 0  729.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2722.00  
+    6) trees_cover < 56.9 0 0 2284.00 *
+    7) trees_cover > 56.9 0 0 4915.00 *
+1) root 0 0  272.60  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  155.30  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   43.22 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  444.70 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 2008.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1437.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 2995.00 *
+1) root 0 0  233.50  
+  2) spectral_NDVI_earlySummer < 6757.6150467234 0 0  166.40  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   74.83 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  640.00 *
+  3) spectral_NDVI_earlySummer > 6757.6150467234 0 0 3058.00  
+    6) spectral_SWIR1_endSnowfree < 1455.52699263562 0 0 4120.00 *
+    7) spectral_SWIR1_endSnowfree > 1455.52699263562 0 0 2172.00 *
+1) root 0 0  233.2  
+  2) spectral_NDVI_earlySummer < 6358.18427534612 0 0  162.9  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   68.0 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  523.5 *
+  3) spectral_NDVI_earlySummer > 6358.18427534612 0 0 2015.0  
+    6) spectral_NBR_changeESPS < 68.2261246630063 0 0 1768.0 *
+    7) spectral_NBR_changeESPS > 68.2261246630063 0 0 3990.0 *
+1) root 0 0  220.1  
+  2) trees_cover < 76.6111111111111 0 0  184.3  
+    4) spectral_NDVI_earlySummer < 6423.10586059963 0 0  140.7 *
+    5) spectral_NDVI_earlySummer > 6423.10586059963 0 0 1851.0 *
+  3) trees_cover > 76.6111111111111 0 0 5839.0 *
+1) root 0 0  202.70  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  162.10  
+    4) trees_cover < 1.28888888888889 0 0   93.47 *
+    5) trees_cover > 1.28888888888889 0 0  652.50 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2084.00  
+    6) spectral_NDVI_peakSummer < 6988.37467837297 0 0 5839.00 *
+    7) spectral_NDVI_peakSummer > 6988.37467837297 0 0 1666.00 *
+1) root 0 0  301.6  
+  2) trees_cover < 23.3666666666667 0 0  175.3  
+    4) spectral_NDVI_annualMean < 6281.92693020582 0 0  111.5 *
+    5) spectral_NDVI_annualMean > 6281.92693020582 0 0 2022.0 *
+  3) trees_cover > 23.3666666666667 0 0 2570.0  
+    6) spectral_red_peakSummer < 288.911455552413 0 0 4207.0 *
+    7) spectral_red_peakSummer > 288.911455552413 0 0 1648.0 *
+1) root 0 0  329.3  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  210.9  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0  101.5 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  649.8 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3328.0  
+    6) spectral_SWIR2_changeLSES < 4.85545557123605 0 0 3481.0 *
+    7) spectral_SWIR2_changeLSES > 4.85545557123605 0 0 2929.0 *
+1) root 0 0  227.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  155.40  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   57.33 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  493.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1853.00  
+    6) spectral_NDMI_annualMedian < 2485.75199308135 0 0 1547.00 *
+    7) spectral_NDMI_annualMedian > 2485.75199308135 0 0 3591.00 *
+1) root 0 0  253.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  148.80  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   65.13 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  536.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2308.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1650.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3165.00 *
+1) root 0 0  229.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  165.40  
+    4) spectral_NDVI_peakSummer < 6190.33668292681 0 0   61.46 *
+    5) spectral_NDVI_peakSummer > 6190.33668292681 0 0  474.30 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1955.00  
+    6) spectral_red_peakSummer < 289.784224375827 0 0 3391.00 *
+    7) spectral_red_peakSummer > 289.784224375827 0 0 1513.00 *
+1) root 0 0  244.5  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  160.8  
+    4) trees_cover < 57.5 0 0  148.0 *
+    5) trees_cover > 57.5 0 0 5839.0 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1529.0  
+    6) spectral_NDVI_annualMean < 6615.34245687959 0 0 1189.0 *
+    7) spectral_NDVI_annualMean > 6615.34245687959 0 0 2831.0 *
+1) root 0 0  274.40  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  144.20  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   50.25 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  508.60 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2613.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2333.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  254.00  
+  2) spectral_NDVI_annualMean < 6615.34245687959 0 0  159.10  
+    4) spectral_NDVI_peakSummer < 7001.12612654985 0 0   91.13 *
+    5) spectral_NDVI_peakSummer > 7001.12612654985 0 0  817.10 *
+  3) spectral_NDVI_annualMean > 6615.34245687959 0 0 3157.00  
+    6) spectral_NDVI_earlySummer < 7958.68900361734 0 0 3408.00 *
+    7) spectral_NDVI_earlySummer > 7958.68900361734 0 0 1526.00 *
+1) root 0 0  319.9  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  157.1  
+    4) spectral_NDVI_peakSummer < 6002.61891454842 0 0   57.9 *
+    5) spectral_NDVI_peakSummer > 6002.61891454842 0 0  417.8 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 3372.0  
+    6) trees_cover < 76.6111111111111 0 0 2723.0 *
+    7) trees_cover > 76.6111111111111 0 0 5839.0 *
+1) root 0 0  248.3  
+  2) trees_cover < 32 0 0  171.0  
+    4) spectral_NDVI_earlySummer < 6545.46060489129 0 0  152.4 *
+    5) spectral_NDVI_earlySummer > 6545.46060489129 0 0 2296.0 *
+  3) trees_cover > 32 0 0 2991.0  
+    6) spectral_EVI2b_changeSSES < 36.4551375266194 0 0 5223.0 *
+    7) spectral_EVI2b_changeSSES > 36.4551375266194 0 0 2321.0 *
+1) root 0 0  210.9  
+  2) world_terrestrial_ecosystems_X72 < 0.5 0 0  177.2  
+    4) spectral_NDVI_peakSummer < 7890.52717238376 0 0  140.4 *
+    5) spectral_NDVI_peakSummer > 7890.52717238376 0 0 2606.0 *
+  3) world_terrestrial_ecosystems_X72 > 0.5 0 0 3369.0 *
+1) root 0 0  252.0  
+  2) spectral_NDVI_earlySummer < 6705.27923562497 0 0  180.4  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   62.0 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  609.1 *
+  3) spectral_NDVI_earlySummer > 6705.27923562497 0 0 3007.0  
+    6) spectral_NDVI_peakSummer < 7355.54250387505 0 0 5839.0 *
+    7) spectral_NDVI_peakSummer > 7355.54250387505 0 0 2750.0 *
+1) root 0 0  269.50  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  147.80  
+    4) trees_cover < 0.333333333333333 0 0   59.99 *
+    5) trees_cover > 0.333333333333333 0 0  650.40 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3539.00  
+    6) spectral_EVI2b_changeSSES < 22.7478501575206 0 0 5839.00 *
+    7) spectral_EVI2b_changeSSES > 22.7478501575206 0 0 3046.00 *
+1) root 0 0  302.5  
+  2) trees_cover < 32 0 0  185.6  
+    4) spectral_NDVI_annualMean < 6281.92693020582 0 0  141.3 *
+    5) spectral_NDVI_annualMean > 6281.92693020582 0 0 1685.0 *
+  3) trees_cover > 32 0 0 2825.0  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1571.0 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 4204.0 *
+1) root 0 0  238.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  133.40  
+    4) trees_cover < 0.333333333333333 0 0   73.99 *
+    5) trees_cover > 0.333333333333333 0 0  541.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2053.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1537.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3215.00 *
+1) root 0 0  250.30  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  145.60  
+    4) spectral_NDVI_peakSummer < 6832.9644346349 0 0   73.97 *
+    5) spectral_NDVI_peakSummer > 6832.9644346349 0 0  616.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2627.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 2038.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3510.00 *
+1) root 0 0  299.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  160.10  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   59.77 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  517.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2603.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1459.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3276.00 *
+1) root 0 0  294.40  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  189.30  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   84.72 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  568.60 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3302.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 3133.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  269.60  
+  2) spectral_NDVI_earlySummer < 6836.73646690947 0 0  162.80  
+    4) trees_cover < 1.28888888888889 0 0   74.38 *
+    5) trees_cover > 1.28888888888889 0 0  698.90 *
+  3) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3537.00  
+    6) spectral_EVI2b_changeSSES < 22.7478501575206 0 0 5839.00 *
+    7) spectral_EVI2b_changeSSES > 22.7478501575206 0 0 3182.00 *
+1) root 0 0  267.80  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  194.40  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   75.37 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  615.90 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3354.00  
+    6) spectral_EVI2b_annualRange < 1131.15420185021 0 0 5839.00 *
+    7) spectral_EVI2b_annualRange > 1131.15420185021 0 0 2802.00 *
+1) root 0 0  269.80  
+  2) spectral_NDVI_earlySummer < 6836.73646690947 0 0  183.10  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   51.92 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  604.00 *
+  3) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3921.00  
+    6) spectral_red_peakSummer < 227.503002731476 0 0 5839.00 *
+    7) spectral_red_peakSummer > 227.503002731476 0 0 3202.00 *
+1) root 0 0  235.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  146.40  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   48.65 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  435.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1981.00  
+    6) trees_cover < 41.8 0 0 3127.00 *
+    7) trees_cover > 41.8 0 0 1370.00 *
+1) root 0 0  192.70  
+  2) trees_cover < 31.1428571428571 0 0  131.00  
+    4) spectral_NDVI_earlySummer < 5147.53416581061 0 0   43.93 *
+    5) spectral_NDVI_earlySummer > 5147.53416581061 0 0  472.50 *
+  3) trees_cover > 31.1428571428571 0 0 1961.00  
+    6) spectral_NDVI_annualMean < 7264.41862447865 0 0 1384.00 *
+    7) spectral_NDVI_annualMean > 7264.41862447865 0 0 3691.00 *
+1) root 0 0  246.20  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  130.50  
+    4) trees_cover < 0.333333333333333 0 0   74.65 *
+    5) trees_cover > 0.333333333333333 0 0  581.70 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2873.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 2350.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  235.1  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  169.0  
+    4) spectral_NDVI_earlySummer < 6783.86040233731 0 0  156.5 *
+    5) spectral_NDVI_earlySummer > 6783.86040233731 0 0 5839.0 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 1818.0  
+    6) spectral_NDVI_changeSSES < 63.6005433316165 0 0 1278.0 *
+    7) spectral_NDVI_changeSSES > 63.6005433316165 0 0 2987.0 *
+1) root 0 0  262.10  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  172.40  
+    4) trees_cover < 1.28888888888889 0 0   87.44 *
+    5) trees_cover > 1.28888888888889 0 0  774.30 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3444.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 3008.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  277.70  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  176.30  
+    4) trees_cover < 1.28888888888889 0 0   84.41 *
+    5) trees_cover > 1.28888888888889 0 0  753.70 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3382.00  
+    6) spectral_NDVI_earlySummer < 7076.49905511924 0 0 5839.00 *
+    7) spectral_NDVI_earlySummer > 7076.49905511924 0 0 3004.00 *
+1) root 0 0  247.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  138.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   63.68 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  505.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2728.00  
+    6) spectral_NDMI_endSnowfree < 1611.56009720012 0 0 1533.00 *
+    7) spectral_NDMI_endSnowfree > 1611.56009720012 0 0 3924.00 *
+1) root 0 0  247.30  
+  2) spectral_NDVI_annualMean < 6281.92693020582 0 0  143.00  
+    4) spectral_NDVI_earlySummer < 4914.38110340786 0 0   42.85 *
+    5) spectral_NDVI_earlySummer > 4914.38110340786 0 0  440.90 *
+  3) spectral_NDVI_annualMean > 6281.92693020582 0 0 1848.00  
+    6) spectral_red_lateSummer < 400.961775665488 0 0 2955.00 *
+    7) spectral_red_lateSummer > 400.961775665488 0 0 1265.00 *
+1) root 0 0  319.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  168.10  
+    4) trees_cover < 1.28888888888889 0 0   88.33 *
+    5) trees_cover > 1.28888888888889 0 0  718.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2415.00  
+    6) spectral_red_changeSSES < 1.70466632840189 0 0 1583.00 *
+    7) spectral_red_changeSSES > 1.70466632840189 0 0 3062.00 *
+1) root 0 0  278.60  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  149.70  
+    4) trees_cover < 1.28888888888889 0 0   70.75 *
+    5) trees_cover > 1.28888888888889 0 0  702.50 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3544.00  
+    6) spectral_NDVI_peakSummer < 7220.39462679571 0 0 5839.00 *
+    7) spectral_NDVI_peakSummer > 7220.39462679571 0 0 3257.00 *
+1) root 0 0  238.20  
+  2) spectral_NDVI_earlySummer < 6836.73646690947 0 0  159.10  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   68.32 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  568.90 *
+  3) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3568.00  
+    6) spectral_NIR_annualRange < 541.030087255761 0 0 5839.00 *
+    7) spectral_NIR_annualRange > 541.030087255761 0 0 3341.00 *
+1) root 0 0  224.80  
+  2) trees_cover < 28.6428571428571 0 0  146.30  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   64.58 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  567.80 *
+  3) trees_cover > 28.6428571428571 0 0 3249.00  
+    6) spectral_red_changePSLS < 4.00766927811503 0 0 3726.00 *
+    7) spectral_red_changePSLS > 4.00766927811503 0 0 1819.00 *
+1) root 0 0  254.10  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  172.10  
+    4) trees_cover < 0.333333333333333 0 0   86.88 *
+    5) trees_cover > 0.333333333333333 0 0  642.40 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3708.00  
+    6) spectral_SWIR1_endSnowfree < 1008.61317974215 0 0 5839.00 *
+    7) spectral_SWIR1_endSnowfree > 1008.61317974215 0 0 2909.00 *
+1) root 0 0  230.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  137.80  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   54.99 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  469.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2573.00  
+    6) spectral_red_peakSummer < 289.784224375827 0 0 3799.00 *
+    7) spectral_red_peakSummer > 289.784224375827 0 0 1960.00 *
+1) root 0 0  310.70  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  167.60  
+    4) trees_cover < 0.333333333333333 0 0   66.65 *
+    5) trees_cover > 0.333333333333333 0 0  760.80 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3560.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2801.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  242.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  174.50  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   62.96 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  512.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2305.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 2053.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  253.60  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  181.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   61.59 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  610.50 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3027.00  
+    6) spectral_EVI2b_changeSSES < 22.7478501575206 0 0 5839.00 *
+    7) spectral_EVI2b_changeSSES > 22.7478501575206 0 0 2465.00 *
+1) root 0 0  201.40  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  158.30  
+    4) trees_cover < 4.44444444444444 0 0   84.33 *
+    5) trees_cover > 4.44444444444444 0 0  820.90 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3561.00  
+    6) spectral_SWIR1_endSnowfree < 1008.61317974215 0 0 5839.00 *
+    7) spectral_SWIR1_endSnowfree > 1008.61317974215 0 0 3105.00 *
+1) root 0 0  259.7  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  161.5  
+    4) world_terrestrial_ecosystems_X72 < 0.5 0 0  149.1 *
+    5) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.0 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3069.0  
+    6) spectral_red_peakSummer < 487.452819268192 0 0 3290.0 *
+    7) spectral_red_peakSummer > 487.452819268192 0 0 1526.0 *
+1) root 0 0  276.8  
+  2) trees_cover < 19.5555555555556 0 0  149.1  
+    4) spectral_NDVI_earlySummer < 6895.04848706844 0 0  135.9 *
+    5) spectral_NDVI_earlySummer > 6895.04848706844 0 0 3037.0 *
+  3) trees_cover > 19.5555555555556 0 0 1878.0  
+    6) spectral_NDMI_endSnowfree < 1747.39480635621 0 0 1178.0 *
+    7) spectral_NDMI_endSnowfree > 1747.39480635621 0 0 3627.0 *
+1) root 0 0  198.60  
+  2) spectral_NDVI_peakSummer < 7821.57599507143 0 0  145.00  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   38.43 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  367.50 *
+  3) spectral_NDVI_peakSummer > 7821.57599507143 0 0 2451.00  
+    6) spectral_NDMI_changeLSES < -11.8382945422961 0 0 1831.00 *
+    7) spectral_NDMI_changeLSES > -11.8382945422961 0 0 3196.00 *
+1) root 0 0  214.40  
+  2) spectral_NDVI_earlySummer < 6524.49035121181 0 0  153.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   63.55 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  539.70 *
+  3) spectral_NDVI_earlySummer > 6524.49035121181 0 0 3022.00  
+    6) spectral_NDMI_endSnowfree < 2196.36534549686 0 0 2375.00 *
+    7) spectral_NDMI_endSnowfree > 2196.36534549686 0 0 3668.00 *
+1) root 0 0  271.70  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  147.50  
+    4) trees_cover < 0.333333333333333 0 0   81.28 *
+    5) trees_cover > 0.333333333333333 0 0  567.70 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2411.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1437.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3246.00 *
+1) root 0 0  264.60  
+  2) spectral_NDVI_annualMean < 6271.31649227039 0 0  146.80  
+    4) trees_cover < 1.28888888888889 0 0   87.24 *
+    5) trees_cover > 1.28888888888889 0 0  523.00 *
+  3) spectral_NDVI_annualMean > 6271.31649227039 0 0 2140.00  
+    6) spectral_NDMI_endSnowfree < 1611.56009720012 0 0 1447.00 *
+    7) spectral_NDMI_endSnowfree > 1611.56009720012 0 0 3387.00 *
+1) root 0 0  268.30  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  175.30  
+    4) trees_cover < 0.333333333333333 0 0   77.96 *
+    5) trees_cover > 0.333333333333333 0 0  692.90 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2495.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1567.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3527.00 *
+1) root 0 0  277.00  
+  2) spectral_NDVI_earlySummer < 6524.49035121181 0 0  163.60  
+    4) spectral_NDVI_peakSummer < 6002.61891454842 0 0   55.17 *
+    5) spectral_NDVI_peakSummer > 6002.61891454842 0 0  495.60 *
+  3) spectral_NDVI_earlySummer > 6524.49035121181 0 0 2993.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 2460.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  294.30  
+  2) spectral_NDVI_earlySummer < 6836.73646690947 0 0  177.70  
+    4) trees_cover < 1.28888888888889 0 0   88.23 *
+    5) trees_cover > 1.28888888888889 0 0  718.50 *
+  3) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3633.00  
+    6) trees_cover < 71.9 0 0 3318.00 *
+    7) trees_cover > 71.9 0 0 5839.00 *
+1) root 0 0  255.90  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  184.30  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   75.05 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  589.90 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3012.00  
+    6) spectral_red_peakSummer < 487.452819268192 0 0 3630.00 *
+    7) spectral_red_peakSummer > 487.452819268192 0 0 1159.00 *
+1) root 0 0  265.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  139.70  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   61.22 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  439.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2524.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1707.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3279.00 *
+1) root 0 0  296.60  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  177.80  
+    4) trees_cover < 1.28888888888889 0 0   87.78 *
+    5) trees_cover > 1.28888888888889 0 0  780.50 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2993.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 2029.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3957.00 *
+1) root 0 0  299.3  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  161.7  
+    4) trees_cover < 0.333333333333333 0 0   84.7 *
+    5) trees_cover > 0.333333333333333 0 0  673.8 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2336.0  
+    6) spectral_EVI2b_annualRange < 1045.49136126675 0 0 5839.0 *
+    7) spectral_EVI2b_annualRange > 1045.49136126675 0 0 2085.0 *
+1) root 0 0  266.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  166.70  
+    4) trees_cover < 0.333333333333333 0 0   73.13 *
+    5) trees_cover > 0.333333333333333 0 0  645.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2428.00  
+    6) spectral_red_changeSSES < 4.31560282658241 0 0 1821.00 *
+    7) spectral_red_changeSSES > 4.31560282658241 0 0 3415.00 *
+1) root 0 0  238.50  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  149.50  
+    4) trees_cover < 1.28888888888889 0 0   84.63 *
+    5) trees_cover > 1.28888888888889 0 0  687.20 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2369.00  
+    6) spectral_NDMI_endSnowfree < 2285.95364433351 0 0 1853.00 *
+    7) spectral_NDMI_endSnowfree > 2285.95364433351 0 0 4303.00 *
+1) root 0 0  206.50  
+  2) spectral_NDVI_annualMean < 6656.24310936723 0 0  162.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   65.68 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  631.70 *
+  3) spectral_NDVI_annualMean > 6656.24310936723 0 0 3136.00  
+    6) spectral_NDVI_earlySummer < 7958.68900361734 0 0 3404.00 *
+    7) spectral_NDVI_earlySummer > 7958.68900361734 0 0 1526.00 *
+1) root 0 0  272.0  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  165.1  
+    4) trees_cover < 0.944444444444444 0 0   78.4 *
+    5) trees_cover > 0.944444444444444 0 0  636.3 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3145.0  
+    6) trees_cover < 76.5 0 0 2568.0 *
+    7) trees_cover > 76.5 0 0 5839.0 *
+1) root 0 0  255.10  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  166.20  
+    4) spectral_NDVI_peakSummer < 6695.30595131842 0 0   65.12 *
+    5) spectral_NDVI_peakSummer > 6695.30595131842 0 0  626.20 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2385.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1352.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3314.00 *
+1) root 0 0  204.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  129.80  
+    4) spectral_NDVI_earlySummer < 4880.5487793821 0 0   48.36 *
+    5) spectral_NDVI_earlySummer > 4880.5487793821 0 0  393.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2222.00  
+    6) spectral_EVI2b_startSnowfree < 1556.86363634229 0 0 5839.00 *
+    7) spectral_EVI2b_startSnowfree > 1556.86363634229 0 0 1995.00 *
+1) root 0 0  215.70  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  135.00  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   31.78 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  365.70 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2259.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1472.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 3831.00 *
+1) root 0 0  235.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  155.00  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   53.93 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  394.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2544.00  
+    6) spectral_NDVI_annualMean < 6658.23824906092 0 0 1744.00 *
+    7) spectral_NDVI_annualMean > 6658.23824906092 0 0 3344.00 *
+1) root 0 0  246.1  
+  2) spectral_NDVI_annualMean < 6615.34245687959 0 0  189.2  
+    4) trees_cover < 76.6111111111111 0 0  164.8 *
+    5) trees_cover > 76.6111111111111 0 0 5839.0 *
+  3) spectral_NDVI_annualMean > 6615.34245687959 0 0 3185.0  
+    6) zone_3_OroArctic < 0.5 0 0 2983.0 *
+    7) zone_3_OroArctic > 0.5 0 0 3438.0 *
+1) root 0 0  250.50  
+  2) spectral_NDVI_earlySummer < 6358.18427534612 0 0  160.60  
+    4) trees_cover < 0.333333333333333 0 0   85.81 *
+    5) trees_cover > 0.333333333333333 0 0  653.00 *
+  3) spectral_NDVI_earlySummer > 6358.18427534612 0 0 2404.00  
+    6) spectral_NDMI_annualMedian < 1659.15875984636 0 0 1531.00 *
+    7) spectral_NDMI_annualMedian > 1659.15875984636 0 0 3375.00 *
+1) root 0 0  180.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  133.40  
+    4) trees_cover < 0.333333333333333 0 0   74.61 *
+    5) trees_cover > 0.333333333333333 0 0  536.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2385.00  
+    6) spectral_NDVI_earlySummer < 6836.73646690947 0 0 1845.00 *
+    7) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3194.00 *
+1) root 0 0  249.2  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  143.5  
+    4) spectral_NDVI_annualMean < 6281.92693020582 0 0  121.4 *
+    5) spectral_NDVI_annualMean > 6281.92693020582 0 0 1231.0 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2420.0  
+    6) spectral_EVI2b_startSnowfree < 2182.46079984477 0 0 1607.0 *
+    7) spectral_EVI2b_startSnowfree > 2182.46079984477 0 0 3234.0 *
+1) root 0 0  249.10  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  154.10  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   34.84 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  368.90 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 1885.00  
+    6) spectral_NDVI_peakSummer < 7825.59136499018 0 0 1250.00 *
+    7) spectral_NDVI_peakSummer > 7825.59136499018 0 0 2521.00 *
+1) root 0 0  229.60  
+  2) spectral_NDVI_earlySummer < 6836.73646690947 0 0  174.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   63.31 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  601.60 *
+  3) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3939.00  
+    6) world_terrestrial_ecosystems_X72 < 0.5 0 0 3622.00 *
+    7) world_terrestrial_ecosystems_X72 > 0.5 0 0 5839.00 *
+1) root 0 0  228.00  
+  2) spectral_NDVI_annualMean < 6615.34245687959 0 0  163.90  
+    4) trees_cover < 1.28888888888889 0 0   91.66 *
+    5) trees_cover > 1.28888888888889 0 0  712.80 *
+  3) spectral_NDVI_annualMean > 6615.34245687959 0 0 3202.00  
+    6) spectral_EVI2b_startSnowfree < 2802.33280648174 0 0 3388.00 *
+    7) spectral_EVI2b_startSnowfree > 2802.33280648174 0 0 1526.00 *
+1) root 0 0  232.70  
+  2) spectral_NDVI_annualMean < 6279.88359027782 0 0  144.70  
+    4) spectral_NDVI_earlySummer < 4880.5487793821 0 0   52.06 *
+    5) spectral_NDVI_earlySummer > 4880.5487793821 0 0  448.70 *
+  3) spectral_NDVI_annualMean > 6279.88359027782 0 0 2230.00  
+    6) spectral_NDMI_endSnowfree < 1395.60485257947 0 0 1319.00 *
+    7) spectral_NDMI_endSnowfree > 1395.60485257947 0 0 2975.00 *
+1) root 0 0  212.50  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  146.00  
+    4) trees_cover < 4.5 0 0   86.47 *
+    5) trees_cover > 4.5 0 0  725.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2568.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1785.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3481.00 *
+1) root 0 0  267.10  
+  2) spectral_NDVI_earlySummer < 7427.48093735288 0 0  198.00  
+    4) trees_cover < 0.333333333333333 0 0   93.47 *
+    5) trees_cover > 0.333333333333333 0 0  723.10 *
+  3) spectral_NDVI_earlySummer > 7427.48093735288 0 0 3476.00  
+    6) spectral_NDWI_changeLSES < 7.91110016246852 0 0 3990.00 *
+    7) spectral_NDWI_changeLSES > 7.91110016246852 0 0 3347.00 *
+1) root 0 0  212.70  
+  2) trees_cover < 29.5 0 0  142.70  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   34.26 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  371.30 *
+  3) trees_cover > 29.5 0 0 2512.00  
+    6) topo_tpi < 0.219577498733998 0 0 1472.00 *
+    7) topo_tpi > 0.219577498733998 0 0 3899.00 *
+1) root 0 0  254.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  161.40  
+    4) trees_cover < 0.944444444444444 0 0   87.23 *
+    5) trees_cover > 0.944444444444444 0 0  696.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2167.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1601.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3158.00 *
+1) root 0 0  273.40  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  151.30  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   48.52 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  438.80 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2376.00  
+    6) spectral_NDMI_endSnowfree < 1579.86288701116 0 0 1486.00 *
+    7) spectral_NDMI_endSnowfree > 1579.86288701116 0 0 3415.00 *
+1) root 0 0  260.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  168.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   77.23 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  522.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1919.00  
+    6) spectral_red_peakSummer < 289.784224375827 0 0 4207.00 *
+    7) spectral_red_peakSummer > 289.784224375827 0 0 1607.00 *
+1) root 0 0  266.40  
+  2) spectral_NDVI_peakSummer < 7890.52717238376 0 0  154.90  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   65.77 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  503.70 *
+  3) spectral_NDVI_peakSummer > 7890.52717238376 0 0 2557.00  
+    6) topo_tpi < 0.142285235060586 0 0 1804.00 *
+    7) topo_tpi > 0.142285235060586 0 0 3645.00 *
+1) root 0 0  270.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  184.60  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   31.99 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  483.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2454.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1734.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 3893.00 *
+1) root 0 0  211.5  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  125.8  
+    4) trees_cover < 0.333333333333333 0 0   68.7 *
+    5) trees_cover > 0.333333333333333 0 0  648.8 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2515.0  
+    6) spectral_red_peakSummer < 437.377492450114 0 0 3237.0 *
+    7) spectral_red_peakSummer > 437.377492450114 0 0 1483.0 *
+1) root 0 0  266.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  141.60  
+    4) trees_cover < 0.333333333333333 0 0   80.67 *
+    5) trees_cover > 0.333333333333333 0 0  626.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2410.00  
+    6) trees_cover < 76.6111111111111 0 0 2272.00 *
+    7) trees_cover > 76.6111111111111 0 0 5839.00 *
+1) root 0 0  252.40  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  148.50  
+    4) spectral_NDVI_earlySummer < 4576.15645154823 0 0   20.86 *
+    5) spectral_NDVI_earlySummer > 4576.15645154823 0 0  382.90 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2289.00  
+    6) spectral_NDMI_endSnowfree < 2285.95364433351 0 0 1780.00 *
+    7) spectral_NDMI_endSnowfree > 2285.95364433351 0 0 4120.00 *
+1) root 0 0  308.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  151.40  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   53.07 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  537.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2552.00  
+    6) topo_tpi < 0.115319580771029 0 0 1886.00 *
+    7) topo_tpi > 0.115319580771029 0 0 3361.00 *
+1) root 0 0  237.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  126.80  
+    4) spectral_NDVI_peakSummer < 6503.26660513338 0 0   50.76 *
+    5) spectral_NDVI_peakSummer > 6503.26660513338 0 0  387.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2145.00  
+    6) trees_cover < 39 0 0 2784.00 *
+    7) trees_cover > 39 0 0 1597.00 *
+1) root 0 0  228.40  
+  2) spectral_NDVI_annualMean < 6279.88359027782 0 0  154.90  
+    4) trees_cover < 0.944444444444444 0 0   85.02 *
+    5) trees_cover > 0.944444444444444 0 0  612.90 *
+  3) spectral_NDVI_annualMean > 6279.88359027782 0 0 1813.00  
+    6) spectral_NDWI_annualRange < 1542.32400525359 0 0 2993.00 *
+    7) spectral_NDWI_annualRange > 1542.32400525359 0 0 1342.00 *
+1) root 0 0  247.40  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  150.70  
+    4) trees_cover < 0.333333333333333 0 0   77.93 *
+    5) trees_cover > 0.333333333333333 0 0  642.80 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3015.00  
+    6) spectral_EVI2b_changeSSES < 22.7478501575206 0 0 5839.00 *
+    7) spectral_EVI2b_changeSSES > 22.7478501575206 0 0 2363.00 *
+1) root 0 0  237.4  
+  2) spectral_NDVI_earlySummer < 6819.53772288958 0 0  183.2  
+    4) trees_cover < 0.333333333333333 0 0  101.6 *
+    5) trees_cover > 0.333333333333333 0 0  714.9 *
+  3) spectral_NDVI_earlySummer > 6819.53772288958 0 0 3399.0  
+    6) spectral_EVI2b_annualRange < 1131.15420185021 0 0 5839.0 *
+    7) spectral_EVI2b_annualRange > 1131.15420185021 0 0 3050.0 *
+1) root 0 0  262.50  
+  2) spectral_NDVI_earlySummer < 6320.6107006503 0 0  164.50  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   57.85 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  536.10 *
+  3) spectral_NDVI_earlySummer > 6320.6107006503 0 0 2376.00  
+    6) topo_tpi < 0.0344331786036495 0 0 1779.00 *
+    7) topo_tpi > 0.0344331786036495 0 0 3571.00 *
+1) root 0 0  238.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  181.40  
+    4) trees_cover < 0.333333333333333 0 0   86.59 *
+    5) trees_cover > 0.333333333333333 0 0  575.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 1992.00  
+    6) spectral_NDVI_annualMean < 6608.64532966151 0 0 1663.00 *
+    7) spectral_NDVI_annualMean > 6608.64532966151 0 0 3309.00 *
+1) root 0 0  227.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  143.10  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   42.46 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  396.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2140.00  
+    6) spectral_EVI2b_startSnowfree < 1556.86363634229 0 0 5839.00 *
+    7) spectral_EVI2b_startSnowfree > 1556.86363634229 0 0 1728.00 *
+1) root 0 0  282.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  160.10  
+    4) trees_cover < 0.333333333333333 0 0   80.87 *
+    5) trees_cover > 0.333333333333333 0 0  577.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2686.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1878.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4200.00 *
+1) root 0 0  277.10  
+  2) spectral_NDVI_earlySummer < 6853.39495745563 0 0  175.20  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   60.49 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  593.30 *
+  3) spectral_NDVI_earlySummer > 6853.39495745563 0 0 3627.00  
+    6) spectral_NDVI_earlySummer < 7076.49905511924 0 0 5839.00 *
+    7) spectral_NDVI_earlySummer > 7076.49905511924 0 0 3024.00 *
+1) root 0 0  264.10  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  175.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   74.72 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  553.20 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2814.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1809.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3819.00 *
+1) root 0 0  278.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  189.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   83.56 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  554.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2518.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1578.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3457.00 *
+1) root 0 0  244.2  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  192.0  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   72.4 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  593.2 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3288.0  
+    6) spectral_red_peakSummer < 227.503002731476 0 0 5839.0 *
+    7) spectral_red_peakSummer > 227.503002731476 0 0 2923.0 *
+1) root 0 0  254.7  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  152.8  
+    4) trees_cover < 1.28888888888889 0 0   89.1 *
+    5) trees_cover > 1.28888888888889 0 0  676.9 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2347.0  
+    6) spectral_NDVI_earlySummer < 6852.01000287502 0 0 1691.0 *
+    7) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3294.0 *
+1) root 0 0  243.8  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  145.3  
+    4) trees_cover < 1.28888888888889 0 0   67.6 *
+    5) trees_cover > 1.28888888888889 0 0  720.4 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 2481.0  
+    6) spectral_NDVI_annualMean < 6611.04022972924 0 0 1517.0 *
+    7) spectral_NDVI_annualMean > 6611.04022972924 0 0 3270.0 *
+1) root 0 0  266.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  174.10  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   73.01 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  666.50 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2157.00  
+    6) spectral_NDMI_annualMedian < 1659.15875984636 0 0 1681.00 *
+    7) spectral_NDMI_annualMedian > 1659.15875984636 0 0 2728.00 *
+1) root 0 0  235.60  
+  2) trees_cover < 29.5 0 0  135.20  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   44.61 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  419.30 *
+  3) trees_cover > 29.5 0 0 2639.00  
+    6) spectral_NDWI_changeESPS < -20.5203957107565 0 0 1478.00 *
+    7) spectral_NDWI_changeESPS > -20.5203957107565 0 0 3929.00 *
+1) root 0 0  247.40  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  165.60  
+    4) trees_cover < 1.28888888888889 0 0   76.52 *
+    5) trees_cover > 1.28888888888889 0 0  787.70 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3688.00  
+    6) trees_cover < 71.9 0 0 3210.00 *
+    7) trees_cover > 71.9 0 0 5839.00 *
+1) root 0 0  285.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  163.50  
+    4) trees_cover < 0.333333333333333 0 0   83.95 *
+    5) trees_cover > 0.333333333333333 0 0  644.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2686.00  
+    6) spectral_NDVI_earlySummer < 6852.01000287502 0 0 1688.00 *
+    7) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3602.00 *
+1) root 0 0  305.3  
+  2) spectral_NDVI_annualMean < 6265.36562081911 0 0  175.7  
+    4) spectral_NDVI_earlySummer < 6783.86040233731 0 0  162.9 *
+    5) spectral_NDVI_earlySummer > 6783.86040233731 0 0 5839.0 *
+  3) spectral_NDVI_annualMean > 6265.36562081911 0 0 2095.0  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1372.0 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3152.0 *
+1) root 0 0  230.10  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  143.70  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   40.68 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  422.70 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3070.00  
+    6) spectral_red_lateSummer < 228.196113526738 0 0 5839.00 *
+    7) spectral_red_lateSummer > 228.196113526738 0 0 2857.00 *
+1) root 0 0  243.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  177.90  
+    4) spectral_NDVI_peakSummer < 6002.61891454842 0 0   58.31 *
+    5) spectral_NDVI_peakSummer > 6002.61891454842 0 0  433.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2113.00  
+    6) spectral_NDMI_annualMedian < 2485.75199308135 0 0 1773.00 *
+    7) spectral_NDMI_annualMedian > 2485.75199308135 0 0 3591.00 *
+1) root 0 0  319.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  164.80  
+    4) trees_cover < 2.36666666666667 0 0   84.69 *
+    5) trees_cover > 2.36666666666667 0 0  727.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2392.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1389.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3228.00 *
+1) root 0 0  231.10  
+  2) spectral_NDVI_earlySummer < 6463.65221460296 0 0  160.00  
+    4) spectral_NDVI_peakSummer < 6474.90414506022 0 0   65.66 *
+    5) spectral_NDVI_peakSummer > 6474.90414506022 0 0  533.50 *
+  3) spectral_NDVI_earlySummer > 6463.65221460296 0 0 2031.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 1807.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  328.0  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  201.7  
+    4) trees_cover < 0.333333333333333 0 0  102.0 *
+    5) trees_cover > 0.333333333333333 0 0  754.1 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3944.0  
+    6) spectral_NDVI_annualMean < 6293.1575904581 0 0 5839.0 *
+    7) spectral_NDVI_annualMean > 6293.1575904581 0 0 3506.0 *
+1) root 0 0  229.00  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  154.70  
+    4) trees_cover < 0.333333333333333 0 0   78.75 *
+    5) trees_cover > 0.333333333333333 0 0  605.60 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2356.00  
+    6) spectral_NDWI_changePSLS < -20.5464767547038 0 0 1476.00 *
+    7) spectral_NDWI_changePSLS > -20.5464767547038 0 0 2884.00 *
+1) root 0 0  251.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  154.00  
+    4) trees_cover < 0.333333333333333 0 0   84.97 *
+    5) trees_cover > 0.333333333333333 0 0  575.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2588.00  
+    6) spectral_NDVI_earlySummer < 6836.19621343574 0 0 1671.00 *
+    7) spectral_NDVI_earlySummer > 6836.19621343574 0 0 3606.00 *
+1) root 0 0  238.90  
+  2) spectral_NDVI_earlySummer < 6358.18427534612 0 0  144.90  
+    4) trees_cover < 0.333333333333333 0 0   68.86 *
+    5) trees_cover > 0.333333333333333 0 0  560.70 *
+  3) spectral_NDVI_earlySummer > 6358.18427534612 0 0 2268.00  
+    6) trees_cover < 76.6111111111111 0 0 2090.00 *
+    7) trees_cover > 76.6111111111111 0 0 5839.00 *
+1) root 0 0  289.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  167.00  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   35.98 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  403.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2485.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1580.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3320.00 *
+1) root 0 0  226.00  
+  2) spectral_NDVI_annualMean < 6615.34245687959 0 0  159.30  
+    4) trees_cover < 0.333333333333333 0 0   84.14 *
+    5) trees_cover > 0.333333333333333 0 0  706.70 *
+  3) spectral_NDVI_annualMean > 6615.34245687959 0 0 3324.00  
+    6) spectral_NDVI_earlySummer < 7958.68900361734 0 0 3524.00 *
+    7) spectral_NDVI_earlySummer > 7958.68900361734 0 0 1526.00 *
+1) root 0 0  259.70  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  152.60  
+    4) trees_cover < 0.333333333333333 0 0   79.83 *
+    5) trees_cover > 0.333333333333333 0 0  627.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2461.00  
+    6) trees_cover < 76.6111111111111 0 0 2300.00 *
+    7) trees_cover > 76.6111111111111 0 0 5839.00 *
+1) root 0 0  260.1  
+  2) spectral_NDVI_earlySummer < 6483.94399720847 0 0  151.5  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   67.8 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  520.2 *
+  3) spectral_NDVI_earlySummer > 6483.94399720847 0 0 2725.0  
+    6) trees_cover < 76.6111111111111 0 0 2176.0 *
+    7) trees_cover > 76.6111111111111 0 0 5839.0 *
+1) root 0 0  268.50  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  166.90  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   60.96 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  573.60 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2702.00  
+    6) spectral_NDWI_changeESPS < -20.5203957107565 0 0 1668.00 *
+    7) spectral_NDWI_changeESPS > -20.5203957107565 0 0 3631.00 *
+1) root 0 0  310.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  173.80  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   83.76 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  611.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2400.00  
+    6) spectral_NDVI_annualMean < 6611.04022972924 0 0 1606.00 *
+    7) spectral_NDVI_annualMean > 6611.04022972924 0 0 3376.00 *
+1) root 0 0  301.3  
+  2) spectral_NDVI_earlySummer < 6524.49035121181 0 0  168.4  
+    4) spectral_NDVI_annualMean < 6276.69913194884 0 0  133.5 *
+    5) spectral_NDVI_annualMean > 6276.69913194884 0 0 1256.0 *
+  3) spectral_NDVI_earlySummer > 6524.49035121181 0 0 2793.0  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1850.0 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3908.0 *
+1) root 0 0  244.80  
+  2) spectral_NDVI_annualMean < 6271.31649227039 0 0  156.10  
+    4) trees_cover < 4.44444444444444 0 0   95.57 *
+    5) trees_cover > 4.44444444444444 0 0  661.50 *
+  3) spectral_NDVI_annualMean > 6271.31649227039 0 0 1839.00  
+    6) spectral_NDMI_annualMedian < 2269.39397204953 0 0 1335.00 *
+    7) spectral_NDMI_annualMedian > 2269.39397204953 0 0 3432.00 *
+1) root 0 0  254.70  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  170.50  
+    4) spectral_NDVI_peakSummer < 6542.83561120092 0 0   67.16 *
+    5) spectral_NDVI_peakSummer > 6542.83561120092 0 0  538.00 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3018.00  
+    6) topo_tpi < -0.0997540925939875 0 0 1809.00 *
+    7) topo_tpi > -0.0997540925939875 0 0 3690.00 *
+1) root 0 0  284.20  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  155.90  
+    4) trees_cover < 1.28888888888889 0 0   79.66 *
+    5) trees_cover > 1.28888888888889 0 0  636.60 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3051.00  
+    6) spectral_SWIR1_endSnowfree < 746.947160296559 0 0 5839.00 *
+    7) spectral_SWIR1_endSnowfree > 746.947160296559 0 0 2757.00 *
+1) root 0 0  229.80  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  145.50  
+    4) trees_cover < 0.333333333333333 0 0   67.56 *
+    5) trees_cover > 0.333333333333333 0 0  612.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2144.00  
+    6) spectral_NDVI_annualMean < 6658.23824906092 0 0 1556.00 *
+    7) spectral_NDVI_annualMean > 6658.23824906092 0 0 3236.00 *
+1) root 0 0  253.20  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  186.80  
+    4) spectral_NDVI_peakSummer < 6681.7067656531 0 0   80.13 *
+    5) spectral_NDVI_peakSummer > 6681.7067656531 0 0  692.80 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3682.00  
+    6) spectral_EVI2b_changeSSES < 22.7478501575206 0 0 5839.00 *
+    7) spectral_EVI2b_changeSSES > 22.7478501575206 0 0 2604.00 *
+1) root 0 0  283.40  
+  2) trees_cover < 31.1428571428571 0 0  188.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   72.34 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  647.30 *
+  3) trees_cover > 31.1428571428571 0 0 2553.00  
+    6) spectral_NDWI_changeLSES < 18.2394656312653 0 0 1812.00 *
+    7) spectral_NDWI_changeLSES > 18.2394656312653 0 0 3822.00 *
+1) root 0 0  262.20  
+  2) spectral_NDVI_annualMean < 6276.69913194884 0 0  148.50  
+    4) spectral_NDVI_peakSummer < 6483.58700912545 0 0   55.86 *
+    5) spectral_NDVI_peakSummer > 6483.58700912545 0 0  494.20 *
+  3) spectral_NDVI_annualMean > 6276.69913194884 0 0 2007.00  
+    6) spectral_NDVI_earlySummer < 7427.48093735288 0 0 1501.00 *
+    7) spectral_NDVI_earlySummer > 7427.48093735288 0 0 3132.00 *
+1) root 0 0  237.30  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  154.80  
+    4) spectral_NDVI_peakSummer < 5878.90817305939 0 0   37.01 *
+    5) spectral_NDVI_peakSummer > 5878.90817305939 0 0  451.20 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2453.00  
+    6) spectral_red_peakSummer < 335.119250303055 0 0 4003.00 *
+    7) spectral_red_peakSummer > 335.119250303055 0 0 1976.00 *
+1) root 0 0  286.7  
+  2) trees_cover < 18.6555555555556 0 0  152.1  
+    4) spectral_NDVI_annualMean < 6273.35983219839 0 0  118.2 *
+    5) spectral_NDVI_annualMean > 6273.35983219839 0 0 1984.0 *
+  3) trees_cover > 18.6555555555556 0 0 2028.0  
+    6) spectral_NDMI_endSnowfree < 2199.701295442 0 0 1519.0 *
+    7) spectral_NDMI_endSnowfree > 2199.701295442 0 0 4980.0 *
+1) root 0 0  265.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  145.60  
+    4) trees_cover < 1.28888888888889 0 0   80.55 *
+    5) trees_cover > 1.28888888888889 0 0  669.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2720.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1612.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3644.00 *
+1) root 0 0  252.70  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  161.10  
+    4) spectral_NDVI_peakSummer < 6695.30595131842 0 0   64.43 *
+    5) spectral_NDVI_peakSummer > 6695.30595131842 0 0  579.40 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2873.00  
+    6) spectral_EVI2b_startSnowfree < 2172.84681621544 0 0 1746.00 *
+    7) spectral_EVI2b_startSnowfree > 2172.84681621544 0 0 3249.00 *
+1) root 0 0  206.60  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  133.60  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   58.93 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  448.80 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 1863.00  
+    6) trees_cover < 41.8 0 0 3287.00 *
+    7) trees_cover > 41.8 0 0 1389.00 *
+1) root 0 0  221.30  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  137.90  
+    4) spectral_NDVI_peakSummer < 6695.30595131842 0 0   70.73 *
+    5) spectral_NDVI_peakSummer > 6695.30595131842 0 0  528.40 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 1786.00  
+    6) spectral_NDVI_annualMean < 6611.04022972924 0 0 1474.00 *
+    7) spectral_NDVI_annualMean > 6611.04022972924 0 0 3350.00 *
+1) root 0 0  207.80  
+  2) spectral_NDVI_peakSummer < 7890.52717238376 0 0  143.10  
+    4) trees_cover < 1.28888888888889 0 0   81.68 *
+    5) trees_cover > 1.28888888888889 0 0  647.90 *
+  3) spectral_NDVI_peakSummer > 7890.52717238376 0 0 2502.00  
+    6) spectral_NDWI_annualRange < 2331.22248099373 0 0 3487.00 *
+    7) spectral_NDWI_annualRange > 2331.22248099373 0 0 1658.00 *
+1) root 0 0  256.90  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  151.00  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   27.49 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  437.20 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2333.00  
+    6) spectral_NDVI_earlySummer < 6868.66849342118 0 0 1703.00 *
+    7) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3772.00 *
+1) root 0 0  271.4  
+  2) spectral_NDVI_earlySummer < 6836.73646690947 0 0  154.7  
+    4) spectral_NDVI_annualMean < 6268.13203394142 0 0  115.4 *
+    5) spectral_NDVI_annualMean > 6268.13203394142 0 0 1405.0 *
+  3) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3840.0  
+    6) spectral_red_peakSummer < 227.503002731476 0 0 5839.0 *
+    7) spectral_red_peakSummer > 227.503002731476 0 0 2841.0 *
+1) root 0 0  263.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  142.80  
+    4) spectral_NDVI_earlySummer < 4889.30069249549 0 0   43.07 *
+    5) spectral_NDVI_earlySummer > 4889.30069249549 0 0  453.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2429.00  
+    6) spectral_NDMI_endSnowfree < 2282.61769438837 0 0 1923.00 *
+    7) spectral_NDMI_endSnowfree > 2282.61769438837 0 0 4030.00 *
+1) root 0 0  251.80  
+  2) spectral_NDVI_annualMean < 6265.36562081911 0 0  137.70  
+    4) trees_cover < 1.28888888888889 0 0   84.68 *
+    5) trees_cover > 1.28888888888889 0 0  531.90 *
+  3) spectral_NDVI_annualMean > 6265.36562081911 0 0 2141.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1511.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3400.00 *
+1) root 0 0  231.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  140.20  
+    4) spectral_NDVI_annualMean < 4558.82642197495 0 0   31.58 *
+    5) spectral_NDVI_annualMean > 4558.82642197495 0 0  360.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2302.00  
+    6) spectral_NDVI_earlySummer < 6852.01000287502 0 0 1685.00 *
+    7) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3447.00 *
+1) root 0 0  252.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  160.60  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   29.04 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  439.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2462.00  
+    6) spectral_NDWI_changeESPS < -22.8717197377431 0 0 1856.00 *
+    7) spectral_NDWI_changeESPS > -22.8717197377431 0 0 3500.00 *
+1) root 0 0  208.10  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  139.10  
+    4) trees_cover < 0.333333333333333 0 0   65.96 *
+    5) trees_cover > 0.333333333333333 0 0  665.40 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2320.00  
+    6) trees_cover < 39 0 0 3092.00 *
+    7) trees_cover > 39 0 0 1438.00 *
+1) root 0 0  276.40  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  129.10  
+    4) spectral_NDVI_peakSummer < 6560.65517571096 0 0   55.54 *
+    5) spectral_NDVI_peakSummer > 6560.65517571096 0 0  516.90 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2536.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2154.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  231.60  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  150.00  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   63.42 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  479.80 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2425.00  
+    6) spectral_NDVI_earlySummer < 6836.73646690947 0 0 1722.00 *
+    7) spectral_NDVI_earlySummer > 6836.73646690947 0 0 3215.00 *
+1) root 0 0  267.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  145.50  
+    4) spectral_NDVI_peakSummer < 6002.61891454842 0 0   50.11 *
+    5) spectral_NDVI_peakSummer > 6002.61891454842 0 0  433.60 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2206.00  
+    6) spectral_NDVI_annualMean < 6656.24310936723 0 0 1488.00 *
+    7) spectral_NDVI_annualMean > 6656.24310936723 0 0 3035.00 *
+1) root 0 0  263.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  170.10  
+    4) trees_cover < 0.333333333333333 0 0   82.37 *
+    5) trees_cover > 0.333333333333333 0 0  588.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2631.00  
+    6) trees_cover < 56.9 0 0 2345.00 *
+    7) trees_cover > 56.9 0 0 4915.00 *
+1) root 0 0  255.00  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  160.90  
+    4) spectral_NDVI_earlySummer < 4889.29964508863 0 0   38.09 *
+    5) spectral_NDVI_earlySummer > 4889.29964508863 0 0  528.40 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2100.00  
+    6) spectral_NDMI_endSnowfree < 1604.14408271799 0 0 1381.00 *
+    7) spectral_NDMI_endSnowfree > 1604.14408271799 0 0 3218.00 *
+1) root 0 0  268.70  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  173.40  
+    4) trees_cover < 1.28888888888889 0 0   89.13 *
+    5) trees_cover > 1.28888888888889 0 0  675.30 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3183.00  
+    6) spectral_NDWI_changeESPS < -26.5957004169302 0 0 1824.00 *
+    7) spectral_NDWI_changeESPS > -26.5957004169302 0 0 4089.00 *
+1) root 0 0  215.20  
+  2) spectral_NDVI_earlySummer < 6853.39495745563 0 0  185.00  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   71.55 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  527.30 *
+  3) spectral_NDVI_earlySummer > 6853.39495745563 0 0 3759.00 *
+1) root 0 0  242.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  155.90  
+    4) spectral_NDVI_peakSummer < 6710.20236798166 0 0   75.16 *
+    5) spectral_NDVI_peakSummer > 6710.20236798166 0 0  584.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2203.00  
+    6) spectral_NDMI_annualMedian < 2159.84771472861 0 0 1343.00 *
+    7) spectral_NDMI_annualMedian > 2159.84771472861 0 0 3063.00 *
+1) root 0 0  235.60  
+  2) spectral_NDVI_earlySummer < 6852.01000287502 0 0  181.70  
+    4) trees_cover < 0.333333333333333 0 0   97.07 *
+    5) trees_cover > 0.333333333333333 0 0  788.90 *
+  3) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3375.00  
+    6) spectral_EVI2b_changeSSES < 30.7836618464767 0 0 5839.00 *
+    7) spectral_EVI2b_changeSSES > 30.7836618464767 0 0 3022.00 *
+1) root 0 0  234.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  142.90  
+    4) spectral_NDVI_annualMean < 4519.33684322755 0 0   26.39 *
+    5) spectral_NDVI_annualMean > 4519.33684322755 0 0  354.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2207.00  
+    6) spectral_NDVI_earlySummer < 6852.01000287502 0 0 1634.00 *
+    7) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3352.00 *
+1) root 0 0  238.90  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  147.10  
+    4) trees_cover < 1.28888888888889 0 0   91.07 *
+    5) trees_cover > 1.28888888888889 0 0  671.30 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2567.00  
+    6) spectral_NDVI_earlySummer < 6852.01000287502 0 0 1585.00 *
+    7) spectral_NDVI_earlySummer > 6852.01000287502 0 0 3352.00 *
+1) root 0 0  258.90  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  152.40  
+    4) trees_cover < 0.333333333333333 0 0   79.18 *
+    5) trees_cover > 0.333333333333333 0 0  578.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2256.00  
+    6) spectral_SWIR1_endSnowfree < 979.597267791822 0 0 5839.00 *
+    7) spectral_SWIR1_endSnowfree > 979.597267791822 0 0 1930.00 *
+1) root 0 0  253.30  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  165.80  
+    4) spectral_NDVI_peakSummer < 6544.14220558023 0 0   65.69 *
+    5) spectral_NDVI_peakSummer > 6544.14220558023 0 0  635.00 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2348.00  
+    6) topo_tpi < 0.219577498733998 0 0 1536.00 *
+    7) topo_tpi > 0.219577498733998 0 0 3251.00 *
+1) root 0 0  253.60  
+  2) spectral_NDVI_annualMean < 6268.13203394142 0 0  137.50  
+    4) spectral_NDVI_peakSummer < 5783.77205622887 0 0   38.69 *
+    5) spectral_NDVI_peakSummer > 5783.77205622887 0 0  370.40 *
+  3) spectral_NDVI_annualMean > 6268.13203394142 0 0 1912.00  
+    6) spectral_NDVI_annualMean < 6658.23824906092 0 0 1383.00 *
+    7) spectral_NDVI_annualMean > 6658.23824906092 0 0 2872.00 *
+1) root 0 0  251.40  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  147.00  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   38.31 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  381.80 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2397.00  
+    6) spectral_NDVI_earlySummer < 6819.53772288958 0 0 1622.00 *
+    7) spectral_NDVI_earlySummer > 6819.53772288958 0 0 3172.00 *
+1) root 0 0  276.50  
+  2) spectral_NDVI_earlySummer < 6868.66849342118 0 0  169.90  
+    4) trees_cover < 0.333333333333333 0 0   87.17 *
+    5) trees_cover > 0.333333333333333 0 0  637.60 *
+  3) spectral_NDVI_earlySummer > 6868.66849342118 0 0 3539.00  
+    6) trees_cover < 71.9 0 0 3185.00 *
+    7) trees_cover > 71.9 0 0 5839.00 *
+1) root 0 0  271.20  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  151.60  
+    4) trees_cover < 0.333333333333333 0 0   79.51 *
+    5) trees_cover > 0.333333333333333 0 0  525.20 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2616.00  
+    6) spectral_NDMI_changeLSES < 21.3058380805878 0 0 2309.00 *
+    7) spectral_NDMI_changeLSES > 21.3058380805878 0 0 5839.00 *
+1) root 0 0  198.80  
+  2) spectral_NDVI_earlySummer < 6358.18427534612 0 0  135.00  
+    4) spectral_NDVI_earlySummer < 5145.16321088098 0 0   48.59 *
+    5) spectral_NDVI_earlySummer > 5145.16321088098 0 0  467.20 *
+  3) spectral_NDVI_earlySummer > 6358.18427534612 0 0 2295.00  
+    6) spectral_EVI2b_changeSSES < 43.5378187132585 0 0 1310.00 *
+    7) spectral_EVI2b_changeSSES > 43.5378187132585 0 0 3034.00 *
+1) root 0 0  247.30  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  184.40  
+    4) spectral_NDVI_earlySummer < 4595.12142888367 0 0   31.07 *
+    5) spectral_NDVI_earlySummer > 4595.12142888367 0 0  501.30 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 2895.00  
+    6) spectral_red_peakSummer < 487.452819268192 0 0 3477.00 *
+    7) spectral_red_peakSummer > 487.452819268192 0 0 1343.00 *
+1) root 0 0  259.50  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  146.40  
+    4) spectral_NDVI_earlySummer < 4812.777829784 0 0   41.38 *
+    5) spectral_NDVI_earlySummer > 4812.777829784 0 0  430.10 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2209.00  
+    6) spectral_red_lateSummer < 400.961775665488 0 0 3100.00 *
+    7) spectral_red_lateSummer > 400.961775665488 0 0 1446.00 *
+1) root 0 0  219.60  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  143.90  
+    4) trees_cover < 1.28888888888889 0 0   73.61 *
+    5) trees_cover > 1.28888888888889 0 0  639.30 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2538.00  
+    6) spectral_red_peakSummer < 227.503002731476 0 0 5839.00 *
+    7) spectral_red_peakSummer > 227.503002731476 0 0 2302.00 *
+1) root 0 0  275.50  
+  2) spectral_NDVI_earlySummer < 6376.94555564814 0 0  158.80  
+    4) spectral_NDVI_peakSummer < 5783.77205622887 0 0   41.84 *
+    5) spectral_NDVI_peakSummer > 5783.77205622887 0 0  398.20 *
+  3) spectral_NDVI_earlySummer > 6376.94555564814 0 0 2288.00  
+    6) spectral_NDMI_annualMedian < 1691.12121035991 0 0 1504.00 *
+    7) spectral_NDMI_annualMedian > 1691.12121035991 0 0 3769.00 *
+1) root 0 0  238.30  
+  2) spectral_NDVI_earlySummer < 6638.77252881671 0 0  168.90  
+    4) spectral_NDVI_earlySummer < 5259.96643929657 0 0   62.87 *
+    5) spectral_NDVI_earlySummer > 5259.96643929657 0 0  558.60 *
+  3) spectral_NDVI_earlySummer > 6638.77252881671 0 0 3159.00  
+    6) spectral_SWIR2_changeESPS < -4.88018635262963 0 0 2616.00 *
+    7) spectral_SWIR2_changeESPS > -4.88018635262963 0 0 4607.00 *
+1) root 0 0  274.10  
+  2) spectral_NDVI_earlySummer < 6339.37198095233 0 0  149.10  
+    4) trees_cover < 0.333333333333333 0 0   79.47 *
+    5) trees_cover > 0.333333333333333 0 0  604.70 *
+  3) spectral_NDVI_earlySummer > 6339.37198095233 0 0 2193.00  
+    6) spectral_NDMI_annualMedian < 2159.84771472861 0 0 1472.00 *
+    7) spectral_NDMI_annualMedian > 2159.84771472861 0 0 3214.00 *
+1) root 0 0  178.80  
+  2) spectral_NDVI_peakSummer < 7821.57599507143 0 0  149.00  
+    4) spectral_NDVI_peakSummer < 6542.83561120092 0 0   63.46 *
+    5) spectral_NDVI_peakSummer > 6542.83561120092 0 0  480.60 *
+  3) spectral_NDVI_peakSummer > 7821.57599507143 0 0 2500.00  
+    6) spectral_red_peakSummer < 327.139665305969 0 0 3184.00 *
+    7) spectral_red_peakSummer > 327.139665305969 0 0 1816.00 *
+1) root 0 0  239.60  
+  2) spectral_NDVI_earlySummer < 6423.10586059963 0 0  160.30  
+    4) spectral_NDVI_peakSummer < 6706.67362759148 0 0   81.41 *
+    5) spectral_NDVI_peakSummer > 6706.67362759148 0 0  567.30 *
+  3) spectral_NDVI_earlySummer > 6423.10586059963 0 0 2250.00  
+    6) spectral_NDMI_endSnowfree < 1587.27890149329 0 0 1489.00 *
+    7) spectral_NDMI_endSnowfree > 1587.27890149329 0 0 3772.00 *

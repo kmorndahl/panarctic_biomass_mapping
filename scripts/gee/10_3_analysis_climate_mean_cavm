@@ -1,0 +1,159 @@
+/*
+
+DESCRIPTION: Average biomass and GDD across CAVM vegetation community types
+
+AUTHOR: Kathleen Orndahl
+DATE: 11-10-2024
+
+NOTES:
+
+TO-DO:
+
+*/
+
+// ===================
+// 1. SET-UP =========
+// ===================
+
+// 1.0 ----- PARAMETERS -----
+
+var gdd_base = 0;
+var gdd_bin_width = 10;
+var canopy_height_threshold = 5; // Set to 200 for no mask, 5 is an appropriate mask
+var output_folder = 'gdd' + gdd_base;
+
+// 1.1 ----- READ IN DATA -----
+
+// CHELSA growing degree days:
+//  - units: degrees celsius
+//  - description: heat sum of all days above the 0°C temperature accumulated over 1 year.
+//  - scale: 0.1
+var gdd = ee.Image("projects/arctic-biomass-mapping/assets/climate_analysis/CHELSA_gdd" + gdd_base + "_1981_2010_V_2_1").multiply(0.1).rename('gdd').round().unmask(0, false);
+
+var total_biomass = ee.Image("projects/arctic-biomass-mapping/assets/modeled_final/total_biomass_2020_j_index_v20240514");
+var woody_biomass = ee.Image("projects/arctic-biomass-mapping/assets/modeled_final/woody_biomass_2020_j_index_v20240514");
+var cavm = ee.Image('projects/arctic-biomass-mapping/assets/ROIs/cavm_raster');
+var cavm_legend = ee.FeatureCollection('projects/arctic-biomass-mapping/assets/ROIs/cavm_raster_legend');
+var canopy_height = ee.ImageCollection("projects/meta-forest-monitoring-okw37/assets/CanopyHeight").mosaic();
+
+// =====================
+// 2. ANALYSIS =========
+// =====================
+
+// 2.0 ----- CALCULATE WOODY PLANT DOMINANCE -----
+
+var woody_percent = woody_biomass.divide(total_biomass).multiply(100).select('woody_biomass').regexpRename('biomass', 'percent'); // New option 'set0' - don't mask, where plant and woody plant biomass are both zero, woody percent is zero
+
+// 2.1 ----- SET UP GDD DATA -----
+
+// Get max GDD -----
+
+var gdd_max = gdd.updateMask(woody_biomass.select('woody_biomass')).reduceRegion({
+  reducer: ee.Reducer.max(),
+  geometry: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false), 
+  scale: gdd.projection().nominalScale(), 
+  crs: gdd.projection().crs(), 
+  maxPixels: 1e13
+});
+
+gdd_max = ee.Number(ee.Dictionary(gdd_max).get('gdd'));
+gdd_max = gdd_max.divide(gdd_bin_width).round().multiply(gdd_bin_width).getInfo();
+
+// 2.2 ----- SET UP BIOMASS DATA -----
+
+// Mask by canopy height -----
+canopy_height = canopy_height.unmask(0); // Fill currently masked areas with low value to ensure we include Greeland, barrier islands etc.
+var canopy_height_mask = canopy_height.lt(canopy_height_threshold).selfMask();
+total_biomass = total_biomass.updateMask(canopy_height_mask);
+woody_biomass = woody_biomass.updateMask(canopy_height_mask);
+
+// 2.3 ----- COMBINE DATA -----
+
+var biomass_gdd = total_biomass.addBands(woody_biomass).addBands(woody_percent).addBands(gdd);
+
+// 2.4 ----- AVERAGE BIOMASS AND GDD ACROSS CAVM VEGETATION COMMUNITY TYPES AND EXPORT -----
+
+// Get CAVM codes
+var cavm_codes_fine = cavm_legend.aggregate_array('raster_code');
+
+// Loop CAVM codes
+var biomass_gdd_cavm_fine = cavm_codes_fine.getInfo().map(function(code){
+  
+  // Get vegetation description
+  var veg_desc = cavm_legend.filter(ee.Filter.eq('raster_code', code)).first().get('short_description');
+
+  // Restrict CAVM image to current code only
+  var cavm_code = cavm.eq(ee.Image.constant(code)).selfMask();
+  
+  // Mask biomass to current code only
+  var biomass_gdd_cavm_code = biomass_gdd.updateMask(cavm_code);
+  
+  // Tidy mask
+  biomass_gdd_cavm_code = biomass_gdd_cavm_code.mask(biomass_gdd_cavm_code.mask().gt(0));
+  
+  // Reduce over masked biomass image
+  var biomass_gdd_cavm_code_reduced = biomass_gdd_cavm_code.reduceRegion({
+    reducer: ee.Reducer.mean(), 
+    geometry: ee.Geometry.Polygon([-180, 88, 0, 88, 180, 88, 180, 45, 0, 45, -180, 45], null, false),
+    crs: gdd.projection(),
+    maxPixels: 1e13,
+    tileScale: 1}); // Default: 0.5
+  
+  // Convert to feature
+  var feat = ee.Feature(null, biomass_gdd_cavm_code_reduced).set('veg_code', code).set('veg_desc', veg_desc);
+  
+  return feat;
+  
+});
+
+// ===================
+// 3. EXPORT =========
+// ===================
+
+Export.table.toDrive({
+  collection: ee.FeatureCollection(biomass_gdd_cavm_fine).select(['.*'], null, false), 
+  description: 'arctic_biomass_gdd' + gdd_base + '_mean_1km_cavm_fine', 
+  folder: output_folder
+});
+
+throw('stop');
+
+// ============================
+// 4. BATCH RUN TASKS =========
+// ============================
+
+// Batch run tasks within the GEE code editor
+// Use the code here under 'Free version': https://github.com/gee-hydro/gee_monkey
+// 1) Run script to generate tasks, make sure the top of the task pane no longer says 'UPDATING...' - this indicates all tasks have generated
+// 2) Press F12 to bring up the javascript console
+// 3) Click the 'console' tab if it is not already open
+// 4) Scroll to the bottom where the blue '>' indicates you can enter code
+// 5) Paste the 'runTaskList' function and hit enter
+// 6) Paste 'runTaskList();' and hit enter
+// 7) Wait for the run dialog boxes to pop up (a dark black border indicates several overlapping dialog boxes which is what we want)
+// 8) Paste the 'confirmAll' function and hit enter
+// 9) Paste 'confirmAll();' and hit enter
+// 10) Be patient as the tasks are confirmed, do not close the browser window, eventually the running tasks will show up in the
+
+function runTaskList(){
+    // var tasklist = document.getElementsByClassName('task local type-EXPORT_IMAGE awaiting-user-config');
+    // for (var i = 0; i < tasklist.length; i++)
+    //         tasklist[i].getElementsByClassName('run-button')[0].click();
+    $$('.run-button' ,$$('ee-task-pane')[0].shadowRoot).forEach(function(e) {
+        e.click()
+    })
+}
+
+function confirmAll() {
+    // var ok = document.getElementsByClassName('goog-buttonset-default goog-buttonset-action');
+    // for (var i = 0; i < ok.length; i++)
+    //     ok[i].click();
+    $$('ee-table-config-dialog, ee-image-config-dialog').forEach(function(e) {
+        var eeDialog = $$('ee-dialog', e.shadowRoot)[0]
+        var paperDialog = $$('paper-dialog', eeDialog.shadowRoot)[0]
+        $$('.ok-button', paperDialog)[0].click()
+    })
+}
+
+runTaskList();
+confirmAll();

@@ -1,0 +1,16 @@
+"Variable","Importance"
+"trees_presence",0.00508551336146273
+"spectral_red_changePSLS",0.000738396624472573
+"spectral_red_changeLSES",0.00040590717299578
+"topo_northness",0.000292545710267229
+"spectral_EVI2b_earlySummer",0
+"spectral_EVI2b_startSnowfree",0
+"spectral_NDVI_earlySummer",0
+"spectral_NDWI_lateSummer",0
+"spectral_NDWI_peakSummer",0
+"spectral_NDWI_startSnowfree",0
+"spectral_SWIR2_endSnowfree",0
+"spectral_EVI2b_annualMedian",0
+"spectral_EVI2b_annualRange",0
+"spectral_NDVI_changeSSES",0
+"spectral_NDWI_annualMedian",0

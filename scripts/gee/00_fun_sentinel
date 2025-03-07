@@ -1,0 +1,167 @@
+/*
+
+DESCRIPTION: Functions to pre-process sentinel-2 data
+
+FUNCTION LIST:
+  quality_S2_CloudlessComposite
+
+AUTHOR: Patrick Burns, Melissa Rose
+DATE:
+
+NOTES:
+References: 
+> GEE S2 cloudless tutorial: https://developers.google.com/earth-engine/tutorials/community/sentinel-2-s2cloudless
+> A number of helpful modules associated with this paper: https://doi.org/10.3390/rs11070831
+  + link1: https://code.earthengine.google.com/b1ed29a648150344e7971b156abc1f6c
+  + link2: https://mygeoblog.com/2018/10/24/modular-landcover-system-step-4-brdf-corrections/
+  
+TO-DO:
+
+*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+// EXISTING MODULES
+
+// Title: sentinel-2_proc_mod
+// By: Patrick Burns [pb463@nau.edu], Northern Arizona University
+// About: functions for processing Sentinel-2 data
+// Last Updated: 13 Sept. 2021
+var S2_proc = require('users/pb463/NAU_GoetzGroup/:01_utilities/modules/sentinel-2_proc_mod');
+
+// Title: compositing_mod
+// By: Patrick Burns [pb463@nau.edu], Northern Arizona University
+// About: functions for compositing image collections
+// Last Updated: 22 Sept. 2021
+var compos = require('users/pb463/NAU_GoetzGroup:01_utilities/modules/compositing_mod');
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+// FUNCTION: quality_S2_CloudlessComposite
+// USE: Produce cloud-free Sentinel-2 composities and export
+// PARAMETERS: 
+//  dataset_id = numerical dataset identifier
+//  feat_col = feature collection of buffered plot/site points corresponding to dataset_id
+//  start = start date yyyy-mm-dd
+//  end = end date yyyy-mm-dd
+//  location = export location (asset vs. drive)
+//  folder = if exporting to asset, specify folder
+// NOTES: Parameters are populated automatically within 1_proc_site_representativeness script
+// AUTHOR: Melissa Rose, NAU
+// LAST UPDATE: 7-19-2022
+// TODO:
+
+exports.quality_S2_CloudlessComposite = function(dataset_id, feat_col, start, end, location, folder){
+  
+  // ----- INPUTS -----
+  
+  // Where to export the image (asset vs drive)
+  var export_loc = location;
+
+  // If 'asset' is specified above, specify your asset folder
+  var asset_folder = folder;
+
+  // Spatial and temporal extent
+  var AOI_name = dataset_id,
+  AOI = ee.Geometry(feat_col.geometry().bounds()),
+  start_date = start,
+  end_date = end,
+
+  // Sentinel-2 band selection
+  // Choose bands to ouput
+  // Available bands: ['Blue','Green','Red','RE1','RE2','RE3','NIR','SWIR1','SWIR2'] 
+  // Available indices: ['NDVI', 'kNDVI', 'EVI', 'RGVI', 'NDMI', 'NBR', 'CIRE', 'SVVI']
+  save_bands = ['Green','Red','RE2','NIR','SWIR1','SWIR2', 
+                'NDVI', 'EVI', 'RGVI', 'NDMI', 'NBR', 'SVVI'],
+
+  // Cloud filtering thresholds
+  cloud_perc_filter = 70,  // Maximum image cloud cover percent allowed in image collection (60)
+  cloud_prob_thresh = 15,  // Cloud probability (%); values greater than are considered cloud (50)
+  NIR_dark_thresh = 0.15,  // Near-infrared reflectance; values less than are considered potential cloud shadow (0.15)
+  cloud_proj_dist = 1,     // Maximum distance (km) to search for cloud shadows from cloud edges (1)
+  buffer = 50,             // Distance (m) to dilate the edge of cloud-identified objects (50)
+
+  // Composite method
+  compos_meth = 'quality';
+
+
+  
+  // ----- PROCESSING ----
+  
+  // Filter the S2 L2A collection by AOI, date range, and cloudy pixel percentage
+  var S2_L2A_filt = ee.ImageCollection('COPERNICUS/S2_SR').filterBounds(AOI)
+                                               .filter(ee.Filter.calendarRange(182, 228, 'day_of_year'))
+                                               .filterDate(start_date, end_date)
+                                               .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', cloud_perc_filter));
+
+  // Use S2 cloudless for cloud masking, and also apply shadow mask
+  var S2_CSmask = S2_proc.L2A_mask_cloudless_wshadow(S2_L2A_filt, cloud_prob_thresh, NIR_dark_thresh, cloud_proj_dist, buffer);
+
+  // Rename S2 bands, scale reflectance values, calculate indices, select bands to keep
+  // Also, reproject to suitable Arctic CRS and scale (10m) -- UTM zone projections invalid for far north areas
+  var S2_ind = S2_CSmask.map(S2_proc.scale_refl_toFlt)
+                        .map(S2_proc.sel_rename_bands)
+                        .map(S2_proc.brdf_corr)
+                        .map(S2_proc.add_spec_indices);
+
+  // ----- COMPOSITING ----
+
+  // Compositing Methods 
+  // 1. Quality composite: use the difference from an index percentile to quality mosaic Sentinel-2
+  // Advantage: measured spectra are preserved
+  // Disadvantage: tends to produce salt/peppery images
+  
+  var compos_index = 'NDVI';  // which index to use for reference
+  var qual_perc = 98;  // the percentile of the above index to use for selecting the closest spectra
+  var s2_CM_index_perc = ee.Image(S2_ind.select(compos_index).reduce(ee.Reducer.percentile([qual_perc]))).rename('ref_val'); // Create reference percentile composite using chosen percentile and index
+  
+  // Create function that selects the chosen index from an image and calculates the difference between the image and the reference composite
+  // Take the absolute value and subtract that from 100 so pixel spectra closer to the reference get a higher value (for use with the 'qualityMosaic' function)
+  var diff_index_perc = function(img){
+    var diff = ee.Image.constant(100)
+                       .subtract(img.select([compos_index]).subtract(s2_CM_index_perc.select(['ref_val'])).abs())
+                       .rename('qual_val');
+    return img.addBands(diff);
+  };
+      
+  // Map across the pre-processed Sentinel-2 collection to calculate the difference from the chosen reference composite value
+  // Create quality mosaic, choosing pixels closest to the reference composite
+  var S2_QM = S2_ind.map(diff_index_perc)
+                    .qualityMosaic('qual_val')
+                    .select(save_bands)
+                    .clip(AOI);
+
+  // Scale the bands by 10000 and convert to int16
+  var S2_QM_resc = S2_QM.multiply(10000).int16();
+  
+  // Change variable name for export
+  var S2_compos = S2_QM_resc;
+
+  // ----- OUTPUTS -----
+  
+  // var asset_name = AOI_name+'_'+'S2_L2A_compos_'+compos_meth+'_'+start_date+'_'+end_date;
+  // if (export_loc === 'asset'){ 
+  //   print('Saving this', S2_compos, 'to:', asset_folder+asset_name);
+  //   Export.image.toAsset({image: S2_compos, 
+  //                         assetId: asset_folder+asset_name,
+  //                         description: asset_name,
+  //                         region: AOI, 
+  //                         scale: 10, 
+  //                         crs: 'EPSG:4326', 
+  //                         maxPixels: 1e13});
+                      
+  // } else if (export_loc === 'drive'){
+  //   print('Saving this', S2_compos, 'to your Google Drive');
+  //   Export.image.toDrive({image: S2_compos, 
+  //                         description: asset_name, 
+  //                         //folder: , 
+  //                         fileNamePrefix: asset_name, 
+  //                         region: box, 
+  //                         scale: 10, 
+  //                         crs: 'EPSG:4326', 
+  //                         maxPixels: 1e13, 
+  //                         skipEmptyTiles: true, 
+  //                         fileFormat: 'GeoTIFF'});
+  // }
+  
+  return S2_compos; 
+  
+};

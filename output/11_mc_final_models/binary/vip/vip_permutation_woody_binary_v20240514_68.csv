@@ -1,0 +1,9 @@
+"Variable","Importance"
+"spectral_NDWI_peakSummer",0.133352618728576
+"spectral_EVI2b_peakSummer",0.117270652626306
+"spectral_NDWI_endSnowfree",0.0263813972635434
+"spectral_NDVI_earlySummer",0.0159412231745209
+"spectral_NDWI_startSnowfree",0.0152053103891878
+"spectral_EVI2b_startSnowfree",0.0150748737336123
+"trees_presence",0.000336275090718128
+"spectral_EVI2b_annualRange",-8.20097545075704e-06
