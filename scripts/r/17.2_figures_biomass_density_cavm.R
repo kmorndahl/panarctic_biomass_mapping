@@ -22,10 +22,11 @@ library(ggpattern)
 library(ggforce)
 library(see)
 library(cowplot)
+library(grid)
 
 # 1.2 Parameters ---------------------------------------------------------------
 
-woody_percent_method = 'woody_percent' # Choose 'woody_percent', 'woody_percent_vegetated_mean' or 'woody_percent_mean'
+woody_percent_method = 'woody_percent' # Choose 'woody_percent', or 'woody_dominance_mean'
 zone_palette = c("#88CCEE", "#CC6677", "#888888", "#117733")
 cavm_coarse_palette = c("#888888", "#56B4E9","#E69F00", "#009E73")
 
@@ -60,7 +61,7 @@ biomass$veg_category = factor(biomass$veg_category, levels = c('Non-vegetated', 
 
 plt = ggplot(data = biomass[biomass$summary_type == 'mean',], aes(x = veg_description, y = predicted))+
   facet_col(~veg_category, scales = "free_y", space = "free", strip.position = "top")+ # Different pattern spacing
-  geom_col_pattern(data = biomass[biomass$summary_type == 'mean' & biomass$biomass_type != 'Actual Total',],
+  geom_col_pattern(data = biomass[biomass$summary_type == 'mean' & biomass$biomass_type != 'Plant',],
                    aes(pattern = biomass_type, fill = veg_category), 
                    position = position_stack(),
                    colour = "black",
@@ -70,14 +71,14 @@ plt = ggplot(data = biomass[biomass$summary_type == 'mean',], aes(x = veg_descri
                    pattern_spacing = c(rep(0.04, 10), rep(0.06, 6), rep(0.05, 16)),
                    pattern_key_scale_factor = 0.25,
                    lwd = 0.75)+
-  geom_errorbar(data = biomass[biomass$summary_type == 'mean' & biomass$biomass_type == 'Actual Total',],
+  geom_errorbar(data = biomass[biomass$summary_type == 'mean' & biomass$biomass_type == 'Plant',],
                 aes(ymin=lwr, ymax=upr), 
                 width=.2,
                 position=position_dodge(.9))+
   scale_pattern_manual(values = c("none", "stripe"),
                        guide = guide_legend(override.aes = list(fill = "white")))+
   scale_fill_manual(values = cavm_coarse_palette)+
-  geom_text(aes(label = ifelse(biomass_type == 'Actual Total',  paste0(round(!!sym(woody_percent_method), 0), '%'), ""),
+  geom_text(aes(label = ifelse(biomass_type == 'Plant',  paste0(round(!!sym(woody_percent_method), 0), '%'), ""),
                 y = 1750),
             size = 10,
             show.legend = FALSE)+
@@ -88,23 +89,23 @@ plt = ggplot(data = biomass[biomass$summary_type == 'mean',], aes(x = veg_descri
          pattern = guide_legend(override.aes = list(color = 'black', fill = NA, lwd = 2)))+
   theme_minimal(base_size = 24)+
   theme(legend.position="top", 
-        legend.key.width = unit(1, "cm"), 
+        legend.key.width = unit(1, "cm"),
         legend.key.height = unit(1, "cm"),
         legend.text = element_text(size = 30),
         strip.text = element_text(size = 34, hjust = 0),
         axis.title.x = element_text(size = 34),
         axis.text.x = element_text(size = 28))+
   coord_flip()
-  
-  ggsave(
-    paste0(out_dir, 'biomass_density_cavm.jpg'),
-    plt,
-    width = 40,
-    height = 40,
-    units = 'cm',
-    bg = 'white',
-    dpi = 600
-  )
+
+ggsave(
+  paste0(out_dir, 'biomass_density_cavm.jpg'),
+  plt,
+  width = 40,
+  height = 40,
+  units = 'cm',
+  bg = 'white',
+  dpi = 600
+)
 
 
 
