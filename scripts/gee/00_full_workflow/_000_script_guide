@@ -1,0 +1,85 @@
+/*
+
+NOTE: Appended zeros are necessary so scripts sort correctly.
+      All scripts in this directory are Python (earthengine-api).
+      Run with CWD set to scripts/gee/ so that utils/ and ccdc_tools/ imports resolve.
+
+utils/ SHARED FUNCTION PACKAGE
+  ccdc.py                                   - CCDC processing functions
+  field_data.py                             - field data loading and processing
+  landsat.py                                - Landsat sensor band definitions and helpers
+  landsat_proc_mod.py                       - GEODE lab Landsat processing module
+  misc.py                                   - miscellaneous utilities (asset management, name shortening, etc.)
+  palettes.py                               - color palettes for visualization
+  params.py                                 - shared constants
+  refl.py                                   - seasonal reflectance computation
+  sentinel.py                               - Sentinel-related functions
+  temporal_segmentation.py                  - Segments class for CCDC segment retrieval (Python port of wiell/temporalSegmentation)
+
+ccdc_tools/ CCDC TOOLS PACKAGE (Python port of parevalo_bu/gee-ccdc-tools)
+  dates.py                                  - date format conversion utilities
+
+000_ GUIDES AND TEMPLATES
+  000_script_template
+  000_script_guide
+  000_to_do
+
+01_ PROCESS CAL/VAL DATA
+  01_0_data_unveg_random_pts                - generate random unvegetated/barren background points
+  01_1_data_site_representativeness         - generate cal/val site representativeness summary statistics
+
+02_ PREPARE DATA FOR CCDC MODELING
+  02_0_prep_finalize_arctic_roi             - define and export Arctic region of interest
+  02_1_prep_create_water_ice_masks          - create permanent water and ice masks
+  02_2_prep_group_tiles                     - group MGRS tiles into processing batches
+
+03_ RUN CCDC
+  03_0_ccdc_fit                             - fit CCDC models across MGRS tiles
+
+04_ PROCESS SEASONAL REFLECTANCE DATA
+  04_0_proc_seasonal_doys                   - compute seasonal day-of-year (DOY) per tile
+  04_1_proc_seasonal_doys_median            - compute pan-Arctic median DOY per season
+  04_2_proc_seasonal_reflectance            - extract CCDC-modeled reflectance at seasonal DOYs
+
+05_ TOPOGRAPHIC CORRECTION
+  05_0_topocorr_seasonal_doy_min_max        - compute min/max DOY bounds for illumination condition calculation
+  05_1_topocorr_copernicus_slope_aspect     - compute slope and aspect from Copernicus 30m DEM
+  05_2_topocorr_calc_illumination_condition - compute solar illumination condition
+  05_3_topocorr_apply                       - apply SCSc topographic correction to reflectance
+
+06_ PREDICTORS
+  06_0_predictor_ecoregion                  - process ecoregion predictor
+  06_1_predictor_wte                        - process World Terrestrial Ecosystems predictor
+  06_2_predictor_aux_refl                   - compute auxiliary reflectance predictors (texture, slope)
+  06_3_predictor_permafrost                 - process permafrost zonation index predictor
+  06_4_predictor_terraclimate               - process TerraClimate climate predictors
+  06_5_predictor_tree_cover                 - process Hansen/VCF tree cover predictor
+  06_6_predictor_zone                       - process bioclimate zone predictor
+
+07_ PREDICTOR DATA EXTRACTION
+  07_0_extract_calval                       - extract all predictors at cal/val point locations
+
+08_ RUN MODELS
+  08_0_run_model_compare_gee_r              - verify GEE predictions match R predictions on cal/val data
+  08_1_run_model_binary_uncertainty         - run 100 Monte Carlo (MC) binary presence/absence models
+  08_2_run_model_continuous_uncertainty     - run 100 Monte Carlo (MC) continuous biomass models
+
+09_ EXPORT DATA
+  09_0_export_mc_iterations_to_gcs          - export per-MC model outputs to Google Cloud Storage
+  09_1_export_biomass_mask                  - export biomass quality/extent mask
+  09_2_export_maps_to_asset                 - aggregate across MC iterations and export final maps to GEE assets
+  09_3_export_maps_to_drive                 - export final aggregated maps to Google Drive
+
+10_ ANALYSES
+  10_0_analysis_summarize_biomass           - summarize biomass amount and density by region/zone
+  10_1_analysis_climate_sum_area            - sum area across climate bins
+  10_2_analysis_climate_mean_biomass        - average biomass across climate bins
+  10_3_analysis_climate_mean_cavm           - average biomass and climate across CAVM regions
+  10_4_analysis_compare_pixels              - pixel-level comparison between map products
+  10_5_analysis_masked_area                 - compute masked/valid area statistics
+  10_6_analysis_zone_area                   - area summaries by bioclimate zone
+  10_7_analysis_soil_carbon                 - soil carbon co-analysis
+  10_8_analysis_topography_gradient         - biomass along topographic gradients
+  10_9_analysis_hillshade_data              - extract hillshade data for visualization
+
+*/

@@ -229,7 +229,7 @@ for(ds_name in ds_name_list){
   # Remove duplicates
   # Can have duplicates if more than one zone polygon within 500m
   # st_join data is sorted alphabetically so when choosing which observation to retain from duplicates it will prioritize in this order:
-  #   High Arctic; Low Arctic; Oro Arctic, Sub Arctic
+  #   High Arctic, Low Arctic, Oro Arctic, Sub Arctic
   if(ds_name == 'all') sf = sf[!duplicated(sf[c("plot_code","pft")]),] else sf = sf[!duplicated(sf$plot_code),]
 
   # Assign 'subarctic' class wherever plot did not intersect one of the arctic zones

@@ -9,6 +9,24 @@ The Arctic is warming faster than anywhere else on Earth, placing tundra ecosyst
 Kathleen M. Orndahl
 kathleen.orndahl@nau.edu
 
+### Companion manuscript:
+
+If you use this code or data, please cite the companion manuscript:
+
+> Orndahl, K. M., Berner, L. T., Macander, M. J., Arndal, M. F., Alexander, H. D., Humphreys, E. R., ... & Goetz, S. J. (2025). Next generation Arctic vegetation maps: Aboveground plant biomass and woody dominance mapped at 30 m resolution across the tundra biome. *Remote Sensing of Environment*, *323*, 114717. https://doi.org/10.1016/j.rse.2025.114717
+
+```bibtex
+@article{orndahl2025arctic,
+  author  = {Orndahl, Kathleen M. and Berner, Logan T. and Macander, Matthew J. and Arndal, Marie F. and Alexander, Heather D. and Humphreys, Elyn R. and Loranty, Michael M. and Ludwig, Sarah M. and Nyman, Johanna and Juutinen, Sari and Aurela, Mika and Mikola, Juha and Mack, Michelle C. and Rose, Melissa and Vankoughnett, Mathew R. and Iversen, Colleen M. and Kumar, Jitendra and Salmon, Verity G. and Yang, Dedi and Grogan, Paul and Danby, Ryan K. and Scott, Neal A. and Olofsson, Johan and Siewert, Matthias B. and Deschamps, Lucas and Maire, Vincent and Lévesque, Esther and Gauthier, Gilles and Boudreau, Stéphane and Gaspard, Anna and Bret-Harte, M. Syndonia and Raynolds, Martha K. and Walker, Donald A. and Michelsen, Anders and Kumpula, Timo and Villoslada, Miguel and Ylänne, Henni and Luoto, Miska and Virtanen, Tarmo and Greaves, Heather E. and Forbes, Bruce C. and Heim, Ramona J. and Hölzel, Norbert and Epstein, Howard and Bunn, Andrew G. and Holmes, Robert Max and Natali, Susan M. and Virkkala, Anna-Maria and Goetz, Scott J.},
+  title   = {Next generation {Arctic} vegetation maps: Aboveground plant biomass and woody dominance mapped at 30 m resolution across the tundra biome},
+  journal = {Remote Sensing of Environment},
+  year    = {2025},
+  volume  = {323},
+  pages   = {114717},
+  doi     = {10.1016/j.rse.2025.114717}
+}
+```
+
 ## Repository summary
 
 This repository includes scripts and data for:
@@ -91,61 +109,82 @@ Scripts are prepended with numbers for organization, see details below for detai
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18.1_compress_final_maps.R  
 
 ### Google Earth Engine code
-000 UTILITIES  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;000_script_guide  
+
+All GEE scripts are Python (earthengine-api).
+
+**utils/** (shared function package)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ccdc.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field_data.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;landsat.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;misc.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;palettes.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;params.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pipeline.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;refl.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sentinel.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temporal_segmentation.py  
+
+**full_workflow/** (pan-Arctic biomass mapping pipeline)  
+000 GUIDES AND TEMPLATES  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;000_script_guide  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;000_script_template  
-00 FUNCTIONS  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00_fun_field_data  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00_fun_misc  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00_fun_palettes  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00_fun_refl  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00_fun_sentinel  
-01 FIELD DATA  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01_0_data_barren_random_pts  
+01 PROCESS CAL/VAL DATA  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01_0_data_unveg_random_pts  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01_1_data_site_representativeness  
-02 PREPARE AUXILLARY DATA  
+02 PREPARE DATA FOR CCDC MODELING  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02_0_prep_finalize_arctic_roi  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02_1_prep_create_water_ice_masks  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02_2_prep_group_tiles  
 03 RUN CCDC  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03_0_ccdc.py
-04 CREATE MODELED SEASONAL REFLECTANCE DATA  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04_0_proc_seasonal_doy_tiles  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04_1_proc_seasonal_doy_median  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04_2_proc_seasonal_reflectance_tiles  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03_0_ccdc_fit  
+04 PROCESS SEASONAL REFLECTANCE DATA  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04_0_proc_seasonal_doys  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04_1_proc_seasonal_doys_median  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04_2_proc_seasonal_reflectance  
 05 TOPOGRAPHIC CORRECTION  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05_0_topocorr_seasonal_doy_min_max  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05_1_topocorr_copernicus_dem_slope_aspect  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05_2_topocorr_calc_illumination_condition.py  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05_3_topocorr_apply.py  
-06 CREATE AUXILLARY PREDICTORS  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05_1_topocorr_calc_copernicus_dem_slope  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05_2_topocorr_calc_illumination_condition  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05_3_topocorr_apply  
+06 PREDICTORS  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06_0_predictor_ecoregion  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06_1_predictor_wte  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06_2_predictor_texture_slope  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06_2_predictor_aux_refl  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06_3_predictor_permafrost  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06_4_predictor_terraclimate  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06_5_predictor_tree_cover  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06_6_predictor_zone  
-07 EXTRACT PREDICTORS AT DATA POINTS  
+07 PREDICTOR DATA EXTRACTION  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07_0_extract_calval  
 08 RUN MODELS  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08_0_run_model_compare_gee_r  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08_1_run_model_binary_uncertainty  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08_2_run_model_continuous_uncertainty  
-09 EXPORT PRODUCTS  
+09 EXPORT DATA  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09_0_export_maps_to_asset  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09_1_export_biomass_mask  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09_2_export_mc_iterations_to_gcs  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09_3_export_final_maps_to_drive  
 10 ANALYSES  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_climate_sum_area  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_climate_mean_biomass  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_climate_mean_cavm  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_compare_pixels  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_masked_area  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_zone_country_area  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_soil_carbon  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_topography_gradient  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_hillshade_data  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_0_analysis_summarize_biomass  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_1_analysis_climate_sum_area  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_2_analysis_climate_mean_biomass  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_3_analysis_climate_mean_cavm  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_4_analysis_compare_pixels  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_5_analysis_masked_area  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_6_analysis_zone_area  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_7_analysis_soil_carbon  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_8_analysis_topography_gradient  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10_9_analysis_hillshade_data  
 
+**annual/** (annual biomass time series pipeline)  
+00 PRE-PROCESSING (run once per model version)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00_0_modfiles_ecoregion_lookup  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00_1_modfiles_shorten_strings  
+01 SEASONAL REFLECTANCE  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01_0_run_annual_reflectance  
+01 MODEL INFERENCE  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01_1_run_annual_binary_continuous  
+01 FINAL BIOMASS MAPS  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01_2_run_annual_final_biomass  
 

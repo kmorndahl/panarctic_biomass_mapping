@@ -1,0 +1,32 @@
+/*
+
+ANNUAL BIOMASS MAPPING WORKFLOW
+  Per-feature (polygon) pipeline for producing annual biomass time series over 
+  FeatureCollections (e.g. fire perimeters, sample areas). Exports one image per feature
+  per pipeline stage, with all years stacked as bands in each image.
+
+  All scripts are Python (earthengine-api). 
+  Run with CWD set to scripts/gee/ so that utils/ and ccdc_tools/ imports resolve. 
+  See utils/pipeline.py for shared functions.
+
+DEPENDENCIES (from full_workflow/ pipeline, run once):
+  - CCDC outputs (module 03)
+  - Seasonal DOYs and illumination condition (modules 04-05)
+  - Auxiliary predictor assets: ecoregions, permafrost, WTE, zones, tree cover (module 06)
+  - Formatted GEE decision-tree model files in GCS (R modules 11-12)
+  - Shortened model files in GCS (00_1_modfiles_shorten_strings.py below)
+
+00_ PRE-PROCESSING (run once per model version)
+  00_0_modfiles_ecoregion_lookup     - generate ecoregion short-code lookup; write to utils/params.py
+  00_1_modfiles_shorten_strings      - shorten R tree files in GCS (final_trees → final_trees_shortened)
+
+01_ SEASONAL REFLECTANCE (run per batch)
+  01_0_run_annual_reflectance        - compute CCDC-modeled reflectance + topo correction; one image per feature, all years as bands
+
+01_ MODEL INFERENCE (run per batch, after Phase 1)
+  01_1_run_annual_binary_continuous  - run 100 MC binary + continuous models; aggregate and export continuous and binary images (all years as bands)
+
+01_ FINAL BIOMASS MAPS (run per batch, after Phase 2)
+  01_2_run_annual_final_biomass      - apply binary masking + ecological constraint; export final biomass maps (all years as bands)
+
+*/

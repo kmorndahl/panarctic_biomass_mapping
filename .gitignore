@@ -2,5 +2,15 @@
 .Rhistory
 .RData
 .Ruserdata
+*.Rproj
+**/.vscode/
+**/__pycache__/
+*.pyc
+CLAUDE.md
 
+/claude_logs/
+/claude_plans/
 /data/lsat_extracts/
+/output/
+/scripts/gee/_000_archive/
+/scripts/gee/_000_scratch/
