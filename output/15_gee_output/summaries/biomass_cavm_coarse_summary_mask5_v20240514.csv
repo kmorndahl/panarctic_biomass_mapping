@@ -1,6 +1,0 @@
-system:index,total_biomass_g_mean,total_biomass_g_sum,total_biomass_lwr_g_mean,total_biomass_lwr_g_sum,total_biomass_upr_g_mean,total_biomass_upr_g_sum,veg_code,woody_biomass_g_mean,woody_biomass_g_sum,woody_biomass_lwr_g_mean,woody_biomass_lwr_g_sum,woody_biomass_upr_g_mean,woody_biomass_upr_g_sum,woody_dominance_mean,woody_dominance_sum,.geo
-0,71890.40586,9.57E+13,38220.16839,5.10E+13,133151.504,1.78E+14,0,31198.25681,4.15E+13,15434.71165,2.05E+13,100940.9414,1.34E+14,9.371481101,1.25E+10,"{""type"":""MultiPoint"",""coordinates"":[]}"
-1,368098.286,5.83E+14,223851.1826,3.54E+14,587447.4088,9.30E+14,2,193164.6849,3.06E+14,100902.1834,1.60E+14,475083.0333,7.52E+14,38.8690349,6.16E+10,"{""type"":""MultiPoint"",""coordinates"":[]}"
-2,377602.3032,6.06E+14,228222.3956,3.67E+14,604900.4044,9.73E+14,3,240406.6363,3.86E+14,123855.1427,1.99E+14,503679.1237,8.09E+14,35.46884454,5.71E+10,"{""type"":""MultiPoint"",""coordinates"":[]}"
-3,445551.4978,1.16E+14,260581.2224,6.81E+13,731008.9164,1.91E+14,4,252208.1427,6.58E+13,122681.9752,3.20E+13,656819.989,1.71E+14,42.71877972,1.12E+10,"{""type"":""MultiPoint"",""coordinates"":[]}"
-4,694449.8113,2.37E+15,397141.238,1.36E+15,1135636.136,3.88E+15,9,555737.5352,1.90E+15,284593.5004,9.71E+14,1080812.237,3.69E+15,56.09971789,2.06E+11,"{""type"":""MultiPoint"",""coordinates"":[]}"
