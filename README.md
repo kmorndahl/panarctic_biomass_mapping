@@ -29,7 +29,7 @@ If you use this code or data, please cite the companion manuscript:
 
 ## Repository summary
 
-This repository includes scripts and data for:
+This repository includes scripts for:
 - Aggregating and processing training and validation data
 - Aggregating and processing Landsat predictor data, including seasonal reflectance modeling using the Continuous Change Detection and Classification Algorithm
 - Modeling plant and woody plant aboveground biomass for the year 2020:
@@ -39,6 +39,10 @@ This repository includes scripts and data for:
     - Using Monte Carlo iterations to derive best estimates of and 95% uncertainty intervals for plant and woody plant aboveground biomass
     - Computing woody plant dominance
 - Performing a series of analyses assessing the spatial distribution of vegetation biomass across the Arctic, and the influence of topography, disturbance, and climate
+
+Data and output associated with this project have been moved to panarctic_biomass_mapping_data and panarctic_biomass_mapping_output to maintain a lightweight script repository.
+
+Scripts in this repository have been converted to Python from the original JavaScript. To use the original JavaScript code, use release v1.0.
 
 ## Repository details
 
